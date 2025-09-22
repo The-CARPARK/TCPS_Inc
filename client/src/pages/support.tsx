@@ -208,7 +208,7 @@ export default function Support() {
 
             {/* Logo Side */}
             <div className="flex justify-center">
-              <div className="bg-black rounded-lg p-8 w-96 h-80 flex flex-col items-center justify-center">
+              <div className="bg-gray-800 rounded-lg p-8 w-96 h-80 flex flex-col items-center justify-center">
                 <img 
                   src={tcpsLogoDesign}
                   alt="TCPS Logo Design" 
