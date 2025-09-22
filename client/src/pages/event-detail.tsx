@@ -159,9 +159,7 @@ export default function EventDetail() {
                   <p>
                     <strong className="text-white">30 Oct 2025, 7:00 pm – 30 Nov 2025, 10:00 pm</strong>
                   </p>
-                  <p>
-                    Te Aro, Wellington 6011, New Zealand
-                  </p>
+                  
                 </div>
                 
                 {/* Control Room Image */}
