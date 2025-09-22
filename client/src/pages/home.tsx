@@ -235,7 +235,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-white rounded-lg p-6 mb-6 inline-block">
               <h2 className="text-black mb-4 font-black text-[36px]" data-testid="text-mission-heading">MISSION</h2>
-              <p className="text-lg leading-relaxed text-black italic" data-testid="text-mission">
+              <p className="text-black italic text-[17px]" data-testid="text-mission">
                 We work <strong>ka mua, ka muri</strong> backwards into the future,<br/>
                 uncovering the colonial layers of urban infrastructure, honoring<br/>
                 Te Tiriti o Waitangi, and modelling co‐governance that places te<br/>

@@ -149,7 +149,7 @@ export default function Support() {
             {/* Content Side */}
             <div className="bg-black/60 p-12 rounded-lg">
               <h1 className="font-bold text-white mb-8 text-[26px]">
-                Support The Car Park Society
+                SUPPORT TCPS
               </h1>
               
               <div className="space-y-6 text-gray-300 leading-relaxed mb-8">
