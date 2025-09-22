@@ -360,7 +360,7 @@ export default function Home() {
                 </a>
               </div>
               <p className="text-gray-400 text-sm mb-2">Te Whanganui-a-Tara</p>
-              <p className="text-gray-400 text-sm mb-2">Auckland</p>
+              <p className="text-gray-400 text-sm mb-2 font-bold">AOTEAROA</p>
               <p className="text-gray-400 text-sm">© 2025 by The Car Park Society Inc.</p>
             </div>
             
