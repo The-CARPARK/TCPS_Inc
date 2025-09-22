@@ -16,6 +16,7 @@ import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import heroImage from "@assets/1_1758536573325.png";
 import visionImage from "@assets/2_1758536573325.png";
+import eyeCreateImage from "@assets/Untitled - 6 August 2025 21.28_1758537254685.jpg";
 import eyeImage from "@assets/Untitled - 6 August 2025 21.28_1758537254685.jpg";
 
 const emailFormSchema = insertEmailSubscriptionSchema.extend({
@@ -248,12 +249,11 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-12">
               <div className="text-center">
                 <div className="w-60 h-48 mx-auto mb-6 flex items-center justify-center">
-                  <svg className="w-32 h-32" viewBox="0 0 120 120" fill="none">
-                    <path d="M60 10 L105 95 L15 95 Z" stroke="white" strokeWidth="2" fill="none"/>
-                    <circle cx="60" cy="50" r="15" fill="white"/>
-                    <circle cx="60" cy="50" r="8" fill="black"/>
-                    <path d="M50 40 L70 40 L70 50 L50 50 Z" fill="#22c55e" transform="rotate(15 60 45)"/>
-                  </svg>
+                  <img 
+                    src={eyeCreateImage} 
+                    alt="Eye symbol representing CREATE" 
+                    className="w-32 h-32 object-contain"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-create-heading">CREATE</h3>
                 <p className="text-gray-300 leading-relaxed" data-testid="text-create">
