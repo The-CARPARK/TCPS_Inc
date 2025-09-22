@@ -79,16 +79,16 @@ export default function Home() {
           <div className="flex items-center gap-4">
             <h1 className="text-lg font-semibold">The Car Park Society Inc.</h1>
             <div className="flex gap-2">
-              <a href="#" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs">
+              <a href="https://facebook.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
                 <FaFacebook className="w-3 h-3" />
               </a>
-              <a href="#" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs">
+              <a href="https://instagram.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
                 <FaInstagram className="w-3 h-3" />
               </a>
-              <a href="#" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs">
+              <a href="https://twitter.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
                 <FaTwitter className="w-3 h-3" />
               </a>
-              <a href="#" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs">
+              <a href="https://youtube.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
                 <FaYoutube className="w-3 h-3" />
               </a>
             </div>
@@ -121,55 +121,79 @@ export default function Home() {
               </Button>
             </div>
             
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-12 h-full">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
               <div className="flex flex-col items-center">
-                <div className="w-64 h-48 bg-white/10 rounded-lg flex items-center justify-center mb-8">
-                  {/* Logo placeholder */}
-                  <div className="text-center">
-                    <div className="w-32 h-32 bg-white rounded-lg mb-4 mx-auto flex items-center justify-center">
-                      <span className="text-black font-bold text-sm">TCPS LOGO</span>
+                <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8">
+                  {/* Logo matching the design */}
+                  <div className="text-center text-black">
+                    <div className="relative w-48 h-32">
+                      <svg className="w-full h-full" viewBox="0 0 200 100" fill="none">
+                        <path d="M100 10 L170 85 L30 85 Z" stroke="black" strokeWidth="3" fill="none"/>
+                        <path d="M70 40 L130 40 L130 60 L70 60 Z" fill="#e53e3e" transform="rotate(15 100 50)"/>
+                        <path d="M85 35 L115 35 L115 45 L85 45 Z" fill="#666" transform="rotate(-10 100 40)"/>
+                        <path d="M85 55 L115 55 L115 65 L85 65 Z" fill="#666" transform="rotate(10 100 60)"/>
+                      </svg>
                     </div>
+                    <div className="text-xs font-bold mt-2">THE CAR PARK SOCIETY</div>
                   </div>
                 </div>
               </div>
               
-              <nav className="flex flex-col gap-6 text-center">
-                <button 
-                  onClick={() => scrollToSection('hero')}
-                  className="text-2xl font-medium hover:text-red-500 transition-colors"
-                  data-testid="nav-home"
-                >
-                  Home
-                </button>
-                <button 
-                  onClick={() => scrollToSection('mission')}
-                  className="text-2xl font-medium hover:text-red-500 transition-colors"
-                  data-testid="nav-about"
-                >
-                  About
-                </button>
-                <button 
-                  onClick={() => scrollToSection('story')}
-                  className="text-2xl font-medium hover:text-red-500 transition-colors"
-                  data-testid="nav-events"
-                >
-                  Events
-                </button>
-                <button 
-                  onClick={() => scrollToSection('join')}
-                  className="text-2xl font-medium hover:text-red-500 transition-colors"
-                  data-testid="nav-blog"
-                >
-                  Blog
-                </button>
-                <button 
-                  onClick={() => scrollToSection('join')}
-                  className="text-2xl font-medium hover:text-red-500 transition-colors"
-                  data-testid="nav-donate"
-                >
-                  Donate
-                </button>
-              </nav>
+              <div className="text-center">
+                <nav className="flex flex-col gap-6 mb-8">
+                  <button 
+                    onClick={() => scrollToSection('hero')}
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-home"
+                  >
+                    Home
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('mission')}
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-about"
+                  >
+                    About
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('story')}
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-events"
+                  >
+                    Events
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('accord')}
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-blog"
+                  >
+                    Blog
+                  </button>
+                  <button 
+                    onClick={() => scrollToSection('join')}
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-donate"
+                  >
+                    Donate
+                  </button>
+                </nav>
+                
+                {/* Social Icons in Overlay */}
+                <div className="flex gap-4 justify-center">
+                  <a href="https://facebook.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaFacebook className="w-5 h-5" />
+                  </a>
+                  <a href="https://instagram.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaInstagram className="w-5 h-5" />
+                  </a>
+                  <a href="https://twitter.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaTwitter className="w-5 h-5" />
+                  </a>
+                  <a href="https://youtube.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaYoutube className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -335,7 +359,7 @@ export default function Home() {
         </section>
 
         {/* Te Mana Whakatete Accord Section */}
-        <section className="py-20 px-6">
+        <section id="accord" className="py-20 px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-8">TE MANA WHAKATETE ACCORD</h2>
             <p className="text-xl mb-4 italic">"The Accord is not a beginning but a recollecting.</p>
@@ -439,16 +463,16 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
               <div className="flex gap-2 mb-4">
-                <a href="#" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center">
+                <a href="https://facebook.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <FaFacebook className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center">
+                <a href="https://instagram.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <FaInstagram className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center">
+                <a href="https://twitter.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <FaTwitter className="w-4 h-4" />
                 </a>
-                <a href="#" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center">
+                <a href="https://youtube.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <FaYoutube className="w-4 h-4" />
                 </a>
               </div>
