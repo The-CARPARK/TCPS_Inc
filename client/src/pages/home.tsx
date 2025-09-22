@@ -213,7 +213,7 @@ export default function Home() {
               </div>
             </div>
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6" data-testid="text-welcome">
+              <h1 className="lg:text-6xl font-bold mb-6 text-[50px] text-center" data-testid="text-welcome">
                 WELCOME TO<br />
                 THE CAR PARK SOCIETY
               </h1>
