@@ -205,17 +205,22 @@ export default function Home() {
         {/* Hero Section */}
         <section className="py-20 px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="lg:text-5xl mb-12 text-center font-black text-[40px]" data-testid="text-welcome">
-              WELCOME TO<br />
-              THE CAR PARK SOCIETY
-            </h1>
-            
-            <div className="flex justify-center mb-12">
-              <img 
-                src={newHeroLogoImage} 
-                alt="The Car Park Society Eye Symbol" 
-                className="w-[600px] h-[400px] object-contain"
-              />
+            <div className="text-center mb-12" data-testid="text-welcome">
+              <h1 className="lg:text-5xl mb-8 text-center font-black text-[40px]">
+                WELCOME TO
+              </h1>
+              
+              <div className="flex justify-center mb-8">
+                <img 
+                  src={newHeroLogoImage} 
+                  alt="The Car Park Society Eye Symbol" 
+                  className="w-[600px] h-[400px] object-contain"
+                />
+              </div>
+              
+              <h1 className="lg:text-5xl text-center font-black text-[40px]">
+                THE CAR PARK SOCIETY
+              </h1>
             </div>
             
             <p className="text-gray-300 text-center text-[18px] max-w-xl mx-auto" data-testid="text-intro">
