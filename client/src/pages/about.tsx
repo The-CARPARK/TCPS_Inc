@@ -217,7 +217,7 @@ export default function About() {
         </section>
 
         {/* Te Mana Whakatete Accord Section */}
-        <section id="accord" className="py-20 px-6">
+        <section id="accord" className="py-20 px-6 text-[18px]">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-center mb-8">TE MANA WHAKATETE ACCORD</h2>
             
