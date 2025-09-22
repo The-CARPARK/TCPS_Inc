@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import urbanMaoriImage from "@assets/Screenshot 2025-09-23 015612_1758549664429.png";
+import tcpsLogoSmall from "@assets/TCPS_Colour_Small_1758549907788.png";
 
 export default function Blog() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -94,9 +95,11 @@ export default function Blog() {
                     
                     <div className="flex items-center gap-4 text-sm text-gray-400">
                       <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
-                          <span className="text-xs font-bold">TCPS</span>
-                        </div>
+                        <img 
+                          src={tcpsLogoSmall} 
+                          alt="TCPS Logo" 
+                          className="w-8 h-8 object-contain"
+                        />
                         <span>The Car Park Society</span>
                       </div>
                       <span>21 hours ago</span>
