@@ -186,7 +186,7 @@ export default function EventDetail() {
                       The Car Park Society invites you to enter <strong className="text-white">THE CONTROL ROOM:</strong> a temporary portal hidden in the heart of Te Aro. This space is the first activation in our journey toward the Induction Centre, where overlooked urban environments are transformed into sites of memory, creativity, and resistance.
                     </p>
                     
-                    <p className="mb-4 text-[21px]">Inside The Control Room, you will encounter:</p>
+                    <p className="mb-4 text-[20px] font-semibold">Inside The Control Room, you will encounter:</p>
                     
                     <ul className="list-disc list-inside space-y-2 ml-4">
                       <li><strong className="text-white">Immersive projections</strong> that fracture and reassemble the concrete mythos of the city.</li>
@@ -208,8 +208,8 @@ export default function EventDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 items-start mb-2">
             <div className="text-[21px]">
-              <div className="flex justify-start gap-3 mb-2">
-                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="text-[21px]">
+              <div className="text-[20px]">
+                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="text-[20px]">
                   <SiTiktok className="w-4 h-4" />
                 </a>
                 <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
