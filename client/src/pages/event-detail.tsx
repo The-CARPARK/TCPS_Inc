@@ -161,7 +161,6 @@ export default function EventDetail() {
                     <strong className="text-white">30 Oct 2025, 7:00 pm – 30 Nov 2025, 10:00 pm</strong>
                   </p>
                   <p>
-                    <strong className="text-white">TCPS CONTROL ROOM</strong><br />
                     Te Aro, Wellington 6011, New Zealand
                   </p>
                 </div>
