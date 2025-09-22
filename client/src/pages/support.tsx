@@ -212,7 +212,7 @@ export default function Support() {
                 <img 
                   src={tcpsLogoDesign}
                   alt="TCPS Logo Design" 
-                  className="w-[500px] h-[400px] object-contain"
+                  className="w-[700px] h-[600px] object-contain"
                 />
               </div>
             </div>
