@@ -207,23 +207,12 @@ export default function Support() {
 
             {/* Logo Side */}
             <div className="flex justify-center">
-              <div className="bg-white rounded-lg p-8 w-96 h-80 flex flex-col items-center justify-center">
-                <div className="mb-8">
-                  <img 
-                    src={logoImage} 
-                    alt="The Car Park Society Logo" 
-                    className="w-48 h-32 object-contain"
-                  />
-                </div>
-
-                {/* Building Structure Icon */}
-                <div className="text-black">
-                  <img 
-                    src={buildingImage} 
-                    alt="Building Structure" 
-                    className="w-24 h-20 object-contain"
-                  />
-                </div>
+              <div className="bg-black rounded-lg p-8 w-96 h-80 flex flex-col items-center justify-center">
+                <img 
+                  src="/@assets/Screenshot 2025-09-23 022253_1758550997767.png"
+                  alt="TCPS Logo Design" 
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
           </div>
