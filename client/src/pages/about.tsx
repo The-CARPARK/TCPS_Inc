@@ -347,17 +347,6 @@ export default function About() {
                   </p>
                 </div>
               </div>
-              
-              <div className="text-center mt-16">
-                <div className="italic text-gray-400 leading-relaxed">
-                  <p>We will not be seen,</p>
-                  <p>but we will be heard.</p>
-                  <p>We will not be controlled,</p>
-                  <p>but we will govern.</p>
-                  <p>We will not wait for change;</p>
-                  <p>we will be the change.</p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -396,6 +385,20 @@ export default function About() {
                 />
               </div>
             </div>
+          </div>
+          
+          <div className="text-center">
+            <p className="text-gray-500 text-sm italic mb-4">
+              "We will not be seen,<br />
+              but we will be heard.<br />
+              We will not be controlled,<br />
+              but we will govern.<br />
+              We will not wait for change;<br />
+              we will be the change."
+            </p>
+            <p className="text-gray-600 text-xs">
+              Oath of the Car Park Society
+            </p>
           </div>
         </div>
       </footer>
