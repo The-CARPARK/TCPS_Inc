@@ -191,36 +191,32 @@ export default function Events() {
       {/* Footer */}
       <footer className="py-16 px-6 border-t border-gray-800 mt-16">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div>
-              <div className="flex gap-2 mb-4">
-                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <SiTiktok className="w-4 h-4" />
-                </a>
-                <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <FaInstagram className="w-4 h-4" />
-                </a>
-                <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <FaFacebook className="w-4 h-4" />
-                </a>
-                <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <FaYoutube className="w-4 h-4" />
-                </a>
-              </div>
-              <p className="text-gray-400 text-sm mb-2">Te Whanganui-a-Tara</p>
-              <p className="text-gray-400 text-sm mb-2">Auckland</p>
-              <p className="text-gray-400 text-sm">© 2025 by The Car Park Society Inc.</p>
+          <div className="text-center mb-8">
+            <div className="flex gap-2 justify-center mb-4">
+              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <SiTiktok className="w-4 h-4" />
+              </a>
+              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <FaInstagram className="w-4 h-4" />
+              </a>
+              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <FaFacebook className="w-4 h-4" />
+              </a>
+              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <FaYoutube className="w-4 h-4" />
+              </a>
             </div>
-            
-            <div className="flex justify-end">
-              <div className="space-y-2">
-                <img 
-                  src={flagsImage} 
-                  alt="Flags" 
-                  className="h-14 object-contain"
-                />
-              </div>
-            </div>
+            <p className="text-gray-400 text-sm mb-2">Te Whanganui-a-Tara</p>
+            <p className="text-gray-400 text-sm mb-2">Auckland</p>
+            <p className="text-gray-400 text-sm mb-6">© 2025 by The Car Park Society Inc.</p>
+          </div>
+          
+          <div className="flex justify-center">
+            <img 
+              src={flagsImage} 
+              alt="Flags" 
+              className="h-16 object-contain"
+            />
           </div>
         </div>
       </footer>
