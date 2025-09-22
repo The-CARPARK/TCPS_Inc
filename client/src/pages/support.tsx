@@ -29,7 +29,9 @@ export default function Support() {
       <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
         <div className="flex justify-between items-center px-6 py-4">
           <div className="flex items-center gap-4">
-            <h1 className="text-lg font-semibold">The Car Park Society Inc.</h1>
+            <Link href="/">
+              <h1 className="text-lg font-semibold hover:text-red-500 transition-colors cursor-pointer">The Car Park Society Inc.</h1>
+            </Link>
             <div className="flex gap-2">
               <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
                 <SiTiktok className="w-3 h-3" />
@@ -218,28 +220,13 @@ export default function Support() {
                   <div className="text-sm font-bold">THE CAR PARK SOCIETY</div>
                 </div>
 
-                {/* Building/Structure Icon */}
+                {/* TCPS Triangular Logo */}
                 <div className="text-black">
-                  <svg className="w-24 h-32" viewBox="0 0 100 120" fill="currentColor">
-                    <rect x="10" y="20" width="80" height="100" fill="none" stroke="currentColor" strokeWidth="2"/>
-                    <rect x="20" y="30" width="15" height="8" fill="currentColor"/>
-                    <rect x="40" y="30" width="15" height="8" fill="currentColor"/>
-                    <rect x="65" y="30" width="15" height="8" fill="currentColor"/>
-                    <rect x="20" y="45" width="15" height="8" fill="currentColor"/>
-                    <rect x="40" y="45" width="15" height="8" fill="currentColor"/>
-                    <rect x="65" y="45" width="15" height="8" fill="currentColor"/>
-                    <rect x="20" y="60" width="15" height="8" fill="currentColor"/>
-                    <rect x="40" y="60" width="15" height="8" fill="currentColor"/>
-                    <rect x="65" y="60" width="15" height="8" fill="currentColor"/>
-                    <rect x="20" y="75" width="15" height="8" fill="currentColor"/>
-                    <rect x="40" y="75" width="15" height="8" fill="currentColor"/>
-                    <rect x="65" y="75" width="15" height="8" fill="currentColor"/>
-                    <rect x="20" y="90" width="15" height="8" fill="currentColor"/>
-                    <rect x="40" y="90" width="15" height="8" fill="currentColor"/>
-                    <rect x="65" y="90" width="15" height="8" fill="currentColor"/>
-                    <rect x="20" y="105" width="15" height="8" fill="currentColor"/>
-                    <rect x="40" y="105" width="15" height="8" fill="currentColor"/>
-                    <rect x="65" y="105" width="15" height="8" fill="currentColor"/>
+                  <svg className="w-24 h-20" viewBox="0 0 100 80" fill="none">
+                    <path d="M50 5 L90 70 L10 70 Z" stroke="black" strokeWidth="2" fill="none"/>
+                    <path d="M30 35 L70 35 L70 50 L30 50 Z" fill="#e53e3e" transform="rotate(15 50 42.5)"/>
+                    <path d="M40 25 L60 25 L60 32 L40 32 Z" fill="#666" transform="rotate(-10 50 28.5)"/>
+                    <path d="M40 50 L60 50 L60 57 L40 57 Z" fill="#666" transform="rotate(10 50 53.5)"/>
                   </svg>
                 </div>
               </div>
@@ -252,11 +239,16 @@ export default function Support() {
       <footer className="py-16 px-6 border-t border-gray-800">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center">
-            <div className="flex gap-4">
-              <div className="w-16 h-10 bg-red-600 flex items-center justify-center text-xs font-bold">NZ</div>
-              <div className="w-16 h-10 bg-blue-600 flex items-center justify-center text-xs font-bold"></div>
-              <div className="w-16 h-10 bg-red-500 flex items-center justify-center text-xs font-bold">C</div>
-              <div className="w-16 h-10 bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500"></div>
+            <div className="flex gap-2">
+              <div className="w-20 h-12 bg-red-600 border border-gray-400 flex items-center justify-center">
+                <span className="text-white text-xs font-bold">NZ</span>
+              </div>
+              <div className="w-20 h-12 bg-blue-800 border border-gray-400 flex items-center justify-center">
+                <span className="text-white text-xs font-bold">AU</span>
+              </div>
+              <div className="w-20 h-12 bg-red-700 border border-gray-400 flex items-center justify-center">
+                <span className="text-white text-xs font-bold">CA</span>
+              </div>
             </div>
           </div>
         </div>

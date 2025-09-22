@@ -349,7 +349,6 @@ export default function About() {
               </div>
               
               <div className="text-center mt-16">
-                <h4 className="text-lg font-semibold text-white mb-4">Oath of The Car Park Society</h4>
                 <div className="italic text-gray-400 leading-relaxed">
                   <p>We will not be seen,</p>
                   <p>but we will be heard.</p>
