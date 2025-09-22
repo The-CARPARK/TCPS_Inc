@@ -163,7 +163,7 @@ export default function About() {
             <p className="text-lg mb-8 text-center">Our story began with a simple act: watching 👁</p>
             
             <div className="space-y-6 text-gray-300 leading-relaxed">
-              <p>
+              <p className="text-center">
                 Late night gatherings at a penthouse window overlooked the stark spiral of Lombard Street Carpark. At first we were captivated by the eerie emptiness, yet each feed felt off, as if the mauri of the place was disturbed. Curiosity turned to investigation. We traced titles, land files, and whakapapa until a submerged history surfaced: The carpark's footprint once held Bethune & Hunter's Wine Merchants warehouse, an outpost of colonial commerce. Before brick and barrel, part of Te Aro Pā, a thriving kāinga forcibly displaced by colonisation.
               </p>
               
@@ -186,7 +186,7 @@ export default function About() {
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-left">• Vertical Archive:</h3>
+                  <h3 className="text-left font-bold">• Vertical Archive:</h3>
                   <p>Concrete decks stack history, layer upon layer, hiding Indigenous memory and colonial erasure beneath.</p>
                 </div>
                 
@@ -221,7 +221,7 @@ export default function About() {
                   The Car Park Society (TCPS) is a living assemblage of artists, insurgents, storytellers, cultural workers, rangatira, and spectral participants dedicated to the reclamation of space, spirit, and story beneath the colonial concrete of Aotearoa's urban cityscapes.
                 </p>
                 
-                <p className="mb-6 text-center text-[17px]">
+                <p className="mb-6 text-center text-[17px] font-thin">
                   We take the carpark, specifically the Lombard Street Carpark in Te Whanganui-a-Tara, as both site and symbol: a vertical archive of suppression and refusal, a space of stilled motion, a modern pā reimagined.
                 </p>
                 
