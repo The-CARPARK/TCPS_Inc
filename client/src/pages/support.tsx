@@ -233,9 +233,6 @@ export default function Support() {
             </div>
             
             <div className="text-center">
-              <p className="text-gray-600 text-xs font-extralight">
-                Oath of TCPS
-              </p>
             </div>
             
             <div className="flex justify-end">
