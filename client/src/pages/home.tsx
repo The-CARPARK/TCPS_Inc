@@ -206,7 +206,7 @@ export default function Home() {
                   <img 
                     src={logoImage} 
                     alt="The Car Park Society Logo" 
-                    className="w-48 h-32 mx-auto object-contain mb-4"
+                    className="w-64 h-40 mx-auto object-contain mb-4"
                   />
                   
                 </div>
