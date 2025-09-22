@@ -80,14 +80,7 @@ export default function EventDetail() {
           </div>
         </section>
 
-        {/* Event Image */}
-        <section className="px-6 mb-12">
-          <div className="max-w-4xl mx-auto">
-            <div className="w-full h-80 bg-gray-800 rounded-lg flex items-center justify-center">
-              <span className="text-gray-400">Event Image: THE CONTROL ROOM [TCPS]</span>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Event Details */}
         <section className="px-6">
