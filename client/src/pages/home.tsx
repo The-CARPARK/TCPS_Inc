@@ -214,7 +214,7 @@ export default function Home() {
               <img 
                 src={newHeroLogoImage} 
                 alt="The Car Park Society Eye Symbol" 
-                className="w-96 h-64 object-contain"
+                className="w-[600px] h-[400px] object-contain"
               />
             </div>
             
