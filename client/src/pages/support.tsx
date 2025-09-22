@@ -233,16 +233,16 @@ export default function Support() {
             </div>
             
             <div className="text-center">
-            </div>
-            
-            <div className="flex justify-center">
               <div className="space-y-2">
                 <img 
                   src={flagsImage} 
                   alt="Flags" 
-                  className="h-28 object-contain"
+                  className="h-28 object-contain mx-auto"
                 />
               </div>
+            </div>
+            
+            <div className="flex justify-center">
             </div>
           </div>
         </div>
