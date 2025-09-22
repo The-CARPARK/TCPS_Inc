@@ -42,7 +42,6 @@ export default function About() {
       >
         Skip to Main Content
       </a>
-
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
         <div className="flex justify-between items-center px-6 py-4">
@@ -76,7 +75,6 @@ export default function About() {
           </Button>
         </div>
       </header>
-
       {/* Overlay Menu */}
       {menuOpen && (
         <div className="overlay-menu">
@@ -156,7 +154,6 @@ export default function About() {
           </div>
         </div>
       )}
-
       <main id="main-content" className="pt-20 pb-16">
         {/* Our Story Section */}
         <section id="story" className="py-20 px-6">
@@ -183,13 +180,13 @@ export default function About() {
             <h2 className="text-4xl font-bold text-center mb-12">WHY A CAR PARK?</h2>
             
             <div className="space-y-8 text-gray-300 leading-relaxed">
-              <p className="text-lg">
+              <p className="text-lg text-center">
                 A car park might seem mundane, ordinary, utilitarian and overlooked but beneath the cold, grey surface lies a profound metaphor. It is our symbolic battleground, where past and future collide:
               </p>
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-white font-semibold mb-2">• Vertical Archive:</h3>
+                  <h3 className="text-center">• Vertical Archive:</h3>
                   <p>Concrete decks stack history, layer upon layer, hiding Indigenous memory and colonial erasure beneath.</p>
                 </div>
                 
@@ -351,7 +348,6 @@ export default function About() {
           </div>
         </section>
       </main>
-
       {/* Footer */}
       <footer className="py-16 px-6 border-t border-gray-800">
         <div className="max-w-7xl mx-auto">
