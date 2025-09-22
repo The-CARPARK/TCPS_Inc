@@ -208,7 +208,7 @@ export default function Support() {
       </main>
 
       {/* Footer */}
-      <footer className="py-16 px-6 border-t border-gray-800 mt-16 bg-[#000000]">
+      <footer className="py-16 px-6 border-t border-gray-800 mt-16 bg-[#0f0404]">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div>
