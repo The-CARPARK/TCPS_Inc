@@ -5,6 +5,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
+import urbanMaoriImage from "@assets/Screenshot 2025-09-23 015612_1758549415360.png";
 
 export default function Blog() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -75,7 +76,11 @@ export default function Blog() {
               <article className="bg-red-900/20 border border-red-800 rounded-lg overflow-hidden hover:bg-red-900/30 transition-colors cursor-pointer group">
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="w-full h-64 bg-gray-800 flex items-center justify-center">
-                    <span className="text-gray-400">Urban Māori Blog Post Image</span>
+                    <img 
+                      src={urbanMaoriImage} 
+                      alt="Urban Māori Blog Post" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   
                   <div className="p-8">
