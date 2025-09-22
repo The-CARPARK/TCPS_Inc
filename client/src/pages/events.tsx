@@ -192,18 +192,18 @@ export default function Events() {
       <footer className="py-16 px-6 border-t border-gray-800 mt-16">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8">
-            <div className="flex gap-2 justify-center mb-4">
-              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                <SiTiktok className="w-4 h-4" />
+            <div className="flex justify-between w-80 mx-auto mb-4">
+              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-16 h-16 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <SiTiktok className="w-8 h-8" />
               </a>
-              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                <FaInstagram className="w-4 h-4" />
+              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-16 h-16 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <FaInstagram className="w-8 h-8" />
               </a>
-              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                <FaFacebook className="w-4 h-4" />
+              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-16 h-16 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <FaFacebook className="w-8 h-8" />
               </a>
-              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                <FaYoutube className="w-4 h-4" />
+              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-16 h-16 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <FaYoutube className="w-8 h-8" />
               </a>
             </div>
             <p className="text-gray-400 text-sm mb-2">Te Whanganui-a-Tara</p>
