@@ -222,7 +222,7 @@ export default function Home() {
                   THE CAR PARK SOCIETY
                 </h1>
                 
-                <p className="text-gray-300 max-w-sm text-center mx-auto font-thin text-[19px]" data-testid="text-intro">
+                <p className="text-gray-300 max-w-sm text-center mx-auto text-[19px] font-extralight" data-testid="text-intro">
                   The Car Park Society (TCPS) formed in 2025, our aim is to reveal hidden histories, restore connection, and transform overlooked spaces into vibrant hubs of collective creativity and community empowerment.
                 </p>
               </div>
@@ -248,7 +248,7 @@ export default function Home() {
         {/* Vision & Goals Section */}
         <section className="py-12 px-6">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl text-center mb-16 font-black" data-testid="text-vision-heading">Our Vision & Goals</h2>
+            <h2 className="text-4xl text-center mb-16 font-black" data-testid="text-vision-heading">VISION + IMPACT</h2>
             
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <div className="text-center max-w-56 mx-auto">
