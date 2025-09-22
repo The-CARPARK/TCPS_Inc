@@ -184,7 +184,7 @@ export default function Support() {
                 className="inline-block"
               >
                 <Button 
-                  className="bg-white text-black font-bold px-8 py-4 text-lg hover:bg-gray-200 transition-colors"
+                  className="bg-white text-black font-bold px-16 py-8 text-2xl hover:bg-gray-200 transition-colors"
                   data-testid="button-donate"
                 >
                   DONATE
@@ -235,7 +235,7 @@ export default function Support() {
             <div className="text-center">
             </div>
             
-            <div className="flex justify-end">
+            <div className="flex justify-center">
               <div className="space-y-2">
                 <img 
                   src={flagsImage} 
