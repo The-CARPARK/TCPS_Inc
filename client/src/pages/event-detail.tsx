@@ -181,7 +181,7 @@ export default function EventDetail() {
                 
                 <div className="space-y-6 text-gray-300 leading-relaxed">
                   <div>
-                    <p className="italic mb-4">Phase Zero: The Rupture</p>
+                    <p className="italic mb-4 text-[19px]">Phase Zero: The Rupture</p>
                     
                     
                     
