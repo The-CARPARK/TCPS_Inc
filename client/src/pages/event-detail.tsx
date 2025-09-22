@@ -207,7 +207,7 @@ export default function EventDetail() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 items-start mb-2">
             <div className="justify-self-start">
-              <div className="flex justify-start gap-3 mb-2">
+              <div className="text-[19px]">
                 <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <SiTiktok className="w-4 h-4" />
                 </a>
