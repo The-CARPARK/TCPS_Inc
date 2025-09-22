@@ -145,8 +145,8 @@ export default function BlogPost() {
         <section className="px-6 py-12">
           <div className="max-w-4xl mx-auto">
             <div className="mb-8">
-              <Link href="/blog" className="text-red-400 hover:text-red-300 transition-colors">
-                ← Back to Blog
+              <Link href="/blog" className="hover:text-red-300 transition-colors text-[#e3071b]">
+                ← Back to Transmissions
               </Link>
             </div>
             

@@ -61,6 +61,86 @@ export default function Blog() {
         </div>
       </header>
 
+      {/* Overlay Menu */}
+      {menuOpen && (
+        <div className="overlay-menu">
+          <div className="menu-content">
+            <div className="absolute top-6 right-6">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setMenuOpen(false)}
+                className="text-white hover:bg-gray-800"
+                data-testid="menu-close"
+              >
+                Close [ - ]
+              </Button>
+            </div>
+            
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
+              <div className="flex flex-col items-center">
+                <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8">
+                  <div className="text-center text-black">
+                    <div className="relative w-48 h-32">
+                      <img 
+                        src={logoImage} 
+                        alt="The Car Park Society Logo" 
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <nav className="flex flex-col gap-6 mb-8">
+                  <Link href="/">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-home">
+                      Home
+                    </button>
+                  </Link>
+                  <Link href="/about-1">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
+                      About
+                    </button>
+                  </Link>
+                  <Link href="/event-list">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-events">
+                      Events
+                    </button>
+                  </Link>
+                  <Link href="/blog">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-blog">
+                      Blog
+                    </button>
+                  </Link>
+                  <Link href="/donate">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-donate">
+                      Donate
+                    </button>
+                  </Link>
+                </nav>
+                
+                <div className="flex gap-4 justify-center">
+                  <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <SiTiktok className="w-5 h-5" />
+                  </a>
+                  <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaInstagram className="w-5 h-5" />
+                  </a>
+                  <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaFacebook className="w-5 h-5" />
+                  </a>
+                  <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaYoutube className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
       <main className="pt-20 pb-16">
         {/* Blog Header */}
         <div className="px-6 py-12">
