@@ -289,7 +289,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-amplify-heading">AMPLIFY</h3>
                 <p className="text-gray-300 text-[15px]" data-testid="text-amplify">
-                  At the heart of The Car Park Society is a commitment to Indigenous narratives of resurgence, reclamation, and radical futures. We centre voices too often erased by consumerism and colonization, using our platforms to project stories of sovereignty, resilience, and imagination into the heart of the city.
+                  At the heart of The Car Park Society is a commitment to Indigenous narratives of resurgence, reclamation, and radical futures. We centre voices too often erased by consumerism and colonisation, using our platforms to project stories of sovereignty, resilience, and imagination into the heart of the city.
                 </p>
               </div>
             </div>
