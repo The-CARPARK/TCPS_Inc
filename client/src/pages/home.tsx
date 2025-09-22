@@ -219,7 +219,7 @@ export default function Home() {
                 </p>
               </div>
               
-              <div className="flex justify-center">
+              <div className="flex justify-center md:justify-start">
                 <img 
                   src={newHeroLogoImage} 
                   alt="The Car Park Society Eye Symbol" 
