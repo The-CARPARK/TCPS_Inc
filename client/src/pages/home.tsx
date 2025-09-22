@@ -14,6 +14,8 @@ import { Link } from "wouter";
 import { z } from "zod";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
+import heroImage from "@assets/1_1758536573325.png";
+import visionImage from "@assets/2_1758536573325.png";
 
 const emailFormSchema = insertEmailSubscriptionSchema.extend({
   email: z.string().email("Please enter a valid email address"),
@@ -197,102 +199,23 @@ export default function Home() {
       <main id="main-content" className="pt-20">
         {/* Hero Section */}
         <section className="py-20 px-6">
-          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
-              <div className="w-96 h-64 bg-white rounded-lg p-8 flex items-center justify-center">
-                <div className="text-center text-black">
-                  <img 
-                    src={logoImage} 
-                    alt="The Car Park Society Logo" 
-                    className="w-48 h-32 mx-auto object-contain"
-                  />
-                  <div className="text-sm font-bold mt-4">THE CAR PARK SOCIETY</div>
-                </div>
-              </div>
-            </div>
-            <div className="text-center lg:text-left">
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6" data-testid="text-welcome">
-                WELCOME TO<br />
-                THE CAR PARK SOCIETY
-              </h1>
-              <p className="text-xl text-gray-300 leading-relaxed" data-testid="text-intro">
-                The Car Park Society (TCPS) formed in 2025, our aim is to reveal hidden histories, restore connection, and transform overlooked spaces into vibrant hubs of collective creativity and community empowerment.
-              </p>
-            </div>
+          <div className="max-w-7xl mx-auto">
+            <img 
+              src={heroImage} 
+              alt="Welcome to The Car Park Society" 
+              className="w-full max-w-4xl mx-auto object-contain"
+            />
           </div>
         </section>
 
-        {/* Mission Section */}
-        <section className="py-20 px-6 bg-red-900/20">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-white rounded-lg p-8 mb-12 inline-block">
-              <h2 className="text-3xl font-bold text-black mb-4" data-testid="text-mission-heading">Mission</h2>
-              <p className="text-lg leading-relaxed text-black italic" data-testid="text-mission">
-                We work <strong>ka mua, ka muri</strong> backwards into the future,<br/>
-                uncovering the colonial layers of urban infrastructure, honoring<br/>
-                Te Tiriti o Waitangi, and modelling co‐governance that places te<br/>
-                taiao and community at the centre.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Vision & Goals Section */}
+        {/* Mission and Vision Section */}
         <section className="py-20 px-6">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-16" data-testid="text-vision-heading">Our Vision & Goals</h2>
-            
-            <div className="grid md:grid-cols-3 gap-12">
-              <div className="text-center">
-                <div className="w-60 h-48 mx-auto mb-6 flex items-center justify-center">
-                  <svg className="w-32 h-32" viewBox="0 0 120 120" fill="none">
-                    <path d="M60 10 L105 95 L15 95 Z" stroke="white" strokeWidth="2" fill="none"/>
-                    <circle cx="60" cy="50" r="15" fill="white"/>
-                    <circle cx="60" cy="50" r="8" fill="black"/>
-                    <path d="M50 40 L70 40 L70 50 L50 50 Z" fill="#22c55e" transform="rotate(15 60 45)"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-create-heading">CREATE</h3>
-                <p className="text-gray-300 leading-relaxed" data-testid="text-create">
-                  We design immersive, participatory experiences that dissolve the line between art, ritual, and activism.
-                </p>
-                <p className="text-gray-300 leading-relaxed mt-4">
-                  Each activation is more than an event: it is a living portal where audiences become participants, stories become ceremonies, and overlooked spaces become sites of collective transformation.
-                </p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-60 h-48 mx-auto mb-6 flex items-center justify-center">
-                  <svg className="w-32 h-32" viewBox="0 0 120 120" fill="none">
-                    <path d="M60 10 L105 95 L15 95 Z" stroke="white" strokeWidth="2" fill="none"/>
-                    <circle cx="60" cy="50" r="15" fill="white"/>
-                    <circle cx="60" cy="50" r="8" fill="black"/>
-                    <path d="M50 40 L70 40 L70 50 L50 50 Z" fill="#f59e0b" transform="rotate(15 60 45)"/>
-                    <path d="M45 55 L75 55 L75 65 L45 65 Z" fill="#ef4444" transform="rotate(-10 60 60)"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-build-heading">BUILD</h3>
-                <p className="text-gray-300 leading-relaxed" data-testid="text-build">
-                  We are committed to resilient networks and long-term community alliances. Our work is rooted in trust, co-design, and reciprocity; ensuring that every Watcher, collaborator, and partner plays an active role in shaping the society we are building together. This is not a movement of spectacle, but one of solidarity.
-                </p>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-60 h-48 mx-auto mb-6 flex items-center justify-center">
-                  <svg className="w-32 h-32" viewBox="0 0 120 120" fill="none">
-                    <path d="M60 10 L105 95 L15 95 Z" stroke="white" strokeWidth="2" fill="none"/>
-                    <circle cx="60" cy="50" r="15" fill="white"/>
-                    <circle cx="60" cy="50" r="8" fill="black"/>
-                    <path d="M50 40 L70 40 L70 50 L50 50 Z" fill="#6366f1" transform="rotate(15 60 45)"/>
-                    <path d="M45 35 L75 35 L75 45 L45 45 Z" fill="#8b5cf6" transform="rotate(-15 60 40)"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-amplify-heading">AMPLIFY</h3>
-                <p className="text-gray-300 leading-relaxed" data-testid="text-amplify">
-                  At the heart of The Car Park Society is a commitment to Indigenous narratives of resurgence, reclamation, and radical futures. We centre voices too often erased by consumerism and colonization, using our platforms to project stories of sovereignty, resilience, and imagination into the heart of the city.
-                </p>
-              </div>
-            </div>
+            <img 
+              src={visionImage} 
+              alt="Mission and Our Vision & Goals" 
+              className="w-full max-w-6xl mx-auto object-contain"
+            />
           </div>
         </section>
 
