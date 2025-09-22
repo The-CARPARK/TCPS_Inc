@@ -368,7 +368,7 @@ export default function Home() {
                 <img 
                   src={flagsImage} 
                   alt="Flags" 
-                  className="h-10 object-contain"
+                  className="h-50 object-contain"
                 />
               </div>
             </div>
