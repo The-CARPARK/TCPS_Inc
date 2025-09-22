@@ -217,7 +217,7 @@ export default function Events() {
                 <img 
                   src={flagsImage} 
                   alt="Flags" 
-                  className="h-32 object-contain"
+                  className="h-29 object-contain"
                 />
               </div>
             </div>
