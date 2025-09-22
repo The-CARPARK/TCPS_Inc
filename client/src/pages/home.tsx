@@ -360,9 +360,9 @@ export default function Home() {
                 </a>
               </div>
               <a href="mailto:connect@thecarparksociety.xyz" className="text-gray-400 text-sm mb-4 block hover:text-red-500 transition-colors font-semibold" data-testid="link-email-contact">connect@thecarparksociety.xyz</a>
-              <p className="text-gray-400 text-sm mb-2">Te Whanganui-a-Tara</p>
-              <p className="text-gray-400 text-sm mb-2 font-bold">AOTEAROA</p>
-              <p className="text-gray-400 text-sm">© 2025 by The Car Park Society Inc.</p>
+              <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
+              <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
+              <p className="text-gray-400 text-[12px]">© 2025 by The Car Park Society Inc.</p>
             </div>
             
             <div className="text-center">
