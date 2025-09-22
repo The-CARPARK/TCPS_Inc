@@ -103,22 +103,22 @@ export default function Support() {
                   </Link>
                   <Link href="/about-1">
                     <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
-                      About
+                      Our Story
                     </button>
                   </Link>
                   <Link href="/event-list">
                     <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-events">
-                      Events
+                      Activations
                     </button>
                   </Link>
                   <Link href="/blog">
                     <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-blog">
-                      Blog
+                      Transmissions
                     </button>
                   </Link>
                   <Link href="/donate">
                     <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-donate">
-                      Donate
+                      Support
                     </button>
                   </Link>
                 </nav>
@@ -226,6 +226,7 @@ export default function Support() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 items-start mb-2">
             <div className="justify-self-start">
+              <a href="mailto:connect@thecarparksociety.xyz" className="text-gray-400 text-sm mb-4 block hover:text-red-500 transition-colors" data-testid="link-email-contact">connect@thecarparksociety.xyz</a>
               <div className="flex justify-start gap-3 mb-2">
                 <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <SiTiktok className="w-4 h-4" />

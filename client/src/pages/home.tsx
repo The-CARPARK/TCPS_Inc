@@ -345,6 +345,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div>
+              <a href="mailto:connect@thecarparksociety.xyz" className="text-gray-400 text-sm mb-4 block hover:text-red-500 transition-colors" data-testid="link-email-contact">connect@thecarparksociety.xyz</a>
               <div className="flex gap-2 mb-4">
                 <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <SiTiktok className="w-4 h-4" />
