@@ -218,7 +218,7 @@ export default function About() {
 
         {/* Te Mana Whakatete Accord Section */}
         <section id="accord" className="py-20 px-6">
-          <div className="max-w-4xl mx-auto">
+          <div className="text-center">
             <h2 className="text-4xl font-bold text-center mb-8">TE MANA WHAKATETE ACCORD</h2>
             
             <div className="text-center mb-12 space-y-2">
@@ -228,7 +228,7 @@ export default function About() {
             
             <div className="space-y-8 text-gray-300 leading-relaxed">
               <div>
-                <p className="mb-6 text-center text-[18px] font-thin">
+                <p className="text-center">
                   The Car Park Society (TCPS) is a living assemblage of artists, insurgents, storytellers, cultural workers, rangatira, and spectral participants dedicated to the reclamation of space, spirit, and story beneath the colonial concrete of Aotearoa's urban cityscapes.
                 </p>
                 
