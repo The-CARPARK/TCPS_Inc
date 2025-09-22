@@ -208,7 +208,7 @@ export default function Home() {
                     alt="The Car Park Society Logo" 
                     className="w-48 h-32 mx-auto object-contain mb-4"
                   />
-                  <div className="text-sm font-bold">THE CAR PARK SOCIETY</div>
+                  
                 </div>
               </div>
             </div>
