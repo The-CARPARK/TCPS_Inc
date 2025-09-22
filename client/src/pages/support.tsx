@@ -1,9 +1,13 @@
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { SiTiktok } from "react-icons/si";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import { useEffect } from "react";
 
 export default function Support() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     document.title = "Support The Car Park Society - Donate";
     
@@ -27,25 +31,113 @@ export default function Support() {
           <div className="flex items-center gap-4">
             <h1 className="text-lg font-semibold">The Car Park Society Inc.</h1>
             <div className="flex gap-2">
-              <a href="https://facebook.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
-                <FaFacebook className="w-3 h-3" />
+              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+                <SiTiktok className="w-3 h-3" />
               </a>
-              <a href="https://instagram.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
                 <FaInstagram className="w-3 h-3" />
               </a>
-              <a href="https://twitter.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
-                <FaTwitter className="w-3 h-3" />
+              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+                <FaFacebook className="w-3 h-3" />
               </a>
-              <a href="https://youtube.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
                 <FaYoutube className="w-3 h-3" />
               </a>
             </div>
           </div>
-          <Link href="/" className="text-white hover:text-red-500 transition-colors">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setMenuOpen(true)}
+            className="text-white hover:bg-gray-800"
+            data-testid="menu-toggle"
+          >
             Menu [ + ]
-          </Link>
+          </Button>
         </div>
       </header>
+
+      {/* Overlay Menu */}
+      {menuOpen && (
+        <div className="overlay-menu">
+          <div className="menu-content">
+            <div className="absolute top-6 right-6">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setMenuOpen(false)}
+                className="text-white hover:bg-gray-800"
+                data-testid="menu-close"
+              >
+                Close [ - ]
+              </Button>
+            </div>
+            
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
+              <div className="flex flex-col items-center">
+                <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8">
+                  <div className="text-center text-black">
+                    <div className="relative w-48 h-32">
+                      <svg className="w-full h-full" viewBox="0 0 200 100" fill="none">
+                        <path d="M100 10 L170 85 L30 85 Z" stroke="black" strokeWidth="3" fill="none"/>
+                        <path d="M70 40 L130 40 L130 60 L70 60 Z" fill="#e53e3e" transform="rotate(15 100 50)"/>
+                        <path d="M85 35 L115 35 L115 45 L85 45 Z" fill="#666" transform="rotate(-10 100 40)"/>
+                        <path d="M85 55 L115 55 L115 65 L85 65 Z" fill="#666" transform="rotate(10 100 60)"/>
+                      </svg>
+                    </div>
+                    <div className="text-xs font-bold mt-2">THE CAR PARK SOCIETY</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <nav className="flex flex-col gap-6 mb-8">
+                  <Link href="/">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-home">
+                      Home
+                    </button>
+                  </Link>
+                  <Link href="/about-1">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
+                      About
+                    </button>
+                  </Link>
+                  <Link href="/event-list">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-events">
+                      Events
+                    </button>
+                  </Link>
+                  <Link href="/blog">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-blog">
+                      Blog
+                    </button>
+                  </Link>
+                  <Link href="/donate">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-donate">
+                      Donate
+                    </button>
+                  </Link>
+                </nav>
+                
+                <div className="flex gap-4 justify-center">
+                  <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <SiTiktok className="w-5 h-5" />
+                  </a>
+                  <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaInstagram className="w-5 h-5" />
+                  </a>
+                  <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaFacebook className="w-5 h-5" />
+                  </a>
+                  <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaYoutube className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <main className="pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-6">
@@ -65,14 +157,14 @@ export default function Support() {
                 </p>
                 
                 <p>
-                  Your help transforms abandoned structures into living art and resistance spaces, 
+                  You help transform abandoned structures into living art and resistance spaces, 
                   create immersive experiences that challenge colonial narratives, and build a 
                   collective of Watchers dedicated to land back, memory, and creativity.
                 </p>
                 
                 <p>
                   Your support keeps the rituals alive, from installations and films to gatherings 
-                  and community meetings.
+                  and community wānanga.
                 </p>
                 
                 <p>The sequence is reclamation and resistance.</p>
@@ -81,22 +173,22 @@ export default function Support() {
               </div>
 
               <div className="flex gap-4 mb-8">
-                <a href="https://facebook.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <FaFacebook className="w-4 h-4" />
+                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <SiTiktok className="w-4 h-4" />
                 </a>
-                <a href="https://instagram.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <FaInstagram className="w-4 h-4" />
                 </a>
-                <a href="https://twitter.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <FaTwitter className="w-4 h-4" />
+                <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <FaFacebook className="w-4 h-4" />
                 </a>
-                <a href="https://youtube.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <FaYoutube className="w-4 h-4" />
                 </a>
               </div>
 
               <a 
-                href="https://ko-fi.com/carparksociety" 
+                href="http://ko-fi.com/thecarparksocietyinc" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block"
