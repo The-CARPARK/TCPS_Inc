@@ -201,9 +201,9 @@ export default function Home() {
         </div>
       )}
 
-      <main id="main-content" className="pt-20">
+      <main id="main-content" className="pt-12">
         {/* Hero Section */}
-        <section className="py-20 px-6">
+        <section className="py-12 px-6">
           <div className="max-w-4xl mx-auto text-center">
             <div className="text-center mb-12" data-testid="text-welcome">
               <div className="flex justify-center mb-8">
@@ -226,9 +226,9 @@ export default function Home() {
         </section>
 
         {/* Mission Section */}
-        <section className="py-20 px-6 bg-red-900/20">
+        <section className="py-12 px-6 bg-red-900/20">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-white rounded-lg p-8 mb-12 inline-block">
+            <div className="bg-white rounded-lg p-6 mb-6 inline-block">
               <h2 className="text-3xl text-black mb-4 font-black" data-testid="text-mission-heading">MISSION</h2>
               <p className="text-lg leading-relaxed text-black italic" data-testid="text-mission">
                 We work <strong>ka mua, ka muri</strong> backwards into the future,<br/>
@@ -241,7 +241,7 @@ export default function Home() {
         </section>
 
         {/* Vision & Goals Section */}
-        <section className="py-20 px-6">
+        <section className="py-12 px-6">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl text-center mb-16 font-black" data-testid="text-vision-heading">Our Vision & Goals</h2>
             
@@ -292,7 +292,7 @@ export default function Home() {
         </section>
 
         {/* Join the Movement Section */}
-        <section className="py-20 px-6 bg-red-900/30">
+        <section className="py-12 px-6 bg-red-900/30">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-8" data-testid="text-join-heading">Join the Movement</h2>
             <p className="text-xl text-gray-300 mb-8" data-testid="text-join-description">
@@ -336,7 +336,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="py-16 px-6 border-t border-gray-800 mt-16">
+      <footer className="py-8 px-6 border-t border-gray-800 mt-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 items-start mb-2">
             <div className="justify-self-start">
