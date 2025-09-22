@@ -363,7 +363,7 @@ export default function Home() {
                 <p className="text-gray-400 mb-6 text-[12px] text-left">© 2025 by The Car Park Society Inc.</p>
               </div>
             </div>
-            <div className="justify-self-center">
+            <div className="justify-self-center mt-8">
               <img 
                 src={flagsImage} 
                 alt="Flags" 
