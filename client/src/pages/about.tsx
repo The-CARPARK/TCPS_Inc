@@ -186,7 +186,7 @@ export default function About() {
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-center">• Vertical Archive:</h3>
+                  <h3 className="text-left">• Vertical Archive:</h3>
                   <p>Concrete decks stack history, layer upon layer, hiding Indigenous memory and colonial erasure beneath.</p>
                 </div>
                 
@@ -217,11 +217,11 @@ export default function About() {
             
             <div className="space-y-8 text-gray-300 leading-relaxed">
               <div>
-                <p className="mb-6 text-center">
+                <p className="mb-6 text-center text-[18px] font-thin">
                   The Car Park Society (TCPS) is a living assemblage of artists, insurgents, storytellers, cultural workers, rangatira, and spectral participants dedicated to the reclamation of space, spirit, and story beneath the colonial concrete of Aotearoa's urban cityscapes.
                 </p>
                 
-                <p className="mb-6 text-center">
+                <p className="mb-6 text-center text-[17px]">
                   We take the carpark, specifically the Lombard Street Carpark in Te Whanganui-a-Tara, as both site and symbol: a vertical archive of suppression and refusal, a space of stilled motion, a modern pā reimagined.
                 </p>
                 
@@ -239,7 +239,7 @@ export default function About() {
                     1. Prosecution of the Colonial Beast: We are the voice for the silenced. Through art, intervention, and covert action, we prosecute the ongoing legacy of colonialism, exposing the cracks in the structure. We speak in whispers and bold strokes.
                   </p>
                   
-                  <p>
+                  <p className="mb-6 text-center text-[18px] font-thin">
                     2. Reclamation of Hidden Spaces: We take what was once forsaken. The Car Park is our vessel. We reclaim it—not for profit, not for recognition, but for resistance. A place forgotten is a place ripe for transformation.
                   </p>
                   
