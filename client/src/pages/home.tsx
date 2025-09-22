@@ -382,9 +382,6 @@ export default function Home() {
               We will not wait for change;<br />
               we will be the change."
             </p>
-            <p className="text-gray-600 text-xs">
-              Oath of the Car Park Society
-            </p>
           </div>
         </div>
       </footer>
