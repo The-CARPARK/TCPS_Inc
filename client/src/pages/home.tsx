@@ -200,10 +200,13 @@ export default function Home() {
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
               <div className="w-96 h-64 bg-white rounded-lg p-8 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 bg-gray-300 rounded-lg flex items-center justify-center">
-                    <span className="text-gray-600 text-xs">TCPS Logo</span>
-                  </div>
+                <div className="text-center text-black">
+                  <img 
+                    src={logoImage} 
+                    alt="The Car Park Society Logo" 
+                    className="w-48 h-32 mx-auto object-contain"
+                  />
+                  <div className="text-sm font-bold mt-4">THE CAR PARK SOCIETY</div>
                 </div>
               </div>
             </div>
@@ -221,11 +224,16 @@ export default function Home() {
 
         {/* Mission Section */}
         <section className="py-20 px-6 bg-red-900/20">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-8" data-testid="text-mission-heading">Mission</h2>
-            <p className="text-lg text-center leading-relaxed text-gray-300" data-testid="text-mission">
-              We walk ka mua, ka muri: backwards into the future, uncovering the colonial layers of urban infrastructure, honoring Te Tiriti o Waitangi, and modelling co‐governance that places te taiao and community at the centre.
-            </p>
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="bg-white rounded-lg p-8 mb-12 inline-block">
+              <h2 className="text-3xl font-bold text-black mb-4" data-testid="text-mission-heading">Mission</h2>
+              <p className="text-lg leading-relaxed text-black italic" data-testid="text-mission">
+                We work <strong>ka mua, ka muri</strong> backwards into the future,<br/>
+                uncovering the colonial layers of urban infrastructure, honoring<br/>
+                Te Tiriti o Waitangi, and modelling co‐governance that places te<br/>
+                taiao and community at the centre.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -236,8 +244,13 @@ export default function Home() {
             
             <div className="grid md:grid-cols-3 gap-12">
               <div className="text-center">
-                <div className="w-60 h-48 mx-auto mb-6 bg-gray-800 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">CREATE Image</span>
+                <div className="w-60 h-48 mx-auto mb-6 flex items-center justify-center">
+                  <svg className="w-32 h-32" viewBox="0 0 120 120" fill="none">
+                    <path d="M60 10 L105 95 L15 95 Z" stroke="white" strokeWidth="2" fill="none"/>
+                    <circle cx="60" cy="50" r="15" fill="white"/>
+                    <circle cx="60" cy="50" r="8" fill="black"/>
+                    <path d="M50 40 L70 40 L70 50 L50 50 Z" fill="#22c55e" transform="rotate(15 60 45)"/>
+                  </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-create-heading">CREATE</h3>
                 <p className="text-gray-300 leading-relaxed" data-testid="text-create">
@@ -249,8 +262,14 @@ export default function Home() {
               </div>
               
               <div className="text-center">
-                <div className="w-60 h-48 mx-auto mb-6 bg-gray-800 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">BUILD Image</span>
+                <div className="w-60 h-48 mx-auto mb-6 flex items-center justify-center">
+                  <svg className="w-32 h-32" viewBox="0 0 120 120" fill="none">
+                    <path d="M60 10 L105 95 L15 95 Z" stroke="white" strokeWidth="2" fill="none"/>
+                    <circle cx="60" cy="50" r="15" fill="white"/>
+                    <circle cx="60" cy="50" r="8" fill="black"/>
+                    <path d="M50 40 L70 40 L70 50 L50 50 Z" fill="#f59e0b" transform="rotate(15 60 45)"/>
+                    <path d="M45 55 L75 55 L75 65 L45 65 Z" fill="#ef4444" transform="rotate(-10 60 60)"/>
+                  </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-build-heading">BUILD</h3>
                 <p className="text-gray-300 leading-relaxed" data-testid="text-build">
@@ -259,8 +278,14 @@ export default function Home() {
               </div>
               
               <div className="text-center">
-                <div className="w-60 h-48 mx-auto mb-6 bg-gray-800 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">AMPLIFY Image</span>
+                <div className="w-60 h-48 mx-auto mb-6 flex items-center justify-center">
+                  <svg className="w-32 h-32" viewBox="0 0 120 120" fill="none">
+                    <path d="M60 10 L105 95 L15 95 Z" stroke="white" strokeWidth="2" fill="none"/>
+                    <circle cx="60" cy="50" r="15" fill="white"/>
+                    <circle cx="60" cy="50" r="8" fill="black"/>
+                    <path d="M50 40 L70 40 L70 50 L50 50 Z" fill="#6366f1" transform="rotate(15 60 45)"/>
+                    <path d="M45 35 L75 35 L75 45 L45 45 Z" fill="#8b5cf6" transform="rotate(-15 60 40)"/>
+                  </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-amplify-heading">AMPLIFY</h3>
                 <p className="text-gray-300 leading-relaxed" data-testid="text-amplify">
