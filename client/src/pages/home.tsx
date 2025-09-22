@@ -218,7 +218,7 @@ export default function Home() {
               />
             </div>
             
-            <p className="text-gray-300 text-center text-[18px] max-w-3xl mx-auto" data-testid="text-intro">
+            <p className="text-gray-300 text-center text-[18px] max-w-xl mx-auto" data-testid="text-intro">
               The Car Park Society (TCPS) formed in 2025, our aim is to reveal hidden histories, restore connection, and transform overlooked spaces into vibrant hubs of collective creativity and community empowerment.
             </p>
           </div>
