@@ -107,7 +107,7 @@ export default function Support() {
                   <div className="text-center text-black">
                     <div className="relative w-48 h-32">
                       <img 
-                        src="/attached_assets/TCPS_Medium_Colour (1)_1758535590698.png" 
+                        src={logoImage} 
                         alt="The Car Park Society Logo" 
                         className="w-full h-full object-contain"
                       />
