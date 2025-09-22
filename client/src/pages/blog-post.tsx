@@ -298,9 +298,9 @@ export default function BlogPost() {
       {/* Footer */}
       <footer className="py-16 px-6 border-t border-gray-800 mt-16">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 items-start mb-2">
-            <div className="justify-self-start">
-              <div className="flex justify-start gap-3 mb-2">
+          <div className="grid md:grid-cols-3 gap-8 items-start">
+            <div>
+              <div className="flex gap-2 mb-4">
                 <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <SiTiktok className="w-4 h-4" />
                 </a>
@@ -314,20 +314,35 @@ export default function BlogPost() {
                   <FaYoutube className="w-4 h-4" />
                 </a>
               </div>
-              <div className="text-left">
-                <p className="text-gray-400 text-sm mb-2 text-left">Te Whanganui-a-Tara</p>
-                <p className="text-gray-400 mb-2 text-[15px] font-bold text-left">AOTEAROA</p>
-                <p className="text-gray-400 mb-6 text-[12px] text-left">© 2025 by The Car Park Society Inc.</p>
+              <a href="mailto:connect@thecarparksociety.xyz" className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]" data-testid="link-email-contact">connect@thecarparksociety.xyz</a>
+              <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
+              <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
+              <p className="text-gray-400 text-[12px]">© 2025 by The Car Park Society Inc.</p>
+            </div>
+            
+            <div className="text-center">
+              <p className="text-gray-500 text-sm italic mb-4">
+                "We will not be seen,<br />
+                but we will be heard.<br />
+                We will not be controlled,<br />
+                but we will govern.<br />
+                We will not wait for change;<br />
+                we will be the change."
+              </p>
+              <p className="text-gray-600 text-xs font-extralight">
+                Oath of TCPS
+              </p>
+            </div>
+            
+            <div className="flex justify-end">
+              <div className="space-y-2">
+                <img 
+                  src={flagsImage} 
+                  alt="Flags" 
+                  className="h-28 object-contain"
+                />
               </div>
             </div>
-            <div className="justify-self-center">
-              <img 
-                src={flagsImage} 
-                alt="Flags" 
-                className="w-48 sm:w-56 md:w-64 h-auto object-contain"
-              />
-            </div>
-            <div />
           </div>
         </div>
       </footer>

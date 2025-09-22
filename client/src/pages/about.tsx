@@ -357,7 +357,6 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div>
-              <a href="mailto:connect@thecarparksociety.xyz" className="text-gray-400 text-sm mb-4 block hover:text-red-500 transition-colors" data-testid="link-email-contact">connect@thecarparksociety.xyz</a>
               <div className="flex gap-2 mb-4">
                 <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <SiTiktok className="w-4 h-4" />
@@ -372,9 +371,10 @@ export default function About() {
                   <FaYoutube className="w-4 h-4" />
                 </a>
               </div>
-              <p className="text-gray-400 text-sm mb-2">Te Whanganui-a-Tara</p>
-              <p className="text-gray-400 text-sm mb-2 font-bold">AOTEAROA</p>
-              <p className="text-gray-400 text-sm">© 2025 by The Car Park Society Inc.</p>
+              <a href="mailto:connect@thecarparksociety.xyz" className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]" data-testid="link-email-contact">connect@thecarparksociety.xyz</a>
+              <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
+              <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
+              <p className="text-gray-400 text-[12px]">© 2025 by The Car Park Society Inc.</p>
             </div>
             
             <div className="text-center">
@@ -386,7 +386,7 @@ export default function About() {
                 We will not wait for change;<br />
                 we will be the change."
               </p>
-              <p className="text-gray-600 text-xs">
+              <p className="text-gray-600 text-xs font-extralight">
                 Oath of TCPS
               </p>
             </div>

@@ -182,7 +182,7 @@ export default function Blog() {
                         />
                         <span>The Car Park Society</span>
                       </div>
-                      <span>21 hours ago</span>
+                      <span>22.09.2025</span>
                       <span>3 min read</span>
                     </div>
                   </div>
@@ -212,9 +212,10 @@ export default function Blog() {
                   <FaYoutube className="w-4 h-4" />
                 </a>
               </div>
-              <p className="text-gray-400 text-sm mb-2">Te Whanganui-a-Tara</p>
-              <p className="text-gray-400 text-sm mb-2">Auckland</p>
-              <p className="text-gray-400 text-sm">© 2025 by The Car Park Society Inc.</p>
+              <a href="mailto:connect@thecarparksociety.xyz" className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]" data-testid="link-email-contact">connect@thecarparksociety.xyz</a>
+              <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
+              <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
+              <p className="text-gray-400 text-[12px]">© 2025 by The Car Park Society Inc.</p>
             </div>
             
             <div className="text-center">
@@ -226,8 +227,8 @@ export default function Blog() {
                 We will not wait for change;<br />
                 we will be the change."
               </p>
-              <p className="text-gray-600 text-xs">
-                Oath of the Car Park Society
+              <p className="text-gray-600 text-xs font-extralight">
+                Oath of TCPS
               </p>
             </div>
             
