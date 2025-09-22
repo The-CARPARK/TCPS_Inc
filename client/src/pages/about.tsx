@@ -209,7 +209,7 @@ export default function About() {
                 
                 <div>
                   <h3 className="text-white font-semibold mb-2 text-center">• Broadcast Tower:</h3>
-                  <p>At night, empty and echoing, the car park transforms into a conduit, broadcasting signals of resistance and revival.</p>
+                  <p className="text-center">At night, empty and echoing, the car park transforms into a conduit, broadcasting signals of resistance and revival.</p>
                 </div>
               </div>
             </div>
@@ -218,7 +218,7 @@ export default function About() {
 
         {/* Te Mana Whakatete Accord Section */}
         <section id="accord" className="py-20 px-6">
-          <div className="text-center">
+          <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-center mb-8">TE MANA WHAKATETE ACCORD</h2>
             
             <div className="text-center mb-12 space-y-2">
