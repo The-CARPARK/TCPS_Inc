@@ -166,12 +166,12 @@ export default function Home() {
                   </Link>
                   <Link href="/event-list">
                     <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-events">
-                      Events
+                      Activations
                     </button>
                   </Link>
                   <Link href="/blog">
                     <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-blog">
-                      Blog
+                      Transmissions
                     </button>
                   </Link>
                   <Link href="/donate">
