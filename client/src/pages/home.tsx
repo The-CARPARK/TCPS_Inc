@@ -7,13 +7,10 @@ import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Card, CardContent } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
-import { ArrowDown, Mail, Menu, X } from "lucide-react";
+import { X, Menu } from "lucide-react";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { z } from "zod";
-import createImage from "@assets/stock_images/community_creative_w_c60b5e60.jpg";
-import buildImage from "@assets/stock_images/community_building_c_3b02f7ed.jpg";
-import amplifyImage from "@assets/stock_images/indigenous_voices_sp_db929368.jpg";
 
 const emailFormSchema = insertEmailSubscriptionSchema.extend({
   email: z.string().email("Please enter a valid email address"),
@@ -22,7 +19,7 @@ const emailFormSchema = insertEmailSubscriptionSchema.extend({
 type EmailFormData = z.infer<typeof emailFormSchema>;
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const { toast } = useToast();
 
   const form = useForm<EmailFormData>({
@@ -40,7 +37,7 @@ export default function Home() {
     onSuccess: () => {
       toast({
         title: "Welcome to The Car Park Society!",
-        description: "Thank you for joining our movement. Check your email for confirmation.",
+        description: "Thank you for joining our movement.",
       });
       form.reset();
     },
@@ -61,11 +58,12 @@ export default function Home() {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setMenuOpen(false);
     }
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-black text-white">
       {/* Skip to main content */}
       <a 
         href="#main-content" 
@@ -75,231 +73,345 @@ export default function Home() {
         Skip to Main Content
       </a>
 
-      {/* Header Navigation */}
-      <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <h1 className="text-xl font-bold text-foreground tracking-tight">
-                The Car Park Society
-              </h1>
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
+        <div className="flex justify-between items-center px-6 py-4">
+          <div className="flex items-center gap-4">
+            <h1 className="text-lg font-semibold">The Car Park Society Inc.</h1>
+            <div className="flex gap-2">
+              <a href="#" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs">
+                <FaFacebook className="w-3 h-3" />
+              </a>
+              <a href="#" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs">
+                <FaInstagram className="w-3 h-3" />
+              </a>
+              <a href="#" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs">
+                <FaTwitter className="w-3 h-3" />
+              </a>
+              <a href="#" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs">
+                <FaYoutube className="w-3 h-3" />
+              </a>
             </div>
-            <nav className="hidden md:flex space-x-8">
-              <button 
-                onClick={() => scrollToSection('mission')}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-200"
-                data-testid="nav-mission"
-              >
-                Mission
-              </button>
-              <button 
-                onClick={() => scrollToSection('vision')}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-200"
-                data-testid="nav-vision"
-              >
-                Vision
-              </button>
-              <button 
-                onClick={() => scrollToSection('join')}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-200"
-                data-testid="nav-join"
-              >
-                Join
-              </button>
-            </nav>
-            <Button
-              variant="ghost"
-              size="sm"
-              className="md:hidden"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              data-testid="mobile-menu-toggle"
-            >
-              {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-            </Button>
           </div>
-          
-          {/* Mobile Menu */}
-          {mobileMenuOpen && (
-            <div className="md:hidden py-4 border-t border-border">
-              <nav className="flex flex-col space-y-2">
-                <button 
-                  onClick={() => {
-                    scrollToSection('mission');
-                    setMobileMenuOpen(false);
-                  }}
-                  className="text-left px-2 py-1 text-muted-foreground hover:text-foreground transition-colors duration-200"
-                  data-testid="mobile-nav-mission"
-                >
-                  Mission
-                </button>
-                <button 
-                  onClick={() => {
-                    scrollToSection('vision');
-                    setMobileMenuOpen(false);
-                  }}
-                  className="text-left px-2 py-1 text-muted-foreground hover:text-foreground transition-colors duration-200"
-                  data-testid="mobile-nav-vision"
-                >
-                  Vision
-                </button>
-                <button 
-                  onClick={() => {
-                    scrollToSection('join');
-                    setMobileMenuOpen(false);
-                  }}
-                  className="text-left px-2 py-1 text-muted-foreground hover:text-foreground transition-colors duration-200"
-                  data-testid="mobile-nav-join"
-                >
-                  Join
-                </button>
-              </nav>
-            </div>
-          )}
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setMenuOpen(true)}
+            className="text-white hover:bg-gray-800"
+            data-testid="menu-toggle"
+          >
+            Menu [ + ]
+          </Button>
         </div>
       </header>
 
-      <main id="main-content">
-        {/* Hero Section */}
-        <section className="hero-gradient py-20 lg:py-32">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="mb-8">
-              <div className="mx-auto mb-8 w-80 h-32 bg-muted rounded-xl flex items-center justify-center">
-                <span className="text-muted-foreground text-sm">Organization Logo</span>
-              </div>
+      {/* Overlay Menu */}
+      {menuOpen && (
+        <div className="overlay-menu">
+          <div className="menu-content">
+            <div className="absolute top-6 right-6">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setMenuOpen(false)}
+                className="text-white hover:bg-gray-800"
+                data-testid="menu-close"
+              >
+                Close [ - ]
+              </Button>
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-              WELCOME TO<br />
-              <span className="text-primary">THE CAR PARK SOCIETY</span>
-            </h1>
-            
-            <div className="max-w-3xl mx-auto">
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-                The Car Park Society (TCPS) formed in 2025, our aim is to reveal hidden histories, restore connection, and transform overlooked spaces into vibrant hubs of collective creativity and community empowerment.
-              </p>
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-12 h-full">
+              <div className="flex flex-col items-center">
+                <div className="w-64 h-48 bg-white/10 rounded-lg flex items-center justify-center mb-8">
+                  {/* Logo placeholder */}
+                  <div className="text-center">
+                    <div className="w-32 h-32 bg-white rounded-lg mb-4 mx-auto flex items-center justify-center">
+                      <span className="text-black font-bold text-sm">TCPS LOGO</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
               
-              <Button 
-                onClick={() => scrollToSection('mission')}
-                className="inline-flex items-center px-8 py-3 shadow-lg hover:shadow-xl"
-                data-testid="button-learn-more"
-              >
-                Learn More
-                <ArrowDown className="ml-2 h-4 w-4" />
-              </Button>
+              <nav className="flex flex-col gap-6 text-center">
+                <button 
+                  onClick={() => scrollToSection('hero')}
+                  className="text-2xl font-medium hover:text-red-500 transition-colors"
+                  data-testid="nav-home"
+                >
+                  Home
+                </button>
+                <button 
+                  onClick={() => scrollToSection('mission')}
+                  className="text-2xl font-medium hover:text-red-500 transition-colors"
+                  data-testid="nav-about"
+                >
+                  About
+                </button>
+                <button 
+                  onClick={() => scrollToSection('story')}
+                  className="text-2xl font-medium hover:text-red-500 transition-colors"
+                  data-testid="nav-events"
+                >
+                  Events
+                </button>
+                <button 
+                  onClick={() => scrollToSection('join')}
+                  className="text-2xl font-medium hover:text-red-500 transition-colors"
+                  data-testid="nav-blog"
+                >
+                  Blog
+                </button>
+                <button 
+                  onClick={() => scrollToSection('join')}
+                  className="text-2xl font-medium hover:text-red-500 transition-colors"
+                  data-testid="nav-donate"
+                >
+                  Donate
+                </button>
+              </nav>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <main id="main-content" className="pt-20">
+        {/* Hero Section */}
+        <section id="hero" className="py-20 px-6">
+          <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center">
+              <div className="w-96 h-64 bg-white rounded-lg flex items-center justify-center">
+                <div className="text-center text-black">
+                  <div className="text-6xl font-bold mb-2">A</div>
+                  <div className="text-sm font-medium">THE CAR PARK SOCIETY</div>
+                </div>
+              </div>
+            </div>
+            <div className="text-center lg:text-left">
+              <h1 className="text-4xl lg:text-6xl font-bold mb-6">
+                WELCOME TO<br />
+                THE CAR PARK SOCIETY
+              </h1>
+              <p className="text-xl text-gray-300 leading-relaxed">
+                The Car Park Society (TCPS) formed in 2025, our aim is 
+                to reveal hidden histories, restore connection, 
+                and transform overlooked spaces into vibrant hubs of 
+                collective creativity and community empowerment
+              </p>
             </div>
           </div>
         </section>
 
-        {/* Mission Statement Section */}
-        <section id="mission" className="py-20 bg-card">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Mission</h2>
-              <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
-            </div>
-            
-            <div className="prose prose-lg mx-auto text-center">
-              <p className="text-xl text-muted-foreground leading-relaxed italic">
-                We walk <strong className="text-foreground">ka mua, ka muri</strong>: backwards into the future, uncovering the colonial layers of urban infrastructure, honoring <strong className="text-foreground">Te Tiriti o Waitangi</strong>, and modelling co‐governance that places <strong className="text-foreground">te taiao</strong> and community at the centre.
+        {/* Mission Section */}
+        <section id="mission" className="py-20 px-6 bg-red-900/20">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white text-black p-8 rounded-lg text-center">
+              <h2 className="text-3xl font-bold mb-6">Mission</h2>
+              <p className="text-lg leading-relaxed">
+                We walk <strong>ka mua, ka muri</strong> backwards into the future, 
+                uncovering the colonial layers of urban infrastructure, honoring 
+                <strong> Te Tiriti o Waitangi</strong>, and modelling co-governance that places 
+                <strong> te taiao</strong> and community at the centre.
               </p>
             </div>
           </div>
         </section>
 
         {/* Vision & Goals Section */}
-        <section id="vision" className="py-20 bg-background">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Our Vision & Goals</h2>
-              <div className="w-24 h-1 bg-primary mx-auto"></div>
-            </div>
+        <section id="vision" className="py-20 px-6">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-4xl font-bold text-center mb-16">Our Vision & Goals</h2>
             
             <div className="grid md:grid-cols-3 gap-12">
-              {/* CREATE Column */}
-              <div className="text-center group">
-                <Card className="mb-8 overflow-hidden shadow-lg transform group-hover:scale-105 transition-transform duration-300">
-                  <img 
-                    src={createImage} 
-                    alt="Community members engaged in creative collaborative activities"
-                    className="w-full h-64 object-cover"
-                  />
-                </Card>
-                
-                <h3 className="text-2xl font-bold text-primary mb-4">CREATE</h3>
-                
-                <p className="text-muted-foreground leading-relaxed">
-                  We design immersive, participatory experiences that dissolve the line between art, ritual, and activism. Each activation is more than an event: it is a living portal where audiences become participants, stories become ceremonies, and overlooked spaces become sites of collective transformation.
+              <div className="text-center">
+                <div className="w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+                  <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
+                    <path d="M50 10 L80 80 L20 80 Z" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <circle cx="50" cy="50" r="15" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <circle cx="50" cy="50" r="8" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-purple-400">CREATE</h3>
+                <p className="text-gray-300 leading-relaxed text-sm">
+                  We design immersive, participatory experiences that dissolve the line between art, ritual, and activism. 
+                  Each activation is more than an event: it is a living portal where audiences become participants, 
+                  stories become ceremonies, and overlooked spaces become sites of collective transformation.
                 </p>
               </div>
               
-              {/* BUILD Column */}
-              <div className="text-center group">
-                <Card className="mb-8 overflow-hidden shadow-lg transform group-hover:scale-105 transition-transform duration-300">
-                  <img 
-                    src={buildImage} 
-                    alt="Community members working together on collaborative projects"
-                    className="w-full h-64 object-cover"
-                  />
-                </Card>
-                
-                <h3 className="text-2xl font-bold text-primary mb-4">BUILD</h3>
-                
-                <p className="text-muted-foreground leading-relaxed">
-                  We are committed to resilient networks and long-term community alliances. Our work is rooted in trust, co-design, and reciprocity; ensuring that every Watcher, collaborator, and partner plays an active role in shaping the society we are building together. This is not a movement of spectacle, but one of solidarity.
+              <div className="text-center">
+                <div className="w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+                  <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
+                    <path d="M50 10 L80 80 L20 80 Z" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <circle cx="50" cy="50" r="15" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <circle cx="50" cy="50" r="8" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-orange-400">BUILD</h3>
+                <p className="text-gray-300 leading-relaxed text-sm">
+                  We are committed to resilient networks and long-term community alliances. Our work is rooted in trust, 
+                  co-design, and reciprocity; ensuring that every watcher, collaborator, and partner plays an active role in shaping 
+                  the society we are building together. This is not a movement of spectacle, but one of solidarity.
                 </p>
               </div>
               
-              {/* AMPLIFY Column */}
-              <div className="text-center group">
-                <Card className="mb-8 overflow-hidden shadow-lg transform group-hover:scale-105 transition-transform duration-300">
-                  <img 
-                    src={amplifyImage} 
-                    alt="Indigenous voices and cultural expression being amplified"
-                    className="w-full h-64 object-cover"
-                  />
-                </Card>
-                
-                <h3 className="text-2xl font-bold text-primary mb-4">AMPLIFY</h3>
-                
-                <p className="text-muted-foreground leading-relaxed">
-                  At the heart of The Car Park Society is a commitment to Indigenous narratives of resurgence, reclamation, and radical futures. We centre voices too often erased by consumerism and colonization, using our platforms to project stories of sovereignty, resilience, and imagination into the heart of the city.
+              <div className="text-center">
+                <div className="w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+                  <svg className="w-20 h-20" viewBox="0 0 100 100" fill="none">
+                    <path d="M50 10 L80 80 L20 80 Z" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <circle cx="50" cy="50" r="15" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <circle cx="50" cy="50" r="8" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-blue-400">AMPLIFY</h3>
+                <p className="text-gray-300 leading-relaxed text-sm">
+                  At the heart of The Car Park Society is a commitment to Indigenous narratives of resurgence, reclamation, 
+                  and radical futures. We centre voices too often erased by consumerism and colonization, using our platforms to 
+                  project stories of sovereignty, resilience, and imagination into the heart of the city.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Email Signup Section */}
-        <section id="join" className="py-20 bg-card">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Join the Movement</h2>
-            <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
+        {/* Our Story Section */}
+        <section id="story" className="py-20 px-6 bg-red-900/30">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-8">OUR STORY</h2>
+            <p className="text-xl mb-12 italic">Aroha kaha beneath asphalt</p>
+            <p className="text-lg mb-8">Our story begins with a simple act: watching. 👁</p>
             
-            <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+            <div className="text-left space-y-6 text-gray-300 leading-relaxed">
+              <p>
+                Late night gatherings at a penthouse window overlooked the stark grout of Lombard Street Carpark. 
+                At first we were captivated by the static employees, and each head too oft, as if the missal of the place 
+                was disturbed. Curiosity turned to investigation. We traced lines, shot files, and photographs until a 
+                submerged history surfaced. The carpark's footprint once held Bellhurst & Hunter's Wine Merchants 
+                warehouse, an outpost of a global alcohol enterprise until 1983, a striving lounge fondly displaced by colonization.
+              </p>
+              
+              <p>
+                Beneath the concrete still runs the silenced Waitematā Stream, its flow straight forward into the police 
+                and the shallow, so to sea thus, so to dust we turn the river and the hair is oil. When land and water are 
+                silenced, so too are the people who live upon them. These revelations exposed a larger pattern: 
+                silenced land. Whakapapa was white-splashed underfoot; the very infrastructure of our cities is an 
+                architecture of colonisation - each slab, each curb, each pipe constructed to erase, to forget, and to neat 
+                the missal of both whenua and people.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Why a Car Park Section */}
+        <section className="py-20 px-6 bg-red-900/20">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-12">WHY A CAR PARK?</h2>
+            
+            <div className="text-left space-y-8 text-gray-300 leading-relaxed">
+              <p>
+                A car park might seem mundane, ordinary, utilitarian and overlooked but beneath this solid, 
+                everything has history but a profound metaphor: it is our symbolic battleground, where past and 
+                future converge.
+              </p>
+              
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-white font-semibold mb-2">• Vertical Arohea:</h3>
+                  <p>Concrete piles stack history layer upon layer, hiding Indigenous memory and colonial erasure beneath.</p>
+                </div>
+                
+                <div>
+                  <h3 className="text-white font-semibold mb-2">• Urban Mythology:</h3>
+                  <p>The car park is a liminal zone, an in-between place perfect for new rituals, stories, and connections.</p>
+                </div>
+                
+                <div>
+                  <h3 className="text-white font-semibold mb-2">• Broadcast Tower:</h3>
+                  <p>In height, energy and echoing, the car park transforms into a conduit, broadcasting signals of resistance and revival.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Te Mana Whakatete Accord Section */}
+        <section className="py-20 px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-8">TE MANA WHAKATETE ACCORD</h2>
+            <p className="text-xl mb-4 italic">"The Accord is not a beginning but a recollecting.</p>
+            <p className="text-xl mb-12 italic">Not a first but a first."</p>
+            <p className="text-lg mb-12">Not a time but a resumption.</p>
+            
+            <div className="text-left space-y-12 text-gray-300 leading-relaxed">
+              <div>
+                <p className="mb-6">
+                  The Car Park Society (TCPS) is a living archive dedicated to preserving silenced voices, cultural contexts, 
+                  navigators, and special participants dedicated to the reclamation of space, spirit, and story beneath the 
+                  imposed concrete of Aotearoa's urban cityscape.
+                </p>
+                
+                <p className="mb-6">
+                  We take the carpark, specifically the Lombard Street Carpark in te Whanganui-a-Tara, our kai ino and 
+                  our venue place. Here we conduct on-land archive of silenced medicine, a revenant pa reimagined.
+                </p>
+                
+                <p>From this fitness, we issue The Accord.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">Article I: RANGATIRATANGA KĀWAI (Purpose)</h3>
+                <p className="mb-4">
+                  What is seen is bound the ono place, add each to time ki Mana Taokete in māori which. The Car Park Society (TCPS) 
+                  operates as not a property of the obvious. Our purpose lies in the unfinished, the unseen, and the unspeakable.
+                </p>
+                
+                <div className="space-y-4 ml-4">
+                  <p>
+                    1. Revolution of the Colonial Resist. We are the service for the silenced. Through art, intervention, and overt 
+                    action, we produce the ongoing legacy of colonialism, exposing the cracks in the structure. We speak in 
+                    schlepping and bold rituals.
+                  </p>
+                  
+                  <p>
+                    2. Reclamation of Hidden Spaces. We take what was once forsaken. The Car Park's 'sick waste.' We reclaim it 
+                    in arent for poets, not for recognition, but for resistance; a bites, urinated, a place lost for transformation.
+                  </p>
+                  
+                  <p>
+                    3. A Future Anchored in Tikonga. Our vision is not blindly futuristic but wisely 'gon gen over.' Cultivate love for present 
+                    speech. For deep roots, we unlearn the colonisers' ture and the future old we have ino the structure dreams. The 
+                    past is our road forward.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Join the Movement Section */}
+        <section id="join" className="py-20 px-6 bg-red-900/30">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-8">Join the Movement</h2>
+            <p className="text-lg text-gray-300 mb-12">
               Join our email list and get updates about upcoming society events and activations:
             </p>
             
             <div className="max-w-md mx-auto">
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                <form onSubmit={form.handleSubmit(onSubmit)} className="flex gap-4">
                   <FormField
                     control={form.control}
                     name="email"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className="flex-1">
                         <FormControl>
-                          <div className="relative">
-                            <Input
-                              type="email"
-                              placeholder="Enter your email here"
-                              className="w-full px-4 py-4 pr-12 text-foreground bg-input border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-colors duration-200"
-                              data-testid="input-email"
-                              {...field}
-                            />
-                            <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                              <Mail className="h-5 w-5 text-muted-foreground" />
-                            </div>
-                          </div>
+                          <Input
+                            type="email"
+                            placeholder="Enter your email here"
+                            className="bg-white text-black border-0 px-4 py-3"
+                            data-testid="input-email"
+                            {...field}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -309,79 +421,67 @@ export default function Home() {
                   <Button
                     type="submit"
                     disabled={subscribeEmail.isPending}
-                    className="w-full px-8 py-4 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                    className="bg-black text-white px-6 py-3 hover:bg-gray-800"
                     data-testid="button-signup"
                   >
-                    {subscribeEmail.isPending ? "Signing Up..." : "Sign Up"}
-                    {!subscribeEmail.isPending && <Mail className="ml-2 h-4 w-4" />}
+                    {subscribeEmail.isPending ? "..." : "Sign Up"}
                   </Button>
                 </form>
               </Form>
-              
-              <p className="text-sm text-muted-foreground mt-4">
-                We respect your privacy. Unsubscribe at any time.
-              </p>
             </div>
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-secondary text-secondary-foreground py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <h3 className="text-2xl font-bold mb-4">The Car Park Society</h3>
-              <p className="text-secondary-foreground/80 leading-relaxed max-w-md">
-                Transforming overlooked urban spaces into vibrant hubs of collective creativity and community empowerment since 2025.
-              </p>
+      <footer className="py-16 px-6 border-t border-gray-800">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div>
+              <div className="flex gap-2 mb-4">
+                <a href="#" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center">
+                  <FaFacebook className="w-4 h-4" />
+                </a>
+                <a href="#" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center">
+                  <FaInstagram className="w-4 h-4" />
+                </a>
+                <a href="#" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center">
+                  <FaTwitter className="w-4 h-4" />
+                </a>
+                <a href="#" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center">
+                  <FaYoutube className="w-4 h-4" />
+                </a>
+              </div>
+              <p className="text-gray-400 text-sm mb-2">thecarpark@society.com</p>
+              <p className="text-gray-400 text-sm mb-2">Te Whanganui-a-Tara</p>
+              <p className="text-gray-400 text-sm mb-2">Auckland</p>
+              <p className="text-gray-400 text-sm">© 2025 by The Car Park Society Inc.</p>
             </div>
             
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2">
-                <li>
-                  <button 
-                    onClick={() => scrollToSection('mission')}
-                    className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors duration-200"
-                    data-testid="footer-mission"
-                  >
-                    Mission
-                  </button>
-                </li>
-                <li>
-                  <button 
-                    onClick={() => scrollToSection('vision')}
-                    className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors duration-200"
-                    data-testid="footer-vision"
-                  >
-                    Vision
-                  </button>
-                </li>
-                <li>
-                  <button 
-                    onClick={() => scrollToSection('join')}
-                    className="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors duration-200"
-                    data-testid="footer-join"
-                  >
-                    Join Us
-                  </button>
-                </li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <ul className="space-y-2 text-secondary-foreground/80">
-                <li>contact@carparksociety.org</li>
-                <li>Auckland, Aotearoa New Zealand</li>
-              </ul>
+            <div className="flex justify-end">
+              <div className="space-y-2">
+                <div className="flex gap-4">
+                  <div className="w-16 h-10 bg-red-600 flex items-center justify-center text-xs font-bold">NZ</div>
+                  <div className="w-16 h-10 bg-blue-600 flex items-center justify-center text-xs font-bold"></div>
+                  <div className="w-16 h-10 bg-red-500 flex items-center justify-center text-xs font-bold">C</div>
+                  <div className="w-16 h-10 bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500"></div>
+                </div>
+              </div>
             </div>
           </div>
           
-          <div className="border-t border-secondary-foreground/20 mt-12 pt-8 text-center">
-            <p className="text-secondary-foreground/60 text-sm">
-              © 2025 The Car Park Society. All rights reserved.
+          <div className="text-center">
+            <p className="text-gray-500 text-sm italic mb-4">
+              "We will not work for change<br />
+              we will not be changed<br />
+              we are not the workers<br />
+              we are not the wonders<br />
+              the world cannot see how we differ<br />
+              we will not work for change<br />
+              we will be the change"
+            </p>
+            <p className="text-gray-600 text-xs">
+              Oath of the Car Park Society
             </p>
           </div>
         </div>

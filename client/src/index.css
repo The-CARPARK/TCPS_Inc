@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(0 0% 98%);
-  --foreground: hsl(0 0% 10%);
-  --card: hsl(0 0% 100%);
-  --card-foreground: hsl(0 0% 10%);
-  --popover: hsl(0 0% 100%);
-  --popover-foreground: hsl(0 0% 10%);
-  --primary: hsl(25 95% 45%);
+  --background: hsl(0 0% 0%);
+  --foreground: hsl(0 0% 100%);
+  --card: hsl(0 0% 5%);
+  --card-foreground: hsl(0 0% 100%);
+  --popover: hsl(0 0% 5%);
+  --popover-foreground: hsl(0 0% 100%);
+  --primary: hsl(0 75% 50%);
   --primary-foreground: hsl(0 0% 100%);
-  --secondary: hsl(0 0% 29%);
+  --secondary: hsl(0 20% 15%);
   --secondary-foreground: hsl(0 0% 100%);
-  --muted: hsl(0 0% 90%);
-  --muted-foreground: hsl(0 0% 45%);
-  --accent: hsl(25 75% 55%);
+  --muted: hsl(0 0% 10%);
+  --muted-foreground: hsl(0 0% 70%);
+  --accent: hsl(0 75% 50%);
   --accent-foreground: hsl(0 0% 100%);
   --destructive: hsl(356.3033 90.5579% 54.3137%);
   --destructive-foreground: hsl(0 0% 100%);
-  --border: hsl(0 0% 85%);
-  --input: hsl(0 0% 95%);
-  --ring: hsl(25 95% 45%);
+  --border: hsl(0 0% 20%);
+  --input: hsl(0 0% 10%);
+  --ring: hsl(0 75% 50%);
   --chart-1: hsl(25 95% 45%);
   --chart-2: hsl(159.7826 100% 36.0784%);
   --chart-3: hsl(42.0290 92.8251% 56.2745%);
@@ -51,26 +51,26 @@
   --spacing: 0.25rem;
 }
 
-.dark {
-  --background: hsl(0 0% 0%);
-  --foreground: hsl(0 0% 91%);
-  --card: hsl(0 0% 5%);
-  --card-foreground: hsl(0 0% 85%);
-  --popover: hsl(0 0% 0%);
-  --popover-foreground: hsl(0 0% 91%);
-  --primary: hsl(25 95% 45%);
+.light {
+  --background: hsl(0 0% 98%);
+  --foreground: hsl(0 0% 10%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(0 0% 10%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(0 0% 10%);
+  --primary: hsl(0 75% 50%);
   --primary-foreground: hsl(0 0% 100%);
-  --secondary: hsl(0 0% 15%);
-  --secondary-foreground: hsl(0 0% 85%);
-  --muted: hsl(0 0% 9%);
-  --muted-foreground: hsl(0 0% 46%);
-  --accent: hsl(25 75% 55%);
+  --secondary: hsl(0 0% 90%);
+  --secondary-foreground: hsl(0 0% 10%);
+  --muted: hsl(0 0% 90%);
+  --muted-foreground: hsl(0 0% 45%);
+  --accent: hsl(0 75% 50%);
   --accent-foreground: hsl(0 0% 100%);
   --destructive: hsl(356.3033 90.5579% 54.3137%);
   --destructive-foreground: hsl(0 0% 100%);
-  --border: hsl(0 0% 15%);
-  --input: hsl(0 0% 18%);
-  --ring: hsl(25 95% 45%);
+  --border: hsl(0 0% 85%);
+  --input: hsl(0 0% 95%);
+  --ring: hsl(0 75% 50%);
   --chart-1: hsl(25 95% 45%);
   --chart-2: hsl(159.7826 100% 36.0784%);
   --chart-3: hsl(42.0290 92.8251% 56.2745%);
@@ -110,4 +110,62 @@
 
 .hero-gradient {
   background: linear-gradient(135deg, var(--background) 0%, var(--muted) 100%);
+}
+
+.overlay-menu {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(4px);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-content {
+  text-align: center;
+  color: white;
+}
+
+.menu-content nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.menu-content nav a,
+.menu-content nav button {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.menu-content nav a:hover,
+.menu-content nav button:hover {
+  color: hsl(0 75% 50%);
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.social-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
