@@ -75,6 +75,30 @@ export default function About() {
           </Button>
         </div>
       </header>
+      
+      {/* Navigation Pane */}
+      <div className="fixed top-16 sm:top-[72px] left-0 right-0 z-30 bg-black/95 backdrop-blur-sm border-b border-gray-700">
+        <div className="px-6 py-3">
+          <nav className="flex justify-center gap-4 sm:gap-8 overflow-x-auto">
+            <Link href="/" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-home">
+              Home
+            </Link>
+            <Link href="/about-1" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-about">
+              Our Story
+            </Link>
+            <Link href="/event-list" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-events">
+              Activations
+            </Link>
+            <Link href="/blog" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-blog">
+              Transmissions
+            </Link>
+            <Link href="/donate" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-donate">
+              Support
+            </Link>
+          </nav>
+        </div>
+      </div>
+      
       {/* Overlay Menu */}
       {menuOpen && (
         <div className="overlay-menu">
@@ -154,7 +178,7 @@ export default function About() {
           </div>
         </div>
       )}
-      <main id="main-content" className="pt-20 pb-16">
+      <main id="main-content" className="pt-28 pb-16">
         {/* Our Story Section */}
         <section id="story" className="py-20 px-6">
           <div className="max-w-4xl mx-auto">

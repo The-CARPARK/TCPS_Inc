@@ -60,6 +60,39 @@ export default function Events() {
         </div>
       </header>
 
+      {/* Navigation Pane */}
+      <div className="fixed top-[72px] left-0 right-0 z-30 bg-black/95 backdrop-blur-sm border-b border-gray-700">
+        <div className="px-6 py-3">
+          <nav className="flex justify-center gap-8">
+            <Link href="/">
+              <button className="text-sm font-medium text-gray-300 hover:text-white transition-colors" data-testid="nav-home">
+                Home
+              </button>
+            </Link>
+            <Link href="/about-1">
+              <button className="text-sm font-medium text-gray-300 hover:text-white transition-colors" data-testid="nav-about">
+                Our Story
+              </button>
+            </Link>
+            <Link href="/event-list">
+              <button className="text-sm font-medium text-white border-b border-red-500" data-testid="nav-events">
+                Activations
+              </button>
+            </Link>
+            <Link href="/blog">
+              <button className="text-sm font-medium text-gray-300 hover:text-white transition-colors" data-testid="nav-blog">
+                Transmissions
+              </button>
+            </Link>
+            <Link href="/donate">
+              <button className="text-sm font-medium text-gray-300 hover:text-white transition-colors" data-testid="nav-donate">
+                Support
+              </button>
+            </Link>
+          </nav>
+        </div>
+      </div>
+
       {/* Overlay Menu */}
       {menuOpen && (
         <div className="overlay-menu">
@@ -140,7 +173,7 @@ export default function Events() {
         </div>
       )}
 
-      <main className="pt-20 pb-16">
+      <main className="pt-28 pb-16">
         {/* Events Header */}
         <div className="px-6 py-12">
           <div className="max-w-4xl mx-auto text-center">
