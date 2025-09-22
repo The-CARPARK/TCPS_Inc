@@ -198,7 +198,7 @@ export default function About() {
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-center">• Vertical Archive:</h3>
+                  <h3 className="text-center font-bold">• Vertical Archive:</h3>
                   <p>Concrete decks stack history, layer upon layer, hiding Indigenous memory and colonial erasure beneath.</p>
                 </div>
                 
