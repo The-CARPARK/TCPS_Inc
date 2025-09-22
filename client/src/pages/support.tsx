@@ -237,7 +237,7 @@ export default function Support() {
                 <img 
                   src={flagsImage} 
                   alt="Flags" 
-                  className="h-28 object-contain mx-auto"
+                  className="h-20 object-contain mx-auto"
                 />
               </div>
             </div>
