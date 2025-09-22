@@ -148,7 +148,7 @@ export default function Support() {
           <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
             {/* Content Side */}
             <div className="bg-black/60 p-12 rounded-lg">
-              <h1 className="text-4xl font-bold text-white mb-8">
+              <h1 className="font-bold text-white mb-8 text-[26px]">
                 Support The Car Park Society
               </h1>
               
@@ -184,7 +184,7 @@ export default function Support() {
                 className="inline-block"
               >
                 <Button 
-                  className="bg-white text-black font-bold px-16 py-8 text-2xl hover:bg-gray-200 transition-colors"
+                  className="bg-white text-black font-bold px-8 sm:px-16 py-4 sm:py-8 text-lg sm:text-2xl hover:bg-gray-200 transition-colors"
                   data-testid="button-donate"
                 >
                   DONATE
@@ -194,12 +194,11 @@ export default function Support() {
 
             {/* Logo Side */}
             <div className="flex justify-center">
-              <div className="flex flex-col items-center justify-center min-w-[700px] min-h-[600px]">
+              <div className="flex flex-col items-center justify-center w-full max-w-[700px]">
                 <img 
                   src={tcpsLogoDesign}
                   alt="TCPS Logo Design" 
-                  className="w-[700px] h-[600px] min-w-[700px] min-h-[600px] max-w-[700px] max-h-[600px] object-contain"
-                  style={{ width: "700px", height: "600px" }}
+                  className="w-full h-auto max-w-[700px] lg:h-[600px] object-contain"
                 />
               </div>
             </div>
