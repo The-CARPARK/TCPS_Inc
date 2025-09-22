@@ -17,6 +17,7 @@ import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import heroImage from "@assets/1_1758536573325.png";
 import visionImage from "@assets/2_1758536573325.png";
 import eyeCreateImage from "@assets/Untitled - 6 August 2025 21.28_1758537254685.jpg";
+import eyeBuildImage from "@assets/Untitled - 6 August 2025 21.28 (3)_1758537371863.jpg";
 import eyeImage from "@assets/Untitled - 6 August 2025 21.28_1758537254685.jpg";
 
 const emailFormSchema = insertEmailSubscriptionSchema.extend({
@@ -264,7 +265,7 @@ export default function Home() {
               <div className="text-center">
                 <div className="w-60 h-48 mx-auto mb-6 flex items-center justify-center">
                   <img 
-                    src={eyeImage} 
+                    src={eyeBuildImage} 
                     alt="Eye symbol representing BUILD" 
                     className="w-32 h-32 object-contain"
                   />
