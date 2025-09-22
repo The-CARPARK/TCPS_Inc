@@ -183,9 +183,7 @@ export default function EventDetail() {
                   <div>
                     <p className="italic mb-4">Phase Zero: The Rupture</p>
                     
-                    <p className="mb-6 text-[21px]">
-                      The Car Park Society invites you to enter <strong className="text-white">THE CONTROL ROOM:</strong> a temporary portal hidden in the heart of Te Aro. This space is the first activation in our journey toward the Induction Centre, where overlooked urban environments are transformed into sites of memory, creativity, and resistance.
-                    </p>
+                    
                     
                     <p className="mb-4 text-[19px]">Inside The Control Room, you will encounter:</p>
                     
