@@ -160,7 +160,7 @@ export default function BlogPost() {
                 </div>
                 <span>The Car Park Society</span>
               </div>
-              <span>21 hours ago</span>
+              <span>22.09.2025</span>
               <span>3 min read</span>
             </div>
           </div>
