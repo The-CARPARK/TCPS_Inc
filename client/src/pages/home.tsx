@@ -111,34 +111,25 @@ export default function Home() {
           </div>
           
           {/* Center Navigation */}
-          <nav className="hidden md:flex justify-center gap-6" role="navigation" aria-label="Primary">
-            <Link href="/" className="text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-home">
+          <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
+            <Link href="/" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-home">
               Home
             </Link>
-            <Link href="/about-1" className="text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-about">
-              Our Story
+            <Link href="/about-1" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-about">
+              Story
             </Link>
-            <Link href="/event-list" className="text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-events">
-              Activations
+            <Link href="/event-list" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-events">
+              Events
             </Link>
-            <Link href="/blog" className="text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-blog">
-              Transmissions
+            <Link href="/blog" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-blog">
+              Blog
             </Link>
-            <Link href="/donate" className="text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-donate">
+            <Link href="/donate" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-donate">
               Support
             </Link>
           </nav>
 
           <div className="justify-self-end">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setMenuOpen(true)}
-              className="text-white hover:bg-gray-800"
-              data-testid="menu-toggle"
-            >
-              Menu [ + ]
-            </Button>
           </div>
         </div>
       </header>
