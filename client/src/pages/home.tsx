@@ -205,16 +205,16 @@ export default function Home() {
         {/* Hero Section */}
         <section className="py-12 px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 items-center" data-testid="text-welcome">
+            <div className="grid md:grid-cols-2 gap-4 items-center" data-testid="text-welcome">
               <div className="text-left">
                 <p className="font-black text-gray-300 mb-4 text-[31px] text-center">
                   WELCOME TO
                 </p>
-                <h1 className="lg:text-5xl mb-8 font-black text-center text-[30px]">
+                <h1 className="lg:text-5xl mb-8 text-center text-[47px] font-black">
                   THE CAR PARK SOCIETY
                 </h1>
                 
-                <p className="text-gray-300 max-w-sm text-center mx-auto font-extralight text-[18px]" data-testid="text-intro">
+                <p className="text-gray-300 max-w-sm text-center mx-auto text-[15px] font-light" data-testid="text-intro">
                   The Car Park Society (TCPS) formed in 2025, our aim is to reveal hidden histories, restore connection, and transform overlooked spaces into vibrant hubs of collective creativity and community empowerment.
                 </p>
               </div>
