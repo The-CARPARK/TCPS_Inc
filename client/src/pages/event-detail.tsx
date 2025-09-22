@@ -118,7 +118,7 @@ export default function EventDetail() {
                     className="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3"
                     data-testid="button-rsvp-bottom"
                   >
-                    RSVP
+                    Subscribe for Event Updates
                   </Button>
                 </div>
               </div>
@@ -126,43 +126,7 @@ export default function EventDetail() {
           </div>
         </section>
 
-        {/* Share Section */}
-        <section className="px-6 mt-16">
-          <div className="max-w-4xl mx-auto">
-            <h3 className="text-xl font-bold mb-6">Share this event</h3>
-            <div className="flex gap-4">
-              <a 
-                href="https://www.facebook.com/sharer/sharer.php?u=https://thecarpark2025.wixsite.com/the-car-park-society/event-details/the-control-room-tcps&quote=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-red-400 hover:text-red-300 transition-colors"
-                data-testid="share-facebook"
-              >
-                Share event on Facebook
-              </a>
-              <span className="text-gray-500">|</span>
-              <a 
-                href="https://twitter.com/intent/tweet?url=https://thecarpark2025.wixsite.com/the-car-park-society/event-details/the-control-room-tcps&text=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-red-400 hover:text-red-300 transition-colors"
-                data-testid="share-twitter"
-              >
-                Share event on X
-              </a>
-              <span className="text-gray-500">|</span>
-              <a 
-                href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fthecarpark2025.wixsite.com%2Fthe-car-park-society%2Fevent-details%2Fthe-control-room-tcps" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-red-400 hover:text-red-300 transition-colors"
-                data-testid="share-linkedin"
-              >
-                Share event on LinkedIn
-              </a>
-            </div>
-          </div>
-        </section>
+        
       </main>
 
       {/* Footer */}
