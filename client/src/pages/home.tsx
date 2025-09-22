@@ -246,7 +246,7 @@ export default function Home() {
             <h2 className="text-4xl text-center mb-16 font-black" data-testid="text-vision-heading">Our Vision & Goals</h2>
             
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="text-center max-w-xs mx-auto">
+              <div className="text-center max-w-56 mx-auto">
                 <div className="w-60 h-40 mx-auto mb-4 flex items-center justify-center">
                   <img 
                     src={eyeCreateImage} 
@@ -260,7 +260,7 @@ export default function Home() {
                 </p>
               </div>
               
-              <div className="text-center max-w-xs mx-auto">
+              <div className="text-center max-w-56 mx-auto">
                 <div className="w-60 h-40 mx-auto mb-4 flex items-center justify-center">
                   <img 
                     src={eyeBuildImage} 
@@ -274,7 +274,7 @@ export default function Home() {
                 </p>
               </div>
               
-              <div className="text-center max-w-xs mx-auto">
+              <div className="text-center max-w-56 mx-auto">
                 <div className="w-60 h-40 mx-auto mb-4 flex items-center justify-center">
                   <img 
                     src={eyeAmplifyImage} 
