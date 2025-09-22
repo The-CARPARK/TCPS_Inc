@@ -204,24 +204,26 @@ export default function Home() {
       <main id="main-content" className="pt-12">
         {/* Hero Section */}
         <section className="py-12 px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="text-center mb-12" data-testid="text-welcome">
-              <div className="flex justify-center mb-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center" data-testid="text-welcome">
+              <div className="text-left">
+                <h1 className="lg:text-5xl mb-8 font-black text-[40px]">
+                  THE CAR PARK SOCIETY
+                </h1>
+                
+                <p className="text-gray-300 text-[21px] leading-relaxed" data-testid="text-intro">
+                  The Car Park Society (TCPS) formed in 2025, our aim is to reveal hidden histories, restore connection, and transform overlooked spaces into vibrant hubs of collective creativity and community empowerment.
+                </p>
+              </div>
+              
+              <div className="flex justify-center">
                 <img 
                   src={newHeroLogoImage} 
                   alt="The Car Park Society Eye Symbol" 
-                  className="w-full max-w-4xl h-[350px] object-contain mx-auto"
+                  className="w-full max-w-lg h-[350px] object-contain"
                 />
               </div>
-              
-              <h1 className="lg:text-5xl text-center font-black text-[40px]">
-                THE CAR PARK SOCIETY
-              </h1>
             </div>
-            
-            <p className="text-gray-300 text-center max-w-xl mx-auto text-[21px]" data-testid="text-intro">
-              The Car Park Society (TCPS) formed in 2025, our aim is to reveal hidden histories, restore connection, and transform overlooked spaces into vibrant hubs of collective creativity and community empowerment.
-            </p>
           </div>
         </section>
 
