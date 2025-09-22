@@ -209,7 +209,7 @@ export default function EventDetail() {
           <div className="grid grid-cols-1 md:grid-cols-3 items-start mb-2">
             <div className="text-[21px]">
               <div className="flex justify-start gap-3 mb-2">
-                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="text-[21px]">
                   <SiTiktok className="w-4 h-4" />
                 </a>
                 <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
