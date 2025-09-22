@@ -397,17 +397,6 @@ export default function About() {
               </div>
             </div>
           </div>
-          
-          <div className="text-center">
-            <p className="text-gray-500 text-sm italic">
-              "We will not be seen,<br />
-              but we will be heard.<br />
-              We will not be controlled,<br />
-              but we will govern.<br />
-              We will not wait for change;<br />
-              we will be the change."
-            </p>
-          </div>
         </div>
       </footer>
     </div>
