@@ -178,7 +178,7 @@ export default function Blog() {
                   
                   <div className="p-8">
                     <h2 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors">
-                      Urban Māori: Breaking through the Concrete Chains of Colonisation
+                      Urban Māori: Breaking the Concrete Chains of Colonisation
                     </h2>
                     
                     <p className="text-gray-300 mb-6 leading-relaxed">
