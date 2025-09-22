@@ -206,10 +206,6 @@ export default function Home() {
         <section className="py-20 px-6">
           <div className="max-w-4xl mx-auto text-center">
             <div className="text-center mb-12" data-testid="text-welcome">
-              <h1 className="lg:text-5xl mb-8 text-center font-black text-[40px]">
-                WELCOME TO
-              </h1>
-              
               <div className="flex justify-center mb-8">
                 <img 
                   src={newHeroLogoImage} 
