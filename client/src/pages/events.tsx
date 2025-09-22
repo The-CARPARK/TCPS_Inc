@@ -191,7 +191,7 @@ export default function Events() {
       {/* Footer */}
       <footer className="py-16 px-6 border-t border-gray-800 mt-16">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-4">
+          <div className="text-center mb-2">
             <div className="flex justify-between w-80 mx-auto mb-4">
               <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                 <SiTiktok className="w-6 h-6" />
