@@ -240,7 +240,7 @@ export default function About() {
                   </p>
                   
                   <p className="mb-6 text-[16px] text-left font-normal">
-                    2. Reclamation of Hidden Spaces: We take what was once forsaken. The Car Park is our vessel. We reclaim it—not for profit, not for recognition, but for resistance. A place forgotten is a place ripe for transformation.
+                    2. Reclamation of Hidden Spaces: We take what was once forsaken. The Car Park is our vessel. We reclaim it; not for profit, not for recognition, but for resistance. A place forgotten is a place ripe for transformation.
                   </p>
                   
                   <p>
@@ -306,7 +306,7 @@ export default function About() {
               <div>
                 <h3 className="text-2xl font-bold text-white mb-6">Article IV: TE TAUMANU (The Reclamation)</h3>
                 <p className="mb-4">
-                  To reclaim The Car Park is to reclaim more than space. It is to reclaim what has been erased and forgotten—the invisible histories, the quiet resistances, the unwritten codes of power.
+                  To reclaim The Car Park is to reclaim more than space. It is to reclaim what has been erased and forgotten; the invisible histories, the quiet resistances, the unwritten codes of power.
                 </p>
                 
                 <div className="space-y-4 ml-4">
