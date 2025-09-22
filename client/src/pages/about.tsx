@@ -44,7 +44,7 @@ export default function About() {
       </a>
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
-        <div className="flex justify-between items-center px-6 py-4">
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center px-6 py-4">
           <div className="flex items-center gap-4">
             <Link href="/">
               <h1 className="text-sm sm:text-lg font-semibold hover:text-red-500 transition-colors cursor-pointer">The Car Park Society Inc.</h1>
@@ -64,41 +64,39 @@ export default function About() {
               </a>
             </div>
           </div>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => setMenuOpen(true)}
-            className="text-white hover:bg-gray-800"
-            data-testid="menu-toggle"
-          >
-            Menu [ + ]
-          </Button>
-        </div>
-      </header>
-      
-      {/* Navigation Pane */}
-      <div className="fixed top-16 sm:top-[72px] left-0 right-0 z-30 bg-black/95 backdrop-blur-sm border-b border-gray-700">
-        <div className="px-6 py-3">
-          <nav className="flex justify-center gap-4 sm:gap-8 overflow-x-auto">
-            <Link href="/" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-home">
+          
+          {/* Center Navigation */}
+          <nav className="hidden md:flex justify-center gap-6" role="navigation" aria-label="Primary">
+            <Link href="/" className="text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-home">
               Home
             </Link>
-            <Link href="/about-1" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-about">
+            <Link href="/about-1" className="text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-about">
               Our Story
             </Link>
-            <Link href="/event-list" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-events">
+            <Link href="/event-list" className="text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-events">
               Activations
             </Link>
-            <Link href="/blog" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-blog">
+            <Link href="/blog" className="text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-blog">
               Transmissions
             </Link>
-            <Link href="/donate" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-donate">
+            <Link href="/donate" className="text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-donate">
               Support
             </Link>
           </nav>
+
+          <div className="justify-self-end">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setMenuOpen(true)}
+              className="text-white hover:bg-gray-800"
+              data-testid="menu-toggle"
+            >
+              Menu [ + ]
+            </Button>
+          </div>
         </div>
-      </div>
-      
+      </header>
       {/* Overlay Menu */}
       {menuOpen && (
         <div className="overlay-menu">
@@ -132,30 +130,20 @@ export default function About() {
               
               <div className="text-center">
                 <nav className="flex flex-col gap-6 mb-8">
-                  <Link href="/">
-                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-home">
-                      Home
-                    </button>
+                  <Link href="/" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-home">
+                    Home
                   </Link>
-                  <Link href="/about-1">
-                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
-                      Our Story
-                    </button>
+                  <Link href="/about-1" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
+                    Our Story
                   </Link>
-                  <Link href="/event-list">
-                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-events">
-                      Activations
-                    </button>
+                  <Link href="/event-list" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-events">
+                    Activations
                   </Link>
-                  <Link href="/blog">
-                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-blog">
-                      Transmissions
-                    </button>
+                  <Link href="/blog" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-blog">
+                    Transmissions
                   </Link>
-                  <Link href="/donate">
-                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-donate">
-                      Support
-                    </button>
+                  <Link href="/donate" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-donate">
+                    Support
                   </Link>
                 </nav>
                 
@@ -178,7 +166,7 @@ export default function About() {
           </div>
         </div>
       )}
-      <main id="main-content" className="pt-28 pb-16">
+      <main id="main-content" className="pt-20 pb-16">
         {/* Our Story Section */}
         <section id="story" className="py-20 px-6">
           <div className="max-w-4xl mx-auto">
@@ -210,7 +198,7 @@ export default function About() {
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-left font-bold">• Vertical Archive:</h3>
+                  <h3 className="text-center">• Vertical Archive:</h3>
                   <p>Concrete decks stack history, layer upon layer, hiding Indigenous memory and colonial erasure beneath.</p>
                 </div>
                 
