@@ -208,11 +208,11 @@ export default function Support() {
 
             {/* Logo Side */}
             <div className="flex justify-center">
-              <div className="bg-gray-800 rounded-lg p-8 w-96 h-80 flex flex-col items-center justify-center">
+              <div className="flex flex-col items-center justify-center">
                 <img 
                   src={tcpsLogoDesign}
                   alt="TCPS Logo Design" 
-                  className="w-full h-full object-contain"
+                  className="w-[500px] h-[400px] object-contain"
                 />
               </div>
             </div>
