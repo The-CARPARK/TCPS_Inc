@@ -20,6 +20,7 @@ import eyeCreateImage from "@assets/Untitled - 6 August 2025 21.28_1758537254685
 import eyeBuildImage from "@assets/Untitled - 6 August 2025 21.28 (3)_1758537371863.jpg";
 import eyeAmplifyImage from "@assets/Untitled - 6 August 2025 21.28 (2)_1758537390681.jpg";
 import eyeImage from "@assets/Untitled - 6 August 2025 21.28_1758537254685.jpg";
+import newHeroLogoImage from "@assets/Untitled - 6 August 2025 21.28 (4)_1758552061511.jpg";
 
 const emailFormSchema = insertEmailSubscriptionSchema.extend({
   email: z.string().email("Please enter a valid email address"),
@@ -214,16 +215,11 @@ export default function Home() {
               </p>
             </div>
             <div className="flex justify-center">
-              <div className="w-96 h-64 bg-white rounded-lg p-8 flex items-center justify-center">
-                <div className="text-center text-black">
-                  <img 
-                    src={logoImage} 
-                    alt="The Car Park Society Logo" 
-                    className="w-64 h-40 mx-auto object-contain mb-4"
-                  />
-                  
-                </div>
-              </div>
+              <img 
+                src={newHeroLogoImage} 
+                alt="The Car Park Society Eye Symbol" 
+                className="w-96 h-64 object-contain"
+              />
             </div>
           </div>
         </section>
