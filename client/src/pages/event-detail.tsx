@@ -66,7 +66,7 @@ export default function EventDetail() {
             <h1 className="text-4xl font-bold mb-4">THE CONTROL ROOM [TCPS]</h1>
             
             <div className="flex items-center gap-4 text-gray-400 mb-8">
-              <span>Thu, 30 Oct</span>
+              <span>DESCENT BEGINS 30 Oct</span>
               <span>|</span>
               <span>TCPS CONTROL ROOM</span>
             </div>
