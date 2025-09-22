@@ -91,10 +91,10 @@ export default function Home() {
 
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center px-6 py-4">
+        <div className="flex items-center justify-between px-6 py-4">
           <div className="flex items-center gap-4">
             <h1 className="text-xs sm:text-sm font-semibold">TCPS Inc.</h1>
-            <div className="flex gap-2">
+            <div className="hidden sm:flex gap-2">
               <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
                 <SiTiktok className="w-3 h-3" />
               </a>
@@ -110,8 +110,8 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Center Navigation */}
-          <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
+          {/* Navigation */}
+          <nav className="flex gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
             <Link href="/" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-home">
               Home
             </Link>
@@ -128,9 +128,6 @@ export default function Home() {
               Support
             </Link>
           </nav>
-
-          <div className="justify-self-end">
-          </div>
         </div>
       </header>
 
