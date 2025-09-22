@@ -176,20 +176,6 @@ export default function Support() {
                 <p>We invite you to be part of it.</p>
               </div>
 
-              <div className="flex gap-4 mb-8">
-                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <SiTiktok className="w-4 h-4" />
-                </a>
-                <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <FaInstagram className="w-4 h-4" />
-                </a>
-                <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <FaFacebook className="w-4 h-4" />
-                </a>
-                <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <FaYoutube className="w-4 h-4" />
-                </a>
-              </div>
 
               <a 
                 href="http://ko-fi.com/thecarparksocietyinc" 
