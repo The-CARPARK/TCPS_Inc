@@ -188,12 +188,7 @@ export default function EventDetail() {
                     </ul>
                   </div>
                   
-                  <Button 
-                    className="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3"
-                    data-testid="button-rsvp-bottom"
-                  >
-                    Subscribe for Event Updates
-                  </Button>
+                  
                 </div>
               </div>
             </div>
