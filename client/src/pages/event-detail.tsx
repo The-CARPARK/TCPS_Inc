@@ -155,7 +155,6 @@ export default function EventDetail() {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-2xl font-bold mb-6">Time & Location</h2>
                 <div className="space-y-4 text-gray-300">
                   <p>
                     <strong className="text-white">30 Oct 2025, 7:00 pm – 30 Nov 2025, 10:00 pm</strong>
