@@ -203,12 +203,12 @@ export default function About() {
                 </div>
                 
                 <div>
-                  <h3 className="text-white font-semibold mb-2">• Urban Mythspace:</h3>
-                  <p>The car park is a liminal zone, an in-between place perfect for new rituals, stories, and disruptions.</p>
+                  <h3 className="text-white font-semibold mb-2 text-center">• Urban Mythspace:</h3>
+                  <p className="text-center">The car park is a liminal zone, an in-between place perfect for new rituals, stories, and disruptions.</p>
                 </div>
                 
                 <div>
-                  <h3 className="text-white font-semibold mb-2">• Broadcast Tower:</h3>
+                  <h3 className="text-white font-semibold mb-2 text-center">• Broadcast Tower:</h3>
                   <p>At night, empty and echoing, the car park transforms into a conduit, broadcasting signals of resistance and revival.</p>
                 </div>
               </div>
@@ -231,7 +231,7 @@ export default function About() {
                   The Car Park Society (TCPS) is a living assemblage of artists, insurgents, storytellers, cultural workers, rangatira, and spectral participants dedicated to the reclamation of space, spirit, and story beneath the colonial concrete of Aotearoa's urban cityscapes. We take the carpark, specifically the Lombard Street Carpark in Te Whanganui-a-Tara, as both site and symbol: a vertical archive of suppression and refusal, a space of stilled motion, a modern pā reimagined.
                 </p>
                 
-                <p className="mb-8 mt-8 text-center font-thin">From this fissure, we issue the Accord.</p>
+                <p className="mb-8 mt-8 text-center font-semibold text-[18px]">From this fissure, we issue the Accord.</p>
               </div>
 
               <div>
