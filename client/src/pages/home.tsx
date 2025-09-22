@@ -215,6 +215,9 @@ export default function Home() {
               </div>
               
               <div className="text-left">
+                <p className="text-[24px] font-black text-gray-300 mb-4">
+                  WELCOME TO
+                </p>
                 <h1 className="lg:text-5xl mb-8 font-black text-[40px]">
                   THE CAR PARK SOCIETY
                 </h1>
