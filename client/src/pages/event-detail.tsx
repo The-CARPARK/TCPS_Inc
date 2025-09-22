@@ -185,7 +185,7 @@ export default function EventDetail() {
                     
                     
                     
-                    <p className="mb-4 text-[21px]">A temporary portal hidden in the heart of Te Aro, The Control Room exists as an experimental space where the boundaries between digital and physical reality blur. Inside The Control Room, you will encounter:</p>
+                    <p className="mb-4 text-[19px] font-semibold">Inside The Control Room, you will encounter:</p>
                     
                     <ul className="list-disc list-inside space-y-2 ml-4">
                       <li><strong className="text-white">Immersive projections</strong> that fracture and reassemble the concrete mythos of the city.</li>
