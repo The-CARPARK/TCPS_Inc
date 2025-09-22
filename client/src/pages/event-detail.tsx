@@ -182,7 +182,6 @@ export default function EventDetail() {
                 
                 <div className="space-y-6 text-gray-300 leading-relaxed">
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-4">The Control Room</h3>
                     <p className="italic mb-4">Phase Zero: The Rupture</p>
                     
                     <p className="mb-6">
