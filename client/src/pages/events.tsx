@@ -4,6 +4,7 @@ import { SiTiktok } from "react-icons/si";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
+import logoBlackWhite from "@assets/TCPS_Medium_Black and White_1758546640968.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 
 export default function Events() {
@@ -155,8 +156,12 @@ export default function Events() {
               <Link href="/event-details/the-control-room-tcps">
                 <div className="bg-red-900/20 border border-red-800 rounded-lg p-8 hover:bg-red-900/30 transition-colors cursor-pointer group">
                   <div className="flex items-start gap-6">
-                    <div className="w-24 h-24 bg-gray-800 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-xs text-gray-400">TCPS</span>
+                    <div className="w-24 h-24 bg-white rounded-lg flex items-center justify-center flex-shrink-0 p-2">
+                      <img 
+                        src={logoBlackWhite} 
+                        alt="The Car Park Society Logo" 
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     
                     <div className="flex-1">
@@ -177,7 +182,6 @@ export default function Events() {
                       
                       <div className="flex gap-4">
                         <span className="text-red-400 font-semibold">More info</span>
-                        <span className="text-red-400 font-semibold">RSVP</span>
                       </div>
                     </div>
                   </div>
