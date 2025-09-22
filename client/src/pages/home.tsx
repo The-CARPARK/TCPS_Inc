@@ -218,7 +218,7 @@ export default function Home() {
                 <p className="font-black text-gray-300 mb-4 text-[31px] text-left">
                   WELCOME TO
                 </p>
-                <h1 className="lg:text-5xl mb-8 font-black text-left text-[44px]">
+                <h1 className="lg:text-5xl mb-8 font-black text-left text-[30px]">
                   THE CAR PARK SOCIETY
                 </h1>
                 
