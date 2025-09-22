@@ -159,7 +159,7 @@ export default function BlogPost() {
                 <img 
                   src={tcpsLogoSmall} 
                   alt="TCPS Logo" 
-                  className="w-8 h-8 object-contain"
+                  className="w-8 h-8 object-contain self-center"
                 />
                 <span>The Car Park Society</span>
               </div>
