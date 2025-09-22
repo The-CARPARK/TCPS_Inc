@@ -71,12 +71,7 @@ export default function EventDetail() {
               <span>TCPS CONTROL ROOM</span>
             </div>
             
-            <Button 
-              className="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 mb-12"
-              data-testid="button-rsvp"
-            >
-              RSVP
-            </Button>
+            
           </div>
         </section>
 
