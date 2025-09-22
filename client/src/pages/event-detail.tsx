@@ -31,7 +31,7 @@ export default function EventDetail() {
         <div className="flex justify-between items-center px-6 py-4">
           <div className="flex items-center gap-4">
             <Link href="/">
-              <h1 className="text-lg font-semibold hover:text-red-500 transition-colors cursor-pointer">The Car Park Society Inc.</h1>
+              <h1 className="text-sm sm:text-lg font-semibold hover:text-red-500 transition-colors cursor-pointer">The Car Park Society Inc.</h1>
             </Link>
             <div className="flex gap-2">
               <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
