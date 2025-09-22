@@ -359,7 +359,7 @@ export default function Home() {
                   <FaYoutube className="w-4 h-4" />
                 </a>
               </div>
-              <a href="mailto:connect@thecarparksociety.xyz" className="text-gray-400 text-sm mb-4 block hover:text-red-500 transition-colors" data-testid="link-email-contact">connect@thecarparksociety.xyz</a>
+              <a href="mailto:connect@thecarparksociety.xyz" className="text-gray-400 text-sm mb-4 block hover:text-red-500 transition-colors font-semibold" data-testid="link-email-contact">connect@thecarparksociety.xyz</a>
               <p className="text-gray-400 text-sm mb-2">Te Whanganui-a-Tara</p>
               <p className="text-gray-400 text-sm mb-2 font-bold">AOTEAROA</p>
               <p className="text-gray-400 text-sm">© 2025 by The Car Park Society Inc.</p>
