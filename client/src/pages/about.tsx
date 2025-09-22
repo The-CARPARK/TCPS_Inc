@@ -211,7 +211,6 @@ export default function About() {
             
             <div className="text-center mb-12 space-y-2">
               <p className="text-xl italic">This Accord is not a beginning, but a resurfacing.</p>
-              <p className="text-xl italic">Not a law, but a glitch.</p>
               <p className="text-xl italic">Not a map, but a transmission.</p>
             </div>
             
