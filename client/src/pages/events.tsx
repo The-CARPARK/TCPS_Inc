@@ -211,7 +211,7 @@ export default function Events() {
             <p className="text-gray-400 mb-6 text-[12px]">© 2025 by The Car Park Society Inc.</p>
           </div>
           
-          <div className="flex justify-center">
+          <div className="flex justify-start">
             <img 
               src={flagsImage} 
               alt="Flags" 
