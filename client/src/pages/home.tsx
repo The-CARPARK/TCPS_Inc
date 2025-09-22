@@ -10,6 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { X, Menu } from "lucide-react";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { Link } from "wouter";
 import { z } from "zod";
 
 const emailFormSchema = insertEmailSubscriptionSchema.extend({
@@ -162,20 +163,22 @@ export default function Home() {
                   >
                     Events
                   </button>
-                  <button 
-                    onClick={() => scrollToSection('accord')}
-                    className="text-2xl font-medium hover:text-red-500 transition-colors"
-                    data-testid="nav-blog"
-                  >
-                    Blog
-                  </button>
-                  <button 
-                    onClick={() => scrollToSection('join')}
-                    className="text-2xl font-medium hover:text-red-500 transition-colors"
-                    data-testid="nav-donate"
-                  >
-                    Donate
-                  </button>
+                  <Link href="/blog/urban-maori">
+                    <button 
+                      className="text-2xl font-medium hover:text-red-500 transition-colors"
+                      data-testid="nav-blog"
+                    >
+                      Blog
+                    </button>
+                  </Link>
+                  <Link href="/support">
+                    <button 
+                      className="text-2xl font-medium hover:text-red-500 transition-colors"
+                      data-testid="nav-donate"
+                    >
+                      Donate
+                    </button>
+                  </Link>
                 </nav>
                 
                 {/* Social Icons in Overlay */}
@@ -363,10 +366,10 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-8">TE MANA WHAKATETE ACCORD</h2>
             <p className="text-xl mb-4 italic">"The Accord is not a beginning but a recollecting.</p>
-            <p className="text-xl mb-12 italic">Not a first but a first."</p>
-            <p className="text-lg mb-12">Not a time but a resumption.</p>
+            <p className="text-xl mb-4 italic">Not a time but a first.</p>
+            <p className="text-xl mb-12 italic">Not a time but a resumption."</p>
             
-            <div className="text-left space-y-12 text-gray-300 leading-relaxed">
+            <div className="text-left space-y-8 text-gray-300 leading-relaxed">
               <div>
                 <p className="mb-6">
                   The Car Park Society (TCPS) is a living archive dedicated to preserving silenced voices, cultural contexts, 
@@ -375,11 +378,11 @@ export default function Home() {
                 </p>
                 
                 <p className="mb-6">
-                  We take the carpark, specifically the Lombard Street Carpark in te Whanganui-a-Tara, our kai ino and 
-                  our venue place. Here we conduct on-land archive of silenced medicine, a revenant pa reimagined.
+                  We take the carpark, specifically the Lombard Street Carpark in te Whanganui-a-Tara, our kāi ino and 
+                  our venue space. Here we conduct on-land archive of silenced medicine, a revenant pa reimagined.
                 </p>
                 
-                <p>From this fitness, we issue The Accord.</p>
+                <p className="mb-8">From this fitness, we issue The Accord.</p>
               </div>
 
               <div>
@@ -389,7 +392,7 @@ export default function Home() {
                   operates as not a property of the obvious. Our purpose lies in the unfinished, the unseen, and the unspeakable.
                 </p>
                 
-                <div className="space-y-4 ml-4">
+                <div className="space-y-4">
                   <p>
                     1. Revolution of the Colonial Resist. We are the service for the silenced. Through art, intervention, and overt 
                     action, we produce the ongoing legacy of colonialism, exposing the cracks in the structure. We speak in 
@@ -398,14 +401,155 @@ export default function Home() {
                   
                   <p>
                     2. Reclamation of Hidden Spaces. We take what was once forsaken. The Car Park's 'sick waste.' We reclaim it 
-                    in arent for poets, not for recognition, but for resistance; a bites, urinated, a place lost for transformation.
+                    not for poets, not for recognition, but for resistance; a bites, urinated, a place lost for transformation.
                   </p>
                   
                   <p>
-                    3. A Future Anchored in Tikonga. Our vision is not blindly futuristic but wisely 'gon gen over.' Cultivate love for present 
-                    speech. For deep roots, we unlearn the colonisers' ture and the future old we have ino the structure dreams. The 
+                    3. A Future Anchored in Tikanga. Our vision is not blindly futuristic but wisely 'gen gen over.' Cultivate love for present 
+                    speech. For deep roots, we unlearn the colonisers' truths and the future old we have ino the structure dreams. The 
                     past is our road forward.
                   </p>
+                  
+                  <p>
+                    4. A Generational Design. We govern not from the top down but from the edges inward. Ancestry is not 
+                    choice - it is the freedom to dream, destroy, and manifest in the shadows. Ka whakatōhea among the 
+                    ancestors are moved to no single voice but to all intergenerational change.
+                  </p>
+                </div>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">Article II: TE MANA WHAKAARO (Principles)</h3>
+                <p className="mb-4">
+                  There are rules, and then there are truths that cannot be broken. The Te Mana Whakatete Accord exists to 
+                  honour these truths.
+                </p>
+                
+                <div className="space-y-4">
+                  <p>
+                    1. Tino Rangatiratanga. Sovereignty is not a paper title; it is an anchor in the wind, a claim to the very soul of 
+                    the land. The first power source is in the bones of the tūpuna; but in the scars of this land that has become 
+                    our own. We carry the pīpi, our heritage.
+                  </p>
+                  
+                  <p>
+                    2. Mana Moturaukı. Our power lies in our autonomy: the ability to stand alone and together, in quiet 
+                    resistance against the forces that would bind us. We hold to opposition; to identification. Our existence is 
+                    our defiance, our strength not proof of our validity.
+                  </p>
+                  
+                  <p>
+                    3. Whakapapa. We are all streams in a larger tapestry. Our stories echo through the generations. Our 
+                    connection stands in tune with what would us like land. In the processes, whose actions will live that ancient 
+                    limits, we never forget.
+                  </p>
+                  
+                  <p>
+                    4. Reclamation. The Car Park is not just concrete and steel; it is a disturbed space, waiting to be restored. 
+                    Through creative acts of resistance, we pull these spaces from the grasp of the coloniser and transform 
+                    them into places of liberation.
+                  </p>
+                  
+                  <p>
+                    5. Radical Co-Governance. There are no leaders, no masters. We govern from below, with our hierarchy. 
+                    Decisions are made not by names but by intercourse of the collective, shifting like the shadows that 
+                    illuminate over time.
+                  </p>
+                </div>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">Article III: TE KOTAHITANGA HUNA (The Unseen Movement)</h3>
+                <p className="mb-4">
+                  We are not bound to the traditional forms; we are fluid, deliberate, and invisible. Governance within TCPS 
+                  operates under the visible structure of the state, announcing the disturbed power of community-led, 
+                  generations presence.
+                </p>
+                
+                <div className="space-y-4">
+                  <p>
+                    1. Beyond Surveillance. We move in the shadows - the very spaces are initially for use, person shares in the fight for living. The 
+                    identity TCPS is in flux but they oppose are entirely for use, person shares in the fight for living for the 
+                    movement is always shifting, always evolving.
+                  </p>
+                  
+                  <p>
+                    2. Decentered Action. Each member is a node in a network. There are no frontiers, here, no confined 
+                    territories. We flow between the cracks, between the known and the unknown, 
+                    carrying the strength of shared intentions.
+                  </p>
+                  
+                  <p>
+                    3. Consensus in Silence. We speak in murmur, but we listen to the loudest silence. Consensus is not 
+                    reached by the loudest voice, but by the shared movement, the most subtle action. We lean until we hear 
+                    the hum of the land, the pulse of the collective heartbeat, before we act.
+                  </p>
+                </div>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">Article IV: TE TAUMANU (The Reclamation)</h3>
+                <p className="mb-4">
+                  To reclaim The Car Park is to reclaim more than space. It is to reclaim what has been erased and forgotten 
+                  over the moveless histories, the quiet resistances, the unwritten codes of power.
+                </p>
+                
+                <div className="space-y-4">
+                  <p>
+                    1. Creative Subversion. We do not ask for permission. We do not beg for recognition. We create in the 
+                    circles. Through our performance and intervention, We turn The Car Park into a stage, a canvas, a 
+                    sacred space - all without seeking the permission of the powerful.
+                  </p>
+                  
+                  <p>
+                    2. Public Intervention. We leave our mark in the most subtle of ways. Our actions are witnesses in the city's 
+                    body which tell suppressed hope, our stories through collective and interpersonal action between the known 
+                    in the shadows, underground.
+                  </p>
+                  
+                  <p>
+                    3. Symbolic Resistance. The Car Park is our symbol; Concrete is broken, metal is bent, and the spaces 
+                    we inhabit are reimagined as sites of revolution. TCPS is not about reform; it is about creating something 
+                    new from the remnants of the old.
+                  </p>
+                </div>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-6">Article V: TE MANAAKITANGA REHEREA (The Invisible Hand)</h3>
+                <p className="mb-4">
+                  Though we operate in the shadows, we are not hidden. We are bound by the principles of the invisible 
+                  hand, without framework located in community care, respect, and indigenous justice.
+                </p>
+                
+                <div className="space-y-4">
+                  <p>
+                    1. Decolonising Law. We do not recognise colonial laws, instead, we exist on our own. form of justice, drawn 
+                    from the wisdom of the land, the whispers of its indigenous ancestors, and the rules of the people.
+                  </p>
+                  
+                  <p>
+                    2. Silent Solidarity. We act in solidarity, not for fame, not for power, but for the quiet, relentless-of-the 
+                    collective. We build, we share, we act. together, as one unbroken chain.
+                  </p>
+                  
+                  <p>
+                    3. Quiet Accountability. Each action, no matter how small, will be held in the collective silence. We are all 
+                    accountable, not to a central authority, but to the land and to each other.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="text-center mt-16">
+                <h4 className="text-lg font-semibold text-white mb-4">Oath of The Car Park Society</h4>
+                <div className="italic text-gray-400 leading-relaxed">
+                  <p>"We will not work for change</p>
+                  <p>but we will be the change</p>
+                  <p>We are not the workers</p>
+                  <p>we are not the watchers</p>
+                  <p>the world cannot see how we differ</p>
+                  <p>we will not work for change</p>
+                  <p>we will be the change"</p>
                 </div>
               </div>
             </div>
