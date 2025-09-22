@@ -205,7 +205,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="py-12 px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center" data-testid="text-welcome">
+            <div className="grid md:grid-cols-2 gap-8 items-center" data-testid="text-welcome">
               <div className="flex justify-center">
                 <img 
                   src={newHeroLogoImage} 
@@ -373,7 +373,7 @@ export default function Home() {
                 We will not wait for change;<br />
                 we will be the change."
               </p>
-              <p className="text-gray-600 text-xs">
+              <p className="text-gray-600 text-xs font-extralight">
                 Oath of TCPS
               </p>
             </div>
