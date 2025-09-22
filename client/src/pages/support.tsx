@@ -208,11 +208,12 @@ export default function Support() {
 
             {/* Logo Side */}
             <div className="flex justify-center">
-              <div className="flex flex-col items-center justify-center">
+              <div className="flex flex-col items-center justify-center min-w-[700px] min-h-[600px]">
                 <img 
                   src={tcpsLogoDesign}
                   alt="TCPS Logo Design" 
-                  className="w-[700px] h-[600px] object-contain"
+                  className="w-[700px] h-[600px] min-w-[700px] min-h-[600px] max-w-[700px] max-h-[600px] object-contain"
+                  style={{ width: "700px", height: "600px" }}
                 />
               </div>
             </div>
