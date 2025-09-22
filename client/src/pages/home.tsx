@@ -258,7 +258,7 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-create-heading">CREATE</h3>
-                <p className="text-gray-300 leading-relaxed" data-testid="text-create">
+                <p className="text-gray-300 text-[15px]" data-testid="text-create">
                   We design immersive, participatory experiences that dissolve the line between art, ritual, and activism. Each activation is more than an event: it is a living portal where audiences become participants, stories become ceremonies, and overlooked spaces become sites of collective transformation.
                 </p>
               </div>
@@ -272,7 +272,7 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-build-heading">BUILD</h3>
-                <p className="text-gray-300 leading-relaxed" data-testid="text-build">
+                <p className="text-gray-300 text-[15px]" data-testid="text-build">
                   We are committed to resilient networks and long-term community alliances. Our work is rooted in trust, co-design, and reciprocity; ensuring that every Watcher, collaborator, and partner plays an active role in shaping the society we are building together. This is not a movement of spectacle, but one of solidarity.
                 </p>
               </div>
@@ -286,7 +286,7 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-amplify-heading">AMPLIFY</h3>
-                <p className="text-gray-300 leading-relaxed" data-testid="text-amplify">
+                <p className="text-gray-300 text-[15px]" data-testid="text-amplify">
                   At the heart of The Car Park Society is a commitment to Indigenous narratives of resurgence, reclamation, and radical futures. We centre voices too often erased by consumerism and colonization, using our platforms to project stories of sovereignty, resilience, and imagination into the heart of the city.
                 </p>
               </div>
