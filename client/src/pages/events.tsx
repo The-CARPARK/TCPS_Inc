@@ -191,32 +191,37 @@ export default function Events() {
       {/* Footer */}
       <footer className="py-16 px-6 border-t border-gray-800 mt-16">
         <div className="max-w-7xl mx-auto">
-          <div className="text-left mb-2">
-            <div className="flex justify-start gap-3 mb-4">
-              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                <SiTiktok className="w-4 h-4" />
-              </a>
-              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                <FaInstagram className="w-4 h-4" />
-              </a>
-              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                <FaFacebook className="w-4 h-4" />
-              </a>
-              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                <FaYoutube className="w-4 h-4" />
-              </a>
+          <div className="grid grid-cols-1 md:grid-cols-3 items-start mb-4">
+            <div className="justify-self-start">
+              <div className="flex justify-start gap-3">
+                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <SiTiktok className="w-4 h-4" />
+                </a>
+                <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <FaInstagram className="w-4 h-4" />
+                </a>
+                <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <FaFacebook className="w-4 h-4" />
+                </a>
+                <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <FaYoutube className="w-4 h-4" />
+                </a>
+              </div>
             </div>
+            <div className="justify-self-center mt-1">
+              <img 
+                src={flagsImage} 
+                alt="Flags" 
+                className="w-48 sm:w-56 md:w-64 h-auto object-contain"
+              />
+            </div>
+            <div />
+          </div>
+          
+          <div className="text-left">
             <p className="text-gray-400 text-sm mb-2 text-left">Te Whanganui-a-Tara</p>
             <p className="text-gray-400 mb-2 text-[15px] font-bold text-left">AOTEAROA</p>
             <p className="text-gray-400 mb-6 text-[12px] text-left">© 2025 by The Car Park Society Inc.</p>
-          </div>
-          
-          <div className="flex justify-start">
-            <img 
-              src={flagsImage} 
-              alt="Flags" 
-              className="w-80 h-auto object-contain"
-            />
           </div>
         </div>
       </footer>
