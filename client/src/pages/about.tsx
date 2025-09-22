@@ -229,11 +229,7 @@ export default function About() {
             <div className="space-y-8 text-gray-300 leading-relaxed">
               <div>
                 <p className="text-center">
-                  The Car Park Society (TCPS) is a living assemblage of artists, insurgents, storytellers, cultural workers, rangatira, and spectral participants dedicated to the reclamation of space, spirit, and story beneath the colonial concrete of Aotearoa's urban cityscapes.
-                </p>
-                
-                <p className="mb-6 text-center text-[17px] font-thin">
-                  We take the carpark, specifically the Lombard Street Carpark in Te Whanganui-a-Tara, as both site and symbol: a vertical archive of suppression and refusal, a space of stilled motion, a modern pā reimagined.
+                  The Car Park Society (TCPS) is a living assemblage of artists, insurgents, storytellers, cultural workers, rangatira, and spectral participants dedicated to the reclamation of space, spirit, and story beneath the colonial concrete of Aotearoa's urban cityscapes. We take the carpark, specifically the Lombard Street Carpark in Te Whanganui-a-Tara, as both site and symbol: a vertical archive of suppression and refusal, a space of stilled motion, a modern pā reimagined.
                 </p>
                 
                 <p className="mb-8 text-center font-thin">From this fissure, we issue the Accord.</p>
