@@ -205,7 +205,7 @@ export default function Home() {
         <section className="py-20 px-6">
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <h1 className="lg:text-5xl mb-6 text-center text-[40px] font-black" data-testid="text-welcome">
+              <h1 className="lg:text-5xl mb-6 text-center font-black text-[40px]" data-testid="text-welcome">
                 WELCOME TO<br />
                 THE CAR PARK SOCIETY
               </h1>
