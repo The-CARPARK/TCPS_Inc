@@ -374,7 +374,7 @@ export default function Home() {
                 we will be the change."
               </p>
               <p className="text-gray-600 text-xs">
-                Oath of The Car Park Society
+                Oath of TCPS
               </p>
             </div>
             
