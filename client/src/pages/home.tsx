@@ -11,6 +11,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { ArrowDown, Mail, Menu, X } from "lucide-react";
 import { z } from "zod";
+import createImage from "@assets/stock_images/community_creative_w_c60b5e60.jpg";
+import buildImage from "@assets/stock_images/community_building_c_3b02f7ed.jpg";
+import amplifyImage from "@assets/stock_images/indigenous_voices_sp_db929368.jpg";
 
 const emailFormSchema = insertEmailSubscriptionSchema.extend({
   email: z.string().email("Please enter a valid email address"),
@@ -215,9 +218,11 @@ export default function Home() {
               {/* CREATE Column */}
               <div className="text-center group">
                 <Card className="mb-8 overflow-hidden shadow-lg transform group-hover:scale-105 transition-transform duration-300">
-                  <div className="w-full h-64 bg-muted flex items-center justify-center">
-                    <span className="text-muted-foreground text-sm">Community Creative Activities</span>
-                  </div>
+                  <img 
+                    src={createImage} 
+                    alt="Community members engaged in creative collaborative activities"
+                    className="w-full h-64 object-cover"
+                  />
                 </Card>
                 
                 <h3 className="text-2xl font-bold text-primary mb-4">CREATE</h3>
@@ -230,9 +235,11 @@ export default function Home() {
               {/* BUILD Column */}
               <div className="text-center group">
                 <Card className="mb-8 overflow-hidden shadow-lg transform group-hover:scale-105 transition-transform duration-300">
-                  <div className="w-full h-64 bg-muted flex items-center justify-center">
-                    <span className="text-muted-foreground text-sm">Community Collaboration</span>
-                  </div>
+                  <img 
+                    src={buildImage} 
+                    alt="Community members working together on collaborative projects"
+                    className="w-full h-64 object-cover"
+                  />
                 </Card>
                 
                 <h3 className="text-2xl font-bold text-primary mb-4">BUILD</h3>
@@ -245,9 +252,11 @@ export default function Home() {
               {/* AMPLIFY Column */}
               <div className="text-center group">
                 <Card className="mb-8 overflow-hidden shadow-lg transform group-hover:scale-105 transition-transform duration-300">
-                  <div className="w-full h-64 bg-muted flex items-center justify-center">
-                    <span className="text-muted-foreground text-sm">Indigenous Voices</span>
-                  </div>
+                  <img 
+                    src={amplifyImage} 
+                    alt="Indigenous voices and cultural expression being amplified"
+                    className="w-full h-64 object-cover"
+                  />
                 </Card>
                 
                 <h3 className="text-2xl font-bold text-primary mb-4">AMPLIFY</h3>
