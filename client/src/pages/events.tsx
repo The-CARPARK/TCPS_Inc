@@ -1,0 +1,230 @@
+import { useState, useEffect } from "react";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
+
+export default function Events() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    document.title = "Events - The Car Park Society";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Upcoming activations and events from The Car Park Society. Join us for immersive experiences that challenge colonial narratives.');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = 'Upcoming activations and events from The Car Park Society. Join us for immersive experiences that challenge colonial narratives.';
+      document.head.appendChild(meta);
+    }
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-black text-white">
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
+        <div className="flex justify-between items-center px-6 py-4">
+          <div className="flex items-center gap-4">
+            <Link href="/">
+              <h1 className="text-lg font-semibold hover:text-red-500 transition-colors cursor-pointer">The Car Park Society Inc.</h1>
+            </Link>
+            <div className="flex gap-2">
+              <a href="https://facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+                <FaFacebook className="w-3 h-3" />
+              </a>
+              <a href="https://instagram.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+                <FaInstagram className="w-3 h-3" />
+              </a>
+              <a href="https://twitter.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+                <FaTwitter className="w-3 h-3" />
+              </a>
+              <a href="https://youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+                <FaYoutube className="w-3 h-3" />
+              </a>
+            </div>
+          </div>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setMenuOpen(true)}
+            className="text-white hover:bg-gray-800"
+            data-testid="menu-toggle"
+          >
+            Menu [ + ]
+          </Button>
+        </div>
+      </header>
+
+      {/* Overlay Menu */}
+      {menuOpen && (
+        <div className="overlay-menu">
+          <div className="menu-content">
+            <div className="absolute top-6 right-6">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setMenuOpen(false)}
+                className="text-white hover:bg-gray-800"
+                data-testid="menu-close"
+              >
+                Close [ - ]
+              </Button>
+            </div>
+            
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
+              <div className="flex flex-col items-center">
+                <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8">
+                  <div className="text-center text-black">
+                    <div className="relative w-48 h-32">
+                      <svg className="w-full h-full" viewBox="0 0 200 100" fill="none">
+                        <path d="M100 10 L170 85 L30 85 Z" stroke="black" strokeWidth="3" fill="none"/>
+                        <path d="M70 40 L130 40 L130 60 L70 60 Z" fill="#e53e3e" transform="rotate(15 100 50)"/>
+                        <path d="M85 35 L115 35 L115 45 L85 45 Z" fill="#666" transform="rotate(-10 100 40)"/>
+                        <path d="M85 55 L115 55 L115 65 L85 65 Z" fill="#666" transform="rotate(10 100 60)"/>
+                      </svg>
+                    </div>
+                    <div className="text-xs font-bold mt-2">THE CAR PARK SOCIETY</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <nav className="flex flex-col gap-6 mb-8">
+                  <Link href="/">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-home">
+                      Home
+                    </button>
+                  </Link>
+                  <Link href="/about-1">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
+                      About
+                    </button>
+                  </Link>
+                  <Link href="/event-list">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-events">
+                      Events
+                    </button>
+                  </Link>
+                  <Link href="/blog">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-blog">
+                      Blog
+                    </button>
+                  </Link>
+                  <Link href="/donate">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-donate">
+                      Donate
+                    </button>
+                  </Link>
+                </nav>
+                
+                <div className="flex gap-4 justify-center">
+                  <a href="https://facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaFacebook className="w-5 h-5" />
+                  </a>
+                  <a href="https://instagram.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaInstagram className="w-5 h-5" />
+                  </a>
+                  <a href="https://twitter.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaTwitter className="w-5 h-5" />
+                  </a>
+                  <a href="https://youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaYoutube className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <main className="pt-20 pb-16">
+        {/* Events Header */}
+        <div className="px-6 py-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl font-bold mb-8">UPCOMING ACTIVATIONS</h1>
+          </div>
+        </div>
+
+        {/* Event List */}
+        <section className="px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid gap-8">
+              {/* The Control Room Event */}
+              <Link href="/event-details/the-control-room-tcps">
+                <div className="bg-red-900/20 border border-red-800 rounded-lg p-8 hover:bg-red-900/30 transition-colors cursor-pointer group">
+                  <div className="flex items-start gap-6">
+                    <div className="w-24 h-24 bg-gray-800 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-xs text-gray-400">TCPS</span>
+                    </div>
+                    
+                    <div className="flex-1">
+                      <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-red-400 transition-colors">
+                        THE CONTROL ROOM [TCPS]
+                      </h2>
+                      
+                      <div className="flex items-center gap-4 text-gray-400 mb-4">
+                        <span>Thu, 30 Oct</span>
+                        <span>|</span>
+                        <span>TCPS CONTROL ROOM</span>
+                      </div>
+                      
+                      <p className="text-gray-300 mb-4">
+                        Phase Zero: The Rupture. A temporary portal hidden in the heart of Te Aro. 
+                        This space is the first activation in our journey toward the Induction Centre.
+                      </p>
+                      
+                      <div className="flex gap-4">
+                        <span className="text-red-400 font-semibold">More info</span>
+                        <span className="text-red-400 font-semibold">RSVP</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      {/* Footer */}
+      <footer className="py-16 px-6 border-t border-gray-800 mt-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div>
+              <div className="flex gap-2 mb-4">
+                <a href="https://facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <FaFacebook className="w-4 h-4" />
+                </a>
+                <a href="https://instagram.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <FaInstagram className="w-4 h-4" />
+                </a>
+                <a href="https://twitter.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <FaTwitter className="w-4 h-4" />
+                </a>
+                <a href="https://youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <FaYoutube className="w-4 h-4" />
+                </a>
+              </div>
+              <p className="text-gray-400 text-sm mb-2">thecarpark@society.com</p>
+              <p className="text-gray-400 text-sm mb-2">Te Whanganui-a-Tara</p>
+              <p className="text-gray-400 text-sm mb-2">Auckland</p>
+              <p className="text-gray-400 text-sm">© 2025 by The Car Park Society Inc.</p>
+            </div>
+            
+            <div className="flex justify-end">
+              <div className="space-y-2">
+                <div className="flex gap-4">
+                  <div className="w-16 h-10 bg-red-600 flex items-center justify-center text-xs font-bold">NZ</div>
+                  <div className="w-16 h-10 bg-blue-600 flex items-center justify-center text-xs font-bold"></div>
+                  <div className="w-16 h-10 bg-red-500 flex items-center justify-center text-xs font-bold">C</div>
+                  <div className="w-16 h-10 bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}

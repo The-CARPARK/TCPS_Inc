@@ -1,19 +1,21 @@
+import { useState, useEffect } from "react";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "wouter";
-import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
 
 export default function BlogPost() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     document.title = "Urban Māori: Breaking through the Concrete Chains of Colonisation - The Car Park Society";
     
-    // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'More than 80% of Māori now live in urban centres across Aotearoa. Read about urban Māori reconnection and breaking through colonial barriers.');
+      metaDescription.setAttribute('content', 'E kore au e ngaro, he kākano i ruia mai i Rangiātea. I will never be lost, for I am a seed sown from Rangiātea. More than 80% of Māori now live in urban centres across Aotearoa.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'More than 80% of Māori now live in urban centres across Aotearoa. Read about urban Māori reconnection and breaking through colonial barriers.';
+      meta.content = 'E kore au e ngaro, he kākano i ruia mai i Rangiātea. I will never be lost, for I am a seed sown from Rangiātea. More than 80% of Māori now live in urban centres across Aotearoa.';
       document.head.appendChild(meta);
     }
   }, []);
@@ -24,208 +26,265 @@ export default function BlogPost() {
       <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
         <div className="flex justify-between items-center px-6 py-4">
           <div className="flex items-center gap-4">
-            <h1 className="text-lg font-semibold">The Car Park Society Inc.</h1>
+            <Link href="/">
+              <h1 className="text-lg font-semibold hover:text-red-500 transition-colors cursor-pointer">The Car Park Society Inc.</h1>
+            </Link>
             <div className="flex gap-2">
-              <a href="https://facebook.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+              <a href="https://facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
                 <FaFacebook className="w-3 h-3" />
               </a>
-              <a href="https://instagram.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+              <a href="https://instagram.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
                 <FaInstagram className="w-3 h-3" />
               </a>
               <a href="https://twitter.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
                 <FaTwitter className="w-3 h-3" />
               </a>
-              <a href="https://youtube.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+              <a href="https://youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
                 <FaYoutube className="w-3 h-3" />
               </a>
             </div>
           </div>
-          <Link href="/" className="text-white hover:text-red-500 transition-colors">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setMenuOpen(true)}
+            className="text-white hover:bg-gray-800"
+            data-testid="menu-toggle"
+          >
             Menu [ + ]
-          </Link>
+          </Button>
         </div>
       </header>
 
-      <main className="pt-20 pb-16">
-        {/* All Posts Header */}
-        <div className="px-6 py-8">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-2xl font-bold mb-4">All Posts</h1>
+      {/* Overlay Menu */}
+      {menuOpen && (
+        <div className="overlay-menu">
+          <div className="menu-content">
+            <div className="absolute top-6 right-6">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setMenuOpen(false)}
+                className="text-white hover:bg-gray-800"
+                data-testid="menu-close"
+              >
+                Close [ - ]
+              </Button>
+            </div>
+            
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
+              <div className="flex flex-col items-center">
+                <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8">
+                  <div className="text-center text-black">
+                    <div className="relative w-48 h-32">
+                      <svg className="w-full h-full" viewBox="0 0 200 100" fill="none">
+                        <path d="M100 10 L170 85 L30 85 Z" stroke="black" strokeWidth="3" fill="none"/>
+                        <path d="M70 40 L130 40 L130 60 L70 60 Z" fill="#e53e3e" transform="rotate(15 100 50)"/>
+                        <path d="M85 35 L115 35 L115 45 L85 45 Z" fill="#666" transform="rotate(-10 100 40)"/>
+                        <path d="M85 55 L115 55 L115 65 L85 65 Z" fill="#666" transform="rotate(10 100 60)"/>
+                      </svg>
+                    </div>
+                    <div className="text-xs font-bold mt-2">THE CAR PARK SOCIETY</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <nav className="flex flex-col gap-6 mb-8">
+                  <Link href="/">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-home">
+                      Home
+                    </button>
+                  </Link>
+                  <Link href="/about-1">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
+                      About
+                    </button>
+                  </Link>
+                  <Link href="/event-list">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-events">
+                      Events
+                    </button>
+                  </Link>
+                  <Link href="/blog">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-blog">
+                      Blog
+                    </button>
+                  </Link>
+                  <Link href="/donate">
+                    <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-donate">
+                      Donate
+                    </button>
+                  </Link>
+                </nav>
+                
+                <div className="flex gap-4 justify-center">
+                  <a href="https://facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaFacebook className="w-5 h-5" />
+                  </a>
+                  <a href="https://instagram.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaInstagram className="w-5 h-5" />
+                  </a>
+                  <a href="https://twitter.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaTwitter className="w-5 h-5" />
+                  </a>
+                  <a href="https://youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                    <FaYoutube className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      )}
 
-        {/* Blog Post */}
-        <article className="px-6">
+      <main className="pt-20 pb-16">
+        {/* Article Header */}
+        <section className="px-6 py-12">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-red-900/20 border border-red-800 rounded-lg p-8">
-              {/* Post Header */}
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">TCPS</span>
+            <div className="mb-8">
+              <Link href="/blog" className="text-red-400 hover:text-red-300 transition-colors">
+                ← Back to Blog
+              </Link>
+            </div>
+            
+            <h1 className="text-4xl font-bold mb-6">
+              Urban Māori: Breaking through the Concrete Chains of Colonisation
+            </h1>
+            
+            <div className="flex items-center gap-4 text-sm text-gray-400 mb-8">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
+                  <span className="text-xs font-bold">TCPS</span>
                 </div>
-                <div>
-                  <p className="text-white font-semibold">The Car Park Society</p>
-                  <p className="text-gray-400 text-sm">2 hours ago · 5 min read</p>
-                </div>
+                <span>The Car Park Society</span>
               </div>
+              <span>21 hours ago</span>
+              <span>3 min read</span>
+            </div>
+          </div>
+        </section>
 
-              {/* Post Content */}
-              <h1 className="text-3xl font-bold text-white mb-8">
-                Urban Māori: Breaking through the Concrete Chains of Colonisation
-              </h1>
-
-              <p className="text-xl text-gray-300 mb-8 italic">
+        {/* Article Content */}
+        <article className="px-6">
+          <div className="max-w-4xl mx-auto prose prose-invert prose-lg">
+            <div className="text-center mb-12">
+              <p className="text-2xl font-bold italic mb-4" data-testid="text-maori-quote">
                 "E kore au e ngaro, he kākano i ruia mai i Rangiātea."
+              </p>
+              <p className="text-xl italic text-gray-300" data-testid="text-english-translation">
                 I will never be lost, for I am a seed sown from Rangiātea.
               </p>
-
-              <div className="space-y-6 text-gray-300 leading-relaxed">
-                <p>
-                  More than 80% of Māori now live in urban centres across Aotearoa, a migration 
-                  born of colonial displacement, land confiscation, and economic necessity. From 
-                  the 1950s onward, our people were encouraged to leave their tūrangawaewae to 
-                  chase employment in the cities, often severing connections to marae and whenua 
-                  that had sustained our ancestors for generations. This exodus created a new 
-                  category of 'urban Māori,' a term that holds both pride and pain.
+            </div>
+            
+            <div className="space-y-8 text-gray-300 leading-relaxed">
+              <p data-testid="text-urban-migration">
+                More than 80% of Māori now live in urban centres across Aotearoa, a migration born of colonial displacement, land confiscation, and economic necessity. From the 1950s onward, our people were encouraged to leave their tūrangawaewae to fill factories, workshops, and service industries in the cities. This shift created the category of Urban Māori: a term that holds both pride and pain.
+              </p>
+              
+              <p className="text-xl font-semibold text-white text-center my-8" data-testid="text-portal">
+                Yet concrete can be both prison and portal.
+              </p>
+              
+              <p data-testid="text-assimilation">
+                In these cities, whakapapa was often buried beneath the noise of assimilation. Many of us were raised without fluent reo, without strong marae ties, disconnected from whenua, hapū, and iwi. We became the children of cul-de-sacs and state housing, of tangi at crematoriums instead of urupā. We became wary of mispronouncing our own names, of being "not Māori enough."
+              </p>
+              
+              <p data-testid="text-whakama">
+                Whakama: that heavy cloak of shame, hesitation, and self-doubt is one of the greatest barriers to Māori reconnection today.
+              </p>
+              
+              <p data-testid="text-barriers">
+                Urban Māori often carry whakama for not knowing their pepeha, for never having stepped onto their marae, for not speaking te reo, for not "looking" Māori enough, or for being afraid to even ask where they come from. Colonisation taught us to be ashamed of what we were. And now that many seek to return, they feel ashamed for how far they've wandered. This double-bind traps generations in spiritual paralysis.
+              </p>
+              
+              <p data-testid="text-not-failing">
+                But whakama is not an individual failing. It is a social toxin produced by systemic alienation. Urban Māori must be reminded: you do not need permission to return. You do not need credentials to be Māori. You are not broken.
+              </p>
+              
+              <p data-testid="text-ancestral-field">
+                Te ao Māori is not a hierarchy of access. It is an ancestral field we all belong to. You carry it in your blood, in your dreams, in the quiet when you walk near water.
+              </p>
+              
+              <p data-testid="text-starting">
+                It doesn't matter if you start with karakia or kai. With mōteatea or memes. With flax or Facebook. What matters is that you start. That you make a single gesture toward the remembering, and the rest will unfold.
+              </p>
+              
+              <p className="text-white font-semibold" data-testid="text-barriers-heading">
+                Urban Māori face systemic and emotional barriers in reconnecting:
+              </p>
+              
+              <ul className="list-disc list-inside space-y-3 ml-4">
+                <li data-testid="text-bureaucratic">
+                  <strong className="text-white">Bureaucratic dislocation</strong> – Many urban Māori have no clear tribal registration or are disconnected from iwi/hapū databases.
+                </li>
+                
+                <li data-testid="text-gatekeeping">
+                  <strong className="text-white">Cultural gatekeeping</strong> – Some spaces may (intentionally or not) make those returning feel unworthy or illegitimate.
+                </li>
+                
+                <li data-testid="text-trauma">
+                  <strong className="text-white">Generational trauma</strong> – Disconnection is often inherited. When parents and grandparents were punished for being Māori, their descendants internalize the silence.
+                </li>
+                
+                <li data-testid="text-cost">
+                  <strong className="text-white">Cost and access</strong>– Reo classes, marae trips, and wānanga often require time, money, and transport that urban whānau may not have.
+                </li>
+                
+                <li data-testid="text-anxiety">
+                  <strong className="text-white">Identity anxiety</strong>– Fear of "getting it wrong," being corrected, or feeling judged can shut down efforts before they begin.
+                </li>
+              </ul>
+              
+              <p data-testid="text-tcps-recognition">
+                The Car Park Society recognises that reclamation is not linear; it is recursive, anarchic, poetic. Te Mana Whakatetē calls us to shatter the illusions of deficit and reawaken our inherent power. That includes power obscured by high-rise towers and motorway shadows.
+              </p>
+              
+              <p className="text-white font-semibold" data-testid="text-roles-heading">
+                Urban Māori have unique roles to play in the great remembering:
+              </p>
+              
+              <ul className="list-disc list-inside space-y-2 ml-4">
+                <li data-testid="text-bridges">We build hybrid bridges between cultures.</li>
+                <li data-testid="text-navigate">We know how to navigate systems and subvert them.</li>
+                <li data-testid="text-wairua">We carry our ancestral wairua wherever we are</li>
+              </ul>
+              
+              <p data-testid="text-mission">
+                Our mission is not to become Māori, we already are. Our mission is to return to ourselves. To be Māori is to be in constant relationship, with whenua, with wairua, with whakapapa. Urban life has fractured those relationships, but they are not lost. The signal is still there, under the concrete, waiting for the right vibration to crack it open.
+              </p>
+              
+              <p data-testid="text-not-visitor">
+                You are not a visitor to your own culture. You are the descendant of those who refused to vanish. The illusion of deficit dissolves here.
+              </p>
+              
+              <p data-testid="text-overflowing">
+                You are not lacking, you are overflowing. Beneath every motorway shadow and high-rise tower, your tīpuna wait, singing through the cracks in the concrete.
+              </p>
+              
+              <p className="text-white font-semibold" data-testid="text-reassembly">
+                We are the reassembly line of indigenous identity.
+              </p>
+              
+              <p className="text-white font-semibold" data-testid="text-frequency">
+                You are not fragments, you are frequency.
+              </p>
+              
+              <p className="text-white font-semibold" data-testid="text-not-alone">
+                You do not return alone.
+              </p>
+              
+              <p className="text-white font-semibold" data-testid="text-return-with-us">
+                You return with us.
+              </p>
+              
+              <div className="text-center mt-12">
+                <p className="text-xl font-bold italic" data-testid="text-final-quote">
+                  "He toka tū moana, arā he toa rongonui."
                 </p>
-
-                <p>Yet coloniser can be both action and portal.</p>
-
-                <p>
-                  In these cities, whakawhaiwhai was often buried beneath the noise of assimilation. 
-                  Our children learned English before te reo, absorbed Pākehā values before they 
-                  disconnected from whaoa, hapu, and iwi. We became the children of our dislocation and state housing, of being at a cemetery crime instead of marae, of being 
-                  wary of misappropriating our own names, of being too Māori amongst.
+                <p className="text-lg italic text-gray-300 mt-2" data-testid="text-final-translation">
+                  Like a rock standing in the ocean, you endure, unshaken.
                 </p>
-
-                <p>
-                  Whaoapapa that heavy cloak of shame, hesitation, and self-doubt is one of the 
-                  greatest barriers to Māori reconnection today.
-                </p>
-
-                <p>
-                  Urban Māori often carry whaakame for not knowing their maori, for never having 
-                  stepped onto their marae, for not speaking te reo, for not "looking" Māori enough, 
-                  or for being afraid to even ask where they come from. Colonisation taught us to 
-                  be shameful of our own place; they're understood. This double-bind traps generations in 
-                  spiritual paralysis.
-                </p>
-
-                <p>
-                  But whaakame is not an individual failing. It is a social harm produced by systemic 
-                  alienation. Urban Māori must be reminded: you do not need permission to return. 
-                  You do not need credentials to be Māori. You are not broken.
-                </p>
-
-                <p>
-                  Te ao Māori is not a hierarchy of access. It is an ancestral field we all belong to. You 
-                  carry it in your blood, in your anguish, in the quiet when you walk near water.
-                </p>
-
-                <h3 className="text-xl font-bold text-white mt-8 mb-4">
-                  It doesn't matter if you start with karakia or kai, Whiti metadatas or maraes. With 
-                  the tv or Facebook. What matters is that you start; that you make a bridge gesture 
-                  to the river that you've always lived beside even when you didn't know its name.
-                </h3>
-
-                <p>Urban Māori face systemic and emotional barriers in reconnecting:</p>
-
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li><strong>Bureaucratic dissociation</strong> - Many urban Māori have no clear tribal registration and are disconnected from iwi/hapū databases.</li>
-                  <li><strong>Cultural gatekeeping</strong> - Some spaces may intentionally or not make those who weren't raised on marae feel unwelcome or illegitimate.</li>
-                  <li><strong>Generational trauma</strong> - Disconnection is often inherited. When parents and grandparents were punished for being Māori, their descendants internalise the shame.</li>
-                  <li><strong>Cost and access</strong> - Hui classes, marae trips, and wānanga often require time, money, and transport that urban whānau may not have.</li>
-                  <li><strong>Identity anxiety</strong> - Fear of 'getting it wrong,' being corrected, or feeling judged can shut down efforts before they begin.</li>
-                </ul>
-
-                <p>
-                  The Car Park Society recognises that reclamation is not linear. It is recursive, 
-                  anarchic, poetic. Te Mana Whakatete calls us to shatter the illusions of deficit and 
-                  reawaken our inherent power. That includes power obscured by high-rise towers and 
-                  bitumen.
-                </p>
-
-                <p>Urban Māori have unique roles to play in the great remembering:</p>
-
-                <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>We exist in spaces of encounter.</li>
-                  <li>We know how to navigate systems and subvert them.</li>
-                  <li>We carry our ancestral wairua wherever we are.</li>
-                </ul>
-
-                <p>
-                  Our mission is not to become Māori, we already are. Our mission is to return to 
-                  ourselves, to live as Māori in all constant relationships, with whenua, with wairua, 
-                  with whakapapa. Urban life has fractured those relationships, but they are not 
-                  lost. The signal is still there, under the concrete, waiting for the right vibration to 
-                  emerge.
-                </p>
-
-                <blockquote className="border-l-4 border-red-500 pl-6 italic text-gray-400 my-8">
-                  "You are not a visitor to your own culture. You are the descendant of those who 
-                  refused to vanish. The illusion of deficit dissolves here."
-                </blockquote>
-
-                <p>
-                  "You are not seeking, you are remembering. Beneath every crackheaded shadow and 
-                  abandoned car park, your tīpuna call you home."
-                </p>
-
-                <p>You are not fragments; you are frequency.</p>
-
-                <p>You do not return alone.</p>
-
-                <p>You return with us.</p>
-
-                <blockquote className="border-l-4 border-red-500 pl-6 italic text-gray-400 my-8">
-                  "He tohia te moana, ara he koa rangiohia."
-                  Like a rock descending in the ocean, you awaken, unbroken.
-                </blockquote>
-
-                <div className="mt-12 pt-8 border-t border-gray-700">
-                  <div className="flex gap-4 mb-4">
-                    <div className="w-16 h-10 bg-red-600 flex items-center justify-center text-xs font-bold">NZ</div>
-                    <div className="w-16 h-10 bg-blue-600 flex items-center justify-center text-xs font-bold"></div>
-                    <div className="w-16 h-10 bg-red-500 flex items-center justify-center text-xs font-bold">C</div>
-                    <div className="w-16 h-10 bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500"></div>
-                  </div>
-
-                  <div className="flex items-center gap-4 mb-4">
-                    <span className="text-gray-400">16 views</span>
-                    <span className="text-gray-400">0 comments</span>
-                  </div>
-
-                  <div className="flex gap-2">
-                    <button className="text-gray-400 hover:text-white transition-colors">
-                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
-                      </svg>
-                    </button>
-                    <button className="text-gray-400 hover:text-white transition-colors">
-                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M22.23 5.924c-.736.326-1.529.547-2.357.646.847-.507 1.496-1.312 1.804-2.27-.793.47-1.671.812-2.606 0.996C18.324 4.498 17.257 4 16.077 4c-2.266 0-4.103 1.837-4.103 4.103 0 .322.036.635.106.935-3.41-.171-6.433-1.804-8.457-4.287-.353.607-.556 1.312-.556 2.064 0 1.424.724 2.679 1.825 3.415-.673-.021-1.305-.206-1.859-.514v.052c0 1.988 1.414 3.647 3.292 4.023-.344.094-.707.144-1.081.144-.265 0-.522-.026-.773-.074.522 1.63 2.038 2.816 3.833 2.85-1.404 1.1-3.174 1.756-5.096 1.756-.331 0-.658-.019-.98-.057 1.816 1.164 3.973 1.843 6.29 1.843 7.547 0 11.675-6.252 11.675-11.675 0-.178-.004-.355-.012-.53.801-.578 1.495-1.3 2.043-2.124z"/>
-                      </svg>
-                    </button>
-                    <button className="text-gray-400 hover:text-white transition-colors">
-                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 7v12H5V7h14m0-2H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2z"/>
-                        <path d="m7 9 5 4 5-4"/>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Comments Section */}
-              <div className="mt-12 pt-8 border-t border-gray-700">
-                <h3 className="text-xl font-semibold text-white mb-6">Comments</h3>
-                <div className="bg-gray-900 rounded-lg p-4">
-                  <textarea 
-                    placeholder="Write a comment..." 
-                    className="w-full bg-transparent text-white border-0 resize-none focus:outline-none"
-                    rows={3}
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -233,21 +292,21 @@ export default function BlogPost() {
       </main>
 
       {/* Footer */}
-      <footer className="py-16 px-6 border-t border-gray-800">
+      <footer className="py-16 px-6 border-t border-gray-800 mt-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
               <div className="flex gap-2 mb-4">
-                <a href="https://facebook.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <a href="https://facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <FaFacebook className="w-4 h-4" />
                 </a>
-                <a href="https://instagram.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <a href="https://instagram.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <FaInstagram className="w-4 h-4" />
                 </a>
                 <a href="https://twitter.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <FaTwitter className="w-4 h-4" />
                 </a>
-                <a href="https://youtube.com/carparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <a href="https://youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <FaYoutube className="w-4 h-4" />
                 </a>
               </div>
