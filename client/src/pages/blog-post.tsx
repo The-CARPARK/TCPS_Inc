@@ -295,9 +295,9 @@ export default function BlogPost() {
       {/* Footer */}
       <footer className="py-16 px-6 border-t border-gray-800 mt-16">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div>
-              <div className="flex gap-2 mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 items-start mb-2">
+            <div className="justify-self-start">
+              <div className="flex justify-start gap-3 mb-2">
                 <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <SiTiktok className="w-4 h-4" />
                 </a>
@@ -311,20 +311,20 @@ export default function BlogPost() {
                   <FaYoutube className="w-4 h-4" />
                 </a>
               </div>
-              <p className="text-gray-400 text-sm mb-2">Te Whanganui-a-Tara</p>
-              <p className="text-gray-400 text-sm mb-2">Auckland</p>
-              <p className="text-gray-400 text-sm">© 2025 by The Car Park Society Inc.</p>
-            </div>
-            
-            <div className="flex justify-end">
-              <div className="space-y-2">
-                <img 
-                  src={flagsImage} 
-                  alt="Flags" 
-                  className="h-40 object-contain"
-                />
+              <div className="text-left">
+                <p className="text-gray-400 text-sm mb-2 text-left">Te Whanganui-a-Tara</p>
+                <p className="text-gray-400 mb-2 text-[15px] font-bold text-left">AOTEAROA</p>
+                <p className="text-gray-400 mb-6 text-[12px] text-left">© 2025 by The Car Park Society Inc.</p>
               </div>
             </div>
+            <div className="justify-self-center">
+              <img 
+                src={flagsImage} 
+                alt="Flags" 
+                className="w-48 sm:w-56 md:w-64 h-auto object-contain"
+              />
+            </div>
+            <div />
           </div>
         </div>
       </footer>
