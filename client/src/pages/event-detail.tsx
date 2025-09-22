@@ -99,22 +99,22 @@ export default function EventDetail() {
                   </Link>
                   <Link href="/about-1">
                     <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
-                      About
+                      Our Story
                     </button>
                   </Link>
                   <Link href="/event-list">
                     <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-events">
-                      Events
+                      Activations
                     </button>
                   </Link>
                   <Link href="/blog">
                     <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-blog">
-                      Blog
+                      Transmissions
                     </button>
                   </Link>
                   <Link href="/donate">
                     <button className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-donate">
-                      Donate
+                      Support
                     </button>
                   </Link>
                 </nav>
