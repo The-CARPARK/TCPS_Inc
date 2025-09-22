@@ -142,7 +142,7 @@ export default function EventDetail() {
         {/* Event Header */}
         <section className="px-6 py-12">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold mb-4 text-center">THE CONTROL ROOM 👁</h1>
+            <h1 className="text-4xl font-bold mb-4">THE CONTROL ROOM [TCPS]</h1>
             
             
           </div>
@@ -155,38 +155,31 @@ export default function EventDetail() {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-2xl font-bold mb-6 text-center">Time & Location</h2>
+                <h2 className="text-2xl font-bold mb-6">Time & Location</h2>
                 <div className="space-y-4 text-gray-300">
                   <p>
-                    <strong className="text-white text-center">30 Oct 2025, 7:00 pm – 30 Nov 2025, 10:00 pm</strong>
+                    <strong className="text-white">30 Oct 2025, 7:00 pm – 30 Nov 2025, 10:00 pm</strong>
                   </p>
                   <p>
-                    Te Aro, Te-Whangnui-a-Tara, Aotearoa
+                    <strong className="text-white">TCPS CONTROL ROOM</strong><br />
+                    Te Aro, Wellington 6011, New Zealand
                   </p>
-                </div>
-                
-                {/* Control Room Image */}
-                <div className="mt-8">
-                  <img 
-                    src={controlRoomImage} 
-                    alt="The Control Room - Phase Zero: The Rupture" 
-                    className="w-full h-auto rounded-lg"
-                  />
                 </div>
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-6 text-center">About the event</h2>
+                <h2 className="text-2xl font-bold mb-6">About the event</h2>
                 
                 <div className="space-y-6 text-gray-300 leading-relaxed">
-                  <div className="text-center">
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-4">The Control Room</h3>
                     <p className="italic mb-4">Phase Zero: The Rupture</p>
                     
-                    <p className="mb-6 text-[21px]">
+                    <p className="mb-6">
                       The Car Park Society invites you to enter <strong className="text-white">THE CONTROL ROOM:</strong> a temporary portal hidden in the heart of Te Aro. This space is the first activation in our journey toward the Induction Centre, where overlooked urban environments are transformed into sites of memory, creativity, and resistance.
                     </p>
                     
-                    <p className="mb-4 text-[20px] font-semibold">Inside The Control Room, you will encounter:</p>
+                    <p className="mb-4">Inside The Control Room, you will encounter:</p>
                     
                     <ul className="list-disc list-inside space-y-2 ml-4">
                       <li><strong className="text-white">Immersive projections</strong> that fracture and reassemble the concrete mythos of the city.</li>
@@ -207,9 +200,9 @@ export default function EventDetail() {
       <footer className="py-16 px-6 border-t border-gray-800 mt-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 items-start mb-2">
-            <div className="text-[21px]">
-              <div className="text-[20px]">
-                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="text-[20px]">
+            <div className="justify-self-start">
+              <div className="flex justify-start gap-3 mb-2">
+                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <SiTiktok className="w-4 h-4" />
                 </a>
                 <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">

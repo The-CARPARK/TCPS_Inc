@@ -216,9 +216,7 @@ export default function Support() {
                   />
                 </div>
                 
-                <div className="text-center text-black mb-8">
-                  <div className="text-sm font-bold">THE CAR PARK SOCIETY</div>
-                </div>
+                
 
                 {/* Building Structure Icon */}
                 <div className="text-black">
