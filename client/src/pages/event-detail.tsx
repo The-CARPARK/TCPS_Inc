@@ -187,7 +187,7 @@ export default function EventDetail() {
                       The Car Park Society invites you to enter <strong className="text-white">THE CONTROL ROOM:</strong> a temporary portal hidden in the heart of Te Aro. This space is the first activation in our journey toward the Induction Centre, where overlooked urban environments are transformed into sites of memory, creativity, and resistance.
                     </p>
                     
-                    <p className="mb-4">Inside The Control Room, you will encounter:</p>
+                    <p className="mb-4 text-[19px]">Inside The Control Room, you will encounter:</p>
                     
                     <ul className="list-disc list-inside space-y-2 ml-4">
                       <li><strong className="text-white">Immersive projections</strong> that fracture and reassemble the concrete mythos of the city.</li>
