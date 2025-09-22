@@ -5,7 +5,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
-import urbanMaoriImage from "@assets/Screenshot 2025-09-23 015612_1758549415360.png";
+import urbanMaoriImage from "@assets/Screenshot 2025-09-23 015612_1758549664429.png";
 
 export default function Blog() {
   const [menuOpen, setMenuOpen] = useState(false);
