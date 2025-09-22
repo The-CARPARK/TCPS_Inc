@@ -386,7 +386,7 @@ export default function About() {
                 we will be the change."
               </p>
               <p className="text-gray-600 text-xs">
-                Oath of the Car Park Society
+                Oath of TCPS
               </p>
             </div>
             
