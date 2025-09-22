@@ -222,7 +222,7 @@ export default function Home() {
                   THE CAR PARK SOCIETY
                 </h1>
                 
-                <p className="text-gray-300 text-[21px] leading-relaxed max-w-sm" data-testid="text-intro">
+                <p className="text-gray-300 text-[21px] leading-relaxed max-w-sm text-center mx-auto" data-testid="text-intro">
                   The Car Park Society (TCPS) formed in 2025, our aim is to reveal hidden histories, restore connection, and transform overlooked spaces into vibrant hubs of collective creativity and community empowerment.
                 </p>
               </div>
