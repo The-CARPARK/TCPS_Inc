@@ -5,7 +5,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
-import controlRoomImage from "@assets/ChatGPT Image Sep 21, 2025, 08_31_58 PM_1758546883007.png";
+import controlRoomImage from "@assets/123_1758548030700.png";
 
 export default function EventDetail() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -164,6 +164,15 @@ export default function EventDetail() {
                     <strong className="text-white">TCPS CONTROL ROOM</strong><br />
                     Te Aro, Wellington 6011, New Zealand
                   </p>
+                </div>
+                
+                {/* Control Room Image */}
+                <div className="mt-8">
+                  <img 
+                    src={controlRoomImage} 
+                    alt="The Control Room - Phase Zero: The Rupture" 
+                    className="w-full h-auto rounded-lg"
+                  />
                 </div>
               </div>
               

@@ -215,8 +215,6 @@ export default function Support() {
                     className="w-48 h-32 object-contain"
                   />
                 </div>
-                
-                
 
                 {/* Building Structure Icon */}
                 <div className="text-black">
