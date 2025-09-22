@@ -144,7 +144,7 @@ export default function EventDetail() {
         {/* Event Header */}
         <section className="px-6 py-12">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold mb-4">THE CONTROL ROOM [TCPS]</h1>
+            <h1 className="text-4xl font-bold mb-4">THE CONTROL ROOM 👁</h1>
             
             
           </div>
@@ -163,7 +163,6 @@ export default function EventDetail() {
                     <strong className="text-white">30 Oct 2025, 7:00 pm – 30 Nov 2025, 10:00 pm</strong>
                   </p>
                   <p>
-                    <strong className="text-white">TCPS CONTROL ROOM</strong><br />
                     Te Aro, Wellington 6011, New Zealand
                   </p>
                 </div>
