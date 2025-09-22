@@ -18,6 +18,7 @@ import heroImage from "@assets/1_1758536573325.png";
 import visionImage from "@assets/2_1758536573325.png";
 import eyeCreateImage from "@assets/Untitled - 6 August 2025 21.28_1758537254685.jpg";
 import eyeBuildImage from "@assets/Untitled - 6 August 2025 21.28 (3)_1758537371863.jpg";
+import eyeAmplifyImage from "@assets/Untitled - 6 August 2025 21.28 (2)_1758537390681.jpg";
 import eyeImage from "@assets/Untitled - 6 August 2025 21.28_1758537254685.jpg";
 
 const emailFormSchema = insertEmailSubscriptionSchema.extend({
@@ -278,13 +279,11 @@ export default function Home() {
               
               <div className="text-center">
                 <div className="w-60 h-48 mx-auto mb-6 flex items-center justify-center">
-                  <svg className="w-32 h-32" viewBox="0 0 120 120" fill="none">
-                    <path d="M60 10 L105 95 L15 95 Z" stroke="white" strokeWidth="2" fill="none"/>
-                    <circle cx="60" cy="50" r="15" fill="white"/>
-                    <circle cx="60" cy="50" r="8" fill="black"/>
-                    <path d="M50 40 L70 40 L70 50 L50 50 Z" fill="#6366f1" transform="rotate(15 60 45)"/>
-                    <path d="M45 35 L75 35 L75 45 L45 45 Z" fill="#8b5cf6" transform="rotate(-15 60 40)"/>
-                  </svg>
+                  <img 
+                    src={eyeAmplifyImage} 
+                    alt="Eye symbol representing AMPLIFY" 
+                    className="w-32 h-32 object-contain"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-amplify-heading">AMPLIFY</h3>
                 <p className="text-gray-300 leading-relaxed" data-testid="text-amplify">
