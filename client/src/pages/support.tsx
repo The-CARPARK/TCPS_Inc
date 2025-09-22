@@ -4,6 +4,9 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { useEffect } from "react";
+import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
+import buildingImage from "@assets/Screenshot 2025-09-21 214642_1758536131507.png";
+import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 
 export default function Support() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -207,7 +210,7 @@ export default function Support() {
               <div className="bg-white rounded-lg p-8 w-96 h-80 flex flex-col items-center justify-center">
                 <div className="mb-8">
                   <img 
-                    src="/attached_assets/TCPS_Medium_Colour (1)_1758535590698.png" 
+                    src={logoImage} 
                     alt="The Car Park Society Logo" 
                     className="w-48 h-32 object-contain"
                   />
@@ -220,7 +223,7 @@ export default function Support() {
                 {/* Building Structure Icon */}
                 <div className="text-black">
                   <img 
-                    src="/attached_assets/Screenshot 2025-09-21 214642_1758535464329.png" 
+                    src={buildingImage} 
                     alt="Building Structure" 
                     className="w-24 h-20 object-contain"
                   />
@@ -236,7 +239,7 @@ export default function Support() {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center">
             <img 
-              src="/attached_assets/Screenshot 2025-09-21 211954_1758535499434.png" 
+              src={flagsImage} 
               alt="Flags" 
               className="h-12 object-contain"
             />

@@ -3,6 +3,8 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
+import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 
 export default function EventDetail() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -203,7 +205,7 @@ export default function EventDetail() {
             <div className="flex justify-end">
               <div className="space-y-2">
                 <img 
-                  src="/attached_assets/Screenshot 2025-09-21 211954_1758535499434.png" 
+                  src={flagsImage} 
                   alt="Flags" 
                   className="h-10 object-contain"
                 />
