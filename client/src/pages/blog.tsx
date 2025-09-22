@@ -130,12 +130,11 @@ export default function Blog() {
             
             <div className="flex justify-end">
               <div className="space-y-2">
-                <div className="flex gap-4">
-                  <div className="w-16 h-10 bg-red-600 flex items-center justify-center text-xs font-bold">NZ</div>
-                  <div className="w-16 h-10 bg-blue-600 flex items-center justify-center text-xs font-bold"></div>
-                  <div className="w-16 h-10 bg-red-500 flex items-center justify-center text-xs font-bold">C</div>
-                  <div className="w-16 h-10 bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500"></div>
-                </div>
+                <img 
+                  src="/attached_assets/Screenshot 2025-09-21 211954_1758535499434.png" 
+                  alt="Flags" 
+                  className="h-10 object-contain"
+                />
               </div>
             </div>
           </div>

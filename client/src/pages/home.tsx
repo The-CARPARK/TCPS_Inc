@@ -133,14 +133,12 @@ export default function Home() {
                 <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8">
                   <div className="text-center text-black">
                     <div className="relative w-48 h-32">
-                      <svg className="w-full h-full" viewBox="0 0 200 100" fill="none">
-                        <path d="M100 10 L170 85 L30 85 Z" stroke="black" strokeWidth="3" fill="none"/>
-                        <path d="M70 40 L130 40 L130 60 L70 60 Z" fill="#e53e3e" transform="rotate(15 100 50)"/>
-                        <path d="M85 35 L115 35 L115 45 L85 45 Z" fill="#666" transform="rotate(-10 100 40)"/>
-                        <path d="M85 55 L115 55 L115 65 L85 65 Z" fill="#666" transform="rotate(10 100 60)"/>
-                      </svg>
+                      <img 
+                        src="/attached_assets/TCPS_Medium_Colour (1)_1758535590698.png" 
+                        alt="The Car Park Society Logo" 
+                        className="w-full h-full object-contain"
+                      />
                     </div>
-                    <div className="text-xs font-bold mt-2">THE CAR PARK SOCIETY</div>
                   </div>
                 </div>
               </div>
@@ -342,12 +340,11 @@ export default function Home() {
             
             <div className="flex justify-end">
               <div className="space-y-2">
-                <div className="flex gap-4">
-                  <div className="w-16 h-10 bg-red-600 flex items-center justify-center text-xs font-bold">NZ</div>
-                  <div className="w-16 h-10 bg-blue-600 flex items-center justify-center text-xs font-bold"></div>
-                  <div className="w-16 h-10 bg-red-500 flex items-center justify-center text-xs font-bold">C</div>
-                  <div className="w-16 h-10 bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500"></div>
-                </div>
+                <img 
+                  src="/attached_assets/Screenshot 2025-09-21 211954_1758535499434.png" 
+                  alt="Flags" 
+                  className="h-10 object-contain"
+                />
               </div>
             </div>
           </div>

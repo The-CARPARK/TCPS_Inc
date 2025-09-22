@@ -80,14 +80,12 @@ export default function Support() {
                 <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8">
                   <div className="text-center text-black">
                     <div className="relative w-48 h-32">
-                      <svg className="w-full h-full" viewBox="0 0 200 100" fill="none">
-                        <path d="M100 10 L170 85 L30 85 Z" stroke="black" strokeWidth="3" fill="none"/>
-                        <path d="M70 40 L130 40 L130 60 L70 60 Z" fill="#e53e3e" transform="rotate(15 100 50)"/>
-                        <path d="M85 35 L115 35 L115 45 L85 45 Z" fill="#666" transform="rotate(-10 100 40)"/>
-                        <path d="M85 55 L115 55 L115 65 L85 65 Z" fill="#666" transform="rotate(10 100 60)"/>
-                      </svg>
+                      <img 
+                        src="/attached_assets/TCPS_Medium_Colour (1)_1758535590698.png" 
+                        alt="The Car Park Society Logo" 
+                        className="w-full h-full object-contain"
+                      />
                     </div>
-                    <div className="text-xs font-bold mt-2">THE CAR PARK SOCIETY</div>
                   </div>
                 </div>
               </div>
@@ -208,26 +206,24 @@ export default function Support() {
             <div className="flex justify-center">
               <div className="bg-white rounded-lg p-8 w-96 h-80 flex flex-col items-center justify-center">
                 <div className="mb-8">
-                  <svg className="w-48 h-32" viewBox="0 0 200 100" fill="none">
-                    <path d="M100 10 L170 85 L30 85 Z" stroke="black" strokeWidth="3" fill="none"/>
-                    <path d="M70 40 L130 40 L130 60 L70 60 Z" fill="#e53e3e" transform="rotate(15 100 50)"/>
-                    <path d="M85 35 L115 35 L115 45 L85 45 Z" fill="#666" transform="rotate(-10 100 40)"/>
-                    <path d="M85 55 L115 55 L115 65 L85 65 Z" fill="#666" transform="rotate(10 100 60)"/>
-                  </svg>
+                  <img 
+                    src="/attached_assets/TCPS_Medium_Colour (1)_1758535590698.png" 
+                    alt="The Car Park Society Logo" 
+                    className="w-48 h-32 object-contain"
+                  />
                 </div>
                 
                 <div className="text-center text-black mb-8">
                   <div className="text-sm font-bold">THE CAR PARK SOCIETY</div>
                 </div>
 
-                {/* TCPS Triangular Logo */}
+                {/* Building Structure Icon */}
                 <div className="text-black">
-                  <svg className="w-24 h-20" viewBox="0 0 100 80" fill="none">
-                    <path d="M50 5 L90 70 L10 70 Z" stroke="black" strokeWidth="2" fill="none"/>
-                    <path d="M30 35 L70 35 L70 50 L30 50 Z" fill="#e53e3e" transform="rotate(15 50 42.5)"/>
-                    <path d="M40 25 L60 25 L60 32 L40 32 Z" fill="#666" transform="rotate(-10 50 28.5)"/>
-                    <path d="M40 50 L60 50 L60 57 L40 57 Z" fill="#666" transform="rotate(10 50 53.5)"/>
-                  </svg>
+                  <img 
+                    src="/attached_assets/Screenshot 2025-09-21 214642_1758535464329.png" 
+                    alt="Building Structure" 
+                    className="w-24 h-20 object-contain"
+                  />
                 </div>
               </div>
             </div>
@@ -239,17 +235,11 @@ export default function Support() {
       <footer className="py-16 px-6 border-t border-gray-800">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center">
-            <div className="flex gap-2">
-              <div className="w-20 h-12 bg-red-600 border border-gray-400 flex items-center justify-center">
-                <span className="text-white text-xs font-bold">NZ</span>
-              </div>
-              <div className="w-20 h-12 bg-blue-800 border border-gray-400 flex items-center justify-center">
-                <span className="text-white text-xs font-bold">AU</span>
-              </div>
-              <div className="w-20 h-12 bg-red-700 border border-gray-400 flex items-center justify-center">
-                <span className="text-white text-xs font-bold">CA</span>
-              </div>
-            </div>
+            <img 
+              src="/attached_assets/Screenshot 2025-09-21 211954_1758535499434.png" 
+              alt="Flags" 
+              className="h-12 object-contain"
+            />
           </div>
         </div>
       </footer>
