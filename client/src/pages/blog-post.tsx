@@ -311,7 +311,6 @@ export default function BlogPost() {
                   <FaYoutube className="w-4 h-4" />
                 </a>
               </div>
-              <p className="text-gray-400 text-sm mb-2">thecarpark@society.com</p>
               <p className="text-gray-400 text-sm mb-2">Te Whanganui-a-Tara</p>
               <p className="text-gray-400 text-sm mb-2">Auckland</p>
               <p className="text-gray-400 text-sm">© 2025 by The Car Park Society Inc.</p>
@@ -322,7 +321,7 @@ export default function BlogPost() {
                 <img 
                   src={flagsImage} 
                   alt="Flags" 
-                  className="h-10 object-contain"
+                  className="h-40 object-contain"
                 />
               </div>
             </div>
