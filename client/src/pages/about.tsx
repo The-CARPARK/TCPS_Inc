@@ -355,7 +355,7 @@ export default function About() {
       {/* Footer */}
       <footer className="py-16 px-6 border-t border-gray-800">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-8 items-start">
             <div>
               <div className="flex gap-2 mb-4">
                 <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
@@ -376,6 +376,20 @@ export default function About() {
               <p className="text-gray-400 text-sm">© 2025 by The Car Park Society Inc.</p>
             </div>
             
+            <div className="text-center">
+              <p className="text-gray-500 text-sm italic mb-4">
+                "We will not be seen,<br />
+                but we will be heard.<br />
+                We will not be controlled,<br />
+                but we will govern.<br />
+                We will not wait for change;<br />
+                we will be the change."
+              </p>
+              <p className="text-gray-600 text-xs">
+                Oath of the Car Park Society
+              </p>
+            </div>
+            
             <div className="flex justify-end">
               <div className="space-y-2">
                 <img 
@@ -385,20 +399,6 @@ export default function About() {
                 />
               </div>
             </div>
-          </div>
-          
-          <div className="text-center">
-            <p className="text-gray-500 text-sm italic mb-4">
-              "We will not be seen,<br />
-              but we will be heard.<br />
-              We will not be controlled,<br />
-              but we will govern.<br />
-              We will not wait for change;<br />
-              we will be the change."
-            </p>
-            <p className="text-gray-600 text-xs">
-              Oath of the Car Park Society
-            </p>
           </div>
         </div>
       </footer>
