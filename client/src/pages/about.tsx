@@ -395,7 +395,7 @@ export default function About() {
                 <img 
                   src={flagsImage} 
                   alt="Flags" 
-                  className="h-36 object-contain"
+                  className="h-28 object-contain"
                 />
               </div>
             </div>
