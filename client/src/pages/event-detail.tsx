@@ -161,7 +161,7 @@ export default function EventDetail() {
                     <strong className="text-white text-center">30 Oct 2025, 7:00 pm – 30 Nov 2025, 10:00 pm</strong>
                   </p>
                   <p>
-                    Te Aro, Wellington 6011, New Zealand
+                    Te Aro, Te-Whangnui-a-Tara, Aotearoa
                   </p>
                 </div>
                 
@@ -176,10 +176,10 @@ export default function EventDetail() {
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-6">About the event</h2>
+                <h2 className="text-2xl font-bold mb-6 text-center">About the event</h2>
                 
                 <div className="space-y-6 text-gray-300 leading-relaxed">
-                  <div>
+                  <div className="text-center">
                     <p className="italic mb-4">Phase Zero: The Rupture</p>
                     
                     <p className="mb-6 text-[21px]">
