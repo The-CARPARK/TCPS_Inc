@@ -189,7 +189,7 @@ export default function Support() {
                 className="inline-block"
               >
                 <Button 
-                  className="bg-white text-black font-bold px-8 sm:px-16 py-4 sm:py-8 text-lg sm:text-2xl hover:bg-gray-200 transition-colors wavy-bg-white-pulse"
+                  className="bg-white text-black font-bold px-8 sm:px-16 py-4 sm:py-8 text-lg sm:text-2xl hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button section-glitch"
                   data-testid="button-donate"
                 >
                   DONATE
@@ -203,7 +203,7 @@ export default function Support() {
                 <img 
                   src={tcpsLogoDesign}
                   alt="TCPS Logo Design" 
-                  className="w-full h-auto max-w-[400px] lg:h-[350px] object-contain"
+                  className="w-full h-auto max-w-[400px] lg:h-[350px] object-contain glitch-image vhs-overlay"
                 />
               </div>
             </div>
