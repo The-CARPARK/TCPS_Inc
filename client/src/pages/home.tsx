@@ -168,7 +168,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/5 to-transparent animate-pulse"></div>
                 
                 {/* Static Time Display */}
-                <span className="text-[10px] font-mono text-red-400 px-2 py-1.5 bg-black/50 border-r border-red-900/30 shrink-0 glitch-text" data-text={currentTime}>
+                <span className="text-[8px] font-mono text-red-400 px-2 py-1.5 bg-black/50 border-r border-red-900/30 shrink-0 glitch-text" data-text={currentTime}>
                   {currentTime}
                 </span>
                 
