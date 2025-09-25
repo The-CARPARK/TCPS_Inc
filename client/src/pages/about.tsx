@@ -169,7 +169,7 @@ export default function About() {
         {/* Our Story Section */}
         <section id="story" className="pt-20 pb-8 px-6 relative river-bg">
           <div className="max-w-4xl mx-auto relative z-10">
-            <h1 className="text-4xl font-bold text-center mb-8">ORIGINS</h1>
+            <h1 className="text-4xl font-bold text-center mb-8">TCPS ORIGINS</h1>
             <p className="text-xl text-center mb-12 font-bold">All Carparks Are Battlegrounds.</p>
             
             <div className="space-y-6 text-gray-300 leading-relaxed">
