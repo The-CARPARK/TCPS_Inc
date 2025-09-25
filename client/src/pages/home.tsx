@@ -126,7 +126,9 @@ export default function Home() {
         <div className="px-6 py-3">
           {/* TCPS Button Above Navigation */}
           <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast">
-            <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 glitch-icon" />
+            <div className="w-[104px] flex justify-start">
+              <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 glitch-icon" />
+            </div>
             
             {/* Scrolling Banner - Center */}
             <div className="flex-1 mx-2">
