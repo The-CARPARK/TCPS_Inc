@@ -45,7 +45,7 @@ export default function Blog() {
               Story
             </Link>
             <Link href="/event-list" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-events">
-              Events
+              Activations
             </Link>
             <Link href="/blog" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-blog">
               Transmissions
