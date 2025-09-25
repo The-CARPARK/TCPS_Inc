@@ -345,17 +345,17 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-red-900/10 via-transparent to-red-900/10 rounded-lg"></div>
                 
                 {/* Custom styled iframe container to hide Google Form branding */}
-                <div className="relative z-10 overflow-hidden rounded bg-gray-800/50 h-32">
+                <div className="relative z-10 overflow-hidden rounded bg-gray-800/50 h-40">
                   <iframe 
                     src="https://docs.google.com/forms/d/e/1FAIpQLScZtK0FRz0y5khXVoDZea5IxPaJYy4M9e66OLTYrJNjL0AZHw/viewform?embedded=true&usp=pp_url&entry.1045781291=" 
                     width="100%"
-                    height="500"
+                    height="600"
                     frameBorder={0}
                     marginHeight={0}
                     marginWidth={0}
                     className="w-full"
                     style={{
-                      transform: 'scale(0.85) translateY(-90px)',
+                      transform: 'scale(0.9) translateY(-200px)',
                       filter: 'invert(0.95) hue-rotate(180deg) contrast(1.1) brightness(0.85) saturate(1.2)',
                       background: 'transparent'
                     }}
