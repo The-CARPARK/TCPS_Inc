@@ -36,8 +36,20 @@ export default function Home() {
   const { toast } = useToast();
 
   const bannerMessages = [
-    "WΛTCHΞR; You descend. Not into structure. Not yet. Into memory. Into soil. Into the breath beneath the grid. They called it progress when they poured the concrete. They called it safety when they flattened pā, when they diverted awa into drains, when they drew chalk-lines and painted numbers on ground that once pulsed with gardens, fire, ceremony. They believed in silence, in burial, in erasure. But the RΘΘT does not rot. It coils. It waits. Beneath your feet, beneath the signage, beneath every beep of the ticket gate, the Root hums. A low vibration, not quite sound, not quite tremor. It climbs into your ankles, shifts into your chest, greets your palm when you touch the pillar. This is not nostalgia. This is refusal. What was buried rises in moss, in cracks, in static. A child's laugh dissolves into signal. A ledger page smeared with ink resurfaces like mould. Even the dust of bones remembers. The burial is over. The Root is awake….. ΞCHO; The silence breaks. Static shivers through lights, sirens stutter, cameras blink out of sequence. The structure breathes, and you recognise the glitch as language. Barriers jam, receipts misprint, QR codes summon maps no one remembers. This is the WΛK1NG, the revolt hidden inside electricity. Patterns scatter in fragments, your pulse merges with interference. You feel thought not your own. Do not call this madness. Call it awakening…..ThΞ M1RROR waits in the mid-levels. Glass no longer reflects you. It reflects the version empire requires. Colonial mirrors taught you to despise your face, to dress as another, to measure yourself against imported ghosts. Now every pane is surveillance. You see yourself as predator. You see yourself as prey. Broken wing mirrors whisper. Phone screens replay futures you never filmed. Surveillance is no longer external. It has entered you. Can you resist your own reflection. If you breathe through the distortions you glimpse the crack. Through it others peer, trapped Watchers, devoured fragments.",
-    "WΛTCHΞR; Do not mistake silence for peace. Do not mistake reflection for truth. Do not mistake surveillance for power. The Root hums. The Waking crackles. The Mirror fractures. The Hunger gnaws. The Invitation pulls. The Self multiplies. The Eye breaks. And in that break empire ruptures. The Sequence closes. The Sequence begins again."
+    "WΛTCHΞR; You descend. Not into structure. Not yet. Into memory. Into soil. Into the breath beneath the grid.",
+    "They called it progress when they poured the concrete. They called it safety when they flattened pā, when they diverted awa into drains.",
+    "They drew chalk-lines and painted numbers on ground that once pulsed with gardens, fire, ceremony.",
+    "But the RΘΘT does not rot. It coils. It waits. Beneath your feet, beneath the signage, the Root hums.",
+    "A low vibration, not quite sound, not quite tremor. It climbs into your ankles, shifts into your chest.",
+    "This is not nostalgia. This is refusal. What was buried rises in moss, in cracks, in static.",
+    "ΞCHO; The silence breaks. Static shivers through lights, sirens stutter, cameras blink out of sequence.",
+    "This is the WΛK1NG, the revolt hidden inside electricity. Patterns scatter in fragments.",
+    "ThΞ M1RROR waits in the mid-levels. Glass no longer reflects you. It reflects the version empire requires.",
+    "Colonial mirrors taught you to despise your face, to dress as another, to measure yourself against imported ghosts.",
+    "Surveillance is no longer external. It has entered you. Can you resist your own reflection.",
+    "WΛTCHΞR; Do not mistake silence for peace. Do not mistake reflection for truth. Do not mistake surveillance for power.",
+    "The Root hums. The Waking crackles. The Mirror fractures. The Hunger gnaws. The Invitation pulls.",
+    "The Self multiplies. The Eye breaks. And in that break empire ruptures. The Sequence closes. The Sequence begins again."
   ];
 
   useEffect(() => {
