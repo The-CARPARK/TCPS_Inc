@@ -30,10 +30,24 @@ export default function Events() {
       <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
           {/* TCPS Button Above Navigation */}
-          <div className="flex justify-start mb-2">
+          <div className="flex justify-between items-center mb-2">
             <Link href="/">
               <h1 className="text-xs sm:text-sm font-semibold hover:text-red-500 transition-colors cursor-pointer">TCPS 👁</h1>
             </Link>
+            <div className="flex gap-2 sm:hidden">
+              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <SiTiktok className="w-3 h-3" />
+              </a>
+              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <FaInstagram className="w-3 h-3" />
+              </a>
+              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <FaFacebook className="w-3 h-3" />
+              </a>
+              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <FaYoutube className="w-3 h-3" />
+              </a>
+            </div>
           </div>
           
           {/* Navigation and Social Icons Row */}
