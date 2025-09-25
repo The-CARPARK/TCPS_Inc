@@ -199,12 +199,12 @@ export default function Support() {
                 </div>
                 
                 {/* Embedded Image */}
-                <div className="flex-shrink-0">
-                  <div className="flex flex-col items-center justify-center wavy-bg-white-slow p-4 rounded">
+                <div className="flex-shrink-0 flex items-center justify-center">
+                  <div className="flex items-center justify-center wavy-bg-white-slow p-3 rounded">
                     <img 
                       src={tcpsLogoDesign}
                       alt="TCPS Logo Design" 
-                      className="w-full h-auto max-w-[300px] lg:max-w-[350px] object-contain glitch-image vhs-overlay"
+                      className="w-full h-auto max-w-[200px] lg:max-w-[240px] object-contain glitch-image vhs-overlay"
                     />
                   </div>
                 </div>
