@@ -31,21 +31,21 @@ export default function BlogPost() {
       <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
           {/* TCPS Button Above Navigation */}
-          <div className="flex justify-between items-center mb-2">
+          <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3">
             <Link href="/">
               <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 hover:opacity-80 transition-opacity cursor-pointer" />
             </Link>
             <div className="flex gap-2">
-              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white">
                 <SiTiktok className="w-3 h-3" />
               </a>
-              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white">
                 <FaInstagram className="w-3 h-3" />
               </a>
-              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white">
                 <FaFacebook className="w-3 h-3" />
               </a>
-              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white">
                 <FaYoutube className="w-3 h-3" />
               </a>
             </div>
