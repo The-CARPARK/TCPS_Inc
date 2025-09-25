@@ -38,7 +38,7 @@ export default function Support() {
             <Link href="/">
               <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 hover:opacity-80 transition-opacity cursor-pointer" />
             </Link>
-            <div className="flex gap-2 sm:hidden">
+            <div className="flex gap-2">
               <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                 <SiTiktok className="w-3 h-3" />
               </a>
@@ -55,22 +55,7 @@ export default function Support() {
           </div>
           
           {/* Navigation and Social Icons Row */}
-          <div className="grid grid-cols-[1fr_auto_1fr] items-center w-full">
-            <div className="hidden sm:flex gap-2">
-              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
-                <SiTiktok className="w-3 h-3" />
-              </a>
-              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
-                <FaInstagram className="w-3 h-3" />
-              </a>
-              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
-                <FaFacebook className="w-3 h-3" />
-              </a>
-              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
-                <FaYoutube className="w-3 h-3" />
-              </a>
-            </div>
-            
+          <div className="flex justify-center">
             {/* Center Navigation */}
             <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
               <Link href="/" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-home">
@@ -89,8 +74,6 @@ export default function Support() {
                 Support
               </Link>
             </nav>
-
-            <div></div>
           </div>
         </div>
       </header>
