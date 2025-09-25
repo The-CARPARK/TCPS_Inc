@@ -217,7 +217,7 @@ export default function About() {
 
 
         {/* Te Mana Whakatete Accord Section */}
-        <section id="accord" className="py-20 px-6 text-[13px] relative river-bg">
+        <section id="accord" className="py-20 px-6 text-[13px] relative bg-black">
           <div className="max-w-4xl mx-auto text-center relative z-10">
             {/* Eye Symbol Above Header */}
             <div className="flex justify-center mb-4">
