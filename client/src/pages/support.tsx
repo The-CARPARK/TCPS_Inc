@@ -150,61 +150,64 @@ export default function Support() {
 
       <main className="pt-20 pb-16 flowing-waves-complex">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-3 items-center min-h-[80vh]">
-            {/* Content Side */}
-            <div className="bg-black/60 p-12 rounded-lg">
-              <h1 className="font-bold text-white mb-8 text-[26px]">
-                SUPPORT TCPS
-              </h1>
-              
-              <div className="space-y-6 text-gray-300 leading-relaxed mb-8">
-                <p className="text-lg font-semibold">Why Support us?</p>
-                
-                <p>
-                  By backing The Car Park Society on Ko-fi, you help us keep the movement 
-                  underground, independent, and powerful.
-                </p>
-                
-                <p>
-                  You help transform abandoned structures into living art and resistance spaces, 
-                  create immersive experiences that challenge colonial narratives, and build a 
-                  collective of Watchers dedicated to land back, memory, and creativity.
-                </p>
-                
-                <p>
-                  Your support keeps the rituals alive, from installations and films to gatherings 
-                  and community wānanga.
-                </p>
-                
-                <p>The sequence is reclamation and resistance.</p>
-                
-                <p>We invite you to be part of it.</p>
-              </div>
+          <div className="flex justify-center min-h-[80vh] items-center">
+            {/* Integrated Content with Image */}
+            <div className="bg-black/60 p-12 rounded-lg max-w-6xl w-full">
+              <div className="flex flex-col lg:flex-row gap-8 items-start">
+                <div className="flex-1">
+                  <h1 className="font-bold text-white mb-8 text-[26px]">
+                    SUPPORT TCPS
+                  </h1>
+                  
+                  <div className="space-y-6 text-gray-300 leading-relaxed mb-8">
+                    <p className="text-lg font-semibold">Why Support us?</p>
+                    
+                    <p>
+                      By backing The Car Park Society on Ko-fi, you help us keep the movement 
+                      underground, independent, and powerful.
+                    </p>
+                    
+                    <p>
+                      You help transform abandoned structures into living art and resistance spaces, 
+                      create immersive experiences that challenge colonial narratives, and build a 
+                      collective of Watchers dedicated to land back, memory, and creativity.
+                    </p>
+                    
+                    <p>
+                      Your support keeps the rituals alive, from installations and films to gatherings 
+                      and community wānanga.
+                    </p>
+                    
+                    <p>The sequence is reclamation and resistance.</p>
+                    
+                    <p>We invite you to be part of it.</p>
+                  </div>
 
-
-              <a 
-                href="http://ko-fi.com/thecarparksocietyinc" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block"
-              >
-                <Button 
-                  className="bg-white text-black font-bold px-8 sm:px-16 py-4 sm:py-8 text-lg sm:text-2xl hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button section-glitch"
-                  data-testid="button-donate"
-                >
-                  DONATE
-                </Button>
-              </a>
-            </div>
-
-            {/* Logo Side */}
-            <div className="flex justify-center">
-              <div className="flex flex-col items-center justify-center w-full max-w-[700px] wavy-bg-white-slow">
-                <img 
-                  src={tcpsLogoDesign}
-                  alt="TCPS Logo Design" 
-                  className="w-full h-auto max-w-[400px] lg:h-[350px] object-contain glitch-image vhs-overlay"
-                />
+                  <a 
+                    href="http://ko-fi.com/thecarparksocietyinc" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block"
+                  >
+                    <Button 
+                      className="bg-white text-black font-bold px-8 sm:px-16 py-4 sm:py-8 text-lg sm:text-2xl hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button section-glitch"
+                      data-testid="button-donate"
+                    >
+                      DONATE
+                    </Button>
+                  </a>
+                </div>
+                
+                {/* Embedded Image */}
+                <div className="flex-shrink-0">
+                  <div className="flex flex-col items-center justify-center wavy-bg-white-slow p-4 rounded">
+                    <img 
+                      src={tcpsLogoDesign}
+                      alt="TCPS Logo Design" 
+                      className="w-full h-auto max-w-[300px] lg:max-w-[350px] object-contain glitch-image vhs-overlay"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
