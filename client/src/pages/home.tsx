@@ -236,8 +236,8 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-white rounded-lg p-6 mb-6 inline-block">
               <h2 className="text-black mb-3 font-black text-[36px]" data-testid="text-mission-heading">MISSION</h2>
-              <div className="text-black italic text-center mb-6 text-[16px] leading-relaxed">
-                <p className="mb-1">Kia whakatōmuri te haere whakamua.</p>
+              <div className="text-black italic text-center mb-6 text-[15px] leading-relaxed">
+                <p className="mb-1 font-bold">Kia whakatōmuri te haere whakamua.</p>
                 <p className="text-[14px]">I walk backwards into the future with my eyes fixed on the past.</p>
               </div>
               <div className="text-black text-center text-[15px] leading-relaxed space-y-4" data-testid="text-mission">
