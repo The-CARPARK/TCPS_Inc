@@ -124,41 +124,42 @@ export default function Home() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-red-950/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
-          {/* TCPS Button Above Navigation */}
-          <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast">
-            <div className="w-[104px] flex justify-start">
-              <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 glitch-icon" />
-            </div>
-            
-            {/* Scrolling Banner - Center */}
-            <div className="flex-1 mx-1 sm:mx-2">
-              <div className="bg-black/80 border border-red-900/50 rounded-sm overflow-hidden relative max-w-[200px] sm:max-w-xs md:max-w-sm lg:max-w-md mx-auto">
-                <div className="h-4 sm:h-5 overflow-hidden relative flex items-center">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/5 to-transparent animate-pulse"></div>
-                  
-                  {/* Scrolling Text */}
-                  <div className="w-full overflow-hidden">
-                    <div className="whitespace-nowrap text-[7px] sm:text-[8px] md:text-[9px] text-gray-300 py-1 px-1 sm:px-2 animate-scroll vhs-overlay">
-                      {bannerText}
-                    </div>
+          {/* TCPS Button Above Navigation with Full-Width Banner */}
+          <div className="relative mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast overflow-hidden">
+            {/* Full-Width Scrolling Banner Background */}
+            <div className="absolute inset-0 bg-black/80 border-y border-red-900/50">
+              <div className="h-full overflow-hidden relative flex items-center">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/5 to-transparent animate-pulse"></div>
+                
+                {/* Scrolling Text */}
+                <div className="w-full overflow-hidden">
+                  <div className="whitespace-nowrap text-[7px] sm:text-[8px] md:text-[9px] text-gray-300 py-2 px-4 animate-scroll vhs-overlay">
+                    {bannerText}
                   </div>
                 </div>
               </div>
             </div>
             
-            <div className="flex gap-1">
-              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <SiTiktok className="w-2 h-2" />
-              </a>
-              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <FaInstagram className="w-2 h-2" />
-              </a>
-              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <FaFacebook className="w-2 h-2" />
-              </a>
-              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <FaYoutube className="w-2 h-2" />
-              </a>
+            {/* Foreground Elements */}
+            <div className="relative z-10 flex justify-between items-center">
+              <div className="w-[104px] flex justify-start">
+                <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 glitch-icon bg-white/90 rounded px-1" />
+              </div>
+              
+              <div className="flex gap-1">
+                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                  <SiTiktok className="w-2 h-2" />
+                </a>
+                <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                  <FaInstagram className="w-2 h-2" />
+                </a>
+                <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                  <FaFacebook className="w-2 h-2" />
+                </a>
+                <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                  <FaYoutube className="w-2 h-2" />
+                </a>
+              </div>
             </div>
           </div>
           
