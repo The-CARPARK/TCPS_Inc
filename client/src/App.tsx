@@ -10,6 +10,7 @@ import EventDetail from "@/pages/event-detail";
 import Blog from "@/pages/blog";
 import BlogPost from "@/pages/blog-post";
 import Support from "@/pages/support";
+import AdminSignups from "@/pages/admin-signups";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/post/urban-māori-recalling-the-sacred-signal-through-concrete" component={BlogPost} />
       <Route path="/donate" component={Support} />
+      <Route path="/admin-signups" component={AdminSignups} />
       {/* Legacy routes for backwards compatibility */}
       <Route path="/blog/urban-maori" component={BlogPost} />
       <Route path="/support" component={Support} />
