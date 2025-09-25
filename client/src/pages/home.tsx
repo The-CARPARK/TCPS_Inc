@@ -166,16 +166,19 @@ export default function Home() {
           {/* Scrolling Banner */}
           <div className="mb-3 mx-2">
             <div className="bg-black/80 border border-red-900/50 rounded-sm overflow-hidden relative">
-              {/* Time Display */}
-              <div className="bg-red-900/20 px-2 py-1 text-center border-b border-red-900/30">
-                <span className="text-[10px] font-mono text-red-400 glitch-text" data-text={currentTime}>{currentTime}</span>
-              </div>
-              
-              {/* Scrolling Text */}
-              <div className="h-6 overflow-hidden relative">
+              <div className="h-6 overflow-hidden relative flex items-center">
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/5 to-transparent animate-pulse"></div>
-                <div className="whitespace-nowrap text-[10px] text-gray-300 py-1.5 px-2 animate-scroll vhs-overlay">
-                  {bannerText}
+                
+                {/* Static Time Display */}
+                <span className="text-[10px] font-mono text-red-400 px-2 py-1.5 bg-black/50 border-r border-red-900/30 shrink-0 glitch-text" data-text={currentTime}>
+                  {currentTime}
+                </span>
+                
+                {/* Scrolling Text */}
+                <div className="flex-1 overflow-hidden">
+                  <div className="whitespace-nowrap text-[10px] text-gray-300 py-1.5 px-2 animate-scroll vhs-overlay">
+                    {bannerText}
+                  </div>
                 </div>
               </div>
             </div>
