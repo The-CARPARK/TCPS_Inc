@@ -146,16 +146,16 @@ export default function Blog() {
         </div>
       )}
 
-      <main className="pt-20 pb-16 flowing-waves-smooth">
+      <main className="pt-20 pb-16 section-glitch-heavy">
         {/* Blog Header */}
         <div className="px-6 py-12">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-8">Transmissions</h1>
+            <h1 className="text-4xl font-bold mb-8 glitch-text-heavy" data-text="Transmissions">Transmissions</h1>
           </div>
         </div>
 
         {/* Blog Posts */}
-        <section className="px-6">
+        <section className="px-6 vhs-overlay-heavy">
           <div className="max-w-4xl mx-auto">
             {/* Featured Blog Post */}
             <Link href="/post/urban-māori-recalling-the-sacred-signal-through-concrete">
@@ -165,12 +165,12 @@ export default function Blog() {
                     <img 
                       src={urbanMaoriImage} 
                       alt="Urban Māori Blog Post" 
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover glitch-image"
                     />
                   </div>
                   
                   <div className="p-8">
-                    <h2 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors">
+                    <h2 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors glitch-text" data-text="Urban Māori: Breaking the Concrete Chains of Colonisation">
                       Urban Māori: Breaking the Concrete Chains of Colonisation
                     </h2>
                     

@@ -873,47 +873,59 @@
 
 /* Glitch Effects - RGB Channel Separation & VHS Style */
 
-/* Text Glitch Effect */
+/* Intense Text Glitch Effect */
 @keyframes text-glitch {
-  0%, 92%, 100% {
+  0%, 85%, 100% {
     transform: translate(0);
     filter: hue-rotate(0deg);
   }
-  2% {
-    transform: translate(-1px, 1px);
-    filter: hue-rotate(90deg) saturate(200%);
+  1% {
+    transform: translate(-2px, 1px) skew(0.5deg);
+    filter: hue-rotate(90deg) saturate(300%) contrast(120%);
   }
-  4% {
-    transform: translate(1px, -1px);
-    filter: hue-rotate(180deg) saturate(150%);
+  3% {
+    transform: translate(2px, -2px) skew(-0.3deg);
+    filter: hue-rotate(180deg) saturate(250%) contrast(110%);
   }
-  6% {
-    transform: translate(-1px, -1px);
-    filter: hue-rotate(270deg) saturate(250%);
+  5% {
+    transform: translate(-3px, -1px) skew(0.8deg);
+    filter: hue-rotate(270deg) saturate(400%) contrast(130%);
   }
-  8% {
-    transform: translate(1px, 1px);
-    filter: hue-rotate(360deg) saturate(100%);
+  7% {
+    transform: translate(1px, 2px) skew(-0.2deg);
+    filter: hue-rotate(360deg) saturate(200%) contrast(115%);
+  }
+  9% {
+    transform: translate(-1px, -3px) skew(0.4deg);
+    filter: hue-rotate(45deg) saturate(350%) contrast(125%);
   }
 }
 
-/* RGB Channel Separation */
+/* Intense RGB Channel Separation */
 @keyframes rgb-shift {
-  0%, 95%, 100% {
+  0%, 88%, 100% {
     transform: translate(0);
     text-shadow: none;
   }
-  2% {
-    transform: translate(-0.5px, 0);
-    text-shadow: 2px 0 #ff0000, -2px 0 #00ffff;
+  1% {
+    transform: translate(-1.5px, 0);
+    text-shadow: 3px 0 #ff0000, -3px 0 #00ffff, 0 2px #ff00ff;
   }
-  4% {
-    transform: translate(0.5px, 0);
-    text-shadow: -1px 0 #ff00ff, 1px 0 #00ff00;
+  3% {
+    transform: translate(2px, 0);
+    text-shadow: -2px 0 #ff00ff, 2px 0 #00ff00, 0 -1px #ffff00;
   }
-  6% {
+  5% {
+    transform: translate(-2px, 0);
+    text-shadow: 4px 0 #ff0000, -4px 0 #0000ff, 1px 1px #ff00ff;
+  }
+  7% {
+    transform: translate(1px, 0);
+    text-shadow: -3px 0 #00ffff, 3px 0 #ff0080, -1px -1px #80ff00;
+  }
+  9% {
     transform: translate(-1px, 0);
-    text-shadow: 1.5px 0 #ff0000, -1.5px 0 #0000ff;
+    text-shadow: 2.5px 0 #ff8000, -2.5px 0 #8000ff, 0 1.5px #00ff80;
   }
 }
 
@@ -972,7 +984,17 @@
 /* Glitch Classes */
 .glitch-text {
   position: relative;
-  animation: text-glitch 8s infinite;
+  animation: text-glitch 4s infinite;
+}
+
+.glitch-text-heavy {
+  position: relative;
+  animation: text-glitch 2s infinite, rgb-shift 1.5s infinite;
+}
+
+.glitch-text-constant {
+  position: relative;
+  animation: text-glitch 3s infinite, rgb-shift 2s infinite;
 }
 
 .glitch-text::before {
@@ -1008,7 +1030,18 @@
 
 .glitch-image {
   position: relative;
-  animation: chromatic-aberration 12s infinite;
+  animation: chromatic-aberration 8s infinite;
+}
+
+.glitch-image-heavy {
+  position: relative;
+  animation: chromatic-aberration 4s infinite, digital-noise 3s infinite;
+}
+
+.glitch-image-intense {
+  position: relative;
+  animation: chromatic-aberration 2s infinite, digital-noise 1.5s infinite;
+  filter: contrast(110%) saturate(120%);
 }
 
 .glitch-image::before {
@@ -1047,14 +1080,65 @@
   background: repeating-linear-gradient(
     0deg,
     transparent 0px,
-    transparent 2px,
-    rgba(255, 255, 255, 0.02) 2px,
-    rgba(255, 255, 255, 0.02) 4px
+    transparent 1px,
+    rgba(255, 255, 255, 0.04) 1px,
+    rgba(255, 255, 255, 0.04) 3px,
+    transparent 3px,
+    rgba(255, 0, 255, 0.02) 4px,
+    transparent 5px
   );
-  animation: vhs-scan 15s linear infinite;
+  animation: vhs-scan 8s linear infinite;
   pointer-events: none;
   z-index: 2;
-  opacity: 0.6;
+  opacity: 0.8;
+  mix-blend-mode: overlay;
+}
+
+.vhs-overlay-heavy {
+  position: relative;
+  overflow: hidden;
+}
+
+.vhs-overlay-heavy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0px,
+    rgba(255, 0, 255, 0.05) 1px,
+    transparent 2px,
+    rgba(0, 255, 255, 0.03) 3px,
+    transparent 4px
+  );
+  animation: vhs-scan 6s linear infinite;
+  pointer-events: none;
+  z-index: 3;
+  mix-blend-mode: screen;
+}
+
+.vhs-overlay-heavy::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(90deg, 
+      transparent 0%, 
+      rgba(255, 0, 128, 0.02) 25%, 
+      transparent 50%, 
+      rgba(128, 255, 0, 0.02) 75%, 
+      transparent 100%
+    );
+  animation: digital-noise 4s infinite;
+  pointer-events: none;
+  z-index: 4;
+  mix-blend-mode: multiply;
 }
 
 .glitch-button {
@@ -1101,12 +1185,53 @@
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(255, 0, 255, 0.01) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(0, 255, 255, 0.01) 0%, transparent 50%),
-    linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.005) 50%, transparent 100%);
-  animation: digital-noise 20s infinite;
+    radial-gradient(circle at 20% 80%, rgba(255, 0, 255, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 255, 255, 0.03) 0%, transparent 50%),
+    linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.02) 50%, transparent 100%);
+  animation: digital-noise 10s infinite;
   pointer-events: none;
   z-index: 1;
+}
+
+.section-glitch-heavy {
+  position: relative;
+}
+
+.section-glitch-heavy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 70%, rgba(255, 0, 255, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 70% 30%, rgba(0, 255, 255, 0.05) 0%, transparent 40%),
+    linear-gradient(45deg, rgba(255, 0, 128, 0.02) 0%, transparent 50%, rgba(128, 255, 0, 0.02) 100%);
+  animation: digital-noise 5s infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.section-glitch-heavy::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0px,
+    rgba(255, 0, 255, 0.01) 1px,
+    transparent 3px,
+    rgba(0, 255, 255, 0.01) 4px,
+    transparent 6px
+  );
+  animation: vhs-scan 8s linear infinite;
+  pointer-events: none;
+  z-index: 2;
+  mix-blend-mode: overlay;
 }
 
 /* Logo Glitch Enhancement */
