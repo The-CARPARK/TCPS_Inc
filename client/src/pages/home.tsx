@@ -131,14 +131,14 @@ export default function Home() {
             </div>
             
             {/* Scrolling Banner - Center */}
-            <div className="flex-1 mx-2">
-              <div className="bg-black/80 border border-red-900/50 rounded-sm overflow-hidden relative max-w-xs mx-auto">
-                <div className="h-5 overflow-hidden relative flex items-center">
+            <div className="flex-1 mx-1 sm:mx-2">
+              <div className="bg-black/80 border border-red-900/50 rounded-sm overflow-hidden relative max-w-[200px] sm:max-w-xs md:max-w-sm lg:max-w-md mx-auto">
+                <div className="h-4 sm:h-5 overflow-hidden relative flex items-center">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/5 to-transparent animate-pulse"></div>
                   
                   {/* Scrolling Text */}
                   <div className="w-full overflow-hidden">
-                    <div className="whitespace-nowrap text-[8px] text-gray-300 py-1 px-2 animate-scroll vhs-overlay">
+                    <div className="whitespace-nowrap text-[7px] sm:text-[8px] md:text-[9px] text-gray-300 py-1 px-1 sm:px-2 animate-scroll vhs-overlay">
                       {bannerText}
                     </div>
                   </div>
