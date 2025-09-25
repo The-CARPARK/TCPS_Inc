@@ -148,12 +148,12 @@ export default function Support() {
         </div>
       )}
 
-      <main className="pt-20 pb-16 section-glitch-heavy">
+      <main className="pt-20 pb-16 flowing-waves-complex">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
             {/* Content Side */}
-            <div className="bg-black/60 p-12 rounded-lg vhs-overlay-heavy">
-              <h1 className="font-bold text-white mb-8 text-[26px] glitch-text-heavy" data-text="SUPPORT TCPS">
+            <div className="bg-black/60 p-12 rounded-lg">
+              <h1 className="font-bold text-white mb-8 text-[26px]">
                 SUPPORT TCPS
               </h1>
               
@@ -189,7 +189,7 @@ export default function Support() {
                 className="inline-block"
               >
                 <Button 
-                  className="bg-white text-black font-bold px-8 sm:px-16 py-4 sm:py-8 text-lg sm:text-2xl hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
+                  className="bg-white text-black font-bold px-8 sm:px-16 py-4 sm:py-8 text-lg sm:text-2xl hover:bg-gray-200 transition-colors wavy-bg-white-pulse"
                   data-testid="button-donate"
                 >
                   DONATE

@@ -116,19 +116,19 @@ export default function Home() {
           <div className="flex justify-center">
             {/* Center Navigation */}
             <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
-              <Link href="/" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap glitch-text" data-testid="nav-home">
+              <Link href="/" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-home">
                 Welcome
               </Link>
-              <Link href="/about-1" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap glitch-text" data-testid="nav-about">
+              <Link href="/about-1" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-about">
                 Origins
               </Link>
-              <Link href="/event-list" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap glitch-text" data-testid="nav-events">
+              <Link href="/event-list" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-events">
                 Activations
               </Link>
-              <Link href="/blog" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap glitch-text" data-testid="nav-blog">
+              <Link href="/blog" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-blog">
                 Transmissions
               </Link>
-              <Link href="/donate" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap glitch-text" data-testid="nav-donate">
+              <Link href="/donate" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-donate">
                 Support
               </Link>
             </nav>
@@ -215,7 +215,7 @@ export default function Home() {
                 <p className="font-black text-gray-300 mb-4 text-[31px] text-center">
                   WELCOME TO
                 </p>
-                <h1 className="lg:text-5xl mb-8 text-center font-black text-[40px] glitch-text-heavy" data-text="THE CAR PARK SOCIETY">
+                <h1 className="lg:text-5xl mb-8 text-center font-black text-[40px] glitch-text" data-text="THE CAR PARK SOCIETY">
                   THE CAR PARK SOCIETY
                 </h1>
                 
@@ -228,7 +228,7 @@ export default function Home() {
                 <img 
                   src={newHeroLogoImage} 
                   alt="The Car Park Society Eye Symbol" 
-                  className="w-full max-w-lg h-[350px] object-contain glitch-image-heavy"
+                  className="w-full max-w-lg h-[350px] object-contain glitch-image"
                 />
               </div>
             </div>
@@ -239,7 +239,7 @@ export default function Home() {
         <section className="py-12 px-6 bg-red-900/20">
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-white rounded-lg p-6 mb-6 inline-block wavy-bg-white-colorful">
-              <h2 className="text-black mb-3 font-black text-[36px] glitch-text-heavy" data-text="MISSION" data-testid="text-mission-heading">MISSION</h2>
+              <h2 className="text-black mb-3 font-black text-[36px] glitch-text" data-text="MISSION" data-testid="text-mission-heading">MISSION</h2>
               <div className="text-black italic text-center mb-6 text-[15px] leading-relaxed">
                 <p className="mb-1 font-bold">Kia whakatōmuri te haere whakamua.</p>
                 <p className="text-[14px]">I walk backwards into the future with my eyes fixed on the past.</p>
@@ -266,9 +266,9 @@ export default function Home() {
         </section>
 
         {/* Vision & Goals Section */}
-        <section className="py-12 px-6 section-glitch-heavy">
+        <section className="py-12 px-6 section-glitch">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl text-center mb-16 font-black glitch-text-heavy" data-text="VISION + IMPACT" data-testid="text-vision-heading">VISION + IMPACT</h2>
+            <h2 className="text-4xl text-center mb-16 font-black glitch-text" data-text="VISION + IMPACT" data-testid="text-vision-heading">VISION + IMPACT</h2>
             
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <div className="text-center max-w-56 mx-auto">
@@ -276,7 +276,7 @@ export default function Home() {
                   <img 
                     src={eyeCreateImage} 
                     alt="Eye symbol representing CREATE" 
-                    className="w-48 h-48 object-contain glitch-image-intense"
+                    className="w-48 h-48 object-contain glitch-image"
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-create-heading">CREATE</h3>
@@ -290,7 +290,7 @@ export default function Home() {
                   <img 
                     src={eyeBuildImage} 
                     alt="Eye symbol representing BUILD" 
-                    className="w-48 h-48 object-contain glitch-image-intense"
+                    className="w-48 h-48 object-contain glitch-image"
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-build-heading">BUILD</h3>
@@ -304,7 +304,7 @@ export default function Home() {
                   <img 
                     src={eyeAmplifyImage} 
                     alt="Eye symbol representing AMPLIFY" 
-                    className="w-48 h-48 object-contain glitch-image-intense"
+                    className="w-48 h-48 object-contain glitch-image"
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-amplify-heading">AMPLIFY</h3>
@@ -317,9 +317,9 @@ export default function Home() {
         </section>
 
         {/* Join the Movement Section */}
-        <section className="py-12 px-6 bg-red-900/30 vhs-overlay-heavy">
+        <section className="py-12 px-6 bg-red-900/30 vhs-overlay">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8 glitch-text-constant" data-text="Join the Movement" data-testid="text-join-heading">Join the Movement</h2>
+            <h2 className="text-4xl font-bold mb-8 glitch-text" data-text="Join the Movement" data-testid="text-join-heading">Join the Movement</h2>
             <p className="text-base text-gray-300 mb-8" data-testid="text-join-description">
               We are building a society of Watchers, partners, and allies who choose solidarity over silence. Join our email list and get updates about upcoming society events and activations:
             </p>

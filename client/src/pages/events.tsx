@@ -55,7 +55,7 @@ export default function Events() {
           <div className="flex justify-center">
             {/* Center Navigation */}
             <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
-              <Link href="/" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap glitch-text" data-testid="nav-home">
+              <Link href="/" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-home">
                 Home
               </Link>
               <Link href="/about-1" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-about">
@@ -108,7 +108,7 @@ export default function Events() {
               
               <div className="text-center">
                 <nav className="flex flex-col gap-6 mb-8">
-                  <Link href="/" className="text-2xl font-medium hover:text-red-500 transition-colors glitch-text" data-testid="nav-home">
+                  <Link href="/" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-home">
                     Home
                   </Link>
                   <Link href="/about-1" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
@@ -145,16 +145,16 @@ export default function Events() {
         </div>
       )}
 
-      <main className="pt-20 pb-16 section-glitch-heavy">
+      <main className="pt-20 pb-16 flowing-waves-pulse">
         {/* Events Header */}
         <div className="px-6 py-12">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-8 glitch-text-heavy" data-text="UPCOMING ACTIVATIONS">UPCOMING ACTIVATIONS</h1>
+            <h1 className="text-4xl font-bold mb-8">UPCOMING ACTIVATIONS</h1>
           </div>
         </div>
 
         {/* Event List */}
-        <section className="px-6 vhs-overlay-heavy">
+        <section className="px-6">
           <div className="max-w-4xl mx-auto">
             <div className="grid gap-8">
               {/* The Control Room Event */}
@@ -165,12 +165,12 @@ export default function Events() {
                       <img 
                         src={logoBlackWhite} 
                         alt="The Car Park Society Logo" 
-                        className="w-full h-full object-contain glitch-image"
+                        className="w-full h-full object-contain"
                       />
                     </div>
                     
                     <div className="flex-1">
-                      <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-red-400 transition-colors glitch-text" data-text="THE CONTROL ROOM [TCPS]">
+                      <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-red-400 transition-colors">
                         THE CONTROL ROOM [TCPS]
                       </h2>
                       
