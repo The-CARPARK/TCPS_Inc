@@ -21,6 +21,7 @@ import eyeBuildImage from "@assets/Untitled - 6 August 2025 21.28 (3)_1758537371
 import eyeAmplifyImage from "@assets/Untitled - 6 August 2025 21.28 (2)_1758537390681.jpg";
 import eyeImage from "@assets/Untitled - 6 August 2025 21.28_1758537254685.jpg";
 import newHeroLogoImage from "@assets/Untitled - 6 August 2025 21.28 (4)_1758552061511.jpg";
+import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
 
 const emailFormSchema = insertEmailSubscriptionSchema.extend({
   email: z.string().email("Please enter a valid email address"),
@@ -94,7 +95,7 @@ export default function Home() {
         <div className="px-6 py-3">
           {/* TCPS Button Above Navigation */}
           <div className="flex justify-between items-center mb-2">
-            <h1 className="text-xs sm:text-sm font-semibold">TCPS 👁</h1>
+            <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5" />
             <div className="flex gap-2 sm:hidden">
               <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                 <SiTiktok className="w-3 h-3" />

@@ -7,6 +7,7 @@ import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import urbanMaoriImage from "@assets/Screenshot 2025-09-23 015612_1758549664429.png";
 import tcpsLogoSmall from "@assets/TCPS_Colour_Small_1758549907788.png";
+import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
 
 export default function Blog() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ export default function Blog() {
           {/* TCPS Button Above Navigation */}
           <div className="flex justify-between items-center mb-2">
             <Link href="/">
-              <h1 className="text-xs sm:text-sm font-semibold hover:text-red-500 transition-colors cursor-pointer">TCPS 👁</h1>
+              <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 hover:opacity-80 transition-opacity cursor-pointer" />
             </Link>
             <div className="flex gap-2 sm:hidden">
               <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
