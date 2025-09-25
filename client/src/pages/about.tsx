@@ -369,7 +369,8 @@ export default function About() {
               <img 
                 src={curvedDesign} 
                 alt="TCPS Design Element" 
-                className="w-full max-w-md h-auto object-contain"
+                className="w-full max-w-xs h-auto object-contain image-rendering-crisp-edges"
+                style={{imageRendering: 'crisp-edges'}}
               />
             </div>
           </div>
