@@ -31,7 +31,7 @@ export default function EventDetail() {
       <header className="fixed top-0 left-0 right-0 z-40 bg-red-900/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
           {/* TCPS Button Above Navigation */}
-          <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3">
+          <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast">
             <Link href="/">
               <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 hover:opacity-80 transition-opacity cursor-pointer glitch-icon" />
             </Link>
@@ -93,7 +93,7 @@ export default function EventDetail() {
             
             <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
               <div className="flex flex-col items-center">
-                <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8">
+                <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8 wavy-bg-white-colorful">
                   <div className="text-center text-black">
                     <div className="relative w-48 h-32">
                       <img 

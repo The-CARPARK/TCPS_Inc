@@ -94,7 +94,7 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-40 bg-red-900/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
           {/* TCPS Button Above Navigation */}
-          <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3">
+          <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast">
             <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 glitch-icon" />
             <div className="flex gap-2">
               <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
@@ -154,7 +154,7 @@ export default function Home() {
             
             <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
               <div className="flex flex-col items-center">
-                <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8">
+                <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8 wavy-bg-white-slow">
                   <div className="text-center text-black">
                     <div className="relative w-48 h-32">
                       <img 
@@ -238,7 +238,7 @@ export default function Home() {
         {/* Mission Section */}
         <section className="py-12 px-6 bg-red-900/20">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-white rounded-lg p-6 mb-6 inline-block">
+            <div className="bg-white rounded-lg p-6 mb-6 inline-block wavy-bg-white-colorful">
               <h2 className="text-black mb-3 font-black text-[36px]" data-testid="text-mission-heading">MISSION</h2>
               <div className="text-black italic text-center mb-6 text-[15px] leading-relaxed">
                 <p className="mb-1 font-bold">Kia whakatōmuri te haere whakamua.</p>

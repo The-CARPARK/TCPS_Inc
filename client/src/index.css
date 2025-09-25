@@ -608,3 +608,265 @@
   pointer-events: none;
   opacity: 0.7;
 }
+
+/* Wavy Line Animations for White Backgrounds - Dark Lines */
+
+/* Fast Moving Dark Lines */
+@keyframes dark-wavy-lines-fast {
+  0% { 
+    transform: translateX(-120%) scaleY(1) rotateZ(0deg);
+    opacity: 0.8;
+  }
+  25% { 
+    transform: translateX(-60%) scaleY(1.1) rotateZ(0.5deg);
+    opacity: 0.6;
+  }
+  50% { 
+    transform: translateX(0%) scaleY(0.9) rotateZ(0deg);
+    opacity: 0.9;
+  }
+  75% { 
+    transform: translateX(60%) scaleY(1.2) rotateZ(-0.5deg);
+    opacity: 0.7;
+  }
+  100% { 
+    transform: translateX(120%) scaleY(1) rotateZ(0deg);
+    opacity: 0.8;
+  }
+}
+
+/* Slow Flowing Dark Lines */
+@keyframes dark-wavy-lines-slow {
+  0%, 100% { 
+    transform: translateX(-180%) scaleY(1) skewX(0deg);
+    filter: brightness(1);
+  }
+  33% { 
+    transform: translateX(-60%) scaleY(1.3) skewX(1deg);
+    filter: brightness(0.8);
+  }
+  66% { 
+    transform: translateX(60%) scaleY(0.8) skewX(-1deg);
+    filter: brightness(1.1);
+  }
+}
+
+/* Medium Speed Colorful Lines */
+@keyframes dark-wavy-colorful {
+  0% { 
+    transform: translateX(-140%) translateY(0px) rotate(0deg) scaleY(1);
+  }
+  25% { 
+    transform: translateX(-70%) translateY(-5px) rotate(0.3deg) scaleY(1.05);
+  }
+  50% { 
+    transform: translateX(0%) translateY(5px) rotate(0deg) scaleY(0.95);
+  }
+  75% { 
+    transform: translateX(70%) translateY(-2px) rotate(-0.3deg) scaleY(1.1);
+  }
+  100% { 
+    transform: translateX(140%) translateY(0px) rotate(0deg) scaleY(1);
+  }
+}
+
+/* Pulsing Dark Waves */
+@keyframes dark-wavy-pulse {
+  0%, 100% { 
+    transform: scaleY(1) scaleX(1) translateX(-110%);
+    opacity: 0.5;
+  }
+  25% { 
+    transform: scaleY(1.3) scaleX(1.1) translateX(-55%);
+    opacity: 0.8;
+  }
+  50% { 
+    transform: scaleY(0.8) scaleX(0.9) translateX(0%);
+    opacity: 0.6;
+  }
+  75% { 
+    transform: scaleY(1.1) scaleX(1.05) translateX(55%);
+    opacity: 0.9;
+  }
+}
+
+/* White Background Wavy Classes */
+.wavy-bg-white-fast {
+  position: relative;
+  overflow: hidden;
+}
+
+.wavy-bg-white-fast::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -200%;
+  width: 500%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent 8px,
+    rgba(0, 0, 0, 0.12) 10px,
+    rgba(55, 55, 55, 0.15) 12px,
+    rgba(0, 0, 0, 0.10) 14px,
+    transparent 16px,
+    transparent 24px
+  );
+  mask: radial-gradient(ellipse 180% 90% at 50% 50%, black 0%, transparent 65%);
+  animation: dark-wavy-lines-fast 9s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+  transform-origin: center center;
+}
+
+.wavy-bg-white-fast::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 400%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(100, 100, 100, 0.08) 6px,
+    rgba(60, 60, 60, 0.12) 10px,
+    rgba(100, 100, 100, 0.08) 14px,
+    transparent 20px
+  );
+  mask: radial-gradient(ellipse 140% 70% at 50% 50%, black 0%, transparent 55%);
+  animation: dark-wavy-lines-fast 13s linear infinite reverse;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.wavy-bg-white-slow {
+  position: relative;
+  overflow: hidden;
+}
+
+.wavy-bg-white-slow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -220%;
+  width: 540%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.08) 12px,
+    rgba(80, 80, 80, 0.12) 18px,
+    rgba(0, 0, 0, 0.08) 24px,
+    transparent 36px
+  );
+  mask: radial-gradient(ellipse 160% 110% at 50% 50%, black 0%, transparent 70%);
+  animation: dark-wavy-lines-slow 28s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.wavy-bg-white-colorful {
+  position: relative;
+  overflow: hidden;
+}
+
+.wavy-bg-white-colorful::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -170%;
+  width: 440%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(220, 38, 38, 0.15) 8px,
+    rgba(185, 28, 28, 0.12) 12px,
+    rgba(153, 27, 27, 0.18) 16px,
+    rgba(220, 38, 38, 0.10) 20px,
+    transparent 28px
+  );
+  mask: radial-gradient(ellipse 150% 85% at 50% 50%, black 0%, transparent 60%);
+  animation: dark-wavy-colorful 16s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.wavy-bg-white-colorful::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -140%;
+  width: 380%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.06) 10px,
+    rgba(60, 60, 60, 0.10) 14px,
+    rgba(0, 0, 0, 0.08) 18px,
+    transparent 26px
+  );
+  mask: radial-gradient(ellipse 120% 60% at 50% 50%, black 0%, transparent 50%);
+  animation: dark-wavy-colorful 22s linear infinite reverse;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.wavy-bg-white-pulse {
+  position: relative;
+  overflow: hidden;
+}
+
+.wavy-bg-white-pulse::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -180%;
+  width: 460%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.06) 8px,
+    rgba(40, 40, 40, 0.10) 12px,
+    rgba(80, 80, 80, 0.14) 16px,
+    rgba(40, 40, 40, 0.10) 20px,
+    rgba(0, 0, 0, 0.06) 24px,
+    transparent 32px
+  );
+  mask: radial-gradient(ellipse 200% 120% at 50% 50%, black 0%, transparent 75%);
+  animation: dark-wavy-pulse 20s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Subtle Dark Overlay for White Backgrounds */
+.wavy-overlay-white {
+  position: relative;
+  overflow: hidden;
+}
+
+.wavy-overlay-white::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 340%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.04) 6px,
+    rgba(60, 60, 60, 0.08) 10px,
+    rgba(0, 0, 0, 0.04) 14px,
+    transparent 20px
+  );
+  mask: radial-gradient(ellipse 130% 90% at 50% 50%, black 0%, transparent 65%);
+  animation: dark-wavy-lines-fast 24s linear infinite reverse;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.6;
+}
