@@ -7,6 +7,7 @@ import { X } from "lucide-react";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
+import wavyPattern from "@assets/Screenshot 2025-09-26 025519_1758813220661.png";
 
 export default function About() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -90,6 +91,12 @@ export default function About() {
           </div>
         </div>
       </header>
+
+      {/* Wavy Pattern Image */}
+      <div className="relative w-full">
+        <img src={wavyPattern} alt="" className="w-full h-auto" />
+      </div>
+
       {/* Overlay Menu */}
       {menuOpen && (
         <div className="overlay-menu">
