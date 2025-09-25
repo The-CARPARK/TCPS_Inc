@@ -7,7 +7,7 @@ import { X } from "lucide-react";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
-import wavyPattern from "@assets/Screenshot 2025-09-26 025519_1758813220661.png";
+
 import eyeSymbol from "@assets/Screenshot 2025-09-26 031454_1758813420788.png";
 import curvedDesign from "@assets/Screenshot 2025-09-26 025540_1758813515914.png";
 
@@ -94,10 +94,7 @@ export default function About() {
         </div>
       </header>
 
-      {/* Wavy Pattern Image - Animated River */}
-      <div className="relative w-full h-24 sm:h-32 mt-20 overflow-hidden bg-gray-900 river-bg">
-        <img src={wavyPattern} alt="" className="w-full h-full object-cover object-center river-flow" />
-      </div>
+      
 
       {/* Overlay Menu */}
       {menuOpen && (
