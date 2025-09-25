@@ -159,17 +159,28 @@ export default function About() {
         {/* Our Story Section */}
         <section id="story" className="py-20 px-6">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold text-center mb-8">OUR STORY</h1>
-            <p className="text-xl text-center mb-12 italic">Awa calls beneath asphalt</p>
-            <p className="text-lg mb-8 text-center">Our story began with a simple act: watching 👁</p>
+            <h1 className="text-4xl font-bold text-center mb-8">TCPS ORIGINS</h1>
+            <p className="text-xl text-center mb-12 font-bold">All Carparks Are Battlegrounds.</p>
+            <p className="text-lg mb-8 text-center">Our origins lie in the act of watching.</p>
             
             <div className="space-y-6 text-gray-300 leading-relaxed">
               <p className="text-center">
-                Late night gatherings at a penthouse window overlooked the stark spiral of Lombard Street Carpark. At first we were captivated by the eerie emptiness, yet each feed felt off, as if the mauri of the place was disturbed. Curiosity turned to investigation. We traced titles, land files, and whakapapa until a submerged history surfaced: The carpark's footprint once held Bethune & Hunter's Wine Merchants warehouse, an outpost of colonial commerce. Before brick and barrel, part of Te Aro Pā, a thriving kāinga forcibly displaced by colonisation.
+                From a penthouse window, late-night gatherings overlooked the spiral of Lombard Street Carpark. At first it seemed empty, just concrete and shadow, but something felt disturbed. The mauri was unsettled.
               </p>
               
               <p className="text-center">
-                Beneath the concrete still runs the diverted Waimapihi Stream, its flow straight‐jacketed into pipes. Ko te awa ahau, ko te awa ko au: I am the river and the river is me. When land and water are distorted, so too are the people who live upon them. These revelations exposed a larger pattern: reclaimed land, Victorian sea‐walls, asphalted waterways; the very infrastructure of our cities is an artefact of colonial dispossession and a driver of present‐day climate risk. To reclaim these spaces is to heal the mauri of both whenua and people.
+                That unease drew us into archives, titles, and whakapapa. Slowly the layers emerged. The site had once been Te Aro Pā, a thriving kāinga of mana whenua, disrupted and displaced through colonisation. It later became home to Bethune & Hunter's Wine Merchants, a colonial warehouse of commerce and extraction, built on reclaimed land. And beneath it all, the Waimapihi Stream still flows, diverted into pipes but never silenced.
+              </p>
+              
+              <p className="text-center italic">
+                Ko te awa ahau, ko te awa ko au. I am the river and the river is me.
+              </p>
+            </div>
+            
+            <div className="mt-12">
+              <h2 className="text-2xl font-bold text-center mb-6">THE LESSON</h2>
+              <p className="text-gray-300 leading-relaxed text-center">
+                Urban infrastructure is not neutral. The skeleton of our city is made of reclaimed shorelines, buried waterways, and asphalted kāinga. These are artefacts of colonisation that continue to shape inequity, disconnection, and climate vulnerability. To reclaim these spaces is to reawaken them. To listen is to resist forgetting.
               </p>
             </div>
           </div>
