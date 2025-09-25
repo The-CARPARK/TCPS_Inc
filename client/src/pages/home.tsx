@@ -91,27 +91,13 @@ export default function Home() {
 
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
-        <div className="flex items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-4">
-            <h1 className="text-xs sm:text-sm font-semibold">TCPS Inc.</h1>
-            <div className="hidden sm:flex gap-2">
-              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
-                <SiTiktok className="w-3 h-3" />
-              </a>
-              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
-                <FaInstagram className="w-3 h-3" />
-              </a>
-              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
-                <FaFacebook className="w-3 h-3" />
-              </a>
-              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
-                <FaYoutube className="w-3 h-3" />
-              </a>
-            </div>
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center px-6 py-4">
+          <div className="flex items-center">
+            <h1 className="text-xs sm:text-sm font-semibold">TCPS 👁</h1>
           </div>
           
-          {/* Navigation */}
-          <nav className="flex gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
+          {/* Center Navigation */}
+          <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
             <Link href="/" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-home">
               Home
             </Link>
@@ -128,6 +114,21 @@ export default function Home() {
               Support
             </Link>
           </nav>
+
+          <div className="justify-self-end hidden sm:flex gap-2">
+            <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+              <SiTiktok className="w-3 h-3" />
+            </a>
+            <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+              <FaInstagram className="w-3 h-3" />
+            </a>
+            <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+              <FaFacebook className="w-3 h-3" />
+            </a>
+            <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+              <FaYoutube className="w-3 h-3" />
+            </a>
+          </div>
         </div>
       </header>
 
