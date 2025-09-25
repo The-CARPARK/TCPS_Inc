@@ -1164,31 +1164,28 @@
   }
 }
 
-/* Donate Button Massive Grow Effect - 10x Size */
+/* Donate Button Massive Grow Effect - 5x Size Slower */
 @keyframes donate-grow {
-  0%, 70% {
+  0%, 60% {
     transform: scale(1);
   }
-  75% {
-    transform: scale(2);
+  70% {
+    transform: scale(1.5);
   }
   80% {
-    transform: scale(4);
-  }
-  85% {
-    transform: scale(6);
+    transform: scale(3);
   }
   90% {
-    transform: scale(8);
+    transform: scale(4.5);
   }
   95% {
-    transform: scale(10);
+    transform: scale(5);
   }
   97% {
-    transform: scale(9);
+    transform: scale(4.8);
   }
   99% {
-    transform: scale(10);
+    transform: scale(5);
   }
   100% {
     transform: scale(1);
