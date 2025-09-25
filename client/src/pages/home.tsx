@@ -102,7 +102,7 @@ export default function Home() {
               Home
             </Link>
             <Link href="/about-1" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-about">
-              Story
+              Origins
             </Link>
             <Link href="/event-list" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-events">
               Activations
@@ -169,7 +169,7 @@ export default function Home() {
                     Home
                   </Link>
                   <Link href="/about-1" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
-                    Our Story
+                    Origins
                   </Link>
                   <Link href="/event-list" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-events">
                     Activations
