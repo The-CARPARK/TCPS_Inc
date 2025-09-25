@@ -219,8 +219,8 @@ export default function About() {
               <img 
                 src={eyeSymbol} 
                 alt="TCPS Eye Symbol" 
-                className="h-48 w-48 sm:h-56 sm:w-56 object-contain image-rendering-crisp-edges"
-                style={{imageRendering: 'crisp-edges'}}
+                className="h-72 w-72 sm:h-80 sm:w-80 object-contain image-rendering-crisp-edges"
+                style={{imageRendering: 'crisp-edges', background: 'transparent'}}
               />
             </div>
             <h2 className="text-4xl font-bold text-center mb-8">TE MANA WHAKATETE ACCORD</h2>
