@@ -271,7 +271,7 @@ export default function Home() {
                 <img 
                   src={newHeroLogoImage} 
                   alt="The Car Park Society Eye Symbol" 
-                  className="w-full max-w-lg h-[350px] object-contain glitch-image"
+                  className="w-full max-w-md h-[280px] object-contain glitch-image"
                 />
               </div>
             </div>
