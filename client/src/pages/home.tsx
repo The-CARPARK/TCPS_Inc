@@ -117,7 +117,7 @@ export default function Home() {
             {/* Center Navigation */}
             <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
               <Link href="/" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-home">
-                Home
+                Welcome
               </Link>
               <Link href="/about-1" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-about">
                 Origins
@@ -170,7 +170,7 @@ export default function Home() {
               <div className="text-center">
                 <nav className="flex flex-col gap-6 mb-8">
                   <Link href="/" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-home">
-                    Home
+                    Welcome
                   </Link>
                   <Link href="/about-1" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
                     Origins
