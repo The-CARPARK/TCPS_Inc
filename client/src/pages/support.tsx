@@ -150,7 +150,7 @@ export default function Support() {
 
       <main className="pt-20 pb-16 flowing-waves-complex">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-6 items-center min-h-[80vh]">
+          <div className="grid lg:grid-cols-2 gap-3 items-center min-h-[80vh]">
             {/* Content Side */}
             <div className="bg-black/60 p-12 rounded-lg">
               <h1 className="font-bold text-white mb-8 text-[26px]">
