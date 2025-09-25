@@ -66,13 +66,11 @@ export default function Home() {
       const now = new Date();
       const nzTime = new Intl.DateTimeFormat('en-NZ', {
         timeZone: 'Pacific/Auckland',
-        weekday: 'short',
-        year: 'numeric',
-        month: 'short', 
-        day: 'numeric',
+        year: '2-digit',
+        month: '2-digit', 
+        day: '2-digit',
         hour: '2-digit',
         minute: '2-digit',
-        second: '2-digit',
         hour12: false
       }).format(now);
       setCurrentTime(`NZEST: ${nzTime}`);
