@@ -97,17 +97,17 @@ export default function Home() {
           <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3">
             <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 glitch-icon" />
             <div className="flex gap-2">
-              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <SiTiktok className="w-3 h-3" />
+              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                <SiTiktok className="w-2.5 h-2.5" />
               </a>
-              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <FaInstagram className="w-3 h-3" />
+              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                <FaInstagram className="w-2.5 h-2.5" />
               </a>
-              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <FaFacebook className="w-3 h-3" />
+              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                <FaFacebook className="w-2.5 h-2.5" />
               </a>
-              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <FaYoutube className="w-3 h-3" />
+              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                <FaYoutube className="w-2.5 h-2.5" />
               </a>
             </div>
           </div>
