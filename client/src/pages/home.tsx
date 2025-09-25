@@ -127,13 +127,13 @@ export default function Home() {
           {/* TCPS Button Above Navigation with Full-Width Banner */}
           <div className="relative mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast overflow-hidden">
             {/* Full-Width Scrolling Banner Background */}
-            <div className="absolute inset-0 bg-black/80 border-y border-red-900/50">
-              <div className="h-full overflow-hidden relative flex items-center">
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/5 to-transparent animate-pulse"></div>
+            <div className="absolute inset-0 bg-white border-y border-red-900/50 glitch-image">
+              <div className="h-full overflow-hidden relative flex items-center section-glitch">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/5 to-transparent animate-pulse"></div>
                 
                 {/* Scrolling Text */}
                 <div className="w-full overflow-hidden">
-                  <div className="whitespace-nowrap text-[7px] sm:text-[8px] md:text-[9px] text-gray-300 py-2 px-4 animate-scroll vhs-overlay">
+                  <div className="whitespace-nowrap text-[7px] sm:text-[8px] md:text-[9px] text-black font-mono py-2 px-4 animate-scroll vhs-overlay glitch-text" data-text={bannerText}>
                     {bannerText}
                   </div>
                 </div>
