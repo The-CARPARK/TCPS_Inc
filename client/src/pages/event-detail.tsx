@@ -28,7 +28,7 @@ export default function EventDetail() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
+      <header className="fixed top-0 left-0 right-0 z-40 bg-red-900/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
           {/* TCPS Button Above Navigation */}
           <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3">
