@@ -199,8 +199,8 @@ export default function Support() {
                 </div>
                 
                 {/* Embedded Image */}
-                <div className="flex-shrink-0 flex items-center justify-center">
-                  <div className="flex items-center justify-center wavy-bg-white-slow p-3 rounded">
+                <div className="flex-shrink-0 flex items-start justify-center">
+                  <div className="flex items-center justify-center wavy-bg-white-slow p-3 rounded mt-8">
                     <img 
                       src={tcpsLogoDesign}
                       alt="TCPS Logo Design" 
