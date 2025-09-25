@@ -87,7 +87,7 @@ export default function About() {
         </div>
       </header>
       {/* Overlay Menu */}
-      {menuOpen && (
+      {menuOpen ? (
         <div className="overlay-menu">
           <div className="menu-content">
             <div className="absolute top-6 right-6">
@@ -154,8 +154,9 @@ export default function About() {
             </div>
           </div>
         </div>
-      )}
-      <main id="main-content" className="pt-20 pb-16">
+      ) : null}
+      <>
+        <main id="main-content" className="pt-20 pb-16">
         {/* Our Story Section */}
         <section id="story" className="py-20 px-6">
           <div className="max-w-4xl mx-auto">
@@ -202,36 +203,35 @@ export default function About() {
           </div>
         </section>
 
-
-        {/* Te Mana Whakatete Accord Section */}
+        {/* Te Mana Whakatete Accord Section */
         <section id="accord" className="py-20 px-6 text-[13px]">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-center mb-8">TE MANA WHAKATETE ACCORD</h2>
             
-            <div className="text-center mb-12 space-y-2">
+            <div className="text-center mb-6 space-y-2">
               <p className="text-[15px] italic">This Accord is not a beginning. It is a resurfacing; the uprising of what colonisation tried to bury beneath asphalt, steel, and concrete.</p>
             </div>
             
-            <div className="space-y-8 text-gray-300 text-[13px]">
+            <div className="space-y-4 text-gray-300 text-[13px]">
               <div>
                 <p className="text-center">
                   The Car Park Society (TCPS) is a living assemblage of artists, insurgents, storytellers, cultural workers, rangatira, and spectral participants dedicated to the reclamation of space, spirit, and story from the suffocating weight of colonial infrastructure.
                 </p>
                 
-                <p className="text-center mt-6">
+                <p className="text-center mt-3">
                   We declare that the structures of the city are not neutral. They are vertical archives of dispossession and resistance, each layer a stratum of memory pressed beneath concrete. They are liminal zones where mauri is distorted yet persists, where streams run silenced but unbroken, where stories buried by colonisation demand to be heard. They are modern pā reimagined, not of palisades but of presence, defence, and resurgence in the very heart of the colonial city.
                 </p>
                 
-                <p className="mb-8 mt-8 text-center font-semibold text-[13px]">From these fissures we issue the Accord. We refuse erasure. We contest the violence of concrete and capital. We declare the right of whenua, awa, and people to be remembered, restored, and reborn.</p>
+                <p className="mb-4 mt-4 text-center font-semibold text-[13px]">From these fissures we issue the Accord. We refuse erasure. We contest the violence of concrete and capital. We declare the right of whenua, awa, and people to be remembered, restored, and reborn.</p>
               </div>
 
               <div>
-                <h3 className="text-[19px] font-bold text-white mb-6">Article I: RANGATIRATANGA KĀWAI (Purpose)</h3>
-                <p className="mb-4 text-center">
+                <h3 className="text-[19px] font-bold text-white mb-3">Article I: RANGATIRATANGA KĀWAI (Purpose)</h3>
+                <p className="mb-2 text-center">
                   What is seen is not always true, and what is true is often hidden in plain sight. The Car Park Society (TCPS) is not a society of the obvious. Our purpose lies in the unclaimed, the unseen, and the unspoken:
                 </p>
                 
-                <div className="space-y-4 ml-4">
+                <div className="space-y-2 ml-4">
                   <p className="text-center">
                     1. Prosecution of the Colonial Beast: We are the voice for the silenced. Through art, intervention, and covert action, we prosecute the ongoing legacy of colonialism, exposing the cracks in the structure. We speak in whispers and bold strokes.
                   </p>
@@ -251,12 +251,12 @@ export default function About() {
               </div>
               
               <div>
-                <h3 className="text-[19px] font-bold text-white mb-6">Article II: TE MANA WHAKAARO (Principles)</h3>
-                <p className="mb-4 text-center">
+                <h3 className="text-[19px] font-bold text-white mb-3">Article II: TE MANA WHAKAARO (Principles)</h3>
+                <p className="mb-2 text-center">
                   There are rules, and then there are truths that cannot be broken. The Te Mana Whakatete Accord exists to honour these truths:
                 </p>
                 
-                <div className="space-y-4 ml-4">
+                <div className="space-y-2 ml-4">
                   <p className="text-center">
                     1. Tino Rangatiratanga: Sovereignty is not a paper title; it is a whisper in the wind, a claim to the very soul of the land. The true power lies not in the laws of the coloniser but in the pulse of the land itself. We honour and uphold Māori sovereignty as the very foundation of our society.
                   </p>
@@ -280,12 +280,12 @@ export default function About() {
               </div>
               
               <div>
-                <h3 className="text-[19px] font-bold text-white mb-6">Article III: TE KOTAHITANGA HUNA (The Unseen Movement)</h3>
-                <p className="mb-4 text-center">
+                <h3 className="text-[19px] font-bold text-white mb-3">Article III: TE KOTAHITANGA HUNA (The Unseen Movement)</h3>
+                <p className="mb-2 text-center">
                   We are not bound to the traditional forms. We are fluid, disruptive, and invisible. Governance within TCPS operates outside the visible structures of the state, embracing the disruptive power of community-led, anarchistic practice.
                 </p>
                 
-                <div className="space-y-4 ml-4">
+                <div className="space-y-2 ml-4">
                   <p className="text-center">
                     1. Rotating Leadership: There are no kings, only shadows that pass from one hand to the next. Leadership within TCPS is as fluid as the very spaces we occupy. No one person stands in the light for long, for the movement is always shifting, always evolving.
                   </p>
@@ -301,12 +301,12 @@ export default function About() {
               </div>
               
               <div>
-                <h3 className="text-[19px] font-bold text-white mb-6">Article IV: TE TAUMANU (The Reclamation)</h3>
-                <p className="mb-4 text-center">
+                <h3 className="text-[19px] font-bold text-white mb-3">Article IV: TE TAUMANU (The Reclamation)</h3>
+                <p className="mb-2 text-center">
                   To reclaim The Car Park is to reclaim more than space. It is to reclaim what has been erased and forgotten; the invisible histories, the quiet resistances, the unwritten codes of power.
                 </p>
                 
-                <div className="space-y-4 ml-4">
+                <div className="space-y-2 ml-4">
                   <p className="text-center">
                     1. Creative Subversion: We do not ask for permission. We do not beg for recognition. We create in the cracks. Through art, performance, and intervention, we turn The Car Park into a stage, a canvas, a battlefield for the decolonial and the indigenous.
                   </p>
@@ -322,12 +322,12 @@ export default function About() {
               </div>
               
               <div>
-                <h3 className="text-[19px] font-bold text-white mb-6">Article V: TE MANAAKITANGA RERENGA (The Invisible Hand)</h3>
-                <p className="mb-4 text-center">
+                <h3 className="text-[19px] font-bold text-white mb-3">Article V: TE MANAAKITANGA RERENGA (The Invisible Hand)</h3>
+                <p className="mb-2 text-center">
                   Though we operate in the shadows, we are not lawless. We are bound by the principles of the invisible hand, an ethical framework rooted in community care, respect, and indigenous justice.
                 </p>
                 
-                <div className="space-y-4 ml-4">
+                <div className="space-y-2 ml-4">
                   <p className="text-center">
                     1. Decolonising Law: We do not recognise colonial laws. Instead, we enact our own form of justice, drawn from the wisdom of the land, the whispers of its indigenous ancestors, and the pulse of the people.
                   </p>
@@ -345,7 +345,7 @@ export default function About() {
           </div>
         </section>
       </main>
-      {/* Footer */}
+
       <footer className="py-16 px-6 border-t border-gray-800">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 items-start">
@@ -396,6 +396,7 @@ export default function About() {
           </div>
         </div>
       </footer>
+      </>
     </div>
   );
 }
