@@ -173,7 +173,7 @@
 /* Red Glitch Effect for Social Media Icons */
 .glitch-icon {
   position: relative;
-  animation: glitch-static 3s infinite;
+  animation: glitch-static 25s infinite;
 }
 
 .glitch-icon::before,
@@ -190,37 +190,33 @@
 }
 
 .glitch-icon::before {
-  animation: glitch-red 2s infinite;
+  animation: glitch-red 20s infinite;
   filter: hue-rotate(90deg) saturate(200%) brightness(1.2);
   mix-blend-mode: screen;
 }
 
 .glitch-icon::after {
-  animation: glitch-shift 1.5s infinite;
+  animation: glitch-shift 18s infinite;
   filter: hue-rotate(270deg) saturate(150%) brightness(0.8);
   mix-blend-mode: multiply;
 }
 
 @keyframes glitch-static {
-  0%, 90%, 100% {
+  0%, 96%, 100% {
     transform: translate(0);
     filter: hue-rotate(0deg);
   }
-  10% {
+  97% {
     transform: translate(-1px, 1px);
     filter: hue-rotate(90deg) saturate(200%);
   }
-  20% {
+  98% {
     transform: translate(1px, -1px);
     filter: hue-rotate(180deg) saturate(150%);
   }
-  30% {
+  99% {
     transform: translate(-1px, -1px);
     filter: hue-rotate(270deg) saturate(250%);
-  }
-  40% {
-    transform: translate(1px, 1px);
-    filter: hue-rotate(360deg) saturate(100%);
   }
 }
 
@@ -875,25 +871,21 @@
 
 /* Text Glitch Effect */
 @keyframes text-glitch {
-  0%, 92%, 100% {
+  0%, 96%, 100% {
     transform: translate(0);
     filter: hue-rotate(0deg);
   }
-  2% {
+  97% {
     transform: translate(-1px, 1px);
     filter: hue-rotate(90deg) saturate(200%);
   }
-  4% {
+  98% {
     transform: translate(1px, -1px);
     filter: hue-rotate(180deg) saturate(150%);
   }
-  6% {
+  99% {
     transform: translate(-1px, -1px);
     filter: hue-rotate(270deg) saturate(250%);
-  }
-  8% {
-    transform: translate(1px, 1px);
-    filter: hue-rotate(360deg) saturate(100%);
   }
 }
 
@@ -958,13 +950,13 @@
 
 /* Chromatic Aberration */
 @keyframes chromatic-aberration {
-  0%, 90%, 100% {
+  0%, 94%, 100% {
     filter: none;
   }
-  5% {
+  96% {
     filter: hue-rotate(90deg) saturate(150%) contrast(110%);
   }
-  10% {
+  98% {
     filter: hue-rotate(-90deg) saturate(200%) contrast(90%);
   }
 }
@@ -972,7 +964,7 @@
 /* Glitch Classes */
 .glitch-text {
   position: relative;
-  animation: text-glitch 8s infinite;
+  animation: text-glitch 30s infinite;
 }
 
 .glitch-text::before {
@@ -1008,7 +1000,7 @@
 
 .glitch-image {
   position: relative;
-  animation: chromatic-aberration 12s infinite;
+  animation: chromatic-aberration 35s infinite;
 }
 
 .glitch-image::before {
