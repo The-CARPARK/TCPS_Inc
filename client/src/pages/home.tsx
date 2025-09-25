@@ -93,7 +93,7 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
         <div className="grid grid-cols-[1fr_auto_1fr] items-center px-6 py-4">
           <div className="flex items-center">
-            <h1 className="text-xs sm:text-sm font-semibold" style={{writingMode: 'vertical-rl', textOrientation: 'mixed'}}>TCPS 👁</h1>
+            <h1 className="text-xs sm:text-sm font-semibold">TCPS</h1>
           </div>
           
           {/* Center Navigation */}
