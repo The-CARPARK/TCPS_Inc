@@ -274,9 +274,14 @@ export default function Home() {
                   THE CAR PARK SOCIETY
                 </h1>
                 
-                <p className="text-gray-300 max-w-sm text-center mx-auto text-[15px] font-light" data-testid="text-intro">
-                  The Car Park Society Inc. (TCPS) is a kaupapa-driven incorporated society based in Te Whanganui-a-Tara. We are a collective of Māori and tauiwi artists, researchers, organisers, and community builders. Our mahi is dedicated to revealing hidden histories, restoring connections, and transforming overlooked urban spaces into vibrant hubs of creativity, cultural resurgence, and community empowerment.
-                </p>
+                <div className="text-gray-300 max-w-sm text-center mx-auto text-[15px] font-light" data-testid="text-intro">
+                  <p className="mb-4">
+                    The Car Park Society Inc. (TCPS) is a kaupapa-driven incorporated society based in Te Whanganui-a-Tara. We are a collective of Māori and tauiwi artists, researchers, organisers, and community builders.
+                  </p>
+                  <p>
+                    Our mahi is dedicated to revealing hidden histories, restoring connections, and transforming overlooked urban spaces into vibrant hubs of creativity, cultural resurgence, and community empowerment.
+                  </p>
+                </div>
               </div>
               
               <div className="flex justify-center md:justify-start">
