@@ -94,9 +94,9 @@ export default function About() {
         </div>
       </header>
 
-      {/* Wavy Pattern Image */}
-      <div className="relative w-full h-24 sm:h-32 mt-20 overflow-hidden bg-gray-900">
-        <img src={wavyPattern} alt="" className="w-full h-full object-cover object-center" />
+      {/* Wavy Pattern Image - Animated River */}
+      <div className="relative w-full h-24 sm:h-32 mt-20 overflow-hidden bg-gray-900 river-bg">
+        <img src={wavyPattern} alt="" className="w-full h-full object-cover object-center river-flow" />
       </div>
 
       {/* Overlay Menu */}
@@ -170,8 +170,8 @@ export default function About() {
       )}
       <main id="main-content" className="pt-20 pb-16">
         {/* Our Story Section */}
-        <section id="story" className="py-20 px-6">
-          <div className="max-w-4xl mx-auto">
+        <section id="story" className="py-20 px-6 relative river-bg">
+          <div className="max-w-4xl mx-auto relative z-10">
             <h1 className="text-4xl font-bold text-center mb-8">ORIGINS</h1>
             <p className="text-xl text-center mb-12 font-bold">All Carparks Are Battlegrounds.</p>
             
@@ -217,8 +217,8 @@ export default function About() {
 
 
         {/* Te Mana Whakatete Accord Section */}
-        <section id="accord" className="py-20 px-6 text-[13px]">
-          <div className="max-w-4xl mx-auto text-center">
+        <section id="accord" className="py-20 px-6 text-[13px] relative river-bg">
+          <div className="max-w-4xl mx-auto text-center relative z-10">
             {/* Eye Symbol Above Header */}
             <div className="flex justify-center mb-8">
               <img 
