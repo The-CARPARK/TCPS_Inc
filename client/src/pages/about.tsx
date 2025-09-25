@@ -49,7 +49,7 @@ export default function About() {
           {/* TCPS Button Above Navigation */}
           <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3">
             <Link href="/">
-              <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 hover:opacity-80 transition-opacity cursor-pointer" />
+              <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 hover:opacity-80 transition-opacity cursor-pointer glitch-icon" />
             </Link>
             <div className="flex gap-2">
               <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
