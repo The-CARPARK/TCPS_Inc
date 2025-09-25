@@ -148,7 +148,7 @@ export default function Support() {
         </div>
       )}
 
-      <main className="pt-20 pb-16">
+      <main className="pt-20 pb-16 flowing-waves-complex">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
             {/* Content Side */}
@@ -212,7 +212,7 @@ export default function Support() {
       </main>
 
       {/* Footer */}
-      <footer className="py-16 px-6 border-t border-gray-800 mt-16 bg-[#0f0404]">
+      <footer className="py-16 px-6 border-t border-gray-800 mt-16 bg-[#0f0404] flowing-waves-pulse">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div className="text-center md:text-left">

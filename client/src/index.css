@@ -870,3 +870,620 @@
   pointer-events: none;
   opacity: 0.6;
 }
+
+/* Enhanced Flowing Wave Animations for Black Backgrounds - Multiple Patterns */
+
+/* Smooth Flowing Wave Lines - Similar to Reference */
+@keyframes flowing-wave-lines {
+  0% { 
+    transform: translateX(-150%) scaleY(1) rotateZ(0deg);
+    opacity: 0.7;
+  }
+  25% { 
+    transform: translateX(-75%) scaleY(1.15) rotateZ(0.8deg);
+    opacity: 0.9;
+  }
+  50% { 
+    transform: translateX(0%) scaleY(0.95) rotateZ(0deg);
+    opacity: 0.8;
+  }
+  75% { 
+    transform: translateX(75%) scaleY(1.1) rotateZ(-0.8deg);
+    opacity: 0.9;
+  }
+  100% { 
+    transform: translateX(150%) scaleY(1) rotateZ(0deg);
+    opacity: 0.7;
+  }
+}
+
+/* Fast Rippling Waves */
+@keyframes rippling-waves {
+  0%, 100% { 
+    transform: translateX(-200%) scaleY(1) skewX(0deg);
+    filter: brightness(1) blur(0px);
+  }
+  20% { 
+    transform: translateX(-120%) scaleY(1.4) skewX(2deg);
+    filter: brightness(1.3) blur(0.5px);
+  }
+  40% { 
+    transform: translateX(-40%) scaleY(0.7) skewX(-1deg);
+    filter: brightness(0.8) blur(0px);
+  }
+  60% { 
+    transform: translateX(40%) scaleY(1.2) skewX(1.5deg);
+    filter: brightness(1.1) blur(0.3px);
+  }
+  80% { 
+    transform: translateX(120%) scaleY(0.9) skewX(-0.5deg);
+    filter: brightness(0.9) blur(0px);
+  }
+}
+
+/* Gentle Undulating Waves */
+@keyframes undulating-gentle {
+  0% { 
+    transform: translateX(-180%) translateY(0px) scaleY(1) rotate(0deg);
+  }
+  33% { 
+    transform: translateX(-60%) translateY(-8px) scaleY(1.25) rotate(1deg);
+  }
+  66% { 
+    transform: translateX(60%) translateY(8px) scaleY(0.8) rotate(-1deg);
+  }
+  100% { 
+    transform: translateX(180%) translateY(0px) scaleY(1) rotate(0deg);
+  }
+}
+
+/* Dynamic Wave Burst */
+@keyframes wave-burst {
+  0%, 100% { 
+    transform: scaleY(1) scaleX(1) translateX(-130%) rotateZ(0deg);
+    opacity: 0.4;
+    filter: blur(0px);
+  }
+  15% { 
+    transform: scaleY(1.8) scaleX(1.2) translateX(-85%) rotateZ(1deg);
+    opacity: 0.9;
+    filter: blur(1px);
+  }
+  35% { 
+    transform: scaleY(0.6) scaleX(0.8) translateX(-30%) rotateZ(-0.5deg);
+    opacity: 0.6;
+    filter: blur(0px);
+  }
+  55% { 
+    transform: scaleY(1.3) scaleX(1.1) translateX(30%) rotateZ(0.8deg);
+    opacity: 0.8;
+    filter: blur(0.5px);
+  }
+  75% { 
+    transform: scaleY(0.9) scaleX(0.95) translateX(85%) rotateZ(-0.3deg);
+    opacity: 0.7;
+    filter: blur(0px);
+  }
+}
+
+/* Spiral Wave Motion */
+@keyframes spiral-waves {
+  0% { 
+    transform: translateX(-160%) translateY(0px) rotateZ(0deg) scaleY(1);
+  }
+  20% { 
+    transform: translateX(-96%) translateY(-12px) rotateZ(2deg) scaleY(1.3);
+  }
+  40% { 
+    transform: translateX(-32%) translateY(8px) rotateZ(-1deg) scaleY(0.8);
+  }
+  60% { 
+    transform: translateX(32%) translateY(-6px) rotateZ(1.5deg) scaleY(1.1);
+  }
+  80% { 
+    transform: translateX(96%) translateY(10px) rotateZ(-0.8deg) scaleY(0.9);
+  }
+  100% { 
+    transform: translateX(160%) translateY(0px) rotateZ(0deg) scaleY(1);
+  }
+}
+
+/* Flowing Wave Background Classes - Enhanced */
+.flowing-waves-smooth {
+  position: relative;
+  overflow: hidden;
+}
+
+.flowing-waves-smooth::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -250%;
+  width: 600%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent 6px,
+    rgba(255, 255, 255, 0.12) 8px,
+    rgba(255, 255, 255, 0.18) 10px,
+    rgba(255, 255, 255, 0.15) 12px,
+    rgba(255, 255, 255, 0.08) 14px,
+    transparent 16px,
+    transparent 22px
+  );
+  mask: radial-gradient(ellipse 200% 120% at 50% 50%, black 0%, transparent 75%);
+  animation: flowing-wave-lines 14s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+  transform-origin: center center;
+}
+
+.flowing-waves-smooth::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -200%;
+  width: 500%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.06) 5px,
+    rgba(255, 255, 255, 0.12) 9px,
+    rgba(255, 255, 255, 0.09) 13px,
+    rgba(255, 255, 255, 0.05) 17px,
+    transparent 22px
+  );
+  mask: radial-gradient(ellipse 170% 100% at 50% 50%, black 0%, transparent 65%);
+  animation: flowing-wave-lines 18s linear infinite reverse;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.flowing-waves-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.flowing-waves-ripple::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -300%;
+  width: 700%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.10) 8px,
+    rgba(255, 255, 255, 0.16) 12px,
+    rgba(255, 255, 255, 0.12) 16px,
+    rgba(255, 255, 255, 0.08) 20px,
+    transparent 28px
+  );
+  mask: radial-gradient(ellipse 180% 140% at 50% 50%, black 0%, transparent 80%);
+  animation: rippling-waves 10s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.flowing-waves-gentle {
+  position: relative;
+  overflow: hidden;
+}
+
+.flowing-waves-gentle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -220%;
+  width: 540%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    88deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.08) 10px,
+    rgba(255, 255, 255, 0.14) 15px,
+    rgba(255, 255, 255, 0.10) 20px,
+    transparent 30px
+  );
+  mask: radial-gradient(ellipse 160% 110% at 50% 50%, black 0%, transparent 70%);
+  animation: undulating-gentle 22s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.flowing-waves-burst {
+  position: relative;
+  overflow: hidden;
+}
+
+.flowing-waves-burst::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -200%;
+  width: 500%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.06) 6px,
+    rgba(255, 255, 255, 0.12) 10px,
+    rgba(255, 255, 255, 0.18) 14px,
+    rgba(255, 255, 255, 0.12) 18px,
+    rgba(255, 255, 255, 0.06) 22px,
+    transparent 30px
+  );
+  mask: radial-gradient(ellipse 220% 160% at 50% 50%, black 0%, transparent 85%);
+  animation: wave-burst 16s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.flowing-waves-spiral {
+  position: relative;
+  overflow: hidden;
+}
+
+.flowing-waves-spiral::before {
+  content: '';
+  position: absolute;
+  top: -5%;
+  left: -180%;
+  width: 460%;
+  height: 110%;
+  background: repeating-linear-gradient(
+    92deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.09) 7px,
+    rgba(255, 255, 255, 0.15) 11px,
+    rgba(255, 255, 255, 0.11) 15px,
+    rgba(255, 255, 255, 0.07) 19px,
+    transparent 26px
+  );
+  mask: radial-gradient(ellipse 150% 120% at 50% 50%, black 0%, transparent 68%);
+  animation: spiral-waves 19s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Subtle Wave Overlay for General Black Backgrounds */
+.flowing-waves-subtle {
+  position: relative;
+  overflow: hidden;
+}
+
+.flowing-waves-subtle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 400%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.04) 8px,
+    rgba(255, 255, 255, 0.08) 12px,
+    rgba(255, 255, 255, 0.06) 16px,
+    rgba(255, 255, 255, 0.04) 20px,
+    transparent 28px
+  );
+  mask: radial-gradient(ellipse 140% 100% at 50% 50%, black 0%, transparent 70%);
+  animation: flowing-wave-lines 26s linear infinite reverse;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Advanced Flowing Wave Animations for Black Backgrounds */
+
+/* Smooth Wave Flow - Like the reference */
+@keyframes flowing-waves-smooth {
+  0% { 
+    transform: translateX(-100%) scaleY(1) rotateZ(0deg);
+    filter: brightness(1);
+  }
+  25% { 
+    transform: translateX(-50%) scaleY(1.15) rotateZ(0.8deg);
+    filter: brightness(1.1);
+  }
+  50% { 
+    transform: translateX(0%) scaleY(0.9) rotateZ(0deg);
+    filter: brightness(0.95);
+  }
+  75% { 
+    transform: translateX(50%) scaleY(1.25) rotateZ(-0.6deg);
+    filter: brightness(1.05);
+  }
+  100% { 
+    transform: translateX(100%) scaleY(1) rotateZ(0deg);
+    filter: brightness(1);
+  }
+}
+
+/* Fast Rippling Waves */
+@keyframes flowing-waves-fast {
+  0%, 100% { 
+    transform: translateX(-120%) scaleY(1) skewY(0deg);
+    opacity: 0.8;
+  }
+  20% { 
+    transform: translateX(-75%) scaleY(1.3) skewY(1deg);
+    opacity: 0.9;
+  }
+  40% { 
+    transform: translateX(-30%) scaleY(0.7) skewY(-0.5deg);
+    opacity: 0.6;
+  }
+  60% { 
+    transform: translateX(15%) scaleY(1.4) skewY(0.8deg);
+    opacity: 0.95;
+  }
+  80% { 
+    transform: translateX(60%) scaleY(0.85) skewY(-0.3deg);
+    opacity: 0.7;
+  }
+}
+
+/* Gentle Long Waves */
+@keyframes flowing-waves-gentle {
+  0% { 
+    transform: translateX(-200%) scaleY(1) rotateZ(0deg) scaleX(1);
+    filter: contrast(1) brightness(1);
+  }
+  33% { 
+    transform: translateX(-100%) scaleY(1.2) rotateZ(0.4deg) scaleX(1.1);
+    filter: contrast(1.1) brightness(1.05);
+  }
+  66% { 
+    transform: translateX(0%) scaleY(0.8) rotateZ(-0.2deg) scaleX(0.95);
+    filter: contrast(0.9) brightness(0.98);
+  }
+  100% { 
+    transform: translateX(100%) scaleY(1) rotateZ(0deg) scaleX(1);
+    filter: contrast(1) brightness(1);
+  }
+}
+
+/* Multi-Layer Wave Distortion */
+@keyframes flowing-waves-complex {
+  0%, 100% { 
+    transform: translateX(-150%) scaleY(1) rotateZ(0deg) skewX(0deg);
+    filter: hue-rotate(0deg) brightness(1);
+  }
+  25% { 
+    transform: translateX(-75%) scaleY(1.4) rotateZ(0.6deg) skewX(0.5deg);
+    filter: hue-rotate(5deg) brightness(1.1);
+  }
+  50% { 
+    transform: translateX(0%) scaleY(0.6) rotateZ(0deg) skewX(0deg);
+    filter: hue-rotate(-3deg) brightness(0.9);
+  }
+  75% { 
+    transform: translateX(75%) scaleY(1.6) rotateZ(-0.4deg) skewX(-0.3deg);
+    filter: hue-rotate(8deg) brightness(1.15);
+  }
+}
+
+/* Pulsing Wave Rhythm */
+@keyframes flowing-waves-pulse {
+  0% { 
+    transform: translateX(-130%) scaleY(1) scaleX(1);
+    opacity: 0.7;
+  }
+  15% { 
+    transform: translateX(-95%) scaleY(1.6) scaleX(1.2);
+    opacity: 0.9;
+  }
+  30% { 
+    transform: translateX(-60%) scaleY(0.4) scaleX(0.8);
+    opacity: 0.5;
+  }
+  45% { 
+    transform: translateX(-25%) scaleY(1.8) scaleX(1.3);
+    opacity: 0.95;
+  }
+  60% { 
+    transform: translateX(10%) scaleY(0.3) scaleX(0.7);
+    opacity: 0.4;
+  }
+  75% { 
+    transform: translateX(45%) scaleY(1.7) scaleX(1.25);
+    opacity: 0.85;
+  }
+  90% { 
+    transform: translateX(80%) scaleY(0.6) scaleX(0.9);
+    opacity: 0.6;
+  }
+  100% { 
+    transform: translateX(115%) scaleY(1) scaleX(1);
+    opacity: 0.7;
+  }
+}
+
+/* Flowing Wave Background Classes */
+.flowing-waves-smooth {
+  position: relative;
+  overflow: hidden;
+}
+
+.flowing-waves-smooth::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -200%;
+  width: 500%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.08) 2px,
+    rgba(255, 255, 255, 0.15) 4px,
+    rgba(255, 255, 255, 0.12) 6px,
+    rgba(255, 255, 255, 0.08) 8px,
+    transparent 10px,
+    transparent 15px
+  );
+  mask: radial-gradient(ellipse 200% 100% at 50% 50%, black 0%, transparent 75%);
+  animation: flowing-waves-smooth 12s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.flowing-waves-smooth::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 400%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 3px,
+    rgba(255, 255, 255, 0.10) 6px,
+    rgba(255, 255, 255, 0.05) 9px,
+    transparent 12px
+  );
+  mask: radial-gradient(ellipse 160% 80% at 50% 50%, black 0%, transparent 65%);
+  animation: flowing-waves-smooth 18s ease-in-out infinite reverse;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.flowing-waves-fast {
+  position: relative;
+  overflow: hidden;
+}
+
+.flowing-waves-fast::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -180%;
+  width: 460%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.10) 1px,
+    rgba(255, 255, 255, 0.18) 3px,
+    rgba(255, 255, 255, 0.14) 5px,
+    rgba(255, 255, 255, 0.10) 7px,
+    transparent 9px,
+    transparent 12px
+  );
+  mask: radial-gradient(ellipse 180% 90% at 50% 50%, black 0%, transparent 70%);
+  animation: flowing-waves-fast 7s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.flowing-waves-gentle {
+  position: relative;
+  overflow: hidden;
+}
+
+.flowing-waves-gentle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -250%;
+  width: 600%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.06) 4px,
+    rgba(255, 255, 255, 0.12) 8px,
+    rgba(255, 255, 255, 0.09) 12px,
+    rgba(255, 255, 255, 0.06) 16px,
+    transparent 20px,
+    transparent 28px
+  );
+  mask: radial-gradient(ellipse 220% 120% at 50% 50%, black 0%, transparent 80%);
+  animation: flowing-waves-gentle 25s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.flowing-waves-complex {
+  position: relative;
+  overflow: hidden;
+}
+
+.flowing-waves-complex::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -170%;
+  width: 440%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.08) 2px,
+    rgba(255, 255, 255, 0.16) 5px,
+    rgba(255, 255, 255, 0.12) 8px,
+    rgba(255, 255, 255, 0.08) 11px,
+    transparent 14px,
+    transparent 18px
+  );
+  mask: radial-gradient(ellipse 170% 95% at 50% 50%, black 0%, transparent 72%);
+  animation: flowing-waves-complex 15s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.flowing-waves-complex::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 360%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.04) 3px,
+    rgba(255, 255, 255, 0.09) 7px,
+    rgba(255, 255, 255, 0.04) 11px,
+    transparent 15px
+  );
+  mask: radial-gradient(ellipse 140% 70% at 50% 50%, black 0%, transparent 60%);
+  animation: flowing-waves-complex 22s ease-in-out infinite reverse;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.flowing-waves-pulse {
+  position: relative;
+  overflow: hidden;
+}
+
+.flowing-waves-pulse::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -190%;
+  width: 480%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.06) 2px,
+    rgba(255, 255, 255, 0.12) 4px,
+    rgba(255, 255, 255, 0.18) 6px,
+    rgba(255, 255, 255, 0.12) 8px,
+    rgba(255, 255, 255, 0.06) 10px,
+    transparent 12px,
+    transparent 16px
+  );
+  mask: radial-gradient(ellipse 210% 110% at 50% 50%, black 0%, transparent 78%);
+  animation: flowing-waves-pulse 20s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+}

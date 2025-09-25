@@ -37,7 +37,7 @@ export default function About() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white flowing-waves-complex">
       {/* Skip to main content */}
       <a 
         href="#main-content" 
@@ -373,7 +373,7 @@ export default function About() {
         </section>
       </main>
       {/* Footer */}
-      <footer className="py-16 px-6 border-t border-gray-800">
+      <footer className="py-16 px-6 border-t border-gray-800 flowing-waves-pulse">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div className="text-center">
