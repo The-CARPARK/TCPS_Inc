@@ -11,6 +11,25 @@ import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
 
 export default function Blog() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [bannerText, setBannerText] = useState('');
+  const [textIndex, setTextIndex] = useState(0);
+
+  const bannerMessages = [
+    "WΛTCHΞR; You descend. Not into structure. Not yet. Into memory. Into soil. Into the breath beneath the grid.",
+    "They called it progress when they poured the concrete. They called it safety when they flattened pā, when they diverted awa into drains.",
+    "They drew chalk-lines and painted numbers on ground that once pulsed with gardens, fire, ceremony.",
+    "But the RΘΘT does not rot. It coils. It waits. Beneath your feet, beneath the signage, the Root hums.",
+    "A low vibration, not quite sound, not quite tremor. It climbs into your ankles, shifts into your chest.",
+    "This is not nostalgia. This is refusal. What was buried rises in moss, in cracks, in static.",
+    "ΞCHO; The silence breaks. Static shivers through lights, sirens stutter, cameras blink out of sequence.",
+    "This is the WΛK1NG, the revolt hidden inside electricity. Patterns scatter in fragments.",
+    "ThΞ M1RROR waits in the mid-levels. Glass no longer reflects you. It reflects the version empire requires.",
+    "Colonial mirrors taught you to despise your face, to dress as another, to measure yourself against imported ghosts.",
+    "Surveillance is no longer external. It has entered you. Can you resist your own reflection.",
+    "WΛTCHΞR; Do not mistake silence for peace. Do not mistake reflection for truth. Do not mistake surveillance for power.",
+    "The Root hums. The Waking crackles. The Mirror fractures. The Hunger gnaws. The Invitation pulls.",
+    "The Self multiplies. The Eye breaks. And in that break empire ruptures. The Sequence closes. The Sequence begins again."
+  ];
 
   useEffect(() => {
     document.title = "Blog - The Car Park Society";
@@ -24,31 +43,66 @@ export default function Blog() {
       meta.content = 'Read stories from The Car Park Society about urban Māori experiences, decolonisation, and reclaiming urban spaces.';
       document.head.appendChild(meta);
     }
+
+    // Banner text cycling
+    const cycleText = () => {
+      setTextIndex((prev) => (prev + 1) % bannerMessages.length);
+    };
+
+    setBannerText(bannerMessages[0]);
+    
+    const textInterval = setInterval(cycleText, 15000);
+
+    return () => {
+      clearInterval(textInterval);
+    };
   }, []);
+
+  useEffect(() => {
+    setBannerText(bannerMessages[textIndex]);
+  }, [textIndex]);
 
   return (
     <div className="min-h-screen bg-black text-white flowing-waves-fast">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-red-950/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
-          {/* TCPS Button Above Navigation */}
-          <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast">
-            <Link href="/">
-              <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 hover:opacity-80 transition-opacity cursor-pointer glitch-icon" />
-            </Link>
-            <div className="flex gap-2">
-              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <SiTiktok className="w-2.5 h-2.5" />
-              </a>
-              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <FaInstagram className="w-2.5 h-2.5" />
-              </a>
-              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <FaFacebook className="w-2.5 h-2.5" />
-              </a>
-              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <FaYoutube className="w-2.5 h-2.5" />
-              </a>
+          {/* TCPS Button Above Navigation with Full-Width Banner */}
+          <div className="relative mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast overflow-hidden">
+            {/* Full-Width Scrolling Banner Background */}
+            <div className="absolute inset-0 bg-white border-y border-red-900/50 glitch-image">
+              <div className="h-full overflow-hidden relative flex items-center section-glitch">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/5 to-transparent animate-pulse"></div>
+                
+                {/* Scrolling Text */}
+                <div className="w-full overflow-hidden">
+                  <div className="whitespace-nowrap text-[7px] sm:text-[8px] md:text-[9px] text-black font-mono py-2 px-4 animate-scroll vhs-overlay glitch-text" data-text={bannerText}>
+                    {bannerText}&nbsp;&nbsp;&nbsp;&nbsp;
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Foreground Elements */}
+            <div className="absolute inset-0 flex justify-between items-center px-4 z-10">
+              <Link href="/">
+                <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 glitch-icon bg-white/90 rounded px-1" />
+              </Link>
+              
+              <div className="flex gap-1 bg-white px-1 py-0.5 rounded">
+                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                  <SiTiktok className="w-2 h-2" />
+                </a>
+                <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                  <FaInstagram className="w-2 h-2" />
+                </a>
+                <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                  <FaFacebook className="w-2 h-2" />
+                </a>
+                <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                  <FaYoutube className="w-2 h-2" />
+                </a>
+              </div>
             </div>
           </div>
           
