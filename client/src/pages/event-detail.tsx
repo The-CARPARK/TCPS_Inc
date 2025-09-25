@@ -169,7 +169,7 @@ export default function EventDetail() {
                 </div>
                 
                 {/* Control Room Image */}
-                <div className="mt-8">
+                <div className="mt-8 wavy-overlay">
                   <img 
                     src={controlRoomImage} 
                     alt="The Control Room - Phase Zero: The Rupture" 

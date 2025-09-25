@@ -199,7 +199,7 @@ export default function Support() {
 
             {/* Logo Side */}
             <div className="flex justify-center">
-              <div className="flex flex-col items-center justify-center w-full max-w-[700px]">
+              <div className="flex flex-col items-center justify-center w-full max-w-[700px] wavy-bg-white-slow">
                 <img 
                   src={tcpsLogoDesign}
                   alt="TCPS Logo Design" 

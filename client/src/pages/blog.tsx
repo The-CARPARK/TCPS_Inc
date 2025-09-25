@@ -161,7 +161,7 @@ export default function Blog() {
             <Link href="/post/urban-māori-recalling-the-sacred-signal-through-concrete">
               <article className="bg-red-900/20 border border-red-800 rounded-lg overflow-hidden hover:bg-red-900/30 transition-colors cursor-pointer group">
                 <div className="grid md:grid-cols-2 gap-0">
-                  <div className="w-full h-64 bg-gray-800 flex items-center justify-center">
+                  <div className="w-full h-64 bg-gray-800 flex items-center justify-center wavy-bg-fast">
                     <img 
                       src={urbanMaoriImage} 
                       alt="Urban Māori Blog Post" 
