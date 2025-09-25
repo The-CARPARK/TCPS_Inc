@@ -317,7 +317,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-8" data-testid="text-join-heading">Join the Movement</h2>
             <p className="text-base text-gray-300 mb-8" data-testid="text-join-description">
-              Join our email list and get updates about upcoming society events and activations:
+              We are building a society of Watchers, partners, and allies who choose solidarity over silence. Join our email list and get updates about upcoming society events and activations:
             </p>
             
             <Form {...form}>
