@@ -192,25 +192,21 @@ export default function About() {
             <h2 className="text-4xl font-bold text-center mb-12">WHY A CAR PARK?</h2>
             
             <div className="space-y-8 text-gray-300 leading-relaxed">
-              <p className="text-lg text-center">
-                A car park might seem mundane, ordinary, utilitarian and overlooked but beneath the cold, grey surface lies a profound metaphor. It is our symbolic battleground, where past and future collide:
+              <p className="text-center">
+                Car parks are often dismissed as mundane: grey, utilitarian, unremarkable. Yet they are powerful metaphors for our kaupapa, overlooked battlegrounds where past and future collide. Each level of concrete is a layer of history, Indigenous presence buried beneath colonial construction. In their liminality, car parks exist between here and there, neither fully one thing nor another. This makes them ideal stages for ritual, story, and disruption. Empty at night, their vast silence transforms them into resonant chambers, broadcasting signals of resurgence, resistance, and imagination.
               </p>
-              
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-center font-bold">• Vertical Archive:</h3>
-                  <p className="text-center">Concrete decks stack history, layer upon layer, hiding Indigenous memory and colonial erasure beneath.</p>
-                </div>
+            </div>
+            
+            <div className="mt-12">
+              <h2 className="text-2xl font-bold text-center mb-8">OUR PATH</h2>
+              <div className="space-y-6 text-gray-300 leading-relaxed">
+                <p className="text-center">
+                  The Car Park Society formed in response to this understanding: that the most ordinary sites of the city are also the most charged with memory, sovereignty, and possibility. We step into these spaces not only to create art but to reclaim tino rangatiratanga in the urban realm, to restore connection between whenua, awa, and people, to resist the erasures buried under asphalt, and to rehearse futures of resilience, solidarity, and collective power.
+                </p>
                 
-                <div>
-                  <h3 className="text-white font-semibold mb-2 text-center">• Urban Mythspace:</h3>
-                  <p className="text-center">The car park is a liminal zone, an in-between place perfect for new rituals, stories, and disruptions.</p>
-                </div>
-                
-                <div>
-                  <h3 className="text-white font-semibold mb-2 text-center">• Broadcast Tower:</h3>
-                  <p className="text-center">At night, empty and echoing, the car park transforms into a conduit, broadcasting signals of resistance and revival.</p>
-                </div>
+                <p className="text-center font-semibold">
+                  We are Watchers. We listen to what concrete tries to silence. We answer the awa beneath asphalt. We reclaim the battlegrounds of the city and reimagine them as portals of mauri, memory, and transformation.
+                </p>
               </div>
             </div>
           </div>
