@@ -234,7 +234,7 @@ export default function About() {
                     1. Prosecution of the Colonial Beast: We are the voice for the silenced. Through art, intervention, and covert action, we prosecute the ongoing legacy of colonialism, exposing the cracks in the structure. We speak in whispers and bold strokes.
                   </p>
                   
-                  <p className="mb-6 text-[16px] text-center font-normal">
+                  <p className="mb-6 text-center font-normal">
                     2. Reclamation of Hidden Spaces: We take what was once forsaken. The Car Park is our vessel. We reclaim it; not for profit, not for recognition, but for resistance. A place forgotten is a place ripe for transformation.
                   </p>
                   
