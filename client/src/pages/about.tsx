@@ -172,7 +172,7 @@ export default function About() {
                 That unease drew us into archives, titles, and whakapapa. Slowly the layers emerged. The site had once been Te Aro Pā, a thriving kāinga of mana whenua, disrupted and displaced through colonisation. It later became home to Bethune & Hunter's Wine Merchants, a colonial warehouse of commerce and extraction, built on reclaimed land. And beneath it all, the Waimapihi Stream still flows, diverted into pipes but never silenced.
               </p>
               
-              <p className="text-center italic">
+              <p className="text-center italic text-xl">
                 Ko te awa ahau, ko te awa ko au. I am the river and the river is me.
               </p>
             </div>
