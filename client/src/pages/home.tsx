@@ -216,8 +216,7 @@ export default function Home() {
                 </h1>
                 
                 <p className="text-gray-300 max-w-sm text-center mx-auto text-[15px] font-light" data-testid="text-intro">
-                  All Carparks Are Battlegrounds.<br/>
-                  We reclaim the overlooked to restore mauri, reawaken memory, and reimagine the future of our cities.
+                  The Car Park Society (TCPS) formed in 2025, our aim is to reveal hidden histories, restore connection, and transform overlooked spaces into vibrant hubs of collective creativity and community empowerment.
                 </p>
               </div>
               
@@ -232,38 +231,17 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Who We Are Section */}
-        <section className="py-12 px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-black mb-8 text-white">WHO WE ARE</h2>
-            <div className="space-y-6 text-gray-300 text-[15px] leading-relaxed">
-              <p>
-                The Car Park Society Inc. (TCPS) is a kaupapa-driven incorporated society based in Te Whanganui-a-Tara.
-              </p>
-              <p>
-                We are a collective of Māori and tauiwi artists, researchers, organisers, and community builders. Our mahi transforms car parks, laneways, and other overlooked infrastructures into vibrant hubs of creativity, cultural resurgence, and collective empowerment.
-              </p>
-              <p>
-                Grounded in tino rangatiratanga and the obligations of Te Tiriti o Waitangi, we centre mana whenua leadership, build genuine allyship, and model co-governance approaches that place te taiao and community at the heart.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Mission Section */}
         <section className="py-12 px-6 bg-red-900/20">
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-white rounded-lg p-6 mb-6 inline-block">
-              <h2 className="text-black mb-4 font-black text-[36px]" data-testid="text-mission-heading">OUR MISSION</h2>
-              <div className="text-black text-[17px]" data-testid="text-mission">
-                <p className="italic mb-4">We walk <strong>ka mua, ka muri</strong> — backwards into the future.</p>
-                <div className="space-y-3 text-left max-w-md mx-auto">
-                  <p>Uncover colonial layers embedded in urban infrastructure.</p>
-                  <p>Honour Te Tiriti o Waitangi as our guiding framework.</p>
-                  <p>Restore mauri by reconnecting people with whenua and awa.</p>
-                  <p>Empower communities through art, ritual, and collective action.</p>
-                </div>
-              </div>
+              <h2 className="text-black mb-4 font-black text-[36px]" data-testid="text-mission-heading">MISSION</h2>
+              <p className="text-black italic text-[17px]" data-testid="text-mission">
+                We work <strong>ka mua, ka muri</strong> backwards into the future,<br/>
+                uncovering the colonial layers of urban infrastructure, honoring<br/>
+                Te Tiriti o Waitangi, and modelling co‐governance that places te<br/>
+                taiao and community at the centre.
+              </p>
             </div>
           </div>
         </section>
@@ -271,10 +249,7 @@ export default function Home() {
         {/* Vision & Goals Section */}
         <section className="py-12 px-6">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl text-center mb-8 font-black" data-testid="text-vision-heading">OUR VISION + IMPACT</h2>
-            <p className="text-center text-gray-300 mb-16 max-w-2xl mx-auto">
-              We believe the most ordinary infrastructures can become extraordinary portals for transformation.
-            </p>
+            <h2 className="text-4xl text-center mb-16 font-black" data-testid="text-vision-heading">VISION + IMPACT</h2>
             
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <div className="text-center max-w-56 mx-auto">
@@ -285,9 +260,9 @@ export default function Home() {
                     className="w-48 h-48 object-contain"
                   />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-create-heading">CREATE 👁</h3>
+                <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-create-heading">CREATE</h3>
                 <p className="text-gray-300 text-[15px]" data-testid="text-create">
-                  Immersive, participatory activations that dissolve boundaries between art, ritual, and activism. Each project is a living ceremony where audiences become participants and overlooked spaces are reanimated.
+                  We design immersive, participatory experiences that dissolve the line between art, ritual, and activism. Each activation is more than an event: it is a living portal where audiences become participants, stories become ceremonies, and overlooked spaces become sites of collective transformation.
                 </p>
               </div>
               
@@ -299,9 +274,9 @@ export default function Home() {
                     className="w-48 h-48 object-contain"
                   />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-build-heading">BUILD 👁</h3>
+                <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-build-heading">BUILD</h3>
                 <p className="text-gray-300 text-[15px]" data-testid="text-build">
-                  Resilient networks of Watchers, collaborators, and communities. Our mahi is rooted in trust, co-design, and reciprocity, ensuring long-term alliances beyond the moment of performance.
+                  We are committed to resilient networks and long-term community alliances. Our work is rooted in trust, co-design, and reciprocity; ensuring that every Watcher, collaborator, and partner plays an active role in shaping the society we are building together. This is not a movement of spectacle, but one of solidarity.
                 </p>
               </div>
               
@@ -313,39 +288,10 @@ export default function Home() {
                     className="w-48 h-48 object-contain"
                   />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-amplify-heading">AMPLIFY 👁</h3>
+                <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-amplify-heading">AMPLIFY</h3>
                 <p className="text-gray-300 text-[15px]" data-testid="text-amplify">
-                  Centred on Indigenous resurgence and tino rangatiratanga, we use our platforms to amplify voices erased by colonisation and consumerism, projecting stories of sovereignty, resilience, and radical imagination into the heart of the city.
+                  At the heart of The Car Park Society is a commitment to Indigenous narratives of resurgence, reclamation, and radical futures. We centre voices too often erased by consumerism and colonisation, using our platforms to project stories of sovereignty, resilience, and imagination into the heart of the city.
                 </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Why It Matters Section */}
-        <section className="py-12 px-6 bg-gray-900/30">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-black mb-8 text-white">WHY IT MATTERS</h2>
-            <div className="space-y-6 text-gray-300 text-[15px] leading-relaxed">
-              <p>
-                Urban infrastructure is not neutral. Beneath asphalt and concrete lie suppressed histories, diverted waterways, and displaced communities. These colonial interventions continue to shape inequity, climate risk, and disconnection today.
-              </p>
-              
-              <p className="font-semibold">By reclaiming these spaces, we deliver impact across:</p>
-              
-              <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto text-left">
-                <div>
-                  <p><strong>Cultural regeneration</strong> – surfacing suppressed stories and whakapapa.</p>
-                </div>
-                <div>
-                  <p><strong>Ecological healing</strong> – reconnecting land, water, and people.</p>
-                </div>
-                <div>
-                  <p><strong>Social empowerment</strong> – strengthening tino rangatiratanga and community agency.</p>
-                </div>
-                <div>
-                  <p><strong>Artistic innovation</strong> – turning infrastructure into portals of imagination and transformation.</p>
-                </div>
               </div>
             </div>
           </div>
@@ -354,14 +300,10 @@ export default function Home() {
         {/* Join the Movement Section */}
         <section className="py-12 px-6 bg-red-900/30">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8" data-testid="text-join-heading">JOIN THE MOVEMENT</h2>
-            <div className="mb-8">
-              <p className="text-xl text-gray-300 mb-4" data-testid="text-join-description">
-                We are building a society of Watchers, partners, and allies who choose solidarity over silence.
-              </p>
-              <p className="text-gray-300 mb-2">📧 connect@thecarparksociety.xyz</p>
-              <p className="text-gray-300 mb-6">📍 Te Whanganui-a-Tara, Aotearoa</p>
-            </div>
+            <h2 className="text-4xl font-bold mb-8" data-testid="text-join-heading">Join the Movement</h2>
+            <p className="text-xl text-gray-300 mb-8" data-testid="text-join-description">
+              Join our email list and get updates about upcoming society events and activations:
+            </p>
             
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="max-w-md mx-auto">
