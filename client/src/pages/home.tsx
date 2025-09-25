@@ -1,17 +1,9 @@
 import { useState, useEffect } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useMutation } from "@tanstack/react-query";
-import { insertEmailSubscriptionSchema } from "@shared/schema";
-import { apiRequest } from "@/lib/queryClient";
-import { useToast } from "@/hooks/use-toast";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import { Link } from "wouter";
-import { z } from "zod";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import heroImage from "@assets/1_1758536573325.png";
@@ -23,17 +15,11 @@ import eyeImage from "@assets/Untitled - 6 August 2025 21.28_1758537254685.jpg";
 import newHeroLogoImage from "@assets/Untitled - 6 August 2025 21.28 (4)_1758552061511.jpg";
 import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
 
-const emailFormSchema = insertEmailSubscriptionSchema.extend({
-  email: z.string().email("Please enter a valid email address"),
-});
-
-type EmailFormData = z.infer<typeof emailFormSchema>;
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [bannerText, setBannerText] = useState('');
   const [textIndex, setTextIndex] = useState(0);
-  const { toast } = useToast();
 
   const bannerMessages = [
     "WΛTCHΞR; You descend. Not into structure. Not yet. Into memory. Into soil. Into the breath beneath the grid.",
@@ -84,37 +70,6 @@ export default function Home() {
     setBannerText(bannerMessages[textIndex]);
   }, [textIndex]);
 
-  const form = useForm<EmailFormData>({
-    resolver: zodResolver(emailFormSchema),
-    defaultValues: {
-      email: "",
-    },
-  });
-
-  const subscribeEmail = useMutation({
-    mutationFn: async (data: EmailFormData) => {
-      const res = await apiRequest("POST", "/api/subscribe", data);
-      return res.json();
-    },
-    onSuccess: () => {
-      toast({
-        title: "Welcome to The Car Park Society!",
-        description: "Thank you for joining our movement.",
-      });
-      form.reset();
-    },
-    onError: (error: any) => {
-      toast({
-        title: "Subscription failed",
-        description: error.message || "An error occurred. Please try again.",
-        variant: "destructive",
-      });
-    },
-  });
-
-  const onSubmit = (data: EmailFormData) => {
-    subscribeEmail.mutate(data);
-  };
 
   return (
     <div className="min-h-screen bg-black text-white flowing-waves-smooth">
@@ -384,38 +339,35 @@ export default function Home() {
               We are building a society of Watchers, partners, and allies who choose solidarity over silence. Join our email list and get updates about upcoming society events and activations:
             </p>
             
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="max-w-md mx-auto">
-                <div className="flex gap-4">
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem className="flex-1">
-                        <FormControl>
-                          <Input
-                            {...field}
-                            type="email"
-                            placeholder="Enter your email here"
-                            className="bg-gray-800 border-gray-600 text-white placeholder-gray-400"
-                            data-testid="input-email"
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <Button 
-                    type="submit" 
-                    disabled={subscribeEmail.isPending}
-                    className="bg-red-600 hover:bg-red-700 text-white px-8 glitch-button"
-                    data-testid="button-signup"
-                  >
-                    {subscribeEmail.isPending ? "Signing up..." : "Sign Up"}
-                  </Button>
+            <div className="max-w-lg mx-auto">
+              {/* Google Form Embed with TCPS Styling */}
+              <div className="relative bg-gray-900/80 p-4 rounded-lg border border-red-900/30 glitch-image vhs-overlay">
+                <div className="absolute inset-0 bg-gradient-to-r from-red-900/10 via-transparent to-red-900/10 rounded-lg"></div>
+                <iframe 
+                  src="https://docs.google.com/forms/d/e/1FAIpQLScZtK0FRz0y5khXVoDZea5IxPaJYy4M9e66OLTYrJNjL0AZHw/viewform?embedded=true" 
+                  width={640}
+                  height={300} 
+                  frameBorder={0}
+                  marginHeight={0}
+                  marginWidth={0}
+                  className="w-full rounded filter brightness-110 contrast-125 relative z-10"
+                  style={{
+                    filter: 'invert(0.9) hue-rotate(180deg) contrast(1.2) brightness(0.8)',
+                    background: 'transparent'
+                  }}
+                  title="The Car Park Society Newsletter Signup"
+                  data-testid="form-newsletter-signup"
+                >
+                  Loading newsletter signup form...
+                </iframe>
+                <div className="absolute bottom-2 right-2 text-xs text-gray-500 font-mono">
+                  ∴ DIRECT CONNECTION ∴
                 </div>
-              </form>
-            </Form>
+              </div>
+              <p className="text-xs text-gray-400 text-center mt-2 font-mono glitch-text" data-text="↑ ENCRYPTED TRANSMISSION PORTAL ↑">
+                ↑ ENCRYPTED TRANSMISSION PORTAL ↑
+              </p>
+            </div>
           </div>
         </section>
       </main>
