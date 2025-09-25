@@ -204,25 +204,25 @@ export default function About() {
 
 
         {/* Te Mana Whakatete Accord Section */}
-        <section id="accord" className="py-20 px-6 text-[18px]">
+        <section id="accord" className="py-20 px-6 text-[13px]">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-center mb-8">TE MANA WHAKATETE ACCORD</h2>
             
             <div className="text-center mb-12 space-y-2">
-              <p className="text-xl italic">This Accord is not a beginning, but a resurfacing.</p>
+              <p className="text-[15px] italic">This Accord is not a beginning, but a resurfacing.</p>
             </div>
             
-            <div className="space-y-8 text-gray-300 text-[18px]">
+            <div className="space-y-8 text-gray-300 text-[13px]">
               <div>
                 <p className="text-center">
                   The Car Park Society (TCPS) is a living assemblage of artists, insurgents, storytellers, cultural workers, rangatira, and spectral participants dedicated to the reclamation of space, spirit, and story beneath the colonial concrete of Aotearoa's urban cityscapes. We take the carpark, specifically the Lombard Street Carpark in Te Whanganui-a-Tara, as both site and symbol: a vertical archive of suppression and refusal, a space of stilled motion, a modern pā reimagined.
                 </p>
                 
-                <p className="mb-8 mt-8 text-center font-semibold text-[18px]">From this fissure, we issue the Accord.</p>
+                <p className="mb-8 mt-8 text-center font-semibold text-[13px]">From this fissure, we issue the Accord.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-white mb-6">Article I: RANGATIRATANGA KĀWAI (Purpose)</h3>
+                <h3 className="text-[19px] font-bold text-white mb-6">Article I: RANGATIRATANGA KĀWAI (Purpose)</h3>
                 <p className="mb-4 text-center">
                   What is seen is not always true, and what is true is often hidden in plain sight. The Car Park Society (TCPS) is not a society of the obvious. Our purpose lies in the unclaimed, the unseen, and the unspoken:
                 </p>
@@ -247,7 +247,7 @@ export default function About() {
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold text-white mb-6">Article II: TE MANA WHAKAARO (Principles)</h3>
+                <h3 className="text-[19px] font-bold text-white mb-6">Article II: TE MANA WHAKAARO (Principles)</h3>
                 <p className="mb-4 text-center">
                   There are rules, and then there are truths that cannot be broken. The Te Mana Whakatete Accord exists to honour these truths:
                 </p>
@@ -276,7 +276,7 @@ export default function About() {
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold text-white mb-6">Article III: TE KOTAHITANGA HUNA (The Unseen Movement)</h3>
+                <h3 className="text-[19px] font-bold text-white mb-6">Article III: TE KOTAHITANGA HUNA (The Unseen Movement)</h3>
                 <p className="mb-4 text-center">
                   We are not bound to the traditional forms. We are fluid, disruptive, and invisible. Governance within TCPS operates outside the visible structures of the state, embracing the disruptive power of community-led, anarchistic practice.
                 </p>
@@ -297,7 +297,7 @@ export default function About() {
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold text-white mb-6">Article IV: TE TAUMANU (The Reclamation)</h3>
+                <h3 className="text-[19px] font-bold text-white mb-6">Article IV: TE TAUMANU (The Reclamation)</h3>
                 <p className="mb-4 text-center">
                   To reclaim The Car Park is to reclaim more than space. It is to reclaim what has been erased and forgotten; the invisible histories, the quiet resistances, the unwritten codes of power.
                 </p>
@@ -318,7 +318,7 @@ export default function About() {
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold text-white mb-6">Article V: TE MANAAKITANGA RERENGA (The Invisible Hand)</h3>
+                <h3 className="text-[19px] font-bold text-white mb-6">Article V: TE MANAAKITANGA RERENGA (The Invisible Hand)</h3>
                 <p className="mb-4 text-center">
                   Though we operate in the shadows, we are not lawless. We are bound by the principles of the invisible hand, an ethical framework rooted in community care, respect, and indigenous justice.
                 </p>
