@@ -140,7 +140,7 @@ export default function Home() {
                 {/* Scrolling Text */}
                 <div className="w-full overflow-hidden">
                   <div className="whitespace-nowrap text-[7px] sm:text-[8px] md:text-[9px] text-black font-mono py-2 px-4 animate-scroll vhs-overlay glitch-text" data-text={bannerText}>
-                    {bannerText}
+                    {bannerText}&nbsp;&nbsp;&nbsp;&nbsp;
                   </div>
                 </div>
               </div>
