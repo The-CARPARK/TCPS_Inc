@@ -361,7 +361,7 @@ export default function About() {
             </div>
             
             {/* Curved Design Image at End */}
-            <div className="flex justify-center mt-12">
+            <div className="flex justify-center mt-12 -mb-8">
               <img 
                 src={curvedDesign} 
                 alt="TCPS Design Element" 
