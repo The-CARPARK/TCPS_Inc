@@ -339,33 +339,47 @@ export default function Home() {
               We are building a society of Watchers, partners, and allies who choose solidarity over silence. Join our email list and get updates about upcoming society events and activations:
             </p>
             
-            <div className="max-w-lg mx-auto">
-              {/* Google Form Embed with TCPS Styling */}
-              <div className="relative bg-gray-900/80 p-4 rounded-lg border border-red-900/30 glitch-image vhs-overlay">
+            <div className="max-w-md mx-auto">
+              {/* Minimal Google Form Embed - Email Field Only */}
+              <div className="relative bg-gray-900/80 p-6 rounded-lg border border-red-900/30 glitch-image vhs-overlay">
                 <div className="absolute inset-0 bg-gradient-to-r from-red-900/10 via-transparent to-red-900/10 rounded-lg"></div>
-                <iframe 
-                  src="https://docs.google.com/forms/d/e/1FAIpQLScZtK0FRz0y5khXVoDZea5IxPaJYy4M9e66OLTYrJNjL0AZHw/viewform?embedded=true" 
-                  width={640}
-                  height={300} 
-                  frameBorder={0}
-                  marginHeight={0}
-                  marginWidth={0}
-                  className="w-full rounded filter brightness-110 contrast-125 relative z-10"
-                  style={{
-                    filter: 'invert(0.9) hue-rotate(180deg) contrast(1.2) brightness(0.8)',
-                    background: 'transparent'
-                  }}
-                  title="The Car Park Society Newsletter Signup"
-                  data-testid="form-newsletter-signup"
-                >
-                  Loading newsletter signup form...
-                </iframe>
-                <div className="absolute bottom-2 right-2 text-xs text-gray-500 font-mono">
-                  ∴ DIRECT CONNECTION ∴
+                
+                {/* Custom styled iframe container to hide Google Form branding */}
+                <div className="relative z-10 overflow-hidden rounded bg-gray-800/50">
+                  <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScZtK0FRz0y5khXVoDZea5IxPaJYy4M9e66OLTYrJNjL0AZHw/viewform?embedded=true&usp=pp_url&entry.1045781291=" 
+                    width="100%"
+                    height="180"
+                    frameBorder={0}
+                    marginHeight={0}
+                    marginWidth={0}
+                    className="w-full rounded-sm"
+                    style={{
+                      transform: 'scale(1.1) translateY(-60px)',
+                      filter: 'invert(0.95) hue-rotate(180deg) contrast(1.1) brightness(0.85) saturate(1.2)',
+                      background: 'transparent',
+                      minHeight: '240px'
+                    }}
+                    title="Newsletter Signup"
+                    data-testid="form-newsletter-signup"
+                  >
+                    Loading...
+                  </iframe>
+                </div>
+                
+                {/* Custom overlay with TCPS styling */}
+                <div className="absolute inset-0 pointer-events-none z-20">
+                  <div className="absolute top-4 left-6 text-xs text-red-400 font-mono uppercase tracking-wider">
+                    ◦ SIGNAL TRANSMISSION ◦
+                  </div>
+                  <div className="absolute bottom-4 right-6 text-xs text-gray-500 font-mono">
+                    ∴ ENCRYPTED ∴
+                  </div>
                 </div>
               </div>
-              <p className="text-xs text-gray-400 text-center mt-2 font-mono glitch-text" data-text="↑ ENCRYPTED TRANSMISSION PORTAL ↑">
-                ↑ ENCRYPTED TRANSMISSION PORTAL ↑
+              
+              <p className="text-xs text-gray-400 text-center mt-3 font-mono tracking-wide glitch-text" data-text="⟩ DIRECT NEURAL INTERFACE ⟨">
+                ⟩ DIRECT NEURAL INTERFACE ⟨
               </p>
             </div>
           </div>
