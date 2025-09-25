@@ -167,7 +167,7 @@ export default function About() {
       )}
       <main id="main-content" className="pt-20 pb-16">
         {/* Our Story Section */}
-        <section id="story" className="py-20 px-6 relative river-bg">
+        <section id="story" className="pt-20 pb-8 px-6 relative river-bg">
           <div className="max-w-4xl mx-auto relative z-10">
             <h1 className="text-4xl font-bold text-center mb-8">ORIGINS</h1>
             <p className="text-xl text-center mb-12 font-bold">All Carparks Are Battlegrounds.</p>
