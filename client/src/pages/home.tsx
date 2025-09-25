@@ -147,8 +147,8 @@ export default function Home() {
             <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 glitch-icon" />
             
             {/* Scrolling Banner - Center */}
-            <div className="flex-1 mx-4">
-              <div className="bg-black/80 border border-red-900/50 rounded-sm overflow-hidden relative max-w-md mx-auto">
+            <div className="flex-1 mx-2">
+              <div className="bg-black/80 border border-red-900/50 rounded-sm overflow-hidden relative max-w-xs mx-auto">
                 <div className="h-5 overflow-hidden relative flex items-center">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/5 to-transparent animate-pulse"></div>
                   
