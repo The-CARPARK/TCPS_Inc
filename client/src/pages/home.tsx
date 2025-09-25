@@ -73,7 +73,7 @@ export default function Home() {
 
     setBannerText(bannerMessages[0]);
     
-    const textInterval = setInterval(cycleText, 8000);
+    const textInterval = setInterval(cycleText, 15000);
 
     return () => {
       clearInterval(textInterval);
