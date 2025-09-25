@@ -168,7 +168,7 @@ export default function About() {
                 Late night gatherings at a penthouse window overlooked the stark spiral of Lombard Street Carpark. At first we were captivated by the eerie emptiness, yet each feed felt off, as if the mauri of the place was disturbed. Curiosity turned to investigation. We traced titles, land files, and whakapapa until a submerged history surfaced: The carpark's footprint once held Bethune & Hunter's Wine Merchants warehouse, an outpost of colonial commerce. Before brick and barrel, part of Te Aro Pā, a thriving kāinga forcibly displaced by colonisation.
               </p>
               
-              <p>
+              <p className="text-center">
                 Beneath the concrete still runs the diverted Waimapihi Stream, its flow straight‐jacketed into pipes. Ko te awa ahau, ko te awa ko au: I am the river and the river is me. When land and water are distorted, so too are the people who live upon them. These revelations exposed a larger pattern: reclaimed land, Victorian sea‐walls, asphalted waterways; the very infrastructure of our cities is an artefact of colonial dispossession and a driver of present‐day climate risk. To reclaim these spaces is to heal the mauri of both whenua and people.
               </p>
             </div>
@@ -188,7 +188,7 @@ export default function About() {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-center font-bold">• Vertical Archive:</h3>
-                  <p>Concrete decks stack history, layer upon layer, hiding Indigenous memory and colonial erasure beneath.</p>
+                  <p className="text-center">Concrete decks stack history, layer upon layer, hiding Indigenous memory and colonial erasure beneath.</p>
                 </div>
                 
                 <div>
