@@ -218,7 +218,7 @@ export default function About() {
                   The Car Park Society (TCPS) is a living assemblage of artists, insurgents, storytellers, cultural workers, rangatira, and spectral participants dedicated to the reclamation of space, spirit, and story from the suffocating weight of colonial infrastructure.
                 </p>
                 
-                <p className="text-center">
+                <p className="text-center mt-6">
                   We declare that the structures of the city are not neutral. They are vertical archives of dispossession and resistance, each layer a stratum of memory pressed beneath concrete. They are liminal zones where mauri is distorted yet persists, where streams run silenced but unbroken, where stories buried by colonisation demand to be heard. They are modern pā reimagined, not of palisades but of presence, defence, and resurgence in the very heart of the colonial city.
                 </p>
                 
