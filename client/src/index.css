@@ -278,13 +278,13 @@
   }
 }
 
-/* River Flow Animation */
+/* River Flow Animation - Smooth Continuous Movement */
 @keyframes river-flow {
-  0% { transform: translateX(-10px) scaleX(1); }
-  25% { transform: translateX(5px) scaleX(1.05); }
-  50% { transform: translateX(0px) scaleX(1); }
-  75% { transform: translateX(-5px) scaleX(0.98); }
-  100% { transform: translateX(-10px) scaleX(1); }
+  0% { transform: translateX(-100%) scaleX(1) rotateZ(0deg); }
+  25% { transform: translateX(-50%) scaleX(1.1) rotateZ(0.5deg); }
+  50% { transform: translateX(0%) scaleX(1.05) rotateZ(0deg); }
+  75% { transform: translateX(50%) scaleX(1.08) rotateZ(-0.3deg); }
+  100% { transform: translateX(100%) scaleX(1) rotateZ(0deg); }
 }
 
 /* Distorted River Glitch */
@@ -326,8 +326,9 @@
 /* River Background Classes */
 .river-flow {
   position: relative;
-  animation: river-flow 15s ease-in-out infinite, river-distort 8s ease-in-out infinite, wave-weave 6s ease-in-out infinite;
+  animation: river-flow 12s linear infinite, river-distort 8s ease-in-out infinite, wave-weave 4s ease-in-out infinite;
   z-index: 0;
+  transform-origin: center center;
 }
 
 .river-bg {
@@ -339,17 +340,18 @@
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 300%;
+  left: -200%;
+  width: 500%;
   height: 100%;
   background: linear-gradient(90deg, 
     transparent 0%, 
-    rgba(220, 38, 38, 0.05) 20%, 
-    rgba(239, 68, 68, 0.08) 40%, 
-    rgba(248, 113, 113, 0.06) 60%, 
-    transparent 80%,
-    transparent 100%);
-  animation: river-flow 12s linear infinite reverse;
+    rgba(220, 38, 38, 0.08) 15%, 
+    rgba(239, 68, 68, 0.12) 30%, 
+    rgba(248, 113, 113, 0.08) 45%, 
+    rgba(220, 38, 38, 0.10) 60%, 
+    rgba(185, 28, 28, 0.06) 75%, 
+    transparent 90%);
+  animation: river-flow 20s linear infinite reverse;
   z-index: 1;
   pointer-events: none;
 }
@@ -358,16 +360,17 @@
   content: '';
   position: absolute;
   top: 0;
-  left: -50%;
-  width: 200%;
+  left: -150%;
+  width: 400%;
   height: 100%;
   background: linear-gradient(90deg, 
     transparent 0%, 
-    rgba(185, 28, 28, 0.03) 30%, 
-    rgba(153, 27, 27, 0.05) 50%, 
-    rgba(220, 38, 38, 0.04) 70%, 
+    rgba(185, 28, 28, 0.04) 20%, 
+    rgba(153, 27, 27, 0.08) 40%, 
+    rgba(220, 38, 38, 0.06) 60%, 
+    rgba(239, 68, 68, 0.05) 80%, 
     transparent 100%);
-  animation: wave-weave 10s ease-in-out infinite, river-flow 18s linear infinite;
+  animation: wave-weave 8s ease-in-out infinite, river-flow 25s linear infinite;
   z-index: 2;
   pointer-events: none;
 }
