@@ -355,7 +355,7 @@ export default function Home() {
                     marginWidth={0}
                     className="w-full"
                     style={{
-                      transform: 'scale(0.9) translateY(-240px)',
+                      transform: 'scale(0.9) translateY(-290px)',
                       filter: 'invert(0.95) hue-rotate(180deg) contrast(1.1) brightness(0.85) saturate(1.2)',
                       background: 'transparent'
                     }}
