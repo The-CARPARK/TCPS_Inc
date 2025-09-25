@@ -225,24 +225,24 @@ export default function About() {
 
               <div>
                 <h3 className="text-2xl font-bold text-white mb-6">Article I: RANGATIRATANGA KĀWAI (Purpose)</h3>
-                <p className="mb-4">
+                <p className="mb-4 text-center">
                   What is seen is not always true, and what is true is often hidden in plain sight. The Car Park Society (TCPS) is not a society of the obvious. Our purpose lies in the unclaimed, the unseen, and the unspoken:
                 </p>
                 
                 <div className="space-y-4 ml-4">
-                  <p>
+                  <p className="text-center">
                     1. Prosecution of the Colonial Beast: We are the voice for the silenced. Through art, intervention, and covert action, we prosecute the ongoing legacy of colonialism, exposing the cracks in the structure. We speak in whispers and bold strokes.
                   </p>
                   
-                  <p className="mb-6 text-[16px] text-left font-normal">
+                  <p className="mb-6 text-[16px] text-center font-normal">
                     2. Reclamation of Hidden Spaces: We take what was once forsaken. The Car Park is our vessel. We reclaim it; not for profit, not for recognition, but for resistance. A place forgotten is a place ripe for transformation.
                   </p>
                   
-                  <p>
+                  <p className="text-center">
                     3. A Future Stitched in Shadows: Our vision is not bound to what you can see. It stretches into the unseen spaces, the grey areas, the interstices where indigenous futures are taking form in whispered dreams. The past lives here, and the future, as it should be, grows in the dark.
                   </p>
                   
-                  <p>
+                  <p className="text-center">
                     4. A Decentralised Reign: We govern not from the top down but from the edges inward. Anarchy is not chaos—it is the freedom to create, destroy, and recreate in the shadows. Co-governance among the unseen. We answer to no single voice, but to the collective murmur.
                   </p>
                 </div>
@@ -250,28 +250,28 @@ export default function About() {
               
               <div>
                 <h3 className="text-2xl font-bold text-white mb-6">Article II: TE MANA WHAKAARO (Principles)</h3>
-                <p className="mb-4">
+                <p className="mb-4 text-center">
                   There are rules, and then there are truths that cannot be broken. The Te Mana Whakatete Accord exists to honour these truths:
                 </p>
                 
                 <div className="space-y-4 ml-4">
-                  <p>
+                  <p className="text-center">
                     1. Tino Rangatiratanga: Sovereignty is not a paper title; it is a whisper in the wind, a claim to the very soul of the land. The true power lies not in the laws of the coloniser but in the pulse of the land itself. We honour and uphold Māori sovereignty as the very foundation of our society.
                   </p>
                   
-                  <p>
+                  <p className="text-center">
                     2. Mana Motuhake: Our power lies in our autonomy, in the ability to stand alone and together, in quiet rebellion against the forces that would bind us. We need no approval, no certification. Our existence is our declaration of independence.
                   </p>
                   
-                  <p>
+                  <p className="text-center">
                     3. Whakapapa: We are all threads in a larger tapestry. Our actions echo through the generations. Our whakapapa binds us to each other and to the land, to the ancestors whose names are lost but whose spirits are never forgotten.
                   </p>
                   
-                  <p>
+                  <p className="text-center">
                     4. Reclamation: The Car Park is not just concrete and steel. It is a wounded space, waiting to be restored. Through creative acts of resistance, we pull these spaces from the grasp of the coloniser and transform them into places of liberation.
                   </p>
                   
-                  <p>
+                  <p className="text-center">
                     5. Radical Co-Governance: There are no leaders, no masters. We govern from below, with no hierarchy. Decisions are made not by decree but by the movement of the collective, shifting like the shadows that rise and fall in the spaces we occupy.
                   </p>
                 </div>
@@ -279,20 +279,20 @@ export default function About() {
               
               <div>
                 <h3 className="text-2xl font-bold text-white mb-6">Article III: TE KOTAHITANGA HUNA (The Unseen Movement)</h3>
-                <p className="mb-4">
+                <p className="mb-4 text-center">
                   We are not bound to the traditional forms. We are fluid, disruptive, and invisible. Governance within TCPS operates outside the visible structures of the state, embracing the disruptive power of community-led, anarchistic practice.
                 </p>
                 
                 <div className="space-y-4 ml-4">
-                  <p>
+                  <p className="text-center">
                     1. Rotating Leadership: There are no kings, only shadows that pass from one hand to the next. Leadership within TCPS is as fluid as the very spaces we occupy. No one person stands in the light for long, for the movement is always shifting, always evolving.
                   </p>
                   
-                  <p>
+                  <p className="text-center">
                     2. Decentralised Action: Each member is a node in a network. There are no borders here, no confined territories. We move freely between the cracks, between the streets, between the known and the unknown. All are welcome, but no one is expected to stay the same.
                   </p>
                   
-                  <p>
+                  <p className="text-center">
                     3. Consensus in the Silence: We speak in murmurs, but we listen to the loudest silence. Consensus is not reached by the loudest voice, but by the quietest movement, the most subtle action. We wait until we hear the hum of the land, the pulse of the collective heartbeat, before we act.
                   </p>
                 </div>
@@ -300,20 +300,20 @@ export default function About() {
               
               <div>
                 <h3 className="text-2xl font-bold text-white mb-6">Article IV: TE TAUMANU (The Reclamation)</h3>
-                <p className="mb-4">
+                <p className="mb-4 text-center">
                   To reclaim The Car Park is to reclaim more than space. It is to reclaim what has been erased and forgotten; the invisible histories, the quiet resistances, the unwritten codes of power.
                 </p>
                 
                 <div className="space-y-4 ml-4">
-                  <p>
+                  <p className="text-center">
                     1. Creative Subversion: We do not ask for permission. We do not beg for recognition. We create in the cracks. Through art, performance, and intervention, we turn The Car Park into a stage, a canvas, a battlefield for the decolonial and the indigenous.
                   </p>
                   
-                  <p>
+                  <p className="text-center">
                     2. Public Intervention: We leave our mark in the most subtle of ways. Our actions are whispers in the city's chaos, small interventions that disrupt and transform. We are seen only in the spaces between, we remain in the shadows, unrecognised.
                   </p>
                   
-                  <p>
+                  <p className="text-center">
                     3. Symbolic Resistance: The Car Park itself is our symbol. Concrete is broken, metal is bent, and the spaces we inhabit are reimagined as sites of revolution. TCPS is not about reform; it is about creating something new from the remnants of the old.
                   </p>
                 </div>
@@ -321,20 +321,20 @@ export default function About() {
               
               <div>
                 <h3 className="text-2xl font-bold text-white mb-6">Article V: TE MANAAKITANGA RERENGA (The Invisible Hand)</h3>
-                <p className="mb-4">
+                <p className="mb-4 text-center">
                   Though we operate in the shadows, we are not lawless. We are bound by the principles of the invisible hand, an ethical framework rooted in community care, respect, and indigenous justice.
                 </p>
                 
                 <div className="space-y-4 ml-4">
-                  <p>
+                  <p className="text-center">
                     1. Decolonising Law: We do not recognise colonial laws. Instead, we enact our own form of justice, drawn from the wisdom of the land, the whispers of its indigenous ancestors, and the pulse of the people.
                   </p>
                   
-                  <p>
+                  <p className="text-center">
                     2. Silent Solidarity: We act in solidarity, not for fame, not for power, but for the quiet strength of the collective. We build, we share, we act, together, as one unbroken chain.
                   </p>
                   
-                  <p>
+                  <p className="text-center">
                     3. Quiet Accountability: Each action, no matter how small, will be held in the collective silence. We are all accountable, not to a central authority, but to the land and to each other.
                   </p>
                 </div>
