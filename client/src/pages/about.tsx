@@ -93,7 +93,7 @@ export default function About() {
       </header>
 
       {/* Wavy Pattern Image */}
-      <div className="relative w-full h-16 sm:h-20 overflow-hidden">
+      <div className="relative w-full h-24 sm:h-32 mt-20 overflow-hidden bg-gray-900">
         <img src={wavyPattern} alt="" className="w-full h-full object-cover object-center" />
       </div>
 
