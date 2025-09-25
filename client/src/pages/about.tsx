@@ -220,11 +220,11 @@ export default function About() {
         <section id="accord" className="py-20 px-6 text-[13px] relative river-bg">
           <div className="max-w-4xl mx-auto text-center relative z-10">
             {/* Eye Symbol Above Header */}
-            <div className="flex justify-center mb-8">
+            <div className="flex justify-center mb-4">
               <img 
                 src={eyeSymbol} 
                 alt="TCPS Eye Symbol" 
-                className="h-40 w-40 sm:h-48 sm:w-48 object-contain"
+                className="h-80 w-80 sm:h-96 sm:w-96 object-contain"
               />
             </div>
             <h2 className="text-4xl font-bold text-center mb-8">TE MANA WHAKATETE ACCORD</h2>
