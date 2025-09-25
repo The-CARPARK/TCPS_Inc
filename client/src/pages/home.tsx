@@ -208,7 +208,7 @@ export default function Home() {
 
       <main id="main-content" className="pt-20">
         {/* Hero Section */}
-        <section className="py-12 px-6">
+        <section className="pt-12 pb-0 px-6">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-4 items-center" data-testid="text-welcome">
               <div className="text-left">
