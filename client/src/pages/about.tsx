@@ -209,7 +209,7 @@ export default function About() {
             <h2 className="text-4xl font-bold text-center mb-8">TE MANA WHAKATETE ACCORD</h2>
             
             <div className="text-center mb-12 space-y-2">
-              <p className="text-[15px] italic">This Accord is not a beginning, but a resurfacing.</p>
+              <p className="text-[15px] italic">This Accord is not a beginning. It is a resurfacing; the uprising of what colonisation tried to bury beneath asphalt, steel, and concrete.</p>
             </div>
             
             <div className="space-y-8 text-gray-300 text-[13px]">
