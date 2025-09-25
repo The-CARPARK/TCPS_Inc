@@ -202,31 +202,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* Why a Car Park Section */}
-        <section className="py-20 px-6 bg-red-900/20">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12">WHY A CAR PARK?</h2>
-            
-            <div className="space-y-8 text-gray-300 leading-relaxed">
-              <p className="text-center">
-                Car parks are often dismissed as mundane: grey, utilitarian, unremarkable. Yet they are powerful metaphors for our kaupapa, overlooked battlegrounds where past and future collide. Each level of concrete is a layer of history, Indigenous presence buried beneath colonial construction. In their liminality, car parks exist between here and there, neither fully one thing nor another. This makes them ideal stages for ritual, story, and disruption. Empty at night, their vast silence transforms them into resonant chambers, broadcasting signals of resurgence, resistance, and imagination.
-              </p>
-            </div>
-            
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-center mb-8">ORIGINS</h2>
-              <div className="space-y-6 text-gray-300 leading-relaxed text-lg">
-                <p className="text-center">
-                  The Car Park Society formed in response to this understanding: that the most ordinary sites of the city are also the most charged with memory, sovereignty, and possibility. We step into these spaces not only to create art but to reclaim tino rangatiratanga in the urban realm, to restore connection between whenua, awa, and people, to resist the erasures buried under asphalt, and to rehearse futures of resilience, solidarity, and collective power.
-                </p>
-                
-                <p className="text-center font-semibold">
-                  We are Watchers. We listen to what concrete tries to silence. We answer the awa beneath asphalt. We reclaim the battlegrounds of the city and reimagine them as portals of mauri, memory, and transformation.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Te Mana Whakatete Accord Section */}
         <section id="accord" className="py-20 px-6 text-[18px]">
