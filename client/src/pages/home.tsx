@@ -93,8 +93,8 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
           {/* TCPS Button Above Navigation */}
-          <div className="flex justify-center mb-2">
-            <h1 className="text-xs sm:text-sm font-semibold">TCPS</h1>
+          <div className="flex justify-start mb-2">
+            <h1 className="text-xs sm:text-sm font-semibold">TCPS 👁</h1>
           </div>
           
           {/* Navigation and Social Icons Row */}
