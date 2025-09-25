@@ -215,7 +215,7 @@ export default function Home() {
                 <p className="font-black text-gray-300 mb-4 text-[31px] text-center">
                   WELCOME TO
                 </p>
-                <h1 className="lg:text-5xl mb-8 text-center font-black text-[40px]">
+                <h1 className="lg:text-5xl mb-8 text-center font-black text-[40px] glitch-text" data-text="THE CAR PARK SOCIETY">
                   THE CAR PARK SOCIETY
                 </h1>
                 
@@ -228,7 +228,7 @@ export default function Home() {
                 <img 
                   src={newHeroLogoImage} 
                   alt="The Car Park Society Eye Symbol" 
-                  className="w-full max-w-lg h-[350px] object-contain"
+                  className="w-full max-w-lg h-[350px] object-contain glitch-image"
                 />
               </div>
             </div>
@@ -239,7 +239,7 @@ export default function Home() {
         <section className="py-12 px-6 bg-red-900/20">
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-white rounded-lg p-6 mb-6 inline-block wavy-bg-white-colorful">
-              <h2 className="text-black mb-3 font-black text-[36px]" data-testid="text-mission-heading">MISSION</h2>
+              <h2 className="text-black mb-3 font-black text-[36px] glitch-text" data-text="MISSION" data-testid="text-mission-heading">MISSION</h2>
               <div className="text-black italic text-center mb-6 text-[15px] leading-relaxed">
                 <p className="mb-1 font-bold">Kia whakatōmuri te haere whakamua.</p>
                 <p className="text-[14px]">I walk backwards into the future with my eyes fixed on the past.</p>
@@ -266,9 +266,9 @@ export default function Home() {
         </section>
 
         {/* Vision & Goals Section */}
-        <section className="py-12 px-6 flowing-waves-gentle">
+        <section className="py-12 px-6 section-glitch">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl text-center mb-16 font-black" data-testid="text-vision-heading">VISION + IMPACT</h2>
+            <h2 className="text-4xl text-center mb-16 font-black glitch-text" data-text="VISION + IMPACT" data-testid="text-vision-heading">VISION + IMPACT</h2>
             
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <div className="text-center max-w-56 mx-auto">
@@ -276,7 +276,7 @@ export default function Home() {
                   <img 
                     src={eyeCreateImage} 
                     alt="Eye symbol representing CREATE" 
-                    className="w-48 h-48 object-contain"
+                    className="w-48 h-48 object-contain glitch-image"
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-create-heading">CREATE</h3>
@@ -290,7 +290,7 @@ export default function Home() {
                   <img 
                     src={eyeBuildImage} 
                     alt="Eye symbol representing BUILD" 
-                    className="w-48 h-48 object-contain"
+                    className="w-48 h-48 object-contain glitch-image"
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-build-heading">BUILD</h3>
@@ -304,7 +304,7 @@ export default function Home() {
                   <img 
                     src={eyeAmplifyImage} 
                     alt="Eye symbol representing AMPLIFY" 
-                    className="w-48 h-48 object-contain"
+                    className="w-48 h-48 object-contain glitch-image"
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-amplify-heading">AMPLIFY</h3>
@@ -317,9 +317,9 @@ export default function Home() {
         </section>
 
         {/* Join the Movement Section */}
-        <section className="py-12 px-6 bg-red-900/30">
+        <section className="py-12 px-6 bg-red-900/30 vhs-overlay">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8" data-testid="text-join-heading">Join the Movement</h2>
+            <h2 className="text-4xl font-bold mb-8 glitch-text" data-text="Join the Movement" data-testid="text-join-heading">Join the Movement</h2>
             <p className="text-base text-gray-300 mb-8" data-testid="text-join-description">
               We are building a society of Watchers, partners, and allies who choose solidarity over silence. Join our email list and get updates about upcoming society events and activations:
             </p>
@@ -348,7 +348,7 @@ export default function Home() {
                   <Button 
                     type="submit" 
                     disabled={subscribeEmail.isPending}
-                    className="bg-red-600 hover:bg-red-700 text-white px-8"
+                    className="bg-red-600 hover:bg-red-700 text-white px-8 glitch-button"
                     data-testid="button-signup"
                   >
                     {subscribeEmail.isPending ? "Signing up..." : "Sign Up"}

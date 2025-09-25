@@ -167,9 +167,9 @@ export default function About() {
       )}
       <main id="main-content" className="pt-20 pb-16">
         {/* Our Story Section */}
-        <section id="story" className="pt-20 pb-8 px-6 relative river-bg">
+        <section id="story" className="pt-20 pb-8 px-6 relative river-bg vhs-overlay">
           <div className="max-w-4xl mx-auto relative z-10">
-            <h1 className="text-4xl font-bold text-center mb-8">TCPS ORIGINS</h1>
+            <h1 className="text-4xl font-bold text-center mb-8 glitch-text" data-text="TCPS ORIGINS">TCPS ORIGINS</h1>
             <p className="text-xl text-center mb-12 font-bold">All Carparks Are Battlegrounds.</p>
             
             <div className="space-y-6 text-gray-300 leading-relaxed">
@@ -212,18 +212,18 @@ export default function About() {
           </div>
         </section>
         {/* Te Mana Whakatete Accord Section */}
-        <section id="accord" className="pt-8 pb-8 px-6 text-[13px] relative bg-black">
+        <section id="accord" className="pt-8 pb-8 px-6 text-[13px] relative bg-black section-glitch">
           <div className="max-w-4xl mx-auto text-center relative z-10">
             {/* Eye Symbol Above Header */}
             <div className="flex justify-center mb-4">
               <img 
                 src={eyeSymbol} 
                 alt="TCPS Eye Symbol" 
-                className="h-72 w-72 sm:h-80 sm:w-80 object-contain image-rendering-crisp-edges"
+                className="h-72 w-72 sm:h-80 sm:w-80 object-contain image-rendering-crisp-edges glitch-image"
                 style={{imageRendering: 'crisp-edges', background: 'transparent'}}
               />
             </div>
-            <h2 className="text-4xl font-bold text-center mb-8">TE MANA WHAKATETE ACCORD</h2>
+            <h2 className="text-4xl font-bold text-center mb-8 glitch-text" data-text="TE MANA WHAKATETE ACCORD">TE MANA WHAKATETE ACCORD</h2>
             
             <div className="text-center mb-12 space-y-2">
               <p className="text-[15px] italic">This Accord is not a beginning. It is a resurfacing; the uprising of what colonisation tried to bury beneath asphalt, steel, and concrete.</p>
