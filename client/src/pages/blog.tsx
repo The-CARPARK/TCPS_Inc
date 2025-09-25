@@ -32,7 +32,7 @@ export default function Blog() {
         <div className="grid grid-cols-[1fr_auto_1fr] items-center px-6 py-4">
           <div className="flex items-center">
             <Link href="/">
-              <h1 className="text-xs sm:text-sm font-semibold hover:text-red-500 transition-colors cursor-pointer">TCPS 👁</h1>
+              <h1 className="text-xs sm:text-sm font-semibold hover:text-red-500 transition-colors cursor-pointer" style={{writingMode: 'vertical-rl', textOrientation: 'mixed'}}>TCPS 👁</h1>
             </Link>
           </div>
           
