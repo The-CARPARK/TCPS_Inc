@@ -31,7 +31,21 @@ type EmailFormData = z.infer<typeof emailFormSchema>;
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [currentTime, setCurrentTime] = useState('');
+  const [bannerText, setBannerText] = useState('');
+  const [textIndex, setTextIndex] = useState(0);
   const { toast } = useToast();
+
+  const bannerMessages = [
+    "WATCHER—You descend. But not into structure. Not yet. First into memory. Into soil. Into the breath beneath the grid.",
+    "The Root does not rot. It coils. It waits. Beneath your feet, beneath the signage, beneath every beep of the ticket gate, the Root hums.",
+    "The Waking is not gentle. It crackles. It ruptures. The lights flicker without reason, casting you in strobe.",
+    "In the Mirror, you will see yourself—but not as you are. You will see the faces of those you might have been, had the burial not occurred.",
+    "The Hunger is not yours alone. It belongs to the structure. To the bureaucracy. To the endless machine of taking, filing, consuming, forgetting.",
+    "The Invitation does not arrive on paper. It arrives as pressure—behind the eyes, in the chest, under the tongue.",
+    "Every descent begins with The Root. Without it, you are lost. With it, you are not safe—only claimed.",
+    "Do not mistake this for nostalgia. This is no passive past. This is the refusal of burial. The Root is alive, growing even under suppression."
+  ];
 
   useEffect(() => {
     document.title = "The Car Park Society - Reclaiming Urban Spaces";
@@ -46,6 +60,43 @@ export default function Home() {
       document.head.appendChild(meta);
     }
   }, []);
+
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      const nzTime = new Intl.DateTimeFormat('en-NZ', {
+        timeZone: 'Pacific/Auckland',
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short', 
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      }).format(now);
+      setCurrentTime(`NZEST: ${nzTime}`);
+    };
+
+    const cycleText = () => {
+      setTextIndex((prev) => (prev + 1) % bannerMessages.length);
+    };
+
+    updateTime();
+    setBannerText(bannerMessages[0]);
+    
+    const timeInterval = setInterval(updateTime, 1000);
+    const textInterval = setInterval(cycleText, 8000);
+
+    return () => {
+      clearInterval(timeInterval);
+      clearInterval(textInterval);
+    };
+  }, []);
+
+  useEffect(() => {
+    setBannerText(bannerMessages[textIndex]);
+  }, [textIndex]);
 
   const form = useForm<EmailFormData>({
     resolver: zodResolver(emailFormSchema),
