@@ -224,7 +224,7 @@ export default function About() {
               <img 
                 src={eyeSymbol} 
                 alt="TCPS Eye Symbol" 
-                className="h-24 w-24 object-contain"
+                className="h-40 w-40 sm:h-48 sm:w-48 object-contain"
               />
             </div>
             <h2 className="text-4xl font-bold text-center mb-8">TE MANA WHAKATETE ACCORD</h2>
