@@ -204,19 +204,19 @@
 @keyframes glitch-static {
   0%, 96%, 100% {
     transform: translate(0);
-    filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg) saturate(100%) contrast(100%);
   }
   97% {
-    transform: translate(-1px, 1px);
-    filter: hue-rotate(90deg) saturate(200%);
+    transform: translate(-2px, 2px) scale(1.02);
+    filter: hue-rotate(180deg) saturate(300%) contrast(150%) brightness(1.3);
   }
   98% {
-    transform: translate(1px, -1px);
-    filter: hue-rotate(180deg) saturate(150%);
+    transform: translate(3px, -2px) scale(0.98);
+    filter: hue-rotate(270deg) saturate(400%) contrast(200%) brightness(0.7);
   }
   99% {
-    transform: translate(-1px, -1px);
-    filter: hue-rotate(270deg) saturate(250%);
+    transform: translate(-2px, -3px) scale(1.01);
+    filter: hue-rotate(90deg) saturate(500%) contrast(120%) brightness(1.5) invert(0.2);
   }
 }
 
@@ -703,14 +703,14 @@
     90deg,
     transparent 0%,
     transparent 8px,
-    rgba(0, 0, 0, 0.12) 10px,
-    rgba(55, 55, 55, 0.15) 12px,
-    rgba(0, 0, 0, 0.10) 14px,
+    rgba(0, 0, 0, 0.04) 10px,
+    rgba(55, 55, 55, 0.06) 12px,
+    rgba(0, 0, 0, 0.03) 14px,
     transparent 16px,
     transparent 24px
   );
   mask: radial-gradient(ellipse 180% 90% at 50% 50%, black 0%, transparent 65%);
-  animation: dark-wavy-lines-fast 9s linear infinite;
+  animation: dark-wavy-lines-fast 25s linear infinite;
   z-index: 1;
   pointer-events: none;
   transform-origin: center center;
@@ -726,13 +726,13 @@
   background: repeating-linear-gradient(
     90deg,
     transparent 0%,
-    rgba(100, 100, 100, 0.08) 6px,
-    rgba(60, 60, 60, 0.12) 10px,
-    rgba(100, 100, 100, 0.08) 14px,
+    rgba(100, 100, 100, 0.03) 6px,
+    rgba(60, 60, 60, 0.05) 10px,
+    rgba(100, 100, 100, 0.03) 14px,
     transparent 20px
   );
   mask: radial-gradient(ellipse 140% 70% at 50% 50%, black 0%, transparent 55%);
-  animation: dark-wavy-lines-fast 13s linear infinite reverse;
+  animation: dark-wavy-lines-fast 30s linear infinite reverse;
   z-index: 2;
   pointer-events: none;
 }
@@ -752,13 +752,13 @@
   background: repeating-linear-gradient(
     90deg,
     transparent 0%,
-    rgba(0, 0, 0, 0.08) 12px,
-    rgba(80, 80, 80, 0.12) 18px,
-    rgba(0, 0, 0, 0.08) 24px,
+    rgba(0, 0, 0, 0.03) 12px,
+    rgba(80, 80, 80, 0.05) 18px,
+    rgba(0, 0, 0, 0.03) 24px,
     transparent 36px
   );
   mask: radial-gradient(ellipse 160% 110% at 50% 50%, black 0%, transparent 70%);
-  animation: dark-wavy-lines-slow 28s ease-in-out infinite;
+  animation: dark-wavy-lines-slow 45s ease-in-out infinite;
   z-index: 1;
   pointer-events: none;
 }
@@ -785,7 +785,7 @@
     transparent 28px
   );
   mask: radial-gradient(ellipse 150% 85% at 50% 50%, black 0%, transparent 60%);
-  animation: dark-wavy-colorful 16s linear infinite;
+  animation: dark-wavy-colorful 35s linear infinite;
   z-index: 1;
   pointer-events: none;
 }
@@ -806,7 +806,7 @@
     transparent 26px
   );
   mask: radial-gradient(ellipse 120% 60% at 50% 50%, black 0%, transparent 50%);
-  animation: dark-wavy-colorful 22s linear infinite reverse;
+  animation: dark-wavy-colorful 40s linear infinite reverse;
   z-index: 2;
   pointer-events: none;
 }
@@ -873,19 +873,19 @@
 @keyframes text-glitch {
   0%, 96%, 100% {
     transform: translate(0);
-    filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg) saturate(100%) contrast(100%);
   }
   97% {
-    transform: translate(-1px, 1px);
-    filter: hue-rotate(90deg) saturate(200%);
+    transform: translate(-2px, 2px);
+    filter: hue-rotate(240deg) saturate(400%) contrast(180%) brightness(1.4);
   }
   98% {
-    transform: translate(1px, -1px);
-    filter: hue-rotate(180deg) saturate(150%);
+    transform: translate(3px, -2px);
+    filter: hue-rotate(120deg) saturate(350%) contrast(220%) brightness(0.6);
   }
   99% {
-    transform: translate(-1px, -1px);
-    filter: hue-rotate(270deg) saturate(250%);
+    transform: translate(-2px, -2px);
+    filter: hue-rotate(300deg) saturate(500%) contrast(150%) brightness(1.6) sepia(0.3);
   }
 }
 
@@ -952,12 +952,23 @@
 @keyframes chromatic-aberration {
   0%, 94%, 100% {
     filter: none;
+    transform: scale(1);
+  }
+  95% {
+    filter: hue-rotate(180deg) saturate(300%) contrast(160%) brightness(1.3);
+    transform: scale(1.02) skewX(1deg);
   }
   96% {
-    filter: hue-rotate(90deg) saturate(150%) contrast(110%);
+    filter: hue-rotate(-120deg) saturate(400%) contrast(200%) brightness(0.7) invert(0.1);
+    transform: scale(0.98) skewX(-2deg);
+  }
+  97% {
+    filter: hue-rotate(240deg) saturate(350%) contrast(180%) brightness(1.5) sepia(0.4);
+    transform: scale(1.03) skewY(1deg);
   }
   98% {
-    filter: hue-rotate(-90deg) saturate(200%) contrast(90%);
+    filter: hue-rotate(-180deg) saturate(450%) contrast(220%) brightness(0.8) invert(0.2);
+    transform: scale(0.97) skewY(-1deg);
   }
 }
 
