@@ -31,7 +31,6 @@ type EmailFormData = z.infer<typeof emailFormSchema>;
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [currentTime, setCurrentTime] = useState('');
   const [bannerText, setBannerText] = useState('');
   const [textIndex, setTextIndex] = useState(0);
   const { toast } = useToast();
@@ -62,32 +61,15 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    const updateTime = () => {
-      const now = new Date();
-      const nzTime = new Intl.DateTimeFormat('en-NZ', {
-        timeZone: 'Pacific/Auckland',
-        year: '2-digit',
-        month: '2-digit', 
-        day: '2-digit',
-        hour: '2-digit',
-        minute: '2-digit',
-        hour12: false
-      }).format(now);
-      setCurrentTime(`NZEST: ${nzTime}`);
-    };
-
     const cycleText = () => {
       setTextIndex((prev) => (prev + 1) % bannerMessages.length);
     };
 
-    updateTime();
     setBannerText(bannerMessages[0]);
     
-    const timeInterval = setInterval(updateTime, 1000);
     const textInterval = setInterval(cycleText, 8000);
 
     return () => {
-      clearInterval(timeInterval);
       clearInterval(textInterval);
     };
   }, []);
@@ -152,13 +134,8 @@ export default function Home() {
                 <div className="h-5 overflow-hidden relative flex items-center">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/5 to-transparent animate-pulse"></div>
                   
-                  {/* Static Time Display */}
-                  <span className="text-[8px] font-mono text-red-400 px-2 py-1 bg-black/50 border-r border-red-900/30 shrink-0 glitch-text" data-text={currentTime}>
-                    {currentTime}
-                  </span>
-                  
                   {/* Scrolling Text */}
-                  <div className="flex-1 overflow-hidden">
+                  <div className="w-full overflow-hidden">
                     <div className="whitespace-nowrap text-[8px] text-gray-300 py-1 px-2 animate-scroll vhs-overlay">
                       {bannerText}
                     </div>
