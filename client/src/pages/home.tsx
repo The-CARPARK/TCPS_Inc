@@ -144,7 +144,7 @@ export default function Home() {
             <div className="absolute inset-0 flex justify-between items-center px-4 z-10">
               <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 glitch-icon bg-white/90 rounded px-1" />
               
-              <div className="flex gap-1">
+              <div className="flex gap-1 bg-white px-1 py-0.5 rounded">
                 <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
                   <SiTiktok className="w-2 h-2" />
                 </a>
