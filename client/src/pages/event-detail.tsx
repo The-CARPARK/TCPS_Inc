@@ -37,7 +37,7 @@ export default function EventDetail() {
           </div>
           
           {/* Navigation and Social Icons Row */}
-          <div className="flex justify-between items-center">
+          <div className="grid grid-cols-[1fr_auto_1fr] items-center w-full">
             <div className="hidden sm:flex gap-2">
               <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
                 <SiTiktok className="w-3 h-3" />
@@ -72,7 +72,7 @@ export default function EventDetail() {
               </Link>
             </nav>
 
-            <div className="w-24"></div>
+            <div></div>
           </div>
         </div>
       </header>
