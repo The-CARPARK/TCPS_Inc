@@ -8,6 +8,7 @@ import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
 import wavyPattern from "@assets/Screenshot 2025-09-26 025519_1758813220661.png";
+import eyeSymbol from "@assets/Screenshot 2025-09-26 031454_1758813420788.png";
 
 export default function About() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -217,6 +218,14 @@ export default function About() {
         {/* Te Mana Whakatete Accord Section */}
         <section id="accord" className="py-20 px-6 text-[13px]">
           <div className="max-w-4xl mx-auto text-center">
+            {/* Eye Symbol Above Header */}
+            <div className="flex justify-center mb-8">
+              <img 
+                src={eyeSymbol} 
+                alt="TCPS Eye Symbol" 
+                className="h-24 w-24 object-contain"
+              />
+            </div>
             <h2 className="text-4xl font-bold text-center mb-8">TE MANA WHAKATETE ACCORD</h2>
             
             <div className="text-center mb-12 space-y-2">
