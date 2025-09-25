@@ -145,6 +145,28 @@ export default function Home() {
           {/* TCPS Button Above Navigation */}
           <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast">
             <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 glitch-icon" />
+            
+            {/* Scrolling Banner - Center */}
+            <div className="flex-1 mx-4">
+              <div className="bg-black/80 border border-red-900/50 rounded-sm overflow-hidden relative max-w-md mx-auto">
+                <div className="h-5 overflow-hidden relative flex items-center">
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/5 to-transparent animate-pulse"></div>
+                  
+                  {/* Static Time Display */}
+                  <span className="text-[8px] font-mono text-red-400 px-2 py-1 bg-black/50 border-r border-red-900/30 shrink-0 glitch-text" data-text={currentTime}>
+                    {currentTime}
+                  </span>
+                  
+                  {/* Scrolling Text */}
+                  <div className="flex-1 overflow-hidden">
+                    <div className="whitespace-nowrap text-[8px] text-gray-300 py-1 px-2 animate-scroll vhs-overlay">
+                      {bannerText}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
             <div className="flex gap-2">
               <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
                 <SiTiktok className="w-2.5 h-2.5" />
@@ -158,27 +180,6 @@ export default function Home() {
               <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
                 <FaYoutube className="w-2.5 h-2.5" />
               </a>
-            </div>
-          </div>
-          
-          {/* Scrolling Banner */}
-          <div className="mb-3 mx-2">
-            <div className="bg-black/80 border border-red-900/50 rounded-sm overflow-hidden relative">
-              <div className="h-6 overflow-hidden relative flex items-center">
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-500/5 to-transparent animate-pulse"></div>
-                
-                {/* Static Time Display */}
-                <span className="text-[8px] font-mono text-red-400 px-2 py-1.5 bg-black/50 border-r border-red-900/30 shrink-0 glitch-text" data-text={currentTime}>
-                  {currentTime}
-                </span>
-                
-                {/* Scrolling Text */}
-                <div className="flex-1 overflow-hidden">
-                  <div className="whitespace-nowrap text-[10px] text-gray-300 py-1.5 px-2 animate-scroll vhs-overlay">
-                    {bannerText}
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           
