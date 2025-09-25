@@ -154,7 +154,7 @@ export default function Home() {
             
             <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
               <div className="flex flex-col items-center">
-                <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8 wavy-bg-white-slow">
+                <div className="w-64 h-48 flex items-center justify-center mb-8">
                   <div className="text-center text-black">
                     <div className="relative w-48 h-32">
                       <img 
