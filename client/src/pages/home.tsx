@@ -236,21 +236,21 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-white rounded-lg p-6 mb-6 inline-block">
               <h2 className="text-black mb-4 font-black text-[36px]" data-testid="text-mission-heading">MISSION</h2>
-              <div className="text-black text-center text-[15px] font-bold leading-relaxed space-y-4" data-testid="text-mission">
+              <div className="text-black text-center text-[15px] leading-relaxed space-y-4" data-testid="text-mission">
                 <p>
-                  We uncover colonial layers embedded in urban infrastructure. Car parks, laneways, and reclaimed lands are not neutral; they are the foundations of displacement. Our mahi makes the hidden visible, exposing how concrete conceals stories of whenua, awa, and people.
+                  <strong>We uncover colonial layers</strong> embedded in urban infrastructure. Car parks, laneways, and reclaimed lands are not neutral; they are the foundations of displacement. Our mahi makes the hidden visible, exposing how concrete conceals stories of whenua, awa, and people.
                 </p>
                 
                 <p>
-                  We honour Te Tiriti o Waitangi as our guiding framework. By centring mana whenua leadership and modelling co-governance, we ensure that our work is not only creative but accountable. Te Tiriti grounds us in reciprocity, partnership, and enduring responsibility.
+                  <strong>We honour Te Tiriti o Waitangi</strong> as our guiding framework. By centring mana whenua leadership and modelling co-governance, we ensure that our work is not only creative but accountable. Te Tiriti grounds us in reciprocity, partnership, and enduring responsibility.
                 </p>
                 
                 <p>
-                  We restore mauri by reconnecting people with whenua and awa. Through ritual, research, and immersive experience, we bring the flow of buried streams, the pulse of land, and the voices of ancestors back into the urban present.
+                  <strong>We restore mauri</strong> by reconnecting people with whenua and awa. Through ritual, research, and immersive experience, we bring the flow of buried streams, the pulse of land, and the voices of ancestors back into the urban present.
                 </p>
                 
                 <p>
-                  We empower communities through art, ritual, and collective action. Each activation is a portal where audiences become participants, where suppressed stories are remembered, and where tino rangatiratanga is exercised in the heart of the city.
+                  <strong>We empower communities</strong> through art, ritual, and collective action. Each activation is a portal where audiences become participants, where suppressed stories are remembered, and where tino rangatiratanga is exercised in the heart of the city.
                 </p>
               </div>
             </div>
