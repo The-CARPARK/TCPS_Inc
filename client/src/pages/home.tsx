@@ -141,7 +141,7 @@ export default function Home() {
             </div>
             
             {/* Foreground Elements */}
-            <div className="relative z-10 flex justify-between items-center">
+            <div className="absolute inset-0 flex justify-between items-center px-4 z-10">
               <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 glitch-icon bg-white/90 rounded px-1" />
               
               <div className="flex gap-1">
