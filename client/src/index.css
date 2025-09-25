@@ -1065,8 +1065,12 @@
   transition: all 0.3s ease;
 }
 
+.glitch-button {
+  animation: donate-flash 3s infinite, donate-grow 4s infinite;
+}
+
 .glitch-button:hover {
-  animation: text-glitch 0.5s;
+  animation: text-glitch 0.5s, donate-flash 1s infinite, donate-grow 1s infinite;
   filter: hue-rotate(180deg) saturate(150%);
 }
 
@@ -1121,6 +1125,44 @@
 .logo-glitch:hover {
   animation: text-glitch 1s, rgb-shift 1s;
   filter: drop-shadow(0 0 4px rgba(0, 255, 255, 0.5));
+}
+
+/* Donate Button Flash Effect */
+@keyframes donate-flash {
+  0%, 85%, 100% {
+    filter: hue-rotate(0deg) saturate(100%) contrast(100%);
+  }
+  87% {
+    filter: hue-rotate(240deg) saturate(300%) contrast(180%) brightness(1.4);
+  }
+  89% {
+    filter: hue-rotate(120deg) saturate(400%) contrast(220%) brightness(0.7);
+  }
+  91% {
+    filter: hue-rotate(300deg) saturate(350%) contrast(160%) brightness(1.6);
+  }
+  93% {
+    filter: hue-rotate(180deg) saturate(450%) contrast(200%) brightness(0.8) invert(0.1);
+  }
+}
+
+/* Donate Button Grow Effect */
+@keyframes donate-grow {
+  0%, 90%, 100% {
+    transform: scale(1);
+  }
+  92% {
+    transform: scale(1.05);
+  }
+  94% {
+    transform: scale(1.08);
+  }
+  96% {
+    transform: scale(1.03);
+  }
+  98% {
+    transform: scale(1.06);
+  }
 }
 
 /* Scrolling Banner Animation */
