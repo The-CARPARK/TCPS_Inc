@@ -236,7 +236,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-white rounded-lg p-6 mb-6 inline-block">
               <h2 className="text-black mb-4 font-black text-[36px]" data-testid="text-mission-heading">MISSION</h2>
-              <div className="text-black text-left text-[15px] leading-relaxed space-y-4" data-testid="text-mission">
+              <div className="text-black text-center text-[15px] leading-relaxed space-y-4" data-testid="text-mission">
                 <p>
                   We uncover colonial layers embedded in urban infrastructure. Car parks, laneways, and reclaimed lands are not neutral; they are the foundations of displacement. Our mahi makes the hidden visible, exposing how concrete conceals stories of whenua, awa, and people.
                 </p>
