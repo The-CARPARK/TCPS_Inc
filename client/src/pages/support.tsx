@@ -199,7 +199,7 @@ export default function Support() {
                 <img 
                   src={tcpsLogoDesign}
                   alt="TCPS Logo Design" 
-                  className="w-full h-auto max-w-[700px] lg:h-[600px] object-contain"
+                  className="w-full h-auto max-w-[400px] lg:h-[350px] object-contain"
                 />
               </div>
             </div>
