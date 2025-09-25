@@ -9,6 +9,7 @@ import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
 import wavyPattern from "@assets/Screenshot 2025-09-26 025519_1758813220661.png";
 import eyeSymbol from "@assets/Screenshot 2025-09-26 031454_1758813420788.png";
+import curvedDesign from "@assets/Screenshot 2025-09-26 025540_1758813515914.png";
 
 export default function About() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -361,6 +362,15 @@ export default function About() {
                   </p>
                 </div>
               </div>
+            </div>
+            
+            {/* Curved Design Image at End */}
+            <div className="flex justify-center mt-12">
+              <img 
+                src={curvedDesign} 
+                alt="TCPS Design Element" 
+                className="w-full max-w-md h-auto object-contain"
+              />
             </div>
           </div>
         </section>
