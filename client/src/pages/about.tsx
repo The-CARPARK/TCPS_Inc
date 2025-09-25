@@ -93,8 +93,8 @@ export default function About() {
       </header>
 
       {/* Wavy Pattern Image */}
-      <div className="relative w-full">
-        <img src={wavyPattern} alt="" className="w-full h-auto" />
+      <div className="relative w-full h-16 sm:h-20 overflow-hidden">
+        <img src={wavyPattern} alt="" className="w-full h-full object-cover object-center" />
       </div>
 
       {/* Overlay Menu */}
