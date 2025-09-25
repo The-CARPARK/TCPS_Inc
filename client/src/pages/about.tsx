@@ -198,7 +198,7 @@ export default function About() {
             </div>
             
             <div className="mt-12">
-              <h2 className="text-2xl font-bold text-center mb-8">OUR PATH</h2>
+              <h2 className="text-2xl font-bold text-center mb-8">ORIGINS</h2>
               <div className="space-y-6 text-gray-300 leading-relaxed text-lg">
                 <p className="text-center">
                   The Car Park Society formed in response to this understanding: that the most ordinary sites of the city are also the most charged with memory, sovereignty, and possibility. We step into these spaces not only to create art but to reclaim tino rangatiratanga in the urban realm, to restore connection between whenua, awa, and people, to resist the erasures buried under asphalt, and to rehearse futures of resilience, solidarity, and collective power.
