@@ -28,45 +28,51 @@ export default function EventDetail() {
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-b border-gray-800">
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center px-6 py-4">
-          <div className="flex items-center">
+        <div className="px-6 py-3">
+          {/* TCPS Button Above Navigation */}
+          <div className="flex justify-center mb-2">
             <Link href="/">
               <h1 className="text-xs sm:text-sm font-semibold hover:text-red-500 transition-colors cursor-pointer">TCPS</h1>
             </Link>
           </div>
           
-          {/* Center Navigation */}
-          <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
-            <Link href="/" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-home">
-              Home
-            </Link>
-            <Link href="/about-1" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-about">
-              Origins
-            </Link>
-            <Link href="/event-list" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-events">
-              Activations
-            </Link>
-            <Link href="/blog" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-blog">
-              Transmissions
-            </Link>
-            <Link href="/donate" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-donate">
-              Support
-            </Link>
-          </nav>
+          {/* Navigation and Social Icons Row */}
+          <div className="flex justify-between items-center">
+            <div className="hidden sm:flex gap-2">
+              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+                <SiTiktok className="w-3 h-3" />
+              </a>
+              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+                <FaInstagram className="w-3 h-3" />
+              </a>
+              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+                <FaFacebook className="w-3 h-3" />
+              </a>
+              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
+                <FaYoutube className="w-3 h-3" />
+              </a>
+            </div>
+            
+            {/* Center Navigation */}
+            <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
+              <Link href="/" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-home">
+                Home
+              </Link>
+              <Link href="/about-1" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-about">
+                Origins
+              </Link>
+              <Link href="/event-list" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-events">
+                Activations
+              </Link>
+              <Link href="/blog" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-blog">
+                Transmissions
+              </Link>
+              <Link href="/donate" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-donate">
+                Support
+              </Link>
+            </nav>
 
-          <div className="justify-self-end hidden sm:flex gap-2">
-            <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
-              <SiTiktok className="w-3 h-3" />
-            </a>
-            <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
-              <FaInstagram className="w-3 h-3" />
-            </a>
-            <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
-              <FaFacebook className="w-3 h-3" />
-            </a>
-            <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-gray-700 rounded-full flex items-center justify-center text-xs hover:bg-red-600 transition-colors">
-              <FaYoutube className="w-3 h-3" />
-            </a>
+            <div className="w-24"></div>
           </div>
         </div>
       </header>
