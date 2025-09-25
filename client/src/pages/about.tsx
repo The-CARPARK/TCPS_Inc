@@ -159,28 +159,44 @@ export default function About() {
         {/* Our Story Section */}
         <section id="story" className="py-20 px-6">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold text-center mb-8">TCPS ORIGINS</h1>
+            <h1 className="text-4xl font-bold text-center mb-8">ORIGINS</h1>
             <p className="text-xl text-center mb-12 font-bold">All Carparks Are Battlegrounds.</p>
-            <p className="text-lg mb-8 text-center">Our origins lie in the act of watching.</p>
             
             <div className="space-y-6 text-gray-300 leading-relaxed">
               <p className="text-center">
-                From a penthouse window, late-night gatherings overlooked the spiral of Lombard Street Carpark. At first it seemed empty, just concrete and shadow, but something felt disturbed. The mauri was unsettled.
+                Our beginnings lie in disturbance. In the the faint static of places where mauri has been unsettled. Concrete slabs and spiral ramps conceal more than emptiness. They hum with what has been buried, what refuses to be forgotten. The silence of these structures is not absence but memory under pressure.
               </p>
               
               <p className="text-center">
-                That unease drew us into archives, titles, and whakapapa. Slowly the layers emerged. The site had once been Te Aro Pā, a thriving kāinga of mana whenua, disrupted and displaced through colonisation. It later became home to Bethune & Hunter's Wine Merchants, a colonial warehouse of commerce and extraction, built on reclaimed land. And beneath it all, the Waimapihi Stream still flows, diverted into pipes but never silenced.
+                The call of the awa led us here. Beneath the asphalt, its flow is forced into darkness, diverted into pipes, its voice distorted but unbroken. That current pulled us downward, into archives, titles, maps, and whakapapa, until the layers of the city revealed themselves.
+              </p>
+              
+              <p className="text-center">
+                This ground once held Te Aro Pā, a thriving kāinga of mana whenua, its people displaced as colonisation reconfigured the shoreline. In its place rose Bethune & Hunter's Wine Merchants, a warehouse of barrels and ledgers, a colonial outpost of extraction and commerce. The building is gone, but its logic remains, hardened into the skeleton of the city.
+              </p>
+              
+              <p className="text-center">
+                Still deeper runs Waimapihi Stream, carrying the memory of what came before. Its waters persist, even when silenced, a reminder that nothing is ever fully erased.
               </p>
               
               <p className="text-center italic text-xl">
                 Ko te awa ahau, ko te awa ko au. I am the river and the river is me.
               </p>
-            </div>
-            
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-center mb-6">THE LESSON</h2>
-              <p className="text-gray-300 leading-relaxed text-center">
-                Urban infrastructure is not neutral. The skeleton of our city is made of reclaimed shorelines, buried waterways, and asphalted kāinga. These are artefacts of colonisation that continue to shape inequity, disconnection, and climate vulnerability. To reclaim these spaces is to reawaken them. To listen is to resist forgetting.
+              
+              <p className="text-center">
+                To listen to the awa is to hear the distortion of mauri. To uncover what lies beneath is to recognise the city itself as a palimpsest of erasure and resistance. A carpark is not neutral ground. It is an archive of violence, resilience, and unfinished histories, waiting to be reawakened.
+              </p>
+              
+              <p className="text-center">
+                This is where The Car Park Society takes its stand. We respond to the awa's call by turning silence into ceremony and concrete into conduit. We gather in these overlooked spaces to restore mauri, to resurface suppressed histories, and to create living portals where tino rangatiratanga is rehearsed and reclaimed.
+              </p>
+              
+              <p className="text-center">
+                A carpark may appear ordinary, but in our hands it becomes extraordinary: a site where memory is activated, where communities reconnect, and where futures are imagined against the grain of colonisation.
+              </p>
+              
+              <p className="text-center font-semibold">
+                We are Watchers. We follow the currents beneath asphalt. We reclaim the battlegrounds of the city and reimagine them as portals of mauri, memory, and transformation.
               </p>
             </div>
           </div>
