@@ -47,7 +47,7 @@ export default function Events() {
               Events
             </Link>
             <Link href="/blog" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-blog">
-              Blog
+              Transmissions
             </Link>
             <Link href="/donate" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-donate">
               Support
