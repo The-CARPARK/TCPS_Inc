@@ -152,7 +152,7 @@ export default function Support() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex justify-center min-h-[80vh] items-center">
             {/* Integrated Content with Image */}
-            <div className="bg-black/60 p-12 rounded-lg max-w-6xl w-full">
+            <div className="bg-black/60 p-12 rounded-lg max-w-4xl w-full">
               <div className="flex flex-col lg:flex-row gap-8 items-start">
                 <div className="flex-1">
                   <h1 className="font-bold text-white mb-8 text-[26px]">
