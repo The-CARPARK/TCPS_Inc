@@ -209,7 +209,7 @@ export default function Support() {
             <div className="bg-black/60 p-12 rounded-lg max-w-4xl w-full">
               <div className="flex flex-col lg:flex-row gap-8 items-start">
                 <div className="flex-1">
-                  <div className="lg:flex lg:items-start lg:justify-between lg:mb-4">
+                  <div className="lg:flex lg:items-center lg:justify-between lg:mb-4">
                     <div>
                       <h1 className="font-bold text-white mb-3 lg:mb-2 text-[26px]">
                         SUPPORT TCPS
