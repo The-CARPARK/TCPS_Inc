@@ -214,22 +214,23 @@ export default function Support() {
                   </h1>
                   
                   <div className="space-y-6 text-gray-300 leading-relaxed mb-8">
-                    <p className="text-lg font-semibold">Why Support us?</p>
-                    
-                    <div className="flex justify-center">
-                      <a 
-                        href="http://ko-fi.com/thecarparksocietyinc" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="inline-block"
-                      >
-                        <Button 
-                          className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
-                          data-testid="button-donate"
+                    <div className="relative flex items-center">
+                      <p className="text-lg font-semibold">Why Support us?</p>
+                      <div className="absolute left-1/2 transform -translate-x-1/2">
+                        <a 
+                          href="http://ko-fi.com/thecarparksocietyinc" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-block"
                         >
-                          DONATE
-                        </Button>
-                      </a>
+                          <Button 
+                            className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
+                            data-testid="button-donate"
+                          >
+                            DONATE
+                          </Button>
+                        </a>
+                      </div>
                     </div>
                     
                     <p>
