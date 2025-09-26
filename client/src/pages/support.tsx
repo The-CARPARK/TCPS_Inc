@@ -211,7 +211,7 @@ export default function Support() {
                 <div className="flex-1">
                   <div className="lg:mb-4">
                     <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 mb-3 lg:mb-2">
-                      <h1 className="font-bold text-white text-[26px]">
+                      <h1 className="font-bold text-white text-[26px] text-center lg:text-left">
                         SUPPORT TCPS
                       </h1>
                       
@@ -232,10 +232,10 @@ export default function Support() {
                         </a>
                       </div>
                     </div>
-                    <p className="text-lg font-semibold text-gray-300 mb-6 lg:mb-0">Why Support us?</p>
+                    <p className="text-lg font-semibold text-gray-300 mb-6 lg:mb-0 text-center lg:text-left">Why Support us?</p>
                   </div>
                   
-                  <div className="space-y-6 text-gray-300 leading-relaxed mb-8">
+                  <div className="space-y-6 text-gray-300 leading-relaxed mb-8 text-center lg:text-left">
                     
                     <p>
                       By backing The Car Park Society on Ko-fi, you help us keep the movement 
