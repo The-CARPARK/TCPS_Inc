@@ -209,29 +209,29 @@ export default function Support() {
             <div className="bg-black/60 p-12 rounded-lg max-w-4xl w-full">
               <div className="flex flex-col lg:flex-row gap-8 items-start">
                 <div className="flex-1">
-                  <h1 className="font-bold text-white mb-8 text-[26px]">
+                  <h1 className="font-bold text-white mb-6 text-[26px]">
                     SUPPORT TCPS
                   </h1>
                   
+                  {/* Donate Button - Between Title and Subtitle */}
+                  <div className="flex justify-center mb-6">
+                    <a 
+                      href="http://ko-fi.com/thecarparksocietyinc" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-block"
+                    >
+                      <Button 
+                        className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
+                        data-testid="button-donate"
+                      >
+                        DONATE
+                      </Button>
+                    </a>
+                  </div>
+                  
                   <div className="space-y-6 text-gray-300 leading-relaxed mb-8">
-                    <div className="relative flex items-center">
-                      <p className="text-lg font-semibold">Why Support us?</p>
-                      <div className="absolute left-[60%] transform -translate-x-1/2 -translate-y-2">
-                        <a 
-                          href="http://ko-fi.com/thecarparksocietyinc" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="inline-block"
-                        >
-                          <Button 
-                            className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
-                            data-testid="button-donate"
-                          >
-                            DONATE
-                          </Button>
-                        </a>
-                      </div>
-                    </div>
+                    <p className="text-lg font-semibold">Why Support us?</p>
                     
                     <p>
                       By backing The Car Park Society on Ko-fi, you help us keep the movement 
