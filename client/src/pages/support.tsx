@@ -209,7 +209,7 @@ export default function Support() {
             <div className="bg-black/60 p-12 rounded-lg max-w-4xl w-full">
               <div className="flex flex-col lg:flex-row gap-8 items-start">
                 <div className="flex-1">
-                  <div className="lg:flex lg:items-center lg:justify-between lg:mb-4">
+                  <div className="lg:relative lg:mb-4">
                     <div>
                       <h1 className="font-bold text-white mb-3 lg:mb-2 text-[26px]">
                         SUPPORT TCPS
@@ -217,8 +217,8 @@ export default function Support() {
                       <p className="text-lg font-semibold text-gray-300 mb-6 lg:mb-0">Why Support us?</p>
                     </div>
                     
-                    {/* Donate Button - Left on desktop, centered on mobile */}
-                    <div className="flex justify-center lg:justify-start lg:ml-2">
+                    {/* Donate Button - Centered on mobile, positioned right and vertically centered on desktop */}
+                    <div className="flex justify-center lg:absolute lg:right-0 lg:top-1/2 lg:transform lg:-translate-y-1/2">
                       <a 
                         href="http://ko-fi.com/thecarparksocietyinc" 
                         target="_blank" 
