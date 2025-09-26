@@ -209,29 +209,33 @@ export default function Support() {
             <div className="bg-black/60 p-12 rounded-lg max-w-4xl w-full">
               <div className="flex flex-col lg:flex-row gap-8 items-start">
                 <div className="flex-1">
-                  <h1 className="font-bold text-white mb-6 text-[26px]">
-                    SUPPORT TCPS
-                  </h1>
-                  
-                  {/* Donate Button - Between Title and Subtitle */}
-                  <div className="flex justify-center mb-6">
-                    <a 
-                      href="http://ko-fi.com/thecarparksocietyinc" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-block"
-                    >
-                      <Button 
-                        className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
-                        data-testid="button-donate"
+                  <div className="lg:flex lg:items-start lg:justify-between lg:mb-4">
+                    <div>
+                      <h1 className="font-bold text-white mb-3 lg:mb-2 text-[26px]">
+                        SUPPORT TCPS
+                      </h1>
+                      <p className="text-lg font-semibold text-gray-300 mb-6 lg:mb-0">Why Support us?</p>
+                    </div>
+                    
+                    {/* Donate Button - Right side on desktop, centered on mobile */}
+                    <div className="flex justify-center lg:justify-end lg:ml-8">
+                      <a 
+                        href="http://ko-fi.com/thecarparksocietyinc" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-block"
                       >
-                        DONATE
-                      </Button>
-                    </a>
+                        <Button 
+                          className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
+                          data-testid="button-donate"
+                        >
+                          DONATE
+                        </Button>
+                      </a>
+                    </div>
                   </div>
                   
                   <div className="space-y-6 text-gray-300 leading-relaxed mb-8">
-                    <p className="text-lg font-semibold">Why Support us?</p>
                     
                     <p>
                       By backing The Car Park Society on Ko-fi, you help us keep the movement 
