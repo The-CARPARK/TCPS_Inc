@@ -204,7 +204,7 @@ export default function EventDetail() {
                   <img 
                     src={controlRoomImage} 
                     alt="The Control Room - Phase Zero: The Rupture" 
-                    className="w-full h-auto rounded-lg transform scale-110"
+                    className="w-full h-auto rounded-lg transform scale-150"
                   />
                 </div>
               </div>
