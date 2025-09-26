@@ -187,7 +187,7 @@ export default function EventDetail() {
                     
                     
                     
-                    <p className="mb-4 font-semibold text-[18px]">
+                    <p className="mb-4 font-semibold text-[18px] text-center">
                       The Car Park Society Inc. invites you to enter THE CONTROL ROOM:<br />
                       a temporary portal hidden in the heart of Te Aro.<br /><br />
                       This immersive installation space transforms an abandoned urban cavity<br />
