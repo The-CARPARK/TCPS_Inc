@@ -210,27 +210,29 @@ export default function Support() {
               <div className="flex flex-col lg:flex-row gap-8 items-start lg:relative">
                 <div className="flex-1">
                   <div className="lg:mb-4">
-                    <h1 className="font-bold text-white mb-3 lg:mb-2 text-[26px]">
-                      SUPPORT TCPS
-                    </h1>
+                    <div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 mb-3 lg:mb-2">
+                      <h1 className="font-bold text-white text-[26px]">
+                        SUPPORT TCPS
+                      </h1>
+                      
+                      {/* Donate Button - Next to title on desktop, centered on mobile */}
+                      <div className="flex justify-center lg:justify-start mt-4 lg:mt-0">
+                        <a 
+                          href="http://ko-fi.com/thecarparksocietyinc" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-block"
+                        >
+                          <Button 
+                            className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
+                            data-testid="button-donate"
+                          >
+                            DONATE
+                          </Button>
+                        </a>
+                      </div>
+                    </div>
                     <p className="text-lg font-semibold text-gray-300 mb-6 lg:mb-0">Why Support us?</p>
-                  </div>
-                  
-                  {/* Donate Button - Centered on mobile, positioned on far right on desktop */}
-                  <div className="flex justify-center lg:absolute lg:right-0 lg:top-0 lg:h-full lg:items-center">
-                    <a 
-                      href="http://ko-fi.com/thecarparksocietyinc" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-block"
-                    >
-                      <Button 
-                        className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
-                        data-testid="button-donate"
-                      >
-                        DONATE
-                      </Button>
-                    </a>
                   </div>
                   
                   <div className="space-y-6 text-gray-300 leading-relaxed mb-8">
