@@ -12,7 +12,7 @@ export default function BlogPost() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    document.title = "Urban Māori: Breaking through the Concrete Chains of Colonisation - The Car Park Society";
+    document.title = "Urban Māori: Breaking the Concrete Chains of Colonisation - The Car Park Society";
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {

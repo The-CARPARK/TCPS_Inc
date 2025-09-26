@@ -356,8 +356,10 @@ export default function Home() {
                     className="w-full"
                     style={{
                       transform: 'scale(0.9) translateY(-290px)',
+                      transformOrigin: 'top center',
                       filter: 'invert(0.95) hue-rotate(180deg) contrast(1.1) brightness(0.85) saturate(1.2)',
-                      background: 'transparent'
+                      background: 'transparent',
+                      minHeight: '700px'
                     }}
                     title="Newsletter Signup"
                     data-testid="form-newsletter-signup"
