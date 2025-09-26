@@ -89,7 +89,7 @@ export default function About() {
           <div className="relative mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast overflow-hidden">
             {/* Full-Width Scrolling Banner Background */}
             <div className="absolute inset-0 bg-white border-y border-red-900/50 glitch-image">
-              <div className="h-full overflow-hidden relative flex items-center section-glitch">
+              <div className="h-full overflow-hidden relative flex items-center">
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/5 to-transparent animate-pulse"></div>
                 
                 {/* Scrolling Text */}
@@ -266,7 +266,7 @@ export default function About() {
           </div>
         </section>
         {/* Te Mana Whakatete Accord Section */}
-        <section id="accord" className="pt-8 pb-8 px-6 text-[13px] relative bg-black section-glitch">
+        <section id="accord" className="pt-8 pb-8 px-6 text-[13px] relative bg-black">
           <div className="max-w-4xl mx-auto text-center relative z-10">
             {/* Eye Symbol Above Header */}
             <div className="flex justify-center mb-4">
