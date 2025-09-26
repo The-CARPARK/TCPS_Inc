@@ -190,9 +190,7 @@ export default function EventDetail() {
                     <p className="mb-4 text-[13px] text-left font-thin">
                       ∴ a hiddΞn p0rtal in the concrΞte veins of te ar0 ∴<br /><br />
                       ▓▓▓ the car park s0ciety rΞclaims an abΛnd0ned urbΛn cavity ▓▓▓<br /><br />
-                      an immersive signal space, recast as a n3rvΞ c3ntrΞ of shifting fr3quenciΞs.<br />
-                      ▲ walls hum with f̸l̴i̵c̶k̵e̷r̶, fl00rs trΞmble with m͠e͞m͟0ry ▲<br />
-                      ⊗ projΞctions sp͠l͡i͝ce pΛst + futurΞ thr0ugh r̷u̵p͢t͞urΞ ⊗<br /><br />
+                      an immersive signal space, recast as a n3rvΞ c3ntrΞ of shifting fr3quenciΞs. ▲ walls hum with f̸l̴i̵c̶k̵e̷r̶, fl00rs trΞmble with m͠e͞m͟0ry ▲ ⊗ projΞctions sp͠l͡i͝ce pΛst + futurΞ thr0ugh r̷u̵p͢t͞urΞ ⊗<br /><br />
                       ◎ step acr0ss the thrΞsh0ld ◎<br />
                       ask the 0racl3 y0ur qu̴e̷s͠t͜i͞o̴n.<br />
                       ∿ lΞarn the s3crΞt thΛt pulsiΞs in the h͢u͝m ∿<br /><br />
