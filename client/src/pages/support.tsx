@@ -214,7 +214,22 @@ export default function Support() {
                   </h1>
                   
                   <div className="space-y-6 text-gray-300 leading-relaxed mb-8">
-                    <p className="text-lg font-semibold">Why Support us?</p>
+                    <div className="flex items-center justify-between">
+                      <p className="text-lg font-semibold">Why Support us?</p>
+                      <a 
+                        href="http://ko-fi.com/thecarparksocietyinc" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-block"
+                      >
+                        <Button 
+                          className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
+                          data-testid="button-donate"
+                        >
+                          DONATE
+                        </Button>
+                      </a>
+                    </div>
                     
                     <p>
                       By backing The Car Park Society on Ko-fi, you help us keep the movement 
@@ -239,21 +254,8 @@ export default function Support() {
 
                 </div>
                 
-                {/* Donate Button and Embedded Image */}
-                <div className="flex-shrink-0 flex flex-col items-center justify-start gap-4">
-                  <a 
-                    href="http://ko-fi.com/thecarparksocietyinc" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-block"
-                  >
-                    <Button 
-                      className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
-                      data-testid="button-donate"
-                    >
-                      DONATE
-                    </Button>
-                  </a>
+                {/* Embedded Image */}
+                <div className="flex-shrink-0 flex items-start justify-center">
                   <div className="flex items-center justify-center wavy-bg-white-slow p-3 rounded mt-8">
                     <img 
                       src={tcpsLogoDesign}
