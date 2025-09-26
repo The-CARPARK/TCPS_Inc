@@ -155,8 +155,8 @@ export default function BlogPost() {
               </Link>
             </div>
             
-            <h1 className="text-4xl font-bold mb-6">
-              Urban Māori: Breaking through the Concrete Chains of Colonisation
+            <h1 className="font-bold mb-6 text-[32px]">
+              Urban Māori: Breaking the Concrete Chains of Colonisation
             </h1>
             
             <div className="flex items-center gap-4 text-sm text-gray-400 mb-8">
