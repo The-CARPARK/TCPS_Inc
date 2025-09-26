@@ -179,7 +179,6 @@ export default function EventDetail() {
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-6">About the event</h2>
                 
                 <div className="space-y-6 text-gray-300 leading-relaxed">
                   <div>
