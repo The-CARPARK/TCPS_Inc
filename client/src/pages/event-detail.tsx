@@ -179,9 +179,7 @@ export default function EventDetail() {
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-6">About the event</h2>
-                
-                <div className="space-y-6 text-gray-300 leading-relaxed">
+                <div className="space-y-6 text-gray-300 leading-relaxed"></div>
                   <div>
                     <p className="italic mb-4 text-[19px]">Phase Zero: The Rupture</p>
                     
@@ -195,8 +193,8 @@ export default function EventDetail() {
                       ⊗ projΞctions sp͠l͡i͝ce pΛst + futurΞ thr0ugh r̷u̵p͢t͞urΞ ⊗<br /><br />
                       ◎ step acr0ss the thrΞsh0ld ◎<br />
                       ask the 0racl3 y0ur qu̴e̷s͠t͜i͞o̴n.<br />
-                      ∿ lΞarn the s3crΞt thΛt pulsiΞs in the h͢u͝m ∿<br /><br />
-                      ░b░e░c░o░m░e░ pΛrt 0f the s3quΞncΞ // wΛtchΞrs, n0t aud͢i͟encΞ░<br /><br />
+                      ∿ l3arn the s3crΞt thΛt pulsiΞs in the h͢u͝m ∿<br /><br />
+                      b3c0m3 pΛrt 0f the s3quΞncΞ // wΛtchΞrs, n0t aud͢i͟encΞ<br /><br />
                       👁 stΛy vigilant // the s͞i͢g͟nΛl drΛws cl0ser 👁<br />
                       stΛy tuned t0 the frΞquΞnciΞs // det͢a͞ils arΞ d͟e̴s͢c3nding...<br /><br />
                       🌀 the cyc10ne 0f m3m0ry sp1ns cl0s3r 🌀
