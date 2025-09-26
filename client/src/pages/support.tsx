@@ -202,7 +202,7 @@ export default function Support() {
         </div>
       )}
 
-      <main className="pt-20 pb-16 flash-bg">
+      <main className="pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex justify-center min-h-[80vh] items-center">
             {/* Integrated Content with Image */}
@@ -269,7 +269,7 @@ export default function Support() {
       </main>
 
       {/* Footer */}
-      <footer className="py-16 px-6 border-t border-gray-800 mt-16 bg-[#0f0404] flash-bg">
+      <footer className="py-16 px-6 border-t border-gray-800 mt-16 bg-[#0f0404]">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div className="text-center md:text-left">

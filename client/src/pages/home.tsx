@@ -72,7 +72,7 @@ export default function Home() {
 
 
   return (
-    <div className="min-h-screen bg-black text-white flash-bg">
+    <div className="min-h-screen bg-black text-white">
       {/* Skip to main content */}
       <a 
         href="#main-content" 
@@ -386,7 +386,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="py-16 px-6 border-t border-gray-800 flash-bg">
+      <footer className="py-16 px-6 border-t border-gray-800">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div className="text-center">

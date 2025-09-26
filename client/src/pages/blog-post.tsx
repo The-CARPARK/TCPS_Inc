@@ -26,7 +26,7 @@ export default function BlogPost() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white flash-bg">
+    <div className="min-h-screen bg-black text-white">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-red-950/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
@@ -145,7 +145,7 @@ export default function BlogPost() {
         </div>
       )}
 
-      <main className="pt-20 pb-16 flash-bg">
+      <main className="pt-20 pb-16">
         {/* Article Header */}
         <section className="px-6 py-12">
           <div className="max-w-4xl mx-auto">
