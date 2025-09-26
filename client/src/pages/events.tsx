@@ -62,7 +62,7 @@ export default function Events() {
   }, [textIndex]);
 
   return (
-    <div className="min-h-screen bg-black text-white flowing-waves-gentle">
+    <div className="min-h-screen bg-black text-white flash-bg">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-red-950/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
@@ -199,7 +199,7 @@ export default function Events() {
         </div>
       )}
 
-      <main className="pt-20 pb-16 flowing-waves-pulse">
+      <main className="pt-20 pb-16 flash-bg">
         {/* Events Header */}
         <div className="px-6 py-12">
           <div className="max-w-4xl mx-auto text-center">

@@ -1830,3 +1830,48 @@
   z-index: 1;
   pointer-events: none;
 }
+
+/* Intermittent Flash Background Effect */
+@keyframes flash-intermittent {
+  0%, 94% { 
+    opacity: 0; 
+  }
+  95%, 97% { 
+    opacity: 0.15; 
+  }
+  98%, 100% { 
+    opacity: 0; 
+  }
+}
+
+.flash-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.flash-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse 80% 60% at 30% 40%, rgba(255, 255, 255, 0.8) 0%, transparent 70%);
+  animation: flash-intermittent 8s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.flash-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse 70% 50% at 70% 60%, rgba(255, 255, 255, 0.6) 0%, transparent 60%);
+  animation: flash-intermittent 12s ease-in-out infinite;
+  animation-delay: 4s;
+  z-index: 2;
+  pointer-events: none;
+}
