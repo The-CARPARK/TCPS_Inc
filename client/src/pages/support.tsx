@@ -210,7 +210,7 @@ export default function Support() {
               <div className="flex flex-col lg:flex-row gap-8 items-start lg:relative">
                 <div className="flex-1">
                   <div className="lg:mb-4">
-                    <div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 mb-3 lg:mb-2">
+                    <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 mb-3 lg:mb-2">
                       <h1 className="font-bold text-white text-[26px]">
                         SUPPORT TCPS
                       </h1>
