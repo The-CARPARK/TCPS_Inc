@@ -187,7 +187,13 @@ export default function EventDetail() {
                     
                     
                     
-                    <p className="mb-4 font-semibold text-[18px]">The Car Park Society Inc. invites you to enter THE CONTROL ROOM: a temporary portal hidden in the heart of Te Aro. This immersive installation space transforms an abandoned urban cavity into a nerve center of glitch aesthetics and digital mythology.</p>
+                    <p className="mb-4 font-semibold text-[18px]">
+                      The Car Park Society Inc. invites you to enter THE CONTROL ROOM:<br />
+                      a temporary portal hidden in the heart of Te Aro.<br /><br />
+                      This immersive installation space transforms an abandoned urban cavity<br />
+                      into a nerve center of glitch aesthetics and digital mythology.<br /><br />
+                      STAY VIGILANT 👁 MORE DETAILS TO COME...
+                    </p>
                     
                     
                   </div>
