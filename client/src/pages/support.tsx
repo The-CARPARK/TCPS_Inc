@@ -156,7 +156,7 @@ export default function Support() {
                       <img 
                         src={logoImage} 
                         alt="The Car Park Society Logo" 
-                        className="w-full h-full object-contain glitch-image-static"
+                        className="w-full h-full object-contain glitch-amplify"
                       />
                     </div>
                   </div>
@@ -258,7 +258,7 @@ export default function Support() {
                     <img 
                       src={tcpsLogoDesign}
                       alt="TCPS Logo Design" 
-                      className="w-full h-auto max-w-[200px] lg:max-w-[240px] object-contain glitch-image-pulse vhs-overlay"
+                      className="w-full h-auto max-w-[200px] lg:max-w-[240px] object-contain glitch-create vhs-overlay"
                     />
                   </div>
                 </div>
@@ -298,7 +298,7 @@ export default function Support() {
                 <img 
                   src={flagsImage} 
                   alt="Flags" 
-                  className="h-16 object-contain mx-auto glitch-image-static"
+                  className="h-16 object-contain mx-auto glitch-build"
                 />
               </div>
             </div>

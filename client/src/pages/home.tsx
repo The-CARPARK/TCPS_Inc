@@ -170,7 +170,7 @@ export default function Home() {
                       <img 
                         src={logoImage} 
                         alt="The Car Park Society Logo" 
-                        className="w-full h-full object-contain glitch-image-chaos"
+                        className="w-full h-full object-contain glitch-create"
                       />
                     </div>
                   </div>
@@ -429,7 +429,7 @@ export default function Home() {
                 <img 
                   src={flagsImage} 
                   alt="Flags" 
-                  className="h-28 object-contain glitch-image-static"
+                  className="h-28 object-contain glitch-amplify"
                 />
               </div>
             </div>

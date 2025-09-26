@@ -130,7 +130,7 @@ export default function EventDetail() {
                       <img 
                         src={logoImage} 
                         alt="The Car Park Society Logo" 
-                        className="w-full h-full object-contain glitch-image-wave"
+                        className="w-full h-full object-contain glitch-create"
                       />
                     </div>
                   </div>
@@ -204,7 +204,7 @@ export default function EventDetail() {
                   <img 
                     src={controlRoomImage} 
                     alt="The Control Room - Phase Zero: The Rupture" 
-                    className="w-full h-auto rounded-lg transform scale-110 glitch-image-corrupt"
+                    className="w-full h-auto rounded-lg transform scale-110 glitch-amplify"
                   />
                 </div>
               </div>
@@ -312,7 +312,7 @@ export default function EventDetail() {
                 <img 
                   src={flagsImage} 
                   alt="Flags" 
-                  className="h-28 object-contain glitch-image-chaos"
+                  className="h-28 object-contain glitch-build"
                 />
               </div>
             </div>

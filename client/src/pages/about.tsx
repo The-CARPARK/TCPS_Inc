@@ -174,7 +174,7 @@ export default function About() {
                       <img 
                         src={logoImage} 
                         alt="The Car Park Society Logo" 
-                        className="w-full h-full object-contain glitch-image-wave"
+                        className="w-full h-full object-contain glitch-build"
                       />
                     </div>
                   </div>
@@ -273,7 +273,7 @@ export default function About() {
               <img 
                 src={eyeSymbol} 
                 alt="TCPS Eye Symbol" 
-                className="h-72 w-72 sm:h-80 sm:w-80 object-contain image-rendering-crisp-edges glitch-image"
+                className="h-72 w-72 sm:h-80 sm:w-80 object-contain image-rendering-crisp-edges glitch-create"
                 style={{imageRendering: 'crisp-edges', background: 'transparent'}}
               />
             </div>
@@ -470,7 +470,7 @@ export default function About() {
                 <img 
                   src={flagsImage} 
                   alt="Flags" 
-                  className="h-28 object-contain glitch-image-corrupt"
+                  className="h-28 object-contain glitch-amplify"
                 />
               </div>
             </div>

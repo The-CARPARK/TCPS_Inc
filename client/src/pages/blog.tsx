@@ -154,7 +154,7 @@ export default function Blog() {
                       <img 
                         src={logoImage} 
                         alt="The Car Park Society Logo" 
-                        className="w-full h-full object-contain glitch-image-pulse"
+                        className="w-full h-full object-contain glitch-amplify"
                       />
                     </div>
                   </div>
@@ -219,7 +219,7 @@ export default function Blog() {
                     <img 
                       src={urbanMaoriImage} 
                       alt="Urban Māori Blog Post" 
-                      className="w-full h-full object-cover glitch-image-wave"
+                      className="w-full h-full object-cover glitch-create"
                     />
                   </div>
                   
@@ -237,7 +237,7 @@ export default function Blog() {
                         <img 
                           src={tcpsLogoSmall} 
                           alt="TCPS Logo" 
-                          className="w-8 h-8 object-contain glitch-image-chaos"
+                          className="w-8 h-8 object-contain glitch-build"
                         />
                         <span>The Car Park Society</span>
                       </div>
@@ -296,7 +296,7 @@ export default function Blog() {
                 <img 
                   src={flagsImage} 
                   alt="Flags" 
-                  className="h-28 object-contain glitch-image-static"
+                  className="h-28 object-contain glitch-build"
                 />
               </div>
             </div>
