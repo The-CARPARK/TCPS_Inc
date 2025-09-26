@@ -217,8 +217,8 @@ export default function Support() {
                       <p className="text-lg font-semibold text-gray-300 mb-6 lg:mb-0">Why Support us?</p>
                     </div>
                     
-                    {/* Donate Button - Centered on mobile, positioned right and vertically centered on desktop */}
-                    <div className="flex justify-center lg:absolute lg:right-[1cm] lg:top-1/2 lg:transform lg:-translate-y-1/2">
+                    {/* Donate Button - Centered on mobile, positioned 1cm right of text on desktop */}
+                    <div className="flex justify-center lg:absolute lg:left-full lg:ml-[1cm] lg:top-1/2 lg:transform lg:-translate-y-1/2">
                       <a 
                         href="http://ko-fi.com/thecarparksocietyinc" 
                         target="_blank" 
