@@ -10,6 +10,12 @@ import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
 
 export default function EventDetail() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
 
   useEffect(() => {
     document.title = "The Control Room [TCPS] - The Car Park Society";
@@ -23,6 +29,31 @@ export default function EventDetail() {
       meta.content = 'Join us for The Control Room: Phase Zero - The Rupture. A temporary portal hidden in the heart of Te Aro featuring immersive projections and cryptic signals.';
       document.head.appendChild(meta);
     }
+
+    // Countdown timer
+    const calculateTimeLeft = () => {
+      const targetDate = new Date('2025-10-31T00:00:00').getTime();
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        return {
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((difference % (1000 * 60)) / 1000)
+        };
+      }
+      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    };
+
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    setTimeLeft(calculateTimeLeft());
+
+    return () => clearInterval(timer);
   }, []);
 
   return (
@@ -198,6 +229,33 @@ export default function EventDetail() {
                       stΛy tuned t0 the frΞquΞnciΞs // det͢a͞ils arΞ d͟e̴s͢c3nding...
                     </p>
                     
+                    {/* Countdown Timer */}
+                    <div className="mt-8 p-6 bg-gray-900/50 border border-red-900/30 rounded-lg font-mono text-center">
+                      <div className="text-red-400 text-xs uppercase tracking-wider mb-4">
+                        ⚡ SIGNAL ACTIVATION COUNTDOWN ⚡
+                      </div>
+                      <div className="grid grid-cols-4 gap-4 text-white">
+                        <div className="bg-black/50 p-3 rounded border border-gray-800">
+                          <div className="text-2xl font-bold text-red-400">{timeLeft.days.toString().padStart(2, '0')}</div>
+                          <div className="text-xs text-gray-400 uppercase">DAYS</div>
+                        </div>
+                        <div className="bg-black/50 p-3 rounded border border-gray-800">
+                          <div className="text-2xl font-bold text-red-400">{timeLeft.hours.toString().padStart(2, '0')}</div>
+                          <div className="text-xs text-gray-400 uppercase">HOURS</div>
+                        </div>
+                        <div className="bg-black/50 p-3 rounded border border-gray-800">
+                          <div className="text-2xl font-bold text-red-400">{timeLeft.minutes.toString().padStart(2, '0')}</div>
+                          <div className="text-xs text-gray-400 uppercase">MINS</div>
+                        </div>
+                        <div className="bg-black/50 p-3 rounded border border-gray-800">
+                          <div className="text-2xl font-bold text-red-400">{timeLeft.seconds.toString().padStart(2, '0')}</div>
+                          <div className="text-xs text-gray-400 uppercase">SECS</div>
+                        </div>
+                      </div>
+                      <div className="text-xs text-gray-500 mt-4 font-mono">
+                        ⧫ THΞ RUPTURΞ BΞGINS ⧫
+                      </div>
+                    </div>
                     
                   </div>
                   
