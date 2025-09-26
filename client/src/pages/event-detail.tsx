@@ -179,7 +179,9 @@ export default function EventDetail() {
               </div>
               
               <div>
-                <div className="space-y-6 text-gray-300 leading-relaxed"></div>
+                <h2 className="text-2xl font-bold mb-6">About the event</h2>
+                
+                <div className="space-y-6 text-gray-300 leading-relaxed">
                   <div>
                     <p className="italic mb-4 text-[19px]">Phase Zero: The Rupture</p>
                     
@@ -188,16 +190,13 @@ export default function EventDetail() {
                     <p className="mb-4 text-[13px] text-left font-thin">
                       ∴ a hiddΞn p0rtal in the concrΞte veins of te ar0 ∴<br /><br />
                       ▓▓▓ the car park s0ciety rΞclaims an abΛnd0ned urbΛn cavity ▓▓▓<br /><br />
-                      an immersive signal space, recast as a n3rvΞ c3ntrΞ of shifting fr3quenciΞs.<br />
-                      ▲ walls hum with f̸l̴i̵c̶k̵e̷r̶, fl00rs trΞmble with m͠e͞m͟0ry ▲<br />
-                      ⊗ projΞctions sp͠l͡i͝ce pΛst + futurΞ thr0ugh r̷u̵p͢t͞urΞ ⊗<br /><br />
+                      an immersive signal space, recast as a n3rvΞ c3ntrΞ of shifting fr3quenciΞs. ▲ walls hum with f̸l̴i̵c̶k̵e̷r̶, fl00rs trΞmble with m͠e͞m͟0ry ▲ ⊗ projΞctions sp͠l͡i͝ce pΛst + futurΞ thr0ugh r̷u̵p͢t͞urΞ ⊗<br /><br />
                       ◎ step acr0ss the thrΞsh0ld ◎<br />
                       ask the 0racl3 y0ur qu̴e̷s͠t͜i͞o̴n.<br />
-                      ∿ l3arn the s3crΞt thΛt pulsiΞs in the h͢u͝m ∿<br /><br />
-                      b3c0m3 pΛrt 0f the s3quΞncΞ // wΛtchΞrs, n0t aud͢i͟encΞ<br /><br />
+                      ∿ lΞarn the s3crΞt thΛt pulsiΞs in the h͢u͝m ∿<br /><br />
+                      ░b░e░c░o░m░e░ pΛrt 0f the s3quΞncΞ // wΛtchΞrs, n0t aud͢i͟encΞ░<br /><br />
                       👁 stΛy vigilant // the s͞i͢g͟nΛl drΛws cl0ser 👁<br />
-                      stΛy tuned t0 the frΞquΞnciΞs // det͢a͞ils arΞ d͟e̴s͢c3nding...<br /><br />
-                      🌀 the cyc10ne 0f m3m0ry sp1ns cl0s3r 🌀
+                      stΛy tuned t0 the frΞquΞnciΞs // det͢a͞ils arΞ d͟e̴s͢c3nding...
                     </p>
                     
                     
