@@ -214,8 +214,9 @@ export default function Support() {
                   </h1>
                   
                   <div className="space-y-6 text-gray-300 leading-relaxed mb-8">
-                    <div className="flex items-center justify-between">
-                      <p className="text-lg font-semibold">Why Support us?</p>
+                    <p className="text-lg font-semibold">Why Support us?</p>
+                    
+                    <div className="flex justify-center">
                       <a 
                         href="http://ko-fi.com/thecarparksocietyinc" 
                         target="_blank" 
