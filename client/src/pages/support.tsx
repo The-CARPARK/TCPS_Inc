@@ -218,7 +218,7 @@ export default function Support() {
                     </div>
                     
                     {/* Donate Button - Centered on mobile, positioned right and vertically centered on desktop */}
-                    <div className="flex justify-center lg:absolute lg:right-0 lg:top-1/2 lg:transform lg:-translate-y-1/2">
+                    <div className="flex justify-center lg:absolute lg:right-[1cm] lg:top-1/2 lg:transform lg:-translate-y-1/2">
                       <a 
                         href="http://ko-fi.com/thecarparksocietyinc" 
                         target="_blank" 
