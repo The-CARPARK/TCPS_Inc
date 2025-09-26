@@ -256,6 +256,23 @@ export default function Events() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div className="text-center">
+              {/* Small Donate Button */}
+              <div className="mb-4">
+                <a 
+                  href="http://ko-fi.com/thecarparksocietyinc" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <Button 
+                    className="bg-white text-black font-bold px-3 py-2 text-sm hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
+                    data-testid="button-donate-footer"
+                  >
+                    DONATE
+                  </Button>
+                </a>
+              </div>
+              
               <div className="flex gap-2 mb-4 justify-center">
                 <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <SiTiktok className="w-4 h-4" />
