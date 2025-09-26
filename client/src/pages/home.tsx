@@ -291,7 +291,7 @@ export default function Home() {
                   <img 
                     src={eyeCreateImage} 
                     alt="Eye symbol representing CREATE" 
-                    className="w-48 h-48 object-contain glitch-image"
+                    className="w-48 h-48 object-contain glitch-create"
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-create-heading">CREATE</h3>
@@ -305,7 +305,7 @@ export default function Home() {
                   <img 
                     src={eyeBuildImage} 
                     alt="Eye symbol representing BUILD" 
-                    className="w-48 h-48 object-contain glitch-image"
+                    className="w-48 h-48 object-contain glitch-build"
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-build-heading">BUILD</h3>
@@ -319,7 +319,7 @@ export default function Home() {
                   <img 
                     src={eyeAmplifyImage} 
                     alt="Eye symbol representing AMPLIFY" 
-                    className="w-48 h-48 object-contain glitch-image"
+                    className="w-48 h-48 object-contain glitch-amplify"
                   />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-white" data-testid="text-amplify-heading">AMPLIFY</h3>

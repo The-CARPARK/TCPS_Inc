@@ -2378,3 +2378,193 @@
     opacity: 0.1;
   }
 }
+
+/* Color Scale Glitch Effects for Triage Images */
+.glitch-create {
+  position: relative;
+  animation: create-color-glitch 4s infinite;
+}
+
+.glitch-create::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent 0px,
+    rgba(255, 80, 0, 0.08) 1px,
+    transparent 2px,
+    rgba(255, 150, 50, 0.06) 3px,
+    transparent 4px,
+    rgba(255, 0, 80, 0.1) 5px,
+    transparent 6px
+  );
+  mix-blend-mode: screen;
+  animation: create-flash 3s infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.glitch-build {
+  position: relative;
+  animation: build-color-glitch 3.5s infinite;
+}
+
+.glitch-build::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    135deg,
+    transparent 0px,
+    rgba(0, 150, 255, 0.08) 1px,
+    transparent 2px,
+    rgba(0, 255, 200, 0.06) 3px,
+    transparent 4px,
+    rgba(80, 180, 255, 0.1) 5px,
+    transparent 6px
+  );
+  mix-blend-mode: overlay;
+  animation: build-flash 2.5s infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.glitch-amplify {
+  position: relative;
+  animation: amplify-color-glitch 4.5s infinite;
+}
+
+.glitch-amplify::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0px,
+    rgba(150, 255, 0, 0.08) 1px,
+    transparent 2px,
+    rgba(255, 0, 150, 0.06) 3px,
+    transparent 4px,
+    rgba(0, 255, 120, 0.1) 5px,
+    transparent 6px
+  );
+  mix-blend-mode: multiply;
+  animation: amplify-flash 3.5s infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Create Color Scale Keyframes - Red/Orange */
+@keyframes create-color-glitch {
+  0%, 85%, 100% { 
+    transform: translate(0) scale(1);
+    filter: hue-rotate(0deg) saturate(100%) sepia(0%);
+  }
+  86% { 
+    transform: translate(-2px, 1px) scale(1.02);
+    filter: hue-rotate(15deg) saturate(200%) sepia(30%);
+  }
+  87% { 
+    transform: translate(3px, -2px) scale(0.98);
+    filter: hue-rotate(30deg) saturate(300%) sepia(60%);
+  }
+  88% { 
+    transform: translate(-1px, -2px) scale(1.01);
+    filter: hue-rotate(0deg) saturate(250%) sepia(40%);
+  }
+}
+
+@keyframes create-flash {
+  0%, 88%, 100% { 
+    opacity: 0.08;
+    transform: translateX(0);
+  }
+  89% { 
+    opacity: 0.2;
+    transform: translateX(-3px);
+  }
+  90% { 
+    opacity: 0.15;
+    transform: translateX(2px);
+  }
+}
+
+/* Build Color Scale Keyframes - Blue/Cyan */
+@keyframes build-color-glitch {
+  0%, 82%, 100% { 
+    transform: translate(0) scale(1);
+    filter: hue-rotate(0deg) saturate(100%) sepia(0%);
+  }
+  83% { 
+    transform: translate(-3px, 2px) scale(1.03);
+    filter: hue-rotate(180deg) saturate(250%) sepia(40%);
+  }
+  84% { 
+    transform: translate(2px, -3px) scale(0.97);
+    filter: hue-rotate(200deg) saturate(350%) sepia(70%);
+  }
+  85% { 
+    transform: translate(-2px, 1px) scale(1.02);
+    filter: hue-rotate(160deg) saturate(200%) sepia(30%);
+  }
+}
+
+@keyframes build-flash {
+  0%, 85%, 100% { 
+    opacity: 0.06;
+    transform: translateY(0);
+  }
+  86% { 
+    opacity: 0.18;
+    transform: translateY(-2px);
+  }
+  87% { 
+    opacity: 0.12;
+    transform: translateY(3px);
+  }
+}
+
+/* Amplify Color Scale Keyframes - Green/Purple */
+@keyframes amplify-color-glitch {
+  0%, 80%, 100% { 
+    transform: translate(0) scale(1);
+    filter: hue-rotate(0deg) saturate(100%) sepia(0%);
+  }
+  81% { 
+    transform: translate(-2px, -1px) scale(1.04);
+    filter: hue-rotate(90deg) saturate(280%) sepia(50%);
+  }
+  82% { 
+    transform: translate(4px, 2px) scale(0.96);
+    filter: hue-rotate(270deg) saturate(320%) sepia(80%);
+  }
+  83% { 
+    transform: translate(-3px, 3px) scale(1.01);
+    filter: hue-rotate(120deg) saturate(220%) sepia(40%);
+  }
+}
+
+@keyframes amplify-flash {
+  0%, 83%, 100% { 
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  84% { 
+    opacity: 0.22;
+    transform: scale(1.05);
+  }
+  85% { 
+    opacity: 0.14;
+    transform: scale(0.95);
+  }
+}
