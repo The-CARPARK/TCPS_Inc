@@ -249,15 +249,9 @@ export default function BlogPost() {
                 The Car Park Society recognises that reclamation is not linear; it is recursive, anarchic, poetic. Te Mana Whakatetē calls us to shatter the illusions of deficit and reawaken our inherent power. That includes power obscured by high-rise towers and motorway shadows.
               </p>
               
-              <p className="text-white font-semibold" data-testid="text-roles-heading">
-                Urban Māori have unique roles to play in the great remembering:
+              <p data-testid="text-roles-combined">
+                Urban Māori have unique roles to play in the great remembering: We build hybrid bridges between cultures. We know how to navigate systems and subvert them. We carry our ancestral wairua wherever we are.
               </p>
-              
-              <div className="space-y-2">
-                <p data-testid="text-bridges">We build hybrid bridges between cultures.</p>
-                <p data-testid="text-navigate">We know how to navigate systems and subvert them.</p>
-                <p data-testid="text-wairua">We carry our ancestral wairua wherever we are</p>
-              </div>
               
               <p data-testid="text-mission">
                 Our mission is not to become Māori, we already are. Our mission is to return to ourselves. To be Māori is to be in constant relationship, with whenua, with wairua, with whakapapa. Urban life has fractured those relationships, but they are not lost. The signal is still there, under the concrete, waiting for the right vibration to crack it open.
