@@ -231,7 +231,7 @@ export default function Events() {
                       <div className="flex items-center gap-4 text-gray-400 mb-4">
                         <span>Thu, 30 Oct</span>
                         <span>|</span>
-                        <span>Te Aro, Te-Whanganui-a-Tata</span>
+                        <span>Te Aro, Te-Whanganui-a-Tara</span>
                       </div>
                       
                       <p className="text-gray-300 mb-4">
