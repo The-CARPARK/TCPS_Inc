@@ -187,7 +187,7 @@ export default function EventDetail() {
                     
                     
                     
-                    <p className="mb-4 font-semibold text-[18px] text-center">
+                    <p className="mb-4 text-[13px] text-left font-thin">
                       ∴ a hiddΞn p0rtal in the concrΞte veins of te ar0 ∴<br /><br />
                       ▓▓▓ the car park s0ciety rΞclaims an abΛnd0ned urbΛn cavity ▓▓▓<br /><br />
                       an immersive signal space, recast as a n3rvΞ c3ntrΞ of shifting fr3quenciΞs.<br />
