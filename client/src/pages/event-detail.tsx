@@ -191,7 +191,6 @@ export default function EventDetail() {
                     
                     <ul className="list-disc list-inside space-y-2 ml-4">
                       <li><strong className="text-white">Immersive projections</strong> that fracture and reassemble the concrete mythos of the city.</li>
-                      <li><strong className="text-white">The Oracle terminal</strong>, transmitting cryptic signals and glitch-coded prophecy.</li>
                     </ul>
                   </div>
                   
