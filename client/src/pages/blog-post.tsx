@@ -223,27 +223,27 @@ export default function BlogPost() {
                 Urban Māori face systemic and emotional barriers in reconnecting:
               </p>
               
-              <ul className="list-disc list-inside space-y-3 ml-4">
-                <li data-testid="text-bureaucratic">
+              <div className="space-y-3">
+                <p data-testid="text-bureaucratic">
                   <strong className="text-white">Bureaucratic dislocation</strong> – Many urban Māori have no clear tribal registration or are disconnected from iwi/hapū databases.
-                </li>
+                </p>
                 
-                <li data-testid="text-gatekeeping">
+                <p data-testid="text-gatekeeping">
                   <strong className="text-white">Cultural gatekeeping</strong> – Some spaces may (intentionally or not) make those returning feel unworthy or illegitimate.
-                </li>
+                </p>
                 
-                <li data-testid="text-trauma">
+                <p data-testid="text-trauma">
                   <strong className="text-white">Generational trauma</strong> – Disconnection is often inherited. When parents and grandparents were punished for being Māori, their descendants internalize the silence.
-                </li>
+                </p>
                 
-                <li data-testid="text-cost">
+                <p data-testid="text-cost">
                   <strong className="text-white">Cost and access</strong>– Reo classes, marae trips, and wānanga often require time, money, and transport that urban whānau may not have.
-                </li>
+                </p>
                 
-                <li data-testid="text-anxiety">
+                <p data-testid="text-anxiety">
                   <strong className="text-white">Identity anxiety</strong>– Fear of "getting it wrong," being corrected, or feeling judged can shut down efforts before they begin.
-                </li>
-              </ul>
+                </p>
+              </div>
               
               <p data-testid="text-tcps-recognition">
                 The Car Park Society recognises that reclamation is not linear; it is recursive, anarchic, poetic. Te Mana Whakatetē calls us to shatter the illusions of deficit and reawaken our inherent power. That includes power obscured by high-rise towers and motorway shadows.
@@ -253,11 +253,11 @@ export default function BlogPost() {
                 Urban Māori have unique roles to play in the great remembering:
               </p>
               
-              <ul className="list-disc list-inside space-y-2 ml-4">
-                <li data-testid="text-bridges">We build hybrid bridges between cultures.</li>
-                <li data-testid="text-navigate">We know how to navigate systems and subvert them.</li>
-                <li data-testid="text-wairua">We carry our ancestral wairua wherever we are</li>
-              </ul>
+              <div className="space-y-2">
+                <p data-testid="text-bridges">We build hybrid bridges between cultures.</p>
+                <p data-testid="text-navigate">We know how to navigate systems and subvert them.</p>
+                <p data-testid="text-wairua">We carry our ancestral wairua wherever we are</p>
+              </div>
               
               <p data-testid="text-mission">
                 Our mission is not to become Māori, we already are. Our mission is to return to ourselves. To be Māori is to be in constant relationship, with whenua, with wairua, with whakapapa. Urban life has fractured those relationships, but they are not lost. The signal is still there, under the concrete, waiting for the right vibration to crack it open.
