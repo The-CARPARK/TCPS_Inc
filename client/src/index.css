@@ -2568,3 +2568,123 @@
     transform: scale(0.95);
   }
 }
+
+/* Māori Flag Background Distortion */
+.maori-flag-bg {
+  position: relative;
+  background: linear-gradient(
+    135deg, 
+    #000000 0%, 
+    #000000 25%, 
+    #ffffff 25%, 
+    #ffffff 50%, 
+    #cc0000 50%, 
+    #cc0000 75%, 
+    #000000 75%, 
+    #000000 100%
+  );
+  background-size: 40px 40px;
+  animation: maori-flag-distort 8s infinite;
+}
+
+.maori-flag-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(204, 0, 0, 0.08) 0px,
+    transparent 2px,
+    rgba(255, 255, 255, 0.12) 4px,
+    transparent 6px,
+    rgba(0, 0, 0, 0.06) 8px,
+    transparent 10px
+  );
+  mix-blend-mode: overlay;
+  animation: maori-flag-waves 6s infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.maori-flag-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    ellipse 60% 40% at 30% 70%,
+    rgba(204, 0, 0, 0.15) 0%,
+    transparent 50%
+  ),
+  radial-gradient(
+    ellipse 40% 30% at 70% 30%,
+    rgba(0, 0, 0, 0.12) 0%,
+    transparent 40%
+  );
+  mix-blend-mode: multiply;
+  animation: maori-flag-pulse 10s infinite;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@keyframes maori-flag-distort {
+  0%, 90%, 100% { 
+    background-size: 40px 40px;
+    filter: hue-rotate(0deg) saturate(100%);
+  }
+  91% { 
+    background-size: 45px 42px;
+    filter: hue-rotate(5deg) saturate(120%);
+  }
+  92% { 
+    background-size: 38px 44px;
+    filter: hue-rotate(-3deg) saturate(140%);
+  }
+  93% { 
+    background-size: 42px 39px;
+    filter: hue-rotate(2deg) saturate(110%);
+  }
+}
+
+@keyframes maori-flag-waves {
+  0%, 88%, 100% { 
+    transform: translateX(0) skewX(0deg);
+    opacity: 0.08;
+  }
+  89% { 
+    transform: translateX(-3px) skewX(1deg);
+    opacity: 0.15;
+  }
+  90% { 
+    transform: translateX(4px) skewX(-2deg);
+    opacity: 0.12;
+  }
+  91% { 
+    transform: translateX(-2px) skewX(1.5deg);
+    opacity: 0.18;
+  }
+}
+
+@keyframes maori-flag-pulse {
+  0%, 85%, 100% { 
+    transform: scale(1);
+    opacity: 0.15;
+  }
+  86% { 
+    transform: scale(1.05);
+    opacity: 0.25;
+  }
+  87% { 
+    transform: scale(0.95);
+    opacity: 0.18;
+  }
+  88% { 
+    transform: scale(1.02);
+    opacity: 0.22;
+  }
+}
