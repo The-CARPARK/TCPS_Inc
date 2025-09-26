@@ -2033,7 +2033,7 @@
 /* Random Glitch Effect Variations */
 .glitch-image-chaos {
   position: relative;
-  animation: chaos-glitch 22s infinite;
+  animation: chaos-glitch 4s infinite;
 }
 
 .glitch-image-chaos::before {
@@ -2054,7 +2054,7 @@
     transparent 6px
   );
   mix-blend-mode: screen;
-  animation: random-shift 8s infinite;
+  animation: random-shift 3s infinite;
   pointer-events: none;
   z-index: 1;
 }
@@ -2075,14 +2075,14 @@
     transparent 8px
   );
   mix-blend-mode: multiply;
-  animation: random-distort 12s infinite;
+  animation: random-distort 5s infinite;
   pointer-events: none;
   z-index: 2;
 }
 
 .glitch-image-static {
   position: relative;
-  animation: static-interference 18s infinite;
+  animation: static-interference 6s infinite;
 }
 
 .glitch-image-static::before {
@@ -2101,14 +2101,14 @@
     transparent 3px
   );
   mix-blend-mode: overlay;
-  animation: tv-static 5s infinite;
+  animation: tv-static 2s infinite;
   pointer-events: none;
   z-index: 1;
 }
 
 .glitch-image-corrupt {
   position: relative;
-  animation: data-corruption 25s infinite;
+  animation: data-corruption 7s infinite;
 }
 
 .glitch-image-corrupt::before {
@@ -2122,14 +2122,14 @@
     linear-gradient(90deg, transparent 98%, rgba(255, 0, 255, 0.08) 99%, transparent 100%),
     linear-gradient(0deg, transparent 97%, rgba(0, 255, 255, 0.06) 98%, transparent 100%);
   mix-blend-mode: difference;
-  animation: corruption-lines 10s infinite;
+  animation: corruption-lines 4s infinite;
   pointer-events: none;
   z-index: 1;
 }
 
 .glitch-image-wave {
   position: relative;
-  animation: wave-distortion 20s infinite;
+  animation: wave-distortion 5s infinite;
 }
 
 .glitch-image-wave::before {
@@ -2148,14 +2148,14 @@
     transparent 8px
   );
   mix-blend-mode: soft-light;
-  animation: wave-scan 7s infinite;
+  animation: wave-scan 3s infinite;
   pointer-events: none;
   z-index: 1;
 }
 
 .glitch-image-pulse {
   position: relative;
-  animation: pulse-glitch 15s infinite;
+  animation: pulse-glitch 6s infinite;
 }
 
 .glitch-image-pulse::before {
@@ -2176,7 +2176,7 @@
     transparent 25%
   );
   mix-blend-mode: color-burn;
-  animation: pulse-waves 6s infinite;
+  animation: pulse-waves 3s infinite;
   pointer-events: none;
   z-index: 1;
 }
