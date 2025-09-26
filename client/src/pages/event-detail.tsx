@@ -163,7 +163,7 @@ export default function EventDetail() {
               <div>
                 <div className="space-y-4 text-gray-300">
                   <p>
-                    <strong className="text-white">30 Oct 2025, 7:00 pm – 30 Nov 2025, 10:00 pm</strong>
+                    <strong className="text-white">31 Oct 2025 – 30 Nov 2025</strong>
                   </p>
                   
                 </div>

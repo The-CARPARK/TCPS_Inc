@@ -229,7 +229,7 @@ export default function Events() {
                       </h2>
                       
                       <div className="flex items-center gap-4 text-gray-400 mb-4">
-                        <span>Thu, 30 Oct</span>
+                        <span>Fri, 31 Oct</span>
                         <span>|</span>
                         <span>Te Aro, Te-Whanganui-a-Tara</span>
                       </div>
