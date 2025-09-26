@@ -111,39 +111,23 @@ export default function Support() {
           {/* Navigation and Social Icons Row */}
           <div className="flex justify-center">
             {/* Center Navigation */}
-            <div className="flex justify-center items-center gap-4">
-              <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
-                <Link href="/" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-home">
-                  Home
-                </Link>
-                <Link href="/about-1" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-about">
-                  Origins
-                </Link>
-                <Link href="/event-list" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-events">
-                  Activations
-                </Link>
-                <Link href="/blog" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-blog">
-                  Transmissions
-                </Link>
-                <Link href="/donate" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-donate">
-                  Support
-                </Link>
-              </nav>
-              
-              <a 
-                href="http://ko-fi.com/thecarparksocietyinc" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block"
-              >
-                <Button 
-                  className="bg-white text-black font-bold px-4 py-2 text-xs hover:bg-gray-200 transition-colors glitch-button"
-                  data-testid="button-donate"
-                >
-                  DONATE
-                </Button>
-              </a>
-            </div>
+            <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
+              <Link href="/" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-home">
+                Home
+              </Link>
+              <Link href="/about-1" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-about">
+                Origins
+              </Link>
+              <Link href="/event-list" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-events">
+                Activations
+              </Link>
+              <Link href="/blog" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-blog">
+                Transmissions
+              </Link>
+              <Link href="/donate" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-donate">
+                Support
+              </Link>
+            </nav>
           </div>
         </div>
       </header>
@@ -253,6 +237,19 @@ export default function Support() {
                     <p>We invite you to be part of it.</p>
                   </div>
 
+                  <a 
+                    href="http://ko-fi.com/thecarparksocietyinc" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block"
+                  >
+                    <Button 
+                      className="bg-white text-black font-bold px-8 sm:px-16 py-4 sm:py-8 text-lg sm:text-2xl hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
+                      data-testid="button-donate"
+                    >
+                      DONATE
+                    </Button>
+                  </a>
                 </div>
                 
                 {/* Embedded Image */}
