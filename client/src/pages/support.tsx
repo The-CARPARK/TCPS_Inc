@@ -207,33 +207,30 @@ export default function Support() {
           <div className="flex justify-center min-h-[80vh] items-center">
             {/* Integrated Content with Image */}
             <div className="bg-black/60 p-12 rounded-lg max-w-4xl w-full">
-              <div className="flex flex-col lg:flex-row gap-8 items-start">
+              <div className="flex flex-col lg:flex-row gap-8 items-start lg:relative">
                 <div className="flex-1">
                   <div className="lg:mb-4">
-                    <div className="lg:relative">
-                      <h1 className="font-bold text-white mb-3 lg:mb-2 text-[26px] lg:inline-block">
-                        SUPPORT TCPS
-                      </h1>
-                      
-                      {/* Donate Button - Centered on mobile, positioned 1cm right of title on desktop */}
-                      <div className="flex justify-center lg:absolute lg:left-full lg:ml-[1cm] lg:top-1/2 lg:transform lg:-translate-y-1/2">
-                        <a 
-                          href="http://ko-fi.com/thecarparksocietyinc" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="inline-block"
-                        >
-                          <Button 
-                            className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
-                            data-testid="button-donate"
-                          >
-                            DONATE
-                          </Button>
-                        </a>
-                      </div>
-                    </div>
-                    
+                    <h1 className="font-bold text-white mb-3 lg:mb-2 text-[26px]">
+                      SUPPORT TCPS
+                    </h1>
                     <p className="text-lg font-semibold text-gray-300 mb-6 lg:mb-0">Why Support us?</p>
+                  </div>
+                  
+                  {/* Donate Button - Centered on mobile, positioned on far right on desktop */}
+                  <div className="flex justify-center lg:absolute lg:right-0 lg:top-0 lg:h-full lg:items-center">
+                    <a 
+                      href="http://ko-fi.com/thecarparksocietyinc" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-block"
+                    >
+                      <Button 
+                        className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
+                        data-testid="button-donate"
+                      >
+                        DONATE
+                      </Button>
+                    </a>
                   </div>
                   
                   <div className="space-y-6 text-gray-300 leading-relaxed mb-8">
