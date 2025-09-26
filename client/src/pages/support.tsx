@@ -216,7 +216,7 @@ export default function Support() {
                   <div className="space-y-6 text-gray-300 leading-relaxed mb-8">
                     <div className="relative flex items-center">
                       <p className="text-lg font-semibold">Why Support us?</p>
-                      <div className="absolute left-1/2 transform -translate-x-1/2">
+                      <div className="absolute left-[60%] transform -translate-x-1/2">
                         <a 
                           href="http://ko-fi.com/thecarparksocietyinc" 
                           target="_blank" 
