@@ -253,13 +253,13 @@ export default function Home() {
         {/* Mission Section */}
         <section className="py-12 px-6 bg-red-900/20">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="rounded-lg p-6 mb-6 inline-block maori-flag-bg">
-              <h2 className="text-white mb-3 font-black text-[36px] glitch-text drop-shadow-lg" data-text="MISSION" data-testid="text-mission-heading">MISSION</h2>
-              <div className="text-white italic text-center mb-6 text-[15px] leading-relaxed drop-shadow-md">
+            <div className="bg-white rounded-lg p-6 mb-6 inline-block wavy-bg-white-colorful">
+              <h2 className="text-black mb-3 font-black text-[36px] glitch-text" data-text="MISSION" data-testid="text-mission-heading">MISSION</h2>
+              <div className="text-black italic text-center mb-6 text-[15px] leading-relaxed">
                 <p className="mb-1 font-bold">Kia whakatōmuri te haere whakamua.</p>
                 <p className="text-[14px]">I walk backwards into the future with my eyes fixed on the past.</p>
               </div>
-              <div className="text-white text-center text-[15px] leading-relaxed space-y-4 drop-shadow-md" data-testid="text-mission">
+              <div className="text-black text-center text-[15px] leading-relaxed space-y-4" data-testid="text-mission">
                 <p>
                   <strong>We uncover colonial layers</strong> embedded in urban infrastructure. Car parks, laneways, and reclaimed lands are not neutral; they are the foundations of displacement. Our mahi makes the hidden visible, exposing how concrete conceals stories of whenua, awa, and people.
                 </p>
