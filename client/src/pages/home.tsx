@@ -220,16 +220,16 @@ export default function Home() {
         {/* Hero Section */}
         <section className="pt-12 pb-0 px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-4 items-center" data-testid="text-welcome">
-              <div className="text-left">
-                <p className="font-black text-gray-300 mb-4 text-[31px] text-center">
+            <div className="grid md:grid-cols-2 gap-8 items-center" data-testid="text-welcome">
+              <div className="text-center md:text-left">
+                <p className="font-black text-gray-300 mb-4 text-[31px]">
                   WELCOME TO
                 </p>
-                <h1 className="mb-8 text-center font-black glitch-text text-[32px]" data-text="THE CAR PARK SOCIETY">
+                <h1 className="mb-8 font-black glitch-text text-[32px]" data-text="THE CAR PARK SOCIETY">
                   THE CAR PARK SOCIETY
                 </h1>
                 
-                <div className="text-gray-300 max-w-sm text-center mx-auto text-[15px] font-light mb-6" data-testid="text-intro">
+                <div className="text-gray-300 max-w-md text-[15px] font-light mb-6 mx-auto md:mx-0" data-testid="text-intro">
                   <p className="mb-4">
                     The Car Park Society Inc. (TCPS) is a kaupapa-driven incorporated society based in Te Whanganui-a-Tara. We are a collective of Māori and tauiwi artists, researchers, organisers, and community builders.
                   </p>
@@ -239,7 +239,7 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="flex justify-center md:justify-start">
+              <div className="flex justify-center md:justify-end">
                 <a 
                   href="https://TCPS-Watcher-Map.replit.app" 
                   target="_blank" 
