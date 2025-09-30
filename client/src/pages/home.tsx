@@ -221,7 +221,7 @@ export default function Home() {
         <section className="pt-12 pb-0 px-6">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center" data-testid="text-welcome">
-              <div className="text-center">
+              <div className="text-center md:pl-16">
                 <p className="font-black text-gray-300 mb-4 text-[31px]">
                   WELCOME TO
                 </p>
