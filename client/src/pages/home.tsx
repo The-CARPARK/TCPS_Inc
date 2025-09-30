@@ -220,7 +220,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="pt-12 pb-0 px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 items-center justify-items-center" data-testid="text-welcome">
+            <div className="grid md:grid-cols-2 gap-12 items-center" data-testid="text-welcome">
               <div className="text-center">
                 <p className="font-black text-gray-300 mb-4 text-[31px]">
                   WELCOME TO
@@ -229,7 +229,7 @@ export default function Home() {
                   THE CAR PARK SOCIETY
                 </h1>
                 
-                <div className="text-gray-300 max-w-md text-[15px] font-light mb-6 mx-auto" data-testid="text-intro">
+                <div className="text-gray-300 text-[15px] font-light mb-6" data-testid="text-intro">
                   <p className="mb-4">
                     The Car Park Society Inc. (TCPS) is a kaupapa-driven incorporated society based in Te Whanganui-a-Tara. We are a collective of Māori and tauiwi artists, researchers, organisers, and community builders.
                   </p>
