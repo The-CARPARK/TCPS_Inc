@@ -266,21 +266,9 @@ export default function Home() {
                 <p className="mb-1 font-bold">Kia whakatōmuri te haere whakamua.</p>
                 <p className="text-[14px]">I walk backwards into the future with my eyes fixed on the past.</p>
               </div>
-              <div className="text-black text-center text-[15px] leading-relaxed space-y-4" data-testid="text-mission">
+              <div className="text-black text-center text-[15px] leading-relaxed" data-testid="text-mission">
                 <p>
-                  <strong>We uncover colonial layers</strong> embedded in urban infrastructure. Car parks, laneways, and reclaimed lands are not neutral; they are the foundations of displacement. Our mahi makes the hidden visible, exposing how concrete conceals stories of whenua, awa, and people.
-                </p>
-                
-                <p>
-                  <strong>We honour Te Tiriti o Waitangi</strong> as our guiding framework. By centring mana whenua leadership and modelling co-governance, we ensure that our work is not only creative but accountable. Te Tiriti grounds us in reciprocity, partnership, and enduring responsibility.
-                </p>
-                
-                <p>
-                  <strong>We restore mauri</strong> by reconnecting people with whenua and awa. Through ritual, research, and immersive experience, we bring the flow of buried streams, the pulse of land, and the voices of ancestors back into the urban present.
-                </p>
-                
-                <p>
-                  <strong>We empower communities</strong> through art, ritual, and collective action. Each activation is a portal where audiences become participants, where suppressed stories are remembered, and where tino rangatiratanga is exercised in the heart of the city.
+                  Our mission is to uncover colonial layers in urban infrastructure. Guided by Te Tiriti o Waitangi, we centre tangata whenua leadership and advance Māori governance so that our work remains creative, accountable, and grounded in reciprocity. Through wānanga, research, and immersive experience, we restore mauri by bringing the flow of buried awa, the pulse of whenua, and the voices of te taiao back into the urban present. Each activation becomes a portal where suppressed stories are remembered, communities are empowered, and mana motuhake is exercised in the heart of the city.
                 </p>
               </div>
             </div>
