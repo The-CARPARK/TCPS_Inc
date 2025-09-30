@@ -220,7 +220,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="pt-12 pb-0 px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-4 items-center" data-testid="text-welcome">
+            <div className="grid md:grid-cols-2 gap-12 items-center" data-testid="text-welcome">
               <div className="text-center">
                 <p className="font-black text-gray-300 mb-4 text-[31px]">
                   WELCOME TO
