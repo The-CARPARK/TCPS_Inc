@@ -240,11 +240,18 @@ export default function Home() {
               </div>
               
               <div className="flex justify-center md:justify-start">
-                <img 
-                  src={newHeroLogoImage} 
-                  alt="The Car Park Society Eye Symbol" 
-                  className="w-full max-w-md h-[280px] object-contain glitch-image"
-                />
+                <a 
+                  href="https://TCPS-Watcher-Map.replit.app" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="cursor-pointer"
+                >
+                  <img 
+                    src={newHeroLogoImage} 
+                    alt="The Car Park Society Eye Symbol" 
+                    className="w-full max-w-md h-[280px] object-contain glitch-image hover:opacity-90 transition-opacity"
+                  />
+                </a>
               </div>
             </div>
           </div>
