@@ -260,7 +260,7 @@ export default function Home() {
         {/* Mission Section */}
         <section className="py-12 px-6 bg-red-900/20">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-white rounded-lg p-6 mb-6 inline-block wavy-bg-white-colorful">
+            <div className="bg-white rounded-lg p-6 mb-6 inline-block wavy-bg-white-colorful max-w-3xl">
               <h2 className="text-black mb-3 font-black text-[36px] glitch-text" data-text="MISSION" data-testid="text-mission-heading">MISSION</h2>
               <div className="text-black italic text-center mb-6 text-[15px] leading-relaxed">
                 <p className="mb-1 font-bold">Kia whakatōmuri te haere whakamua.</p>
