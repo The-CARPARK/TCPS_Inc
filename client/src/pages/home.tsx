@@ -241,7 +241,7 @@ export default function Home() {
               
               <div className="flex justify-center">
                 <a 
-                  href="https://TCPS-Watcher-Map.replit.app" 
+                  href="https://tcps-map-spj5.onrender.com/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="cursor-pointer"
