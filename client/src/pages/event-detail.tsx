@@ -5,7 +5,6 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
-import controlRoomImage from "@assets/123_1758548030700.png";
 import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
 import groupHero from "./TCPS_Group_Hero_1.webp";
 import landscape from "./Landscape_1.webp";
@@ -202,16 +201,7 @@ export default function EventDetail() {
                   
                 </div>
                 
-                {/* Control Room Image */}
-                <div className="mt-8 wavy-overlay">
-                  <img 
-                    src={controlRoomImage} 
-                    alt="The Control Room - Phase Zero: The Rupture" 
-                    className="w-full h-auto rounded-lg transform scale-110 glitch-amplify"
-                  />
-                </div>
-              </div>
-                {/* Additional Images Section */}
+                              {/* Additional Images Section */}
 <div className="flex flex-wrap justify-between mt-8 gap-6">
   {/* Left: Group Hero (under main image) */}
   <div className="flex-1 min-w-[300px] text-center">
