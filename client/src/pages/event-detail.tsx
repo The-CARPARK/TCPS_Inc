@@ -349,12 +349,7 @@ By The Car Park Society Inc.<br /><br />
                   alt="Flags" 
                   className="h-28 object-contain glitch-build"
                 />
-                       </div>
-        </section>
-      </main>
-      {/* Footer */}
-      <footer ...
-              </div>
+        </div>
             </div>
           </div>
         </div>
