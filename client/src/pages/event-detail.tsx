@@ -31,34 +31,35 @@ export default function EventDetail() {
       document.head.appendChild(meta);
     }
 
-    // Countdown timer
-    const calculateTimeLeft = () => {
-      const targetDate = new Date('2025-10-31T20:00:00').getTime();
-      const now = new Date().getTime();
-      const difference = targetDate - now;
+useEffect(() => {
+  // Countdown timer
+  const calculateTimeLeft = () => {
+    const targetDate = new Date('2025-10-31T20:00:00').getTime();
+    const now = new Date().getTime();
+    const difference = targetDate - now;
 
-      if (difference > 0) {
-        return {
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((difference % (1000 * 60)) / 1000)
-        };
-      }
-      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
-    };
+    if (difference > 0) {
+      return {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((difference % (1000 * 60)) / 1000)
+      };
+    }
+    return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  };
 
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
+  const timer = setInterval(() => {
     setTimeLeft(calculateTimeLeft());
+  }, 1000);
 
-    return () => clearInterval(timer);
-  }, []);
+  setTimeLeft(calculateTimeLeft());
+
+  return () => clearInterval(timer);
+}, []);   // ✅ useEffect ends here
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <main className="min-h-screen bg-black text-white">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-red-950/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
