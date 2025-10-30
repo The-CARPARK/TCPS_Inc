@@ -57,131 +57,12 @@ useEffect(() => {
 
   return () => clearInterval(timer);
 }, []);   // ✅ useEffect ends here
-
-  return (
-    <main className="min-h-screen bg-black text-white">
-      {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-40 bg-red-950/95 backdrop-blur-sm border-b border-gray-800">
-        <div className="px-6 py-3">
-          {/* TCPS Button Above Navigation */}
-          <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast">
-            <Link href="/">
-              <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 hover:opacity-80 transition-opacity cursor-pointer glitch-icon" />
-            </Link>
-            <div className="flex gap-2">
-              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <SiTiktok className="w-2.5 h-2.5" />
-              </a>
-              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <FaInstagram className="w-2.5 h-2.5" />
-              </a>
-              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <FaFacebook className="w-2.5 h-2.5" />
-              </a>
-              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-5 h-5 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
-                <FaYoutube className="w-2.5 h-2.5" />
-              </a>
-            </div>
-          </div>
-          
-          {/* Navigation and Social Icons Row */}
-          <div className="flex justify-center">
-            {/* Center Navigation */}
-            <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
-              <Link href="/" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-home">
-                Home
-              </Link>
-              <Link href="/about-1" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-about">
-                Origins
-              </Link>
-              <Link href="/event-list" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-events">
-                Activations
-              </Link>
-              <Link href="/blog" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-blog">
-                Transmissions
-              </Link>
-              <Link href="/donate" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-donate">
-                Support
-              </Link>
-            </nav>
-          </div>
-        </div>
+          </div> {/* closes inner flex container */}
+        </div>   {/* closes header wrapper */}
       </header>
 
-      {/* Overlay Menu */}
-      {menuOpen && (
-        <div className="overlay-menu">
-          <div className="menu-content">
-            <div className="absolute top-6 right-6">
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setMenuOpen(false)}
-                className="text-white hover:bg-gray-800"
-                data-testid="menu-close"
-              >
-                Close [ - ]
-              </Button>
-            </div>
-            
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
-              <div className="flex flex-col items-center">
-                <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8 wavy-bg-white-colorful">
-                  <div className="text-center text-black">
-                    <div className="relative w-48 h-32">
-                      <img 
-                        src={logoImage} 
-                        alt="The Car Park Society Logo" 
-                        className="w-full h-full object-contain glitch-create"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <nav className="flex flex-col gap-6 mb-8">
-                  <Link href="/" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-home">
-                    Home
-                  </Link>
-                  <Link href="/about-1" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
-                    Origins
-                  </Link>
-                  <Link href="/event-list" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-events">
-                    Activations
-                  </Link>
-                  <Link href="/blog" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-blog">
-                    Transmissions
-                  </Link>
-                  <Link href="/donate" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-donate">
-                    Support
-                  </Link>
-                </nav>
-                
-                <div className="flex gap-4 justify-center">
-                  <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
-                    <SiTiktok className="w-5 h-5" />
-                  </a>
-                  <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
-                    <FaInstagram className="w-5 h-5" />
-                  </a>
-                  <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
-                    <FaFacebook className="w-5 h-5" />
-                  </a>
-                  <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
-                    <FaYoutube className="w-5 h-5" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-     export default function EventDetail() {
-  return (
-    <main className="pt-20 pb-16">
-      {/* Event Header */}
-      <section className="px-6 py-12">
+      {/* Main Content */}
+      <section className="px-6 py-12 pt-24">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl font-bold mb-8">T͟H͟Ξ CØNTЯØL RØØM</h1>
 
@@ -236,7 +117,7 @@ useEffect(() => {
 
                 <b>Nau mai, haere mai</b> — come down and have a kōrero, have a kai, while we deep dive into what a utopian future might look like when we honour <b>Te Tiriti o Waitangi</b> and respect <b>te taiao</b>.<br /><br />
 
-                Acknowledgement to Urban Dream Brokerage, Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
+                Acknowledgement to Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
               </p>
             </div>
 
@@ -267,23 +148,13 @@ useEffect(() => {
           </div>   {/* closes grid */}
         </div>     {/* closes wrapper */}
       </section>
-    </main>
 
-    {/* Footer */}
-    <footer className="py-16 px-6 border-t border-gray-800 mt-16">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-8 items-start">
-          <div>
-            <a href="mailto:connect@thecarparksociety.xyz"
-               className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]">
-              connect@thecarparksociety.xyz
-            </a>
-            <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
-            <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
-            <p className="text-gray-400 text-[12px]">© 2025 by The Car Park Society Inc.</p>
-          </div>
+      {/* Footer */}
+      <footer className="py-16 px-6 border-t border-gray-800 mt-16">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-center text-gray-500 text-sm">© 2025 The Car Park Society Inc.</p>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </main>
   );
 }
