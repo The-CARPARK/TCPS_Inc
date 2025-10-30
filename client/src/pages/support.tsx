@@ -218,7 +218,7 @@ export default function Support() {
                       {/* Donate Button - Next to title on desktop, centered on mobile */}
                       <div className="flex justify-center lg:justify-start mt-4 lg:mt-0">
                         <a 
-                          href="http://ko-fi.com/thecarparksocietyinc" 
+                          href="http://https://donate.stripe.com/5kQcMXfYR5W5ashfl32oE00?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExMkxGV3F3ZUp4VThMWDhTZwEe-OGbJR7ehYUNpJ4GBDobwDvnZgnFAj-xl0_-PAUYuiHq_rmkO4k3S243Wz0_aem_Pqhe4mQfKMP37gl2OUceEg" 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="inline-block"
