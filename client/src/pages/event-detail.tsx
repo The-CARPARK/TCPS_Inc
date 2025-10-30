@@ -176,152 +176,113 @@ export default function EventDetail() {
           </div>
         </div>
       )}
-      <main className="pt-20 pb-16">
-        {/* Event Header */}
-        <section className="px-6 py-12">
-  <div className="max-w-6xl mx-auto">
-    <h1 className="text-4xl font-bold mb-8">T͟H͟Ξ CØNTЯØL RØØM</h1>
+     export default function EventDetail() {
+  return (
+    <main className="pt-20 pb-16">
+      {/* Event Header */}
+      <section className="px-6 py-12">
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-4xl font-bold mb-8">T͟H͟Ξ CØNTЯØL RØØM</h1>
 
-    {/* Event Details Grid */}
-    <div className="grid md:grid-cols-[1.1fr_1fr] gap-10 items-start">
-      {/* Left column: text */}
-      <div className="text-gray-300 leading-relaxed text-[13px] space-y-4">
-        <p>
-  <strong className="text-white">31 October – 13 December 2025</strong><br /><br />
+          {/* Event Details Grid */}
+          <div className="grid md:grid-cols-[1.1fr_1fr] gap-10 items-start">
+            {/* Left column: text */}
+            <div className="text-gray-300 leading-relaxed text-[13px] space-y-4">
+              <p>
+                <strong className="text-white">31 October – 13 December 2025</strong><br /><br />
 
-  <b>The Control Room</b><br />
-  By The Car Park Society Inc.<br /><br />
+                <b>The Control Room</b><br />
+                By The Car Park Society Inc.<br /><br />
 
-  <b>Location:</b> 149 Victoria Street; corner of Dixon & Victoria Street; Te Whanganui-a-Tara<br />
-  <b>In Collaboration with:</b>{" "}
-  <a
-    href="https://www.urbandreambrokerage.org.nz/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-red-400 hover:text-red-500 underline"
-  >
-    Urban Dream Brokerage
-  </a><br />
-</p>
-      Do you miss trick-or-treating? We've built a Halloween treasure hunt for you.<br />
-      Wellington didn’t always look like this. Colonisation has changed the very land we walk on; it has shaped our history, our present, and our future.<br /><br />
+                <b>Location:</b> 149 Victoria Street; corner of Dixon & Victoria Street; Te Whanganui-a-Tara<br />
+                <b>In Collaboration with:</b>{" "}
+                <a
+                  href="https://www.urbandreambrokerage.org.nz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-500 underline"
+                >
+                  Urban Dream Brokerage
+                </a><br /><br />
 
-      <b>The Control Room</b> is <b>Phase Zero: The Rupture</b> — the first live activation of The Car Park Society.<br />
-      We have transformed a modest urban tenancy into a public portal and member hub; a place where the Watcher Network begins. Here, we test our systems, rituals, and signals in preparation for the larger Induction Centre activation planned for 2026.<br /><br />
+                Do you miss trick-or-treating? We've built a Halloween treasure hunt for you.<br />
+                Wellington didn’t always look like this. Colonisation has changed the very land we walk on; it has shaped our history, our present, and our future.<br /><br />
 
-      We reclaim forgotten and overlooked spaces; sites where histories have been buried, distorted, or erased. Through projection, sound, QR glyphs, and symbolic acts, we invite you to step into these fractures and witness what the city tries to forget.<br /><br />
+                <b>The Control Room</b> is <b>Phase Zero: The Rupture</b> — the first live activation of The Car Park Society.<br />
+                We have transformed a modest urban tenancy into a public portal and member hub; a place where the Watcher Network begins. Here, we test our systems, rituals, and signals in preparation for the larger Induction Centre activation planned for 2026.<br /><br />
 
-      Across six weeks, four activations will unfold; each revealing a deeper layer of Te Aro’s hidden memory:<br /><br />
+                We reclaim forgotten and overlooked spaces; sites where histories have been buried, distorted, or erased. Through projection, sound, QR glyphs, and symbolic acts, we invite you to step into these fractures and witness what the city tries to forget.<br /><br />
 
-      <b>Activation 1 – 31 Oct: The First Rupture</b><br />
-      Projection overlays of colonial maps and glyphs. QR glyphs unlock File #1.<br />
-      <i>“The burial is broken. You are observed.”</i><br /><br />
+                Across six weeks, four activations will unfold; each revealing a deeper layer of Te Aro’s hidden memory:<br /><br />
 
-      <b>Activation 2 – 14 Nov: The Battle Archive</b><br />
-      Projection overlays of riot vs refusal. Soundscape of haka, musket fire, and colonial orders dissolving into static. QR glyphs unlock File #2.<br />
-      <i>Oracle: “They called it riot. We call it refusal.”</i><br /><br />
+                <b>Activation 1 – 31 Oct: The First Rupture</b><br />
+                Projection overlays of colonial maps and glyphs. QR glyphs unlock File #1.<br />
+                <i>“The burial is broken. You are observed.”</i><br /><br />
 
-      <b>Activation 3 – 28 Nov: The Drowned File</b><br />
-      Projection of the lost shoreline. Soundscape of waves and Harbour Board minutes. QR glyphs unlock File #3.<br />
-      <i>“The sea still waits beneath. You are reclaimed.”</i><br /><br />
+                <b>Activation 2 – 14 Nov: The Battle Archive</b><br />
+                Projection overlays of riot vs refusal. Soundscape of haka, musket fire, and colonial orders dissolving into static. QR glyphs unlock File #2.<br />
+                <i>Oracle: “They called it riot. We call it refusal.”</i><br /><br />
 
-      <b>Activation 4 – 12 Dec: The Veins Beneath</b><br />
-      Projection of rippling water textures. Soundscape of awa and glitch static. QR glyphs unlock File #4.<br />
-      <i>Oracle: “Ko te awa ahau. Ko te awa ko au. The memory flows.”</i><br /><br />
+                <b>Activation 3 – 28 Nov: The Drowned File</b><br />
+                Projection of the lost shoreline. Soundscape of waves and Harbour Board minutes. QR glyphs unlock File #3.<br />
+                <i>“The sea still waits beneath. You are reclaimed.”</i><br /><br />
 
-      We invite the public to participate, observe, and connect with us throughout the activation period; to join the Watcher Network as it forms in real time.<br /><br />
+                <b>Activation 4 – 12 Dec: The Veins Beneath</b><br />
+                Projection of rippling water textures. Soundscape of awa and glitch static. QR glyphs unlock File #4.<br />
+                <i>Oracle: “Ko te awa ahau. Ko te awa ko au. The memory flows.”</i><br /><br />
 
-      <b>Nau mai, haere mai</b> — come down and have a kōrero, have a kai, while we deep dive into what a utopian future might look like when we honour <b>Te Tiriti o Waitangi</b> and respect <b>te taiao</b>.<br /><br />
+                We invite the public to participate, observe, and connect with us throughout the activation period; to join the Watcher Network as it forms in real time.<br /><br />
 
-      Acknowledgement to Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
-    </p>
-  <div>
-         {/* Right column: images stacked vertically */}
-    <div className="flex flex-col gap-8">
-      <div>
-        <img
-          src={groupHero}
-          alt="The Car Park Society – collective assembly beneath the glow"
-          className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
-        />
-        <p className="mt-2 text-[12px] text-gray-500 italic text-center">
-          The Car Park Society – collective assembly beneath the glow.
-        </p>
-      </div>
+                <b>Nau mai, haere mai</b> — come down and have a kōrero, have a kai, while we deep dive into what a utopian future might look like when we honour <b>Te Tiriti o Waitangi</b> and respect <b>te taiao</b>.<br /><br />
 
-      <div>
-        <img
-          src={landscape}
-          alt="The Control Room – landscape signal projection"
-          className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
-        />
-        <p className="mt-2 text-[12px] text-gray-500 italic text-center">
-          The Control Room – landscape signal projection.
-        </p>
-      </div>
-    </div>      {/* closes right column */}
-  </div>        {/* closes grid */}
-</div>          {/* closes wrapper */}
-</section>      {/* closes section */}
-</main>         {/* closes main */}
+                Acknowledgement to Urban Dream Brokerage, Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
+              </p>
+            </div>
 
-{/* Footer */}
-<footer className="py-16 px-6 border-t border-gray-800 mt-16">
-  <div className="max-w-7xl mx-auto">
-    <div className="grid md:grid-cols-3 gap-8 items-start">
-      {/* Left column */}
-      <div>
-        <div className="flex gap-2 mb-4">
-          <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer"
-             className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-            <SiTiktok className="w-4 h-4" />
-          </a>
-          <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer"
-             className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-            <FaInstagram className="w-4 h-4" />
-          </a>
-          <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer"
-             className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-            <FaFacebook className="w-4 h-4" />
-          </a>
-          <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer"
-             className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-            <FaYoutube className="w-4 h-4" />
-          </a>
+            {/* Right column: images stacked vertically */}
+            <div className="flex flex-col gap-8">
+              <div>
+                <img
+                  src={groupHero}
+                  alt="The Car Park Society – collective assembly beneath the glow"
+                  className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
+                />
+                <p className="mt-2 text-[12px] text-gray-500 italic text-center">
+                  The Car Park Society – collective assembly beneath the glow.
+                </p>
+              </div>
+
+              <div>
+                <img
+                  src={landscape}
+                  alt="The Control Room – landscape signal projection"
+                  className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
+                />
+                <p className="mt-2 text-[12px] text-gray-500 italic text-center">
+                  The Control Room – landscape signal projection.
+                </p>
+              </div>
+            </div> {/* closes right column */}
+          </div>   {/* closes grid */}
+        </div>     {/* closes wrapper */}
+      </section>
+    </main>
+
+    {/* Footer */}
+    <footer className="py-16 px-6 border-t border-gray-800 mt-16">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 items-start">
+          <div>
+            <a href="mailto:connect@thecarparksociety.xyz"
+               className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]">
+              connect@thecarparksociety.xyz
+            </a>
+            <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
+            <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
+            <p className="text-gray-400 text-[12px]">© 2025 by The Car Park Society Inc.</p>
+          </div>
         </div>
-        <a href="mailto:connect@thecarparksociety.xyz"
-           className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]"
-           data-testid="link-email-contact">
-          connect@thecarparksociety.xyz
-        </a>
-        <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
-        <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
-        <p className="text-gray-400 text-[12px]">© 2025 by The Car Park Society Inc.</p>
       </div>
-
-      {/* Middle column */}
-      <div className="text-center">
-        <p className="text-gray-500 text-sm italic mb-4">
-          "We will not be seen,<br />
-          but we will be heard.<br />
-          We will not be controlled,<br />
-          but we will govern.<br />
-          We will not wait for change;<br />
-          we will be the change."
-        </p>
-        <p className="text-gray-600 text-xs font-extralight">Oath of TCPS</p>
-      </div>
-
-      {/* Right column */}
-      <div className="flex justify-end">
-        <img
-          src={flagsImage}
-          alt="Flags"
-          className="h-28 object-contain glitch-build"
-        />
-      </div>
-    </div>
-  </div>
-</footer>
-);
+    </footer>
+  );
 }
