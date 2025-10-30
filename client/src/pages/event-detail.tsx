@@ -237,7 +237,6 @@ export default function EventDetail() {
 
       Acknowledgement to Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
     </p>
- </div>
 
       {/* Right column: images stacked vertically */}
       <div className="flex flex-col gap-8">
