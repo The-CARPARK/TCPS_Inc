@@ -217,17 +217,47 @@ export default function EventDetail() {
                     
                     
                     
-                    <p className="mb-4 text-[13px] text-left font-thin">
-                      ∴ a hiddΞn p0rtal in the concrΞte veins of te ar0 ∴<br /><br />
-                      ▓▓▓ the car park s0ciety rΞclaims an abΛnd0ned urbΛn cavity ▓▓▓<br /><br />
-                      an immersive signal space, recast as a n3rvΞ c3ntrΞ of shifting fr3quenciΞs. ▲ walls hum with f̸l̴i̵c̶k̵e̷r̶, fl00rs trΞmble with m͠e͞m͟0ry ▲ ⊗ projΞctions sp͠l͡i͝ce pΛst + futurΞ thr0ugh r̷u̵p͢t͞urΞ ⊗<br /><br />
-                      ◎ step acr0ss the thrΞsh0ld ◎<br />
-                      ask the 0racl3 y0ur qu̴e̷s͠t͜i͞o̴n.<br />
-                      ∿ lΞarn the s3crΞt thΛt pulsiΞs in the h͢u͝m ∿<br /><br />
-                      ░b░e░c░o░m░e░ pΛrt 0f the s3quΞncΞ // wΛtchΞrs, n0t aud͢i͟encΞ░<br /><br />
-                      👁 stΛy vigilant // the s͞i͢g͟nΛl drΛws cl0ser 👁<br />
-                      stΛy tuned t0 the frΞquΞnciΞs // det͢a͞ils arΞ d͟e̴s͢c3nding...
-                    </p>
+                    <p>
+<b>The Control Room</b><br />
+By The Car Park Society Inc.<br /><br />
+
+<b>Location:</b> 149 Victoria Street; corner of Dixon & Victoria Street; Te Whanganui-a-Tara<br />
+<b>Property Partner:</b> Willis Bond<br />
+<b>Dates:</b> 31 October – 13 December 2025<br /><br />
+
+Do you miss trick-or-treating? We've built a Halloween treasure hunt for you.<br />
+Wellington didn’t always look like this. Colonisation has changed the very land we walk on; it has shaped our history, our present, and our future.<br /><br />
+
+<b>The Control Room</b> is <b>Phase Zero: The Rupture</b> — the first live activation of The Car Park Society.<br />
+We have transformed a modest urban tenancy into a public portal and member hub; a place where the Watcher Network begins. Here, we test our systems, rituals, and signals in preparation for the larger Induction Centre activation planned for 2026.<br /><br />
+
+We reclaim forgotten and overlooked spaces; sites where histories have been buried, distorted, or erased. Through projection, sound, QR glyphs, and symbolic acts, we invite you to step into these fractures and witness what the city tries to forget.<br /><br />
+
+Across six weeks, four activations will unfold; each revealing a deeper layer of Te Aro’s hidden memory:<br /><br />
+
+<b>Activation 1 – 31 Oct: The First Rupture / The Exchange</b><br />
+Projection overlays of colonial maps and glyphs. QR glyphs unlock File #1.<br />
+<i>“The burial is broken. You are observed.”</i><br /><br />
+
+<b>Activation 2 – 14 Nov: The Battle Archive / Manners St 1846</b><br />
+Projection overlays of riot vs refusal. Soundscape of haka, musket fire, and colonial orders dissolving into static. QR glyphs unlock File #2.<br />
+<i>Oracle: “They called it riot. We call it refusal.”</i><br /><br />
+
+<b>Activation 3 – 28 Nov: The Drowned File / Reclaimed Land</b><br />
+Projection of the lost shoreline. Soundscape of waves and Harbour Board minutes. QR glyphs unlock File #3.<br />
+<i>“The sea still waits beneath. You are reclaimed.”</i><br /><br />
+
+<b>Activation 4 – 12 Dec: The Veins Beneath / Te Aro Pā + Waimapihi</b><br />
+Projection of rippling water textures. Soundscape of awa and glitch static. QR glyphs unlock File #4.<br />
+<i>Oracle: “Ko te awa ahau. Ko te awa ko au. The memory flows.”</i><br /><br />
+
+We invite the public to participate, observe, and connect with us throughout the activation period; to join the Watcher Network as it forms in real time.<br /><br />
+
+<b>Nau mai, haere mai</b> — come down and have a kōrero, have a kai, while we deep dive into what a utopian future might look like when we honour <b>Te Tiriti o Waitangi</b> and respect <b>te taiao</b>.<br /><br />
+
+Acknowledgement to Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
+</p>
+
                     
                     {/* Countdown Timer */}
                     <div className="mt-3 py-2 px-3 bg-gray-900/50 border border-red-900/30 rounded font-mono text-center">
