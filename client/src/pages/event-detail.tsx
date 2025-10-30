@@ -346,15 +346,16 @@ export default function EventDetail() {
             
             <div className="flex justify-end">
               <div className="space-y-2">
-                <img 
+                              <img 
                   src={flagsImage} 
                   alt="Flags" 
                   className="h-28 object-contain glitch-build"
                 />
-                       </div>
-        </section>
-      </main>
-      {/* Footer */}
-      <footer ...
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   );
 }
