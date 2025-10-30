@@ -188,7 +188,7 @@ export default function EventDetail() {
       <div className="text-gray-300 leading-relaxed text-[13px] space-y-4">
         <p>
           <strong className="text-white">31 October – 13 December 2025</strong>
-        </p>
+                
       <b>The Control Room</b><br />
       By The Car Park Society Inc.<br /><br />
 
@@ -203,7 +203,6 @@ export default function EventDetail() {
         Urban Dream Brokerage
       </a>
       <br />
-      <b>Dates:</b> 31 October – 13 December 2025<br /><br />
 
       Do you miss trick-or-treating? We've built a Halloween treasure hunt for you.<br />
       Wellington didn’t always look like this. Colonisation has changed the very land we walk on; it has shaped our history, our present, and our future.<br /><br />
