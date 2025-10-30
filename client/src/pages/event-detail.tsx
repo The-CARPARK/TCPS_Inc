@@ -285,7 +285,9 @@ export default function EventDetail() {
 
   Acknowledgement to Urban Dream Brokerage, Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
 </p>
-
+  </div>
+</div>
+    
 {/* Correctly close all containers */}
               </div> {/* closes left column */}
             </div>   {/* closes grid */}
