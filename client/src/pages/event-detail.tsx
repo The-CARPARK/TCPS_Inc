@@ -186,33 +186,7 @@ export default function EventDetail() {
           </div>
         </section>
 
-{/* Countdown Timer */}
-<div className="mt-6 py-2 px-3 bg-gray-900/50 border border-red-900/30 rounded font-mono text-center">
-  <div className="text-red-400 text-xs uppercase tracking-wider mb-1">
-    FIRST RUPTURE POINT LOADING IN...
-  </div>
-  <div className="grid grid-cols-4 gap-2 text-white">
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.days.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">DAYS</div>
-    </div>
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.hours.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">HRS</div>
-    </div>
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.minutes.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">MIN</div>
-    </div>
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.seconds.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">SEC</div>
-    </div>
-  </div>
-  <div className="text-xs text-gray-500 mt-1 font-mono">
-    ⧫ THΞ RUPTURΞ BΞGINS ⧫
-  </div>
-</div>
+
 
         {/* Event Details */}
         <section className="px-6">
@@ -225,6 +199,7 @@ export default function EventDetail() {
                   </p>
 
                 </div>
+
 
                {/* Hero and Landscape Images */}
 <div className="mt-8 flex flex-col md:flex-row gap-6 justify-between">
@@ -257,7 +232,7 @@ export default function EventDetail() {
 {/* Body Text and Countdown */}
 <p className="mt-6 text-[13px] text-gray-300 leading-relaxed">
   <b>The Control Room</b><br />
-  By The Car Park Society Inc.<br /><br />
+By The Car Park Society Inc.<br /><br />
 
   <b>Location:</b> 149 Victoria Street; corner of Dixon & Victoria Street; Te Whanganui-a-Tara<br />
   <b>In Collaboration with:</b> <a href="https://www.urbandreambrokerage.org.nz/" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-red-500 underline">Urban Dream Brokerage</a><br />
@@ -292,6 +267,34 @@ export default function EventDetail() {
 
   Acknowledgement to Urban Dream Brokerage, Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
 </p>
+
+{/* Countdown Timer */}
+<div className="mt-6 py-2 px-3 bg-gray-900/50 border border-red-900/30 rounded font-mono text-center">
+  <div className="text-red-400 text-xs uppercase tracking-wider mb-1">
+    FIRST RUPTURE POINT LOADING IN...
+  </div>
+  <div className="grid grid-cols-4 gap-2 text-white">
+    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
+      <div className="text-sm font-bold text-red-400">{timeLeft.days.toString().padStart(2, '0')}</div>
+      <div className="text-xs text-gray-400 uppercase">DAYS</div>
+    </div>
+    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
+      <div className="text-sm font-bold text-red-400">{timeLeft.hours.toString().padStart(2, '0')}</div>
+      <div className="text-xs text-gray-400 uppercase">HRS</div>
+    </div>
+    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
+      <div className="text-sm font-bold text-red-400">{timeLeft.minutes.toString().padStart(2, '0')}</div>
+      <div className="text-xs text-gray-400 uppercase">MIN</div>
+    </div>
+    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
+      <div className="text-sm font-bold text-red-400">{timeLeft.seconds.toString().padStart(2, '0')}</div>
+      <div className="text-xs text-gray-400 uppercase">SEC</div>
+    </div>
+  </div>
+  <div className="text-xs text-gray-500 mt-1 font-mono">
+    ⧫ THΞ RUPTURΞ BΞGINS ⧫
+  </div>
+</div>
 
 {/* Correctly close all containers */}
               </div> {/* closes left column */}
