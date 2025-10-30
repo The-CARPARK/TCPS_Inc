@@ -323,7 +323,7 @@ export default function EventDetail() {
       </main>        {/* closes main */}
 
       {/* Footer */}
-        <footer className="py-16 px-6 border-t border-gray-800 mt-16">
+      <footer className="py-16 px-6 border-t border-gray-800 mt-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div>
@@ -363,7 +363,7 @@ export default function EventDetail() {
             
             <div className="flex justify-end">
               <div className="space-y-2">
-                              <img 
+                <img 
                   src={flagsImage} 
                   alt="Flags" 
                   className="h-28 object-contain glitch-build"
