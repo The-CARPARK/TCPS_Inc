@@ -187,23 +187,22 @@ export default function EventDetail() {
       {/* Left column: text */}
       <div className="text-gray-300 leading-relaxed text-[13px] space-y-4">
         <p>
-          <strong className="text-white">31 October – 13 December 2025</strong>
-                
-      <b>The Control Room</b><br />
-      By The Car Park Society Inc.<br /><br />
+  <strong className="text-white">31 October – 13 December 2025</strong><br /><br />
 
-      <b>Location:</b> 149 Victoria Street; corner of Dixon & Victoria Street; Te Whanganui-a-Tara<br />
-      <b>In Collaboration with:</b>{" "}
-      <a
-        href="https://www.urbandreambrokerage.org.nz/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-red-400 hover:text-red-500 underline"
-      >
-        Urban Dream Brokerage
-      </a>
-      <br />
+  <b>The Control Room</b><br />
+  By The Car Park Society Inc.<br /><br />
 
+  <b>Location:</b> 149 Victoria Street; corner of Dixon & Victoria Street; Te Whanganui-a-Tara<br />
+  <b>In Collaboration with:</b>{" "}
+  <a
+    href="https://www.urbandreambrokerage.org.nz/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-red-400 hover:text-red-500 underline"
+  >
+    Urban Dream Brokerage
+  </a><br />
+</p>
       Do you miss trick-or-treating? We've built a Halloween treasure hunt for you.<br />
       Wellington didn’t always look like this. Colonisation has changed the very land we walk on; it has shaped our history, our present, and our future.<br /><br />
 
@@ -236,7 +235,7 @@ export default function EventDetail() {
 
       Acknowledgement to Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
     </p>
-
+  <div>
       {/* Right column: images stacked vertically */}
       <div className="flex flex-col gap-8">
         <div>
