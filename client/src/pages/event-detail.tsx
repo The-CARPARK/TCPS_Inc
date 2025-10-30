@@ -182,13 +182,59 @@ export default function EventDetail() {
           <div className="max-w-7x1 mx-auto">
 <h1 className="text-4xl font-bold mb-2 text-white">T͟H͟Ξ CØNTЯØL RØØM</h1>
 <p className="italic text-gray-400 mb-6">By The Car Park Society</p>
-<p>
-<strong className="text-white">31 October – 13 December 2025</strong>
-</p>
 
 
           </div>
         </section>
+
+
+
+        {/* Event Details */}
+        <section className="px-6">
+          <div className="max-w-9x1 mx-auto">
+            <div className="grid md:grid-cols-2 gap-5">
+              <div>
+                <div className="space-y-4 text-gray-300">
+                  <p>
+                    <strong className="text-white">31 October – 13 December 2025</strong>
+                  </p>
+
+                </div>
+
+{/* Hero and Landscape Images */}
+<div className="mt-10 flex flex-col md:flex-row gap-8 justify-between items-start">
+  {/* Left: Group Hero */}
+  <div className="flex-1">
+  <div className="flex-1 max-w-[48%] md:max-w-none">
+    <img
+      src={groupHero}
+      alt="The Car Park Society – collective assembly beneath the grid"
+      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300 scale-[1.50]"
+      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300"
+      loading="lazy"
+    />
+    <p className="mt-3 text-[9px] text-gray-400 italic text-center leading-snug">
+    <p className="mt-3 text-[11px] text-gray-400 italic text-center leading-snug">
+      The Car Park Society – collective assembly beneath the grid.
+    </p>
+  </div>
+
+  {/* Right: Landscape */}
+  <div className="flex-1">
+  <div className="flex-1 max-w-[48%] md:max-w-none">
+    <img
+      src={landscape}
+      alt="The Control Room – Cnr Dixon & Victoria Street"
+      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300 scale-[1.50]"
+      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300"
+      loading="lazy"
+    />
+    <p className="mt-3 text-[9px] text-gray-400 italic text-center leading-snug">
+    <p className="mt-3 text-[11px] text-gray-400 italic text-center leading-snug">
+      The Control Room – Cnr Dixon & Victoria Street.
+    </p>
+  </div>
+</div>
 
 {/* Countdown Timer */}
 <div className="mb-8 py-3 px-4 bg-gray-900/50 border border-red-900/30 rounded font-mono text-center shadow-lg">
@@ -218,43 +264,13 @@ export default function EventDetail() {
   </div>
 </div>
 
-
-{/* Hero and Landscape Images */}
-<div className="mt-10 flex flex-col md:flex-row gap-8 justify-between items-start">
-  {/* Left: Group Hero */}
-  <div className="flex-1 max-w-[48%] md:max-w-none">
-    <img
-      src={groupHero}
-      alt="The Car Park Society – collective assembly beneath the grid"
-      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300"
-      loading="lazy"
-    />
-    <p className="mt-3 text-[11px] text-gray-400 italic text-center leading-snug">
-      The Car Park Society – collective assembly beneath the grid.
-    </p>
-  </div>
-
-  {/* Right: Landscape */}
-  <div className="flex-1 max-w-[48%] md:max-w-none">
-    <img
-      src={landscape}
-      alt="The Control Room – Cnr Dixon & Victoria Street"
-      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300"
-      loading="lazy"
-    />
-    <p className="mt-3 text-[11px] text-gray-400 italic text-center leading-snug">
-      The Control Room – Cnr Dixon & Victoria Street.
-    </p>
-  </div>
-</div>
-                
 {/* Body Text */}
 <p className="mt-8 text-[15px] md:text-[16px] text-gray-200 leading-relaxed">
 
   <b>Location:</b> 149 Victoria Street; Te Aro; Te Whanganui-a-Tara<br />
   <b>In Collaboration with:</b> <a href="https://www.urbandreambrokerage.org.nz/" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-red-500 underline">Urban Dream Brokerage</a><br />
 
-  
+
   Do you miss trick-or-treating? We've built a Halloween treasure hunt for you! Wellington didn’t always look like this. Colonisation has changed the very land we walk on; it has shaped our history, our present, and our future.<br /><br />
 
   <b>The Control Room</b> is <b>Phase Zero: The Rupture</b> — the first live activation of The Car Park Society.We have transformed a modest urban tenancy into a public portal and member hub; a place where the Watcher Network begins. Here, we test our systems, rituals, and signals in preparation for the larger Induction Centre activation planned for 2026.<br /><br />
@@ -285,9 +301,7 @@ export default function EventDetail() {
 
   Acknowledgement to Urban Dream Brokerage, Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
 </p>
-  </div>
-</div>
-    
+
 {/* Correctly close all containers */}
               </div> {/* closes left column */}
             </div>   {/* closes grid */}
