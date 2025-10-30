@@ -238,7 +238,7 @@ export default function Support() {
                   <div className="space-y-6 text-gray-300 leading-relaxed mb-8 text-center lg:text-left">
                     
                     <p>
-                      By backing The Car Park Society on Ko-fi, you help us keep the movement 
+                      By backing The Car Park Society, you help us keep the movement 
                       underground, independent, and powerful.
                     </p>
                     
