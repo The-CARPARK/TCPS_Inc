@@ -183,9 +183,6 @@ export default function EventDetail() {
             <h1 className="text-4xl font-bold mb-4">T͟H͟Ξ CØNTЯØL RØØM </h1>
             
             
-          </div>
-        </section>
-
         
 
 {/* Event Details */}
@@ -371,8 +368,6 @@ export default function EventDetail() {
                   className="h-28 object-contain glitch-build"
                 />
                        </div>
-        </section>
-      </main>
       {/* Footer */}
       <footer ...
   );
