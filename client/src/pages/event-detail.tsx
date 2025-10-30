@@ -71,12 +71,11 @@ useEffect(() => {
             {/* Left column: text */}
             <div className="text-gray-300 leading-relaxed text-[13px] space-y-4">
               <p>
-                <strong className="text-white">31 October – 13 December 2025</strong><br /><br />
 
                 <b>The Control Room</b><br />
                 By The Car Park Society Inc.<br /><br />
 
-                <b>Location:</b> 149 Victoria Street; corner of Dixon & Victoria Street; Te Whanganui-a-Tara<br />
+                <b>Location:</b> 149 Victoria Street; Te Aro, Te Whanganui-a-Tara<br />
                 <b>In Collaboration with:</b>{" "}
                 <a
                   href="https://www.urbandreambrokerage.org.nz/"
@@ -87,13 +86,10 @@ useEffect(() => {
                   Urban Dream Brokerage
                 </a><br /><br />
 
-                Do you miss trick-or-treating? We've built a Halloween treasure hunt for you.<br />
-                Wellington didn’t always look like this. Colonisation has changed the very land we walk on; it has shaped our history, our present, and our future.<br /><br />
+                Do you miss trick-or-treating? We've built a Halloween treasure hunt for you. Wellington didn’t always look like this. Colonisation has changed the very land we walk on; it has shaped our history, our present, and our future.<br /><br />
 
                 <b>The Control Room</b> is <b>Phase Zero: The Rupture</b> — the first live activation of The Car Park Society.<br />
                 We have transformed a modest urban tenancy into a public portal and member hub; a place where the Watcher Network begins. Here, we test our systems, rituals, and signals in preparation for the larger Induction Centre activation planned for 2026.<br /><br />
-
-                We reclaim forgotten and overlooked spaces; sites where histories have been buried, distorted, or erased. Through projection, sound, QR glyphs, and symbolic acts, we invite you to step into these fractures and witness what the city tries to forget.<br /><br />
 
                 Across six weeks, four activations will unfold; each revealing a deeper layer of Te Aro’s hidden memory:<br /><br />
 
@@ -117,7 +113,7 @@ useEffect(() => {
 
                 <b>Nau mai, haere mai</b> — come down and have a kōrero, have a kai, while we deep dive into what a utopian future might look like when we honour <b>Te Tiriti o Waitangi</b> and respect <b>te taiao</b>.<br /><br />
 
-                Acknowledgement to Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
+                Acknowledgement to Urban Dream BRokerage, Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
               </p>
             </div>
 
@@ -130,7 +126,7 @@ useEffect(() => {
                   className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
                 />
                 <p className="mt-2 text-[12px] text-gray-500 italic text-center">
-                  The Car Park Society – collective assembly beneath the glow.
+                  The Car Park Society – collective assembly beneath the grid.
                 </p>
               </div>
 
@@ -141,7 +137,7 @@ useEffect(() => {
                   className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
                 />
                 <p className="mt-2 text-[12px] text-gray-500 italic text-center">
-                  The Control Room – landscape signal projection.
+                  The Control Room – Corner Victoria & Dixon St.
                 </p>
               </div>
             </div> {/* closes right column */}
