@@ -298,22 +298,14 @@ Acknowledgement to Wellington City Council and our property partners Willis Bond
                       </div>
                       <div className="text-xs text-gray-500 mt-1 font-mono">
                         ⧫ THΞ RUPTURΞ BΞGINS ⧫
-                      </div>
-                    </div>
-                    
-                  </div>
-                  
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        
-      </main>
+                </div>  {/* closes right column content */}
+              </div>    {/* closes grid column container */}
+            </div>      {/* closes max-w-4xl wrapper */}
+          </div>        {/* closes px-6 section */}
+        </section>      {/* closes event details section */}
+      </main>           {/* closes main */}
       {/* Footer */}
-      <footer className="py-16 px-6 border-t border-gray-800 mt-16">
+        <footer className="py-16 px-6 border-t border-gray-800 mt-16">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div>
@@ -358,11 +350,10 @@ Acknowledgement to Wellington City Council and our property partners Willis Bond
                   alt="Flags" 
                   className="h-28 object-contain glitch-build"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
+                       </div>
+        </section>
+      </main>
+      {/* Footer */}
+      <footer ...
   );
 }
