@@ -345,7 +345,6 @@ By The Car Park Society Inc.<br /><br />
             <div className="flex justify-end">
               <div className="space-y-2">
                 <img 
-                              <img 
                   src={flagsImage} 
                   alt="Flags" 
                   className="h-28 object-contain glitch-build"
