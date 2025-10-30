@@ -232,12 +232,11 @@ export default function EventDetail() {
 
 {/* Body Text and Countdown */}
 <p className="mt-8 text-[15px] md:text-[16px] text-gray-200 leading-relaxed">
-  <b>The Control Room</b><br />
-By The Car Park Society Inc.<br /><br />
 
   <b>Location:</b> 149 Victoria Street; Te Aro; Te Whanganui-a-Tara<br />
   <b>In Collaboration with:</b> <a href="https://www.urbandreambrokerage.org.nz/" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-red-500 underline">Urban Dream Brokerage</a><br />
 
+  
   Do you miss trick-or-treating? We've built a Halloween treasure hunt for you! Wellington didn’t always look like this. Colonisation has changed the very land we walk on; it has shaped our history, our present, and our future.<br /><br />
 
   <b>The Control Room</b> is <b>Phase Zero: The Rupture</b> — the first live activation of The Car Park Society.We have transformed a modest urban tenancy into a public portal and member hub; a place where the Watcher Network begins. Here, we test our systems, rituals, and signals in preparation for the larger Induction Centre activation planned for 2026.<br /><br />
