@@ -347,7 +347,7 @@ export default function EventDetail() {
               <p className="text-gray-400 text-[12px]">© 2025 by The Car Park Society Inc.</p>
             </div>
             
-            <div className="text-center">
+             <div className="text-center">
               <p className="text-gray-500 text-sm italic mb-4">
                 "We will not be seen,<br />
                 but we will be heard.<br />
@@ -368,11 +368,10 @@ export default function EventDetail() {
                   alt="Flags" 
                   className="h-28 object-contain glitch-build"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
+                       </div>
+        </section>
+      </main>
+      {/* Footer */}
+      <footer ...
   );
 }
