@@ -321,54 +321,60 @@ export default function EventDetail() {
         </section>   {/* closes event details */}
       </main>        {/* closes main */}
 
-      {/* Footer */}
-      <footer className="py-16 px-6 border-t border-gray-800 mt-16">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 items-start">
-            <div>
-              <div className="flex gap-2 mb-4">
-                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <SiTiktok className="w-4 h-4" />
-                </a>
-                <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <FaInstagram className="w-4 h-4" />
-                </a>
-                <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <FaFacebook className="w-4 h-4" />
-                </a>
-                <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
-                  <FaYoutube className="w-4 h-4" />
-                </a>
-              </div>
-              <a href="mailto:connect@thecarparksociety.xyz" className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]" data-testid="link-email-contact">connect@thecarparksociety.xyz</a>
-              <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
-              <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
-              <p className="text-gray-400 text-[12px]">© 2025 by The Car Park Society Inc.</p>
-            </div>
-            
-             <div className="text-center">
-              <p className="text-gray-500 text-sm italic mb-4">
-                "We will not be seen,<br />
-                but we will be heard.<br />
-                We will not be controlled,<br />
-                but we will govern.<br />
-                We will not wait for change;<br />
-                we will be the change."
-              </p>
-              <p className="text-gray-600 text-xs font-extralight">
-                Oath of TCPS
-              </p>
-            </div>
-            
-            <div className="flex justify-end">
-              <div className="space-y-2">
-                <img 
-                  src={flagsImage} 
-                  alt="Flags" 
-                  className="h-28 object-contain glitch-build"
-                />
-                       </div>
-      {/* Footer */}
-      <footer ...
-  );
-}
+{/* Footer */}
+<footer className="py-16 px-6 border-t border-gray-800 mt-16">
+  <div className="max-w-7xl mx-auto">
+    <div className="grid md:grid-cols-3 gap-8 items-start">
+      
+      {/* Left column */}
+      <div>
+        <div className="flex gap-2 mb-4">
+          <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+            <SiTiktok className="w-4 h-4" />
+          </a>
+          <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+            <FaInstagram className="w-4 h-4" />
+          </a>
+          <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+            <FaFacebook className="w-4 h-4" />
+          </a>
+          <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+            <FaYoutube className="w-4 h-4" />
+          </a>
+        </div>
+        <a href="mailto:connect@thecarparksociety.xyz" className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]" data-testid="link-email-contact">
+          connect@thecarparksociety.xyz
+        </a>
+        <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
+        <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
+        <p className="text-gray-400 text-[12px]">© 2025 by The Car Park Society Inc.</p>
+      </div>
+
+      {/* Middle column */}
+      <div className="text-center">
+        <p className="text-gray-500 text-sm italic mb-4">
+          "We will not be seen,<br />
+          but we will be heard.<br />
+          We will not be controlled,<br />
+          but we will govern.<br />
+          We will not wait for change;<br />
+          we will be the change."
+        </p>
+        <p className="text-gray-600 text-xs font-extralight">
+          Oath of TCPS
+        </p>
+      </div>
+
+      {/* Right column */}
+      <div className="flex justify-end">
+        <div className="space-y-2">
+          <img
+            src={flagsImage}
+            alt="Flags"
+            className="h-28 object-contain glitch-build"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
