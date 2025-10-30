@@ -190,16 +190,6 @@ export default function EventDetail() {
 
         {/* Event Details */}
         <section className="px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12">
-              <div>
-                <div className="space-y-4 text-gray-300">
-                  <p>
-                    <strong className="text-white">31 October – 13 December 2025</strong>
-                  </p>
-                  
-                </div>
-                
              {/* Event Details Grid */}
 {/* Event Details Grid */}
 <div className="grid md:grid-cols-[1.1fr_1fr] gap-10 items-start max-w-6xl mx-auto">
