@@ -179,7 +179,7 @@ export default function EventDetail() {
       <main className="pt-20 pb-16">
         {/* Event Header */}
         <section className="px-6 py-12">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-7xl mx-auto">
 <h1 className="text-4xl font-bold mb-2 text-white">T͟H͟Ξ CØNTЯØL RØØM</h1>
 <p className="italic text-gray-400 mb-6">By The Car Park Society</p>
 
@@ -191,8 +191,8 @@ export default function EventDetail() {
 
         {/* Event Details */}
         <section className="px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-9">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-5">
               <div>
                 <div className="space-y-4 text-gray-300">
                   <p>
@@ -208,7 +208,7 @@ export default function EventDetail() {
     <img
       src={groupHero}
       alt="The Car Park Society – collective assembly beneath the grid"
-      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300 scale-[1.05]"
+      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300 scale-[1.50]"
       loading="lazy"
     />
     <p className="mt-3 text-[9px] text-gray-400 italic text-center leading-snug">
@@ -221,7 +221,7 @@ export default function EventDetail() {
     <img
       src={landscape}
       alt="The Control Room – Cnr Dixon & Victoria Street"
-      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300 scale-[1.05]"
+      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300 scale-[1.50]"
       loading="lazy"
     />
     <p className="mt-3 text-[9px] text-gray-400 italic text-center leading-snug">
