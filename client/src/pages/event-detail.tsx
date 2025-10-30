@@ -236,86 +236,62 @@ export default function EventDetail() {
       Acknowledgement to Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
     </p>
   <div>
-      {/* Right column: images stacked vertically */}
-      <div className="flex flex-col gap-8">
-        <div>
-          <img
-            src={groupHero}
-            alt="The Car Park Society – collective assembly beneath the glow"
-            className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
-          />
-          <p className="mt-2 text-[12px] text-gray-500 italic text-center">
-            The Car Park Society – collective assembly beneath the glow.
-          </p>
-        </div>
-
-        <div>
-          <img
-            src={landscape}
-            alt="The Control Room – landscape signal projection"
-            className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
-          />
-          <p className="mt-2 text-[12px] text-gray-500 italic text-center">
-            The Control Room – landscape signal projection.
-          </p>
-        </div>
+         {/* Right column: images stacked vertically */}
+    <div className="flex flex-col gap-8">
+      <div>
+        <img
+          src={groupHero}
+          alt="The Car Park Society – collective assembly beneath the glow"
+          className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
+        />
+        <p className="mt-2 text-[12px] text-gray-500 italic text-center">
+          The Car Park Society – collective assembly beneath the glow.
+        </p>
       </div>
-    </div>
-</section>
 
-{/* Countdown Timer */}
-<div className="mt-6 py-2 px-3 bg-gray-900/50 border border-red-900/30 rounded font-mono text-center">
-  <div className="text-red-400 text-xs uppercase tracking-wider mb-1">
-    ⚡ SIGNAL ACTIVATION ⚡
-  </div>
-  <div className="grid grid-cols-4 gap-2 text-white">
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.days.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">DAYS</div>
-    </div>
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.hours.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">HRS</div>
-    </div>
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.minutes.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">MIN</div>
-    </div>
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.seconds.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">SEC</div>
-    </div>
-  </div>
-  <div className="text-xs text-gray-500 mt-1 font-mono">
-    ⧫ THΞ RUPTURΞ BΞGINS ⧫
-  </div>
-</div>
-
-</section>
-</main>
+      <div>
+        <img
+          src={landscape}
+          alt="The Control Room – landscape signal projection"
+          className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
+        />
+        <p className="mt-2 text-[12px] text-gray-500 italic text-center">
+          The Control Room – landscape signal projection.
+        </p>
+      </div>
+    </div>      {/* closes right column */}
+  </div>        {/* closes grid */}
+</div>          {/* closes wrapper */}
+</section>      {/* closes section */}
+</main>         {/* closes main */}
 
 {/* Footer */}
 <footer className="py-16 px-6 border-t border-gray-800 mt-16">
   <div className="max-w-7xl mx-auto">
     <div className="grid md:grid-cols-3 gap-8 items-start">
-      
       {/* Left column */}
       <div>
         <div className="flex gap-2 mb-4">
-          <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+          <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer"
+             className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
             <SiTiktok className="w-4 h-4" />
           </a>
-          <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+          <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer"
+             className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
             <FaInstagram className="w-4 h-4" />
           </a>
-          <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+          <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer"
+             className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
             <FaFacebook className="w-4 h-4" />
           </a>
-          <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+          <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer"
+             className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
             <FaYoutube className="w-4 h-4" />
           </a>
         </div>
-        <a href="mailto:connect@thecarparksociety.xyz" className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]" data-testid="link-email-contact">
+        <a href="mailto:connect@thecarparksociety.xyz"
+           className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]"
+           data-testid="link-email-contact">
           connect@thecarparksociety.xyz
         </a>
         <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
@@ -333,20 +309,16 @@ export default function EventDetail() {
           We will not wait for change;<br />
           we will be the change."
         </p>
-        <p className="text-gray-600 text-xs font-extralight">
-          Oath of TCPS
-        </p>
+        <p className="text-gray-600 text-xs font-extralight">Oath of TCPS</p>
       </div>
 
       {/* Right column */}
       <div className="flex justify-end">
-        <div className="space-y-2">
-          <img
-            src={flagsImage}
-            alt="Flags"
-            className="h-28 object-contain glitch-build"
-          />
-        </div>
+        <img
+          src={flagsImage}
+          alt="Flags"
+          className="h-28 object-contain glitch-build"
+        />
       </div>
     </div>
   </div>
