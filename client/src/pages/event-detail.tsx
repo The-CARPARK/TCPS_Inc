@@ -5,10 +5,9 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
-import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
 import groupHero from "./TCPS_Group_Hero_1.webp";
 import landscape from "./Landscape_1.webp";
-
+import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
 
 export default function EventDetail() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,7 +33,7 @@ export default function EventDetail() {
 
     // Countdown timer
     const calculateTimeLeft = () => {
-      const targetDate = new Date('2025-10-31T00:00:00').getTime();
+      const targetDate = new Date('2025-10-31T20:00:00').getTime();
       const now = new Date().getTime();
       const difference = targetDate - now;
 
@@ -201,39 +200,34 @@ export default function EventDetail() {
                   
                 </div>
                 
-                              {/* Additional Images Section */}
-<div className="flex flex-wrap justify-between mt-8 gap-6">
-  {/* Left: Group Hero (under main image) */}
-  <div className="flex-1 min-w-[300px] text-center">
+               {/* Hero and Landscape Images */}
+<div className="mt-8 flex flex-col md:flex-row gap-6 justify-between">
+  {/* Left: Group Hero */}
+  <div className="flex-1">
     <img
       src={groupHero}
-      alt="The Car Park Society collective assembly"
-      className="w-full rounded-lg border border-gray-800 shadow-lg hover:opacity-90 transition-all duration-300"
+      alt="The Car Park Society – collective assembly beneath the glow"
+      className="w-full h-auto rounded-lg border border-gray-800 shadow-lg hover:opacity-90 transition-all duration-300"
       loading="lazy"
     />
-    <p className="mt-2 text-sm text-gray-400">
-      The Car Park Society – Collective assembly beneath the glow.
+    <p className="mt-2 text-[12px] text-gray-500 italic text-center">
+      The Car Park Society – collective assembly beneath the glow.
     </p>
   </div>
 
-  {/* Right: Landscape (under countdown) */}
-  <div className="flex-1 min-w-[300px] text-center">
+  {/* Right: Landscape */}
+  <div className="flex-1">
     <img
       src={landscape}
-      alt="The Control Room landscape projection"
-      className="w-full rounded-lg border border-gray-800 shadow-lg hover:opacity-90 transition-all duration-300"
+      alt="The Control Room – landscape signal projection"
+      className="w-full h-auto rounded-lg border border-gray-800 shadow-lg hover:opacity-90 transition-all duration-300"
       loading="lazy"
     />
-    <p className="mt-2 text-sm text-gray-400">
-      The Control Room – Landscape signal projection.
+    <p className="mt-2 text-[12px] text-gray-500 italic text-center">
+      The Control Room – landscape signal projection.
     </p>
   </div>
 </div>
-              <div>
-                
-                <div className="space-y-6 text-gray-300 leading-relaxed">
-                  <div>
-                    <p className="italic mb-4 text-[19px]">Phase Zero: The Rupture</p>
                     
                     
                     
@@ -306,8 +300,7 @@ Acknowledgement to Wellington City Council and our property partners Willis Bond
                         ⧫ THΞ RUPTURΞ BΞGINS ⧫
                       </div>
                     </div>
-                  
-
+                    
                   </div>
                   
                   
