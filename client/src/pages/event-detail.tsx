@@ -191,7 +191,7 @@ export default function EventDetail() {
 
         {/* Event Details */}
         <section className="px-6">
-          <div className="max-w-none mx-auto">
+<div className="max-w-[90rem] mx-auto">
             <div className="grid md:grid-cols-2 gap-5">
               <div>
                 <div className="space-y-4 text-gray-300">
