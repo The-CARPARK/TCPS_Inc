@@ -200,75 +200,92 @@ export default function EventDetail() {
                   
                 </div>
                 
-               {/* Hero and Landscape Images */}
-<div className="mt-8 flex flex-col md:flex-row gap-6 justify-between">
-  {/* Left: Group Hero */}
-  <div className="flex-1">
-    <img
-      src={groupHero}
-      alt="The Car Park Society – collective assembly beneath the glow"
-      className="w-full h-auto rounded-lg border border-gray-800 shadow-lg hover:opacity-90 transition-all duration-300"
-      loading="lazy"
-    />
-    <p className="mt-2 text-[12px] text-gray-500 italic text-center">
-      The Car Park Society – collective assembly beneath the glow.
+             {/* Event Details Grid */}
+<div className="grid md:grid-cols-2 gap-8 items-start">
+  {/* Left column: text */}
+  <div className="text-gray-300 leading-relaxed text-[13px] space-y-4">
+    <p>
+      <strong className="text-white">31 October – 13 December 2025</strong>
+    </p>
+
+    <p>
+      <b>The Control Room</b><br />
+      By The Car Park Society Inc.<br /><br />
+
+      <b>Location:</b> 149 Victoria Street; corner of Dixon & Victoria Street; Te Whanganui-a-Tara<br />
+      <b>In Collaboration with:</b>{" "}
+      <a
+        href="https://www.urbandreambrokerage.org.nz/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-red-400 hover:text-red-500 underline"
+      >
+        Urban Dream Brokerage
+      </a>
+      <br />
+      <b>Dates:</b> 31 October – 13 December 2025<br /><br />
+
+      Do you miss trick-or-treating? We've built a Halloween treasure hunt for you.<br />
+      Wellington didn’t always look like this. Colonisation has changed the very land we walk on; it has shaped our history, our present, and our future.<br /><br />
+
+      <b>The Control Room</b> is <b>Phase Zero: The Rupture</b> — the first live activation of The Car Park Society.<br />
+      We have transformed a modest urban tenancy into a public portal and member hub; a place where the Watcher Network begins. Here, we test our systems, rituals, and signals in preparation for the larger Induction Centre activation planned for 2026.<br /><br />
+
+      We reclaim forgotten and overlooked spaces; sites where histories have been buried, distorted, or erased. Through projection, sound, QR glyphs, and symbolic acts, we invite you to step into these fractures and witness what the city tries to forget.<br /><br />
+
+      Across six weeks, four activations will unfold; each revealing a deeper layer of Te Aro’s hidden memory:<br /><br />
+
+      <b>Activation 1 – 31 Oct: The First Rupture</b><br />
+      Projection overlays of colonial maps and glyphs. QR glyphs unlock File #1.<br />
+      <i>“The burial is broken. You are observed.”</i><br /><br />
+
+      <b>Activation 2 – 14 Nov: The Battle Archive</b><br />
+      Projection overlays of riot vs refusal. Soundscape of haka, musket fire, and colonial orders dissolving into static. QR glyphs unlock File #2.<br />
+      <i>Oracle: “They called it riot. We call it refusal.”</i><br /><br />
+
+      <b>Activation 3 – 28 Nov: The Drowned File</b><br />
+      Projection of the lost shoreline. Soundscape of waves and Harbour Board minutes. QR glyphs unlock File #3.<br />
+      <i>“The sea still waits beneath. You are reclaimed.”</i><br /><br />
+
+      <b>Activation 4 – 12 Dec: The Veins Beneath</b><br />
+      Projection of rippling water textures. Soundscape of awa and glitch static. QR glyphs unlock File #4.<br />
+      <i>Oracle: “Ko te awa ahau. Ko te awa ko au. The memory flows.”</i><br /><br />
+
+      We invite the public to participate, observe, and connect with us throughout the activation period; to join the Watcher Network as it forms in real time.<br /><br />
+
+      <b>Nau mai, haere mai</b> — come down and have a kōrero, have a kai, while we deep dive into what a utopian future might look like when we honour <b>Te Tiriti o Waitangi</b> and respect <b>te taiao</b>.<br /><br />
+
+      Acknowledgement to Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
     </p>
   </div>
 
-  {/* Right: Landscape */}
-  <div className="flex-1">
-    <img
-      src={landscape}
-      alt="The Control Room – landscape signal projection"
-      className="w-full h-auto rounded-lg border border-gray-800 shadow-lg hover:opacity-90 transition-all duration-300"
-      loading="lazy"
-    />
-    <p className="mt-2 text-[12px] text-gray-500 italic text-center">
-      The Control Room – landscape signal projection.
-    </p>
+  {/* Right column: images stacked vertically */}
+  <div className="flex flex-col gap-6">
+    <div>
+      <img
+        src={groupHero}
+        alt="The Car Park Society – collective assembly beneath the glow"
+        className="w-full h-auto rounded-lg border border-gray-800 shadow-lg hover:opacity-90 transition-all duration-300"
+        loading="lazy"
+      />
+      <p className="mt-1 text-[11px] text-gray-500 italic text-center">
+        The Car Park Society – collective assembly beneath the glow.
+      </p>
+    </div>
+
+    <div>
+      <img
+        src={landscape}
+        alt="The Control Room – landscape signal projection"
+        className="w-full h-auto rounded-lg border border-gray-800 shadow-lg hover:opacity-90 transition-all duration-300"
+        loading="lazy"
+      />
+      <p className="mt-1 text-[11px] text-gray-500 italic text-center">
+        The Control Room – landscape signal projection.
+      </p>
+    </div>
   </div>
 </div>
-{/* Body Text and Countdown */}
-<p className="mt-6 text-[13px] text-gray-300 leading-relaxed">
-  <b>The Control Room</b><br />
-  By The Car Park Society Inc.<br /><br />
-
-  <b>Location:</b> 149 Victoria Street; corner of Dixon & Victoria Street; Te Whanganui-a-Tara<br />
-  <b>In Collaboration with:</b> <a href="https://www.urbandreambrokerage.org.nz/" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-red-500 underline">Urban Dream Brokerage</a><br />
-  <b>Dates:</b> 31 October – 13 December 2025<br /><br />
-
-  Do you miss trick-or-treating? We've built a Halloween treasure hunt for you.<br />
-  Wellington didn’t always look like this. Colonisation has changed the very land we walk on; it has shaped our history, our present, and our future.<br /><br />
-
-  <b>The Control Room</b> is <b>Phase Zero: The Rupture</b> — the first live activation of The Car Park Society.<br />
-  We have transformed a modest urban tenancy into a public portal and member hub; a place where the Watcher Network begins. Here, we test our systems, rituals, and signals in preparation for the larger Induction Centre activation planned for 2026.<br /><br />
-
-  We reclaim forgotten and overlooked spaces; sites where histories have been buried, distorted, or erased. Through projection, sound, QR glyphs, and symbolic acts, we invite you to step into these fractures and witness what the city tries to forget.<br /><br />
-
-  Across six weeks, four activations will unfold; each revealing a deeper layer of Te Aro’s hidden memory:<br /><br />
-
-  <b>Activation 1 – 31 Oct: The First Rupture</b><br />
-  Projection overlays of colonial maps and glyphs. QR glyphs unlock File #1.<br />
-  <i>“The burial is broken. You are observed.”</i><br /><br />
-
-  <b>Activation 2 – 14 Nov: The Battle Archive</b><br />
-  Projection overlays of riot vs refusal. Soundscape of haka, musket fire, and colonial orders dissolving into static. QR glyphs unlock File #2.<br />
-  <i>Oracle: “They called it riot. We call it refusal.”</i><br /><br />
-
-  <b>Activation 3 – 28 Nov: The Drowned File</b><br />
-  Projection of the lost shoreline. Soundscape of waves and Harbour Board minutes. QR glyphs unlock File #3.<br />
-  <i>“The sea still waits beneath. You are reclaimed.”</i><br /><br />
-
-  <b>Activation 4 – 12 Dec: The Veins Beneath</b><br />
-  Projection of rippling water textures. Soundscape of awa and glitch static. QR glyphs unlock File #4.<br />
-  <i>Oracle: “Ko te awa ahau. Ko te awa ko au. The memory flows.”</i><br /><br />
-
-  We invite the public to participate, observe, and connect with us throughout the activation period; to join the Watcher Network as it forms in real time.<br /><br />
-
-  <b>Nau mai, haere mai</b> — come down and have a kōrero, have a kai, while we deep dive into what a utopian future might look like when we honour <b>Te Tiriti o Waitangi</b> and respect <b>te taiao</b>.<br /><br />
-
-  Acknowledgement to Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
-</p>
 
 {/* Countdown Timer */}
 <div className="mt-6 py-2 px-3 bg-gray-900/50 border border-red-900/30 rounded font-mono text-center">
