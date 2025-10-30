@@ -182,24 +182,42 @@ export default function EventDetail() {
           <div className="max-w-7x1 mx-auto">
 <h1 className="text-4xl font-bold mb-2 text-white">T͟H͟Ξ CØNTЯØL RØØM</h1>
 <p className="italic text-gray-400 mb-6">By The Car Park Society</p>
+<p>
+<strong className="text-white">31 October – 13 December 2025</strong>
+</p>
 
 
           </div>
         </section>
 
+{/* Countdown Timer */}
+<div className="mb-8 py-3 px-4 bg-gray-900/50 border border-red-900/30 rounded font-mono text-center shadow-lg">
+  <div className="text-red-400 text-xs uppercase tracking-wider mb-1">
+    FIRST RUPTURΞ POINT LOADING IN...
+  </div>
+  <div className="grid grid-cols-4 gap-2 text-white">
+    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
+      <div className="text-sm font-bold text-red-400">{timeLeft.days.toString().padStart(2, '0')}</div>
+      <div className="text-xs text-gray-400 uppercase">DAYS</div>
+    </div>
+    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
+      <div className="text-sm font-bold text-red-400">{timeLeft.hours.toString().padStart(2, '0')}</div>
+      <div className="text-xs text-gray-400 uppercase">HRS</div>
+    </div>
+    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
+      <div className="text-sm font-bold text-red-400">{timeLeft.minutes.toString().padStart(2, '0')}</div>
+      <div className="text-xs text-gray-400 uppercase">MIN</div>
+    </div>
+    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
+      <div className="text-sm font-bold text-red-400">{timeLeft.seconds.toString().padStart(2, '0')}</div>
+      <div className="text-xs text-gray-400 uppercase">SEC</div>
+    </div>
+  </div>
+  <div className="text-xs text-gray-500 mt-1 font-mono">
+    ⧫ THΞ RUPTURΞ BΞGINS ⧫
+  </div>
+</div>
 
-
-        {/* Event Details */}
-        <section className="px-6">
-<div className="max-w-[90rem] mx-auto">
-            <div className="grid md:grid-cols-2 gap-5">
-              <div>
-                <div className="space-y-4 text-gray-300">
-                  <p>
-                    <strong className="text-white">31 October – 13 December 2025</strong>
-                  </p>
-
-                </div>
 
 {/* Hero and Landscape Images */}
 <div className="mt-10 flex flex-col md:flex-row gap-8 justify-between items-start">
@@ -227,34 +245,6 @@ export default function EventDetail() {
     <p className="mt-3 text-[11px] text-gray-400 italic text-center leading-snug">
       The Control Room – Cnr Dixon & Victoria Street.
     </p>
-  </div>
-</div>
-
-{/* Countdown Timer */}
-<div className="mb-8 py-3 px-4 bg-gray-900/50 border border-red-900/30 rounded font-mono text-center shadow-lg">
-  <div className="text-red-400 text-xs uppercase tracking-wider mb-1">
-    FIRST RUPTURΞ POINT LOADING IN...
-  </div>
-  <div className="grid grid-cols-4 gap-2 text-white">
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.days.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">DAYS</div>
-    </div>
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.hours.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">HRS</div>
-    </div>
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.minutes.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">MIN</div>
-    </div>
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.seconds.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">SEC</div>
-    </div>
-  </div>
-  <div className="text-xs text-gray-500 mt-1 font-mono">
-    ⧫ THΞ RUPTURΞ BΞGINS ⧫
   </div>
 </div>
                 
