@@ -204,27 +204,27 @@ export default function EventDetail() {
 {/* Hero and Landscape Images */}
 <div className="mt-10 flex flex-col md:flex-row gap-8 justify-between items-start">
   {/* Left: Group Hero */}
-  <div className="flex-1">
+  <div className="flex-1 max-w-[48%] md:max-w-none">
     <img
       src={groupHero}
       alt="The Car Park Society – collective assembly beneath the grid"
-      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300 scale-[1.50]"
+      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300"
       loading="lazy"
     />
-    <p className="mt-3 text-[9px] text-gray-400 italic text-center leading-snug">
+    <p className="mt-3 text-[11px] text-gray-400 italic text-center leading-snug">
       The Car Park Society – collective assembly beneath the grid.
     </p>
   </div>
 
   {/* Right: Landscape */}
-  <div className="flex-1">
+  <div className="flex-1 max-w-[48%] md:max-w-none">
     <img
       src={landscape}
       alt="The Control Room – Cnr Dixon & Victoria Street"
-      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300 scale-[1.50]"
+      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300"
       loading="lazy"
     />
-    <p className="mt-3 text-[9px] text-gray-400 italic text-center leading-snug">
+    <p className="mt-3 text-[11px] text-gray-400 italic text-center leading-snug">
       The Control Room – Cnr Dixon & Victoria Street.
     </p>
   </div>
