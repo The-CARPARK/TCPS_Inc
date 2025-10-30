@@ -179,28 +179,16 @@ export default function EventDetail() {
       <main className="pt-20 pb-16">
         {/* Event Header */}
         <section className="px-6 py-12">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold mb-4">T͟H͟Ξ CØNTЯØL RØØM </h1>
-            
-            
-        
-{/* Event Details */}
-<section className="px-6">
-  {/* Event Details Grid */}
-  <div className="grid md:grid-cols-[1.1fr_1fr] gap-10 items-start">
-    {/* Left column: text */}
-    <div className="text-gray-300 leading-relaxed text-[13px] space-y-4">
-      ...
-    </div>
+  <div className="max-w-6xl mx-auto">
+    <h1 className="text-4xl font-bold mb-8">T͟H͟Ξ CØNTЯØL RØØM</h1>
 
-    {/* Right column: images stacked vertically */}
-    <div className="flex flex-col gap-8">
-      ...
-    </div>
-  </div>
-</section>
-
-    <p>
+    {/* Event Details Grid */}
+    <div className="grid md:grid-cols-[1.1fr_1fr] gap-10 items-start">
+      {/* Left column: text */}
+      <div className="text-gray-300 leading-relaxed text-[13px] space-y-4">
+        <p>
+          <strong className="text-white">31 October – 13 December 2025</strong>
+        </p>
       <b>The Control Room</b><br />
       By The Car Park Society Inc.<br /><br />
 
@@ -249,35 +237,35 @@ export default function EventDetail() {
 
       Acknowledgement to Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
     </p>
-  </div>
+ </div>
 
-   {/* Right column: images stacked vertically */}
-  <div className="flex flex-col gap-8">
-    <div>
-      <img
-        src={groupHero}
-        alt="The Car Park Society – collective assembly beneath the glow"
-        className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
-        loading="lazy"
-      />
-      <p className="mt-2 text-[12px] text-gray-500 italic text-center">
-        The Car Park Society – collective assembly beneath the glow.
-      </p>
-    </div>
+      {/* Right column: images stacked vertically */}
+      <div className="flex flex-col gap-8">
+        <div>
+          <img
+            src={groupHero}
+            alt="The Car Park Society – collective assembly beneath the glow"
+            className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
+          />
+          <p className="mt-2 text-[12px] text-gray-500 italic text-center">
+            The Car Park Society – collective assembly beneath the glow.
+          </p>
+        </div>
 
-    <div>
-      <img
-        src={landscape}
-        alt="The Control Room – landscape signal projection"
-        className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
-        loading="lazy"
-      />
-      <p className="mt-2 text-[12px] text-gray-500 italic text-center">
-        The Control Room – landscape signal projection.
-      </p>
+        <div>
+          <img
+            src={landscape}
+            alt="The Control Room – landscape signal projection"
+            className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
+          />
+          <p className="mt-2 text-[12px] text-gray-500 italic text-center">
+            The Control Room – landscape signal projection.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 {/* Countdown Timer */}
 <div className="mt-6 py-2 px-3 bg-gray-900/50 border border-red-900/30 rounded font-mono text-center">
@@ -307,12 +295,8 @@ export default function EventDetail() {
   </div>
 </div>
 
-{/* Correctly close all containers */}
-              </div> {/* closes left column */}
-            </div>   {/* closes grid */}
-          </div>     {/* closes max-w-4xl */}
-        </section>   {/* closes event details */}
-      </main>        {/* closes main */}
+</section>
+</main>
 
 {/* Footer */}
 <footer className="py-16 px-6 border-t border-gray-800 mt-16">
@@ -371,5 +355,5 @@ export default function EventDetail() {
     </div>
   </div>
 </footer>
-  );
+);
 }
