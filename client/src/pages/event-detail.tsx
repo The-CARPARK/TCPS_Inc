@@ -201,12 +201,12 @@ export default function EventDetail() {
                 </div>
                 
              {/* Event Details Grid */}
-<div className="grid md:grid-cols-2 gap-8 items-start">
+{/* Event Details Grid */}
+<div className="grid md:grid-cols-[1.1fr_1fr] gap-10 items-start max-w-6xl mx-auto">
   {/* Left column: text */}
   <div className="text-gray-300 leading-relaxed text-[13px] space-y-4">
-    <p>
-      <strong className="text-white">31 October – 13 December 2025</strong>
-    </p>
+    ...
+  </div>
 
     <p>
       <b>The Control Room</b><br />
@@ -259,16 +259,16 @@ export default function EventDetail() {
     </p>
   </div>
 
-  {/* Right column: images stacked vertically */}
-  <div className="flex flex-col gap-6">
+   {/* Right column: images stacked vertically */}
+  <div className="flex flex-col gap-8">
     <div>
       <img
         src={groupHero}
         alt="The Car Park Society – collective assembly beneath the glow"
-        className="w-full h-auto rounded-lg border border-gray-800 shadow-lg hover:opacity-90 transition-all duration-300"
+        className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
         loading="lazy"
       />
-      <p className="mt-1 text-[11px] text-gray-500 italic text-center">
+      <p className="mt-2 text-[12px] text-gray-500 italic text-center">
         The Car Park Society – collective assembly beneath the glow.
       </p>
     </div>
@@ -277,10 +277,10 @@ export default function EventDetail() {
       <img
         src={landscape}
         alt="The Control Room – landscape signal projection"
-        className="w-full h-auto rounded-lg border border-gray-800 shadow-lg hover:opacity-90 transition-all duration-300"
+        className="w-full rounded-xl border border-gray-800 shadow-xl hover:opacity-95 transition-all duration-300"
         loading="lazy"
       />
-      <p className="mt-1 text-[11px] text-gray-500 italic text-center">
+      <p className="mt-2 text-[12px] text-gray-500 italic text-center">
         The Control Room – landscape signal projection.
       </p>
     </div>
