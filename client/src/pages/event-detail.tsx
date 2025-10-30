@@ -199,7 +199,6 @@ export default function EventDetail() {
                     <strong className="text-white">31 October – 13 December 2025</strong>
                   </p>
 
-                </div>
 
 {/* Hero and Landscape Images */}
 <div className="mt-10 flex flex-col md:flex-row gap-8 justify-between items-start">
@@ -301,7 +300,7 @@ export default function EventDetail() {
 {/* Correctly close all containers */}
               </div> {/* closes left column */}
             </div>   {/* closes grid */}
-          </div>     {/* closes max-w-4xl */}
+          </div>     {/* closes max-w-9xl */}
         </section>   {/* closes event details */}
       </main>        {/* closes main */}
 
