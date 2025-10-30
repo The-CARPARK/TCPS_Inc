@@ -252,7 +252,7 @@ export default function EventDetail() {
 By The Car Park Society Inc.<br /><br />
 
 <b>Location:</b> 149 Victoria Street; corner of Dixon & Victoria Street; Te Whanganui-a-Tara<br />
-<b>Property Partner:</b> Willis Bond<br />
+<b>In Collaboration with:</b> <a href="https://www.urbandreambrokerage.org.nz/" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-red-500 underline">Urban Dream Brokerage</a><br />
 <b>Dates:</b> 31 October – 13 December 2025<br /><br />
 
 Do you miss trick-or-treating? We've built a Halloween treasure hunt for you.<br />
@@ -265,19 +265,19 @@ We reclaim forgotten and overlooked spaces; sites where histories have been buri
 
 Across six weeks, four activations will unfold; each revealing a deeper layer of Te Aro’s hidden memory:<br /><br />
 
-<b>Activation 1 – 31 Oct: The First Rupture / The Exchange</b><br />
+<b>Activation 1 – 31 Oct: The First Rupture</b><br />
 Projection overlays of colonial maps and glyphs. QR glyphs unlock File #1.<br />
 <i>“The burial is broken. You are observed.”</i><br /><br />
 
-<b>Activation 2 – 14 Nov: The Battle Archive / Manners St 1846</b><br />
+<b>Activation 2 – 14 Nov: The Battle Archive</b><br />
 Projection overlays of riot vs refusal. Soundscape of haka, musket fire, and colonial orders dissolving into static. QR glyphs unlock File #2.<br />
 <i>Oracle: “They called it riot. We call it refusal.”</i><br /><br />
 
-<b>Activation 3 – 28 Nov: The Drowned File / Reclaimed Land</b><br />
+<b>Activation 3 – 28 Nov: The Drowned File</b><br />
 Projection of the lost shoreline. Soundscape of waves and Harbour Board minutes. QR glyphs unlock File #3.<br />
 <i>“The sea still waits beneath. You are reclaimed.”</i><br /><br />
 
-<b>Activation 4 – 12 Dec: The Veins Beneath / Te Aro Pā + Waimapihi</b><br />
+<b>Activation 4 – 12 Dec: The Veins Beneath</b><br />
 Projection of rippling water textures. Soundscape of awa and glitch static. QR glyphs unlock File #4.<br />
 <i>Oracle: “Ko te awa ahau. Ko te awa ko au. The memory flows.”</i><br /><br />
 
