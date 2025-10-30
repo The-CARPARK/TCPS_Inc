@@ -184,28 +184,21 @@ export default function EventDetail() {
             
             
         
-
 {/* Event Details */}
 <section className="px-6">
-  <div className="max-w-6xl mx-auto">
-
-    {/* Event Details Grid */}
-    <div className="grid md:grid-cols-[1.1fr_1fr] gap-10 items-start">
-      {/* Left column: text */}
-      <div className="text-gray-300 leading-relaxed text-[13px] space-y-4">
-        ...
-      </div>
-
-      {/* Right column: images stacked vertically */}
-      <div className="flex flex-col gap-8">
-        ...
-      </div>
+  {/* Event Details Grid */}
+  <div className="grid md:grid-cols-[1.1fr_1fr] gap-10 items-start">
+    {/* Left column: text */}
+    <div className="text-gray-300 leading-relaxed text-[13px] space-y-4">
+      ...
     </div>
 
+    {/* Right column: images stacked vertically */}
+    <div className="flex flex-col gap-8">
+      ...
+    </div>
   </div>
 </section>
-
-  </div>
 
     <p>
       <b>The Control Room</b><br />
