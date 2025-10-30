@@ -200,18 +200,17 @@ export default function EventDetail() {
 
                 </div>
 
-
-               {/* Hero and Landscape Images */}
-<div className="mt-8 flex flex-col md:flex-row gap-6 justify-between">
+{/* Hero and Landscape Images */}
+<div className="mt-10 flex flex-col md:flex-row gap-8 justify-between items-start">
   {/* Left: Group Hero */}
   <div className="flex-1">
     <img
       src={groupHero}
       alt="The Car Park Society – collective assembly beneath the grid"
-      className="w-full h-auto rounded-lg border border-gray-800 shadow-lg hover:opacity-90 transition-all duration-300"
+      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300 scale-[1.05]"
       loading="lazy"
     />
-    <p className="mt-2 text-[12px] text-gray-500 italic text-center">
+    <p className="mt-3 text-[15px] text-gray-400 italic text-center leading-snug">
       The Car Park Society – collective assembly beneath the grid.
     </p>
   </div>
@@ -221,23 +220,24 @@ export default function EventDetail() {
     <img
       src={landscape}
       alt="The Control Room – Cnr Dixon & Victoria Street"
-      className="w-full h-auto rounded-lg border border-gray-800 shadow-lg hover:opacity-90 transition-all duration-300"
+      className="w-full h-auto rounded-xl border-2 border-gray-700 shadow-2xl hover:opacity-95 transition-all duration-300 scale-[1.05]"
       loading="lazy"
     />
-    <p className="mt-2 text-[12px] text-gray-500 italic text-center">
+    <p className="mt-3 text-[15px] text-gray-400 italic text-center leading-snug">
       The Control Room – Cnr Dixon & Victoria Street.
     </p>
   </div>
 </div>
+
 {/* Body Text and Countdown */}
-<p className="mt-6 text-[13px] text-gray-300 leading-relaxed">
+<p className="mt-8 text-[15px] md:text-[16px] text-gray-200 leading-relaxed">
   <b>The Control Room</b><br />
 By The Car Park Society Inc.<br /><br />
 
-  <b>Location:</b> 149 Victoria Street; corner of Dixon & Victoria Street; Te Whanganui-a-Tara<br />
+  <b>Location:</b> 149 Victoria Street; Te Aro; Te Whanganui-a-Tara<br />
   <b>In Collaboration with:</b> <a href="https://www.urbandreambrokerage.org.nz/" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-red-500 underline">Urban Dream Brokerage</a><br />
 
-  Do you miss trick-or-treating? We've built a Halloween treasure hunt for you. Wellington didn’t always look like this. Colonisation has changed the very land we walk on; it has shaped our history, our present, and our future.<br /><br />
+  Do you miss trick-or-treating? We've built a Halloween treasure hunt for you! Wellington didn’t always look like this. Colonisation has changed the very land we walk on; it has shaped our history, our present, and our future.<br /><br />
 
   <b>The Control Room</b> is <b>Phase Zero: The Rupture</b> — the first live activation of The Car Park Society.We have transformed a modest urban tenancy into a public portal and member hub; a place where the Watcher Network begins. Here, we test our systems, rituals, and signals in preparation for the larger Induction Centre activation planned for 2026.<br /><br />
 
