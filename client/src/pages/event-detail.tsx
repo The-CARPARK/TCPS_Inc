@@ -378,3 +378,5 @@ export default function EventDetail() {
     </div>
   </div>
 </footer>
+  );
+}
