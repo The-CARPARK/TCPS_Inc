@@ -179,7 +179,7 @@ export default function EventDetail() {
       <main className="pt-20 pb-16">
         {/* Event Header */}
         <section className="px-6 py-12">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-7x1 mx-auto">
 <h1 className="text-4xl font-bold mb-2 text-white">T͟H͟Ξ CØNTЯØL RØØM</h1>
 <p className="italic text-gray-400 mb-6">By The Car Park Society</p>
 
@@ -191,7 +191,7 @@ export default function EventDetail() {
 
         {/* Event Details */}
         <section className="px-6">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-none mx-auto">
             <div className="grid md:grid-cols-2 gap-5">
               <div>
                 <div className="space-y-4 text-gray-300">
