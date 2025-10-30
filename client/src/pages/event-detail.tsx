@@ -186,7 +186,33 @@ export default function EventDetail() {
           </div>
         </section>
 
-
+{/* Countdown Timer */}
+<div className="mt-6 py-2 px-3 bg-gray-900/50 border border-red-900/30 rounded font-mono text-center">
+  <div className="text-red-400 text-xs uppercase tracking-wider mb-1">
+    FIRST RUPTURE POINT LOADING IN...
+  </div>
+  <div className="grid grid-cols-4 gap-2 text-white">
+    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
+      <div className="text-sm font-bold text-red-400">{timeLeft.days.toString().padStart(2, '0')}</div>
+      <div className="text-xs text-gray-400 uppercase">DAYS</div>
+    </div>
+    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
+      <div className="text-sm font-bold text-red-400">{timeLeft.hours.toString().padStart(2, '0')}</div>
+      <div className="text-xs text-gray-400 uppercase">HRS</div>
+    </div>
+    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
+      <div className="text-sm font-bold text-red-400">{timeLeft.minutes.toString().padStart(2, '0')}</div>
+      <div className="text-xs text-gray-400 uppercase">MIN</div>
+    </div>
+    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
+      <div className="text-sm font-bold text-red-400">{timeLeft.seconds.toString().padStart(2, '0')}</div>
+      <div className="text-xs text-gray-400 uppercase">SEC</div>
+    </div>
+  </div>
+  <div className="text-xs text-gray-500 mt-1 font-mono">
+    ⧫ THΞ RUPTURΞ BΞGINS ⧫
+  </div>
+</div>
 
         {/* Event Details */}
         <section className="px-6">
@@ -266,34 +292,6 @@ export default function EventDetail() {
 
   Acknowledgement to Urban Dream Brokerage, Wellington City Council and our property partners Willis Bond for their ongoing support of this work.
 </p>
-
-{/* Countdown Timer */}
-<div className="mt-6 py-2 px-3 bg-gray-900/50 border border-red-900/30 rounded font-mono text-center">
-  <div className="text-red-400 text-xs uppercase tracking-wider mb-1">
-    ⚡ SIGNAL ACTIVATION ⚡
-  </div>
-  <div className="grid grid-cols-4 gap-2 text-white">
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.days.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">DAYS</div>
-    </div>
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.hours.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">HRS</div>
-    </div>
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.minutes.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">MIN</div>
-    </div>
-    <div className="bg-black/50 py-1 px-2 rounded border border-gray-800">
-      <div className="text-sm font-bold text-red-400">{timeLeft.seconds.toString().padStart(2, '0')}</div>
-      <div className="text-xs text-gray-400 uppercase">SEC</div>
-    </div>
-  </div>
-  <div className="text-xs text-gray-500 mt-1 font-mono">
-    ⧫ THΞ RUPTURΞ BΞGINS ⧫
-  </div>
-</div>
 
 {/* Correctly close all containers */}
               </div> {/* closes left column */}
