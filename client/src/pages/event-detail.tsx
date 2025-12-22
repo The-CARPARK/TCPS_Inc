@@ -151,7 +151,7 @@ export default function EventDetail() {
               <p className="text-gray-200 leading-relaxed">
                 <b>Location:</b> 149 Victoria Street, Te Aro, Te Whanganui-a-Tara<br />
                 <b>In collaboration with:</b>{" "}
-                <a href="https://www.urbandreambrokerage.org.nz/" target="_blank" rel="noopener noreferrer" className="text-red-400 underline">
+                <a href="https://www.urbandreambrokerage.org.nz/carpark-society" target="_blank" rel="noopener noreferrer" className="text-red-400 underline">
                   Urban Dream Brokerage
                 </a>
                 <br /><br />
