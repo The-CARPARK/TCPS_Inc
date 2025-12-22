@@ -259,7 +259,7 @@ export default function Events() {
               {/* Small Donate Button */}
               <div className="mb-4">
                 <a 
-                  href="http://ko-fi.com/thecarparksocietyinc" 
+                  href="https://donate.stripe.com/5kQcMXfYR5W5ashfl32oE00" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-block"
