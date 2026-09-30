@@ -292,6 +292,26 @@ export default function AnnualReportPost() {
               <span>30.09.2026</span>
               <span>3 min read</span>
             </div>
+
+            {/* Annual Report Link */}
+            <div className="bg-red-950/30 border border-red-800 rounded-lg p-6 sm:p-8 mb-4">
+              <p className="text-white font-semibold mb-3">
+                TCPS Annual Report FY2025/26 — Phase Zero: The Rupture
+              </p>
+
+              <p className="text-gray-300 mb-4">
+                The first year is now on record.
+              </p>
+
+              <a
+                href="https://drive.google.com/file/d/1wmK2F1EL5e7VFdmYi-jJjN46ToFEv9BG/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-red-400 hover:text-red-300 underline underline-offset-4 transition-colors"
+              >
+                Read the Annual Report →
+              </a>
+            </div>
           </div>
         </section>
 
@@ -565,22 +585,6 @@ export default function AnnualReportPost() {
                   <br />
                   Now we descend.
                 </p>
-
-                <div className="bg-red-950/30 border border-red-800 rounded-lg p-6 sm:p-8 my-10">
-                  <p className="text-white font-semibold mb-4">
-                    Read the TCPS Annual Report FY2025/26 — Phase Zero: The
-                    Rupture
-                  </p>
-
-                  <a
-                    href="https://drive.google.com/file/d/1wmK2F1EL5e7VFdmYi-jJjN46ToFEv9BG/view?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block text-red-400 hover:text-red-300 underline underline-offset-4 transition-colors"
-                  >
-                    Open the Annual Report →
-                  </a>
-                </div>
 
                 <p>
                   Follow the Society into its next phase.
