@@ -658,7 +658,7 @@ export default function AnnualReportPost() {
                 className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]"
                 data-testid="link-email-contact"
               >
-                connect@thecarparksociety.xyz
+                the.carpark2025@gmail.com
               </a>
 
               <p className="text-gray-400 mb-2 text-[13px]">
@@ -670,7 +670,7 @@ export default function AnnualReportPost() {
               </p>
 
               <p className="text-gray-400 text-[12px]">
-                © 2025 by The Car Park Society Inc.
+                © 2026 by The Car Park Society Inc.
               </p>
             </div>
 
