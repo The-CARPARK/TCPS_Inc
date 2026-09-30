@@ -293,9 +293,9 @@ export default function Support() {
                 </a>
                 <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
                   <FaYoutube className="w-4 h-4" />
-                </a>
+                                </a>
               </div>
-              <a href="mailto:the.carpark2025@gmail.com" className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#0f0404]" data-testid="link-email-contact">the.carpark2025@gmail.com</a>
+              <a href="mailto:the.carpark2025@gmail.com" className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]" data-testid="link-email-contact">the.carpark2025@gmail.com</a>
               <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
               <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
               <p className="text-gray-400 text-[12px]">© 2026 by The Car Park Society Inc.</p>
