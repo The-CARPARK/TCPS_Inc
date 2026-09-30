@@ -300,6 +300,18 @@ export default function Support() {
               <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
               <p className="text-gray-400 text-[12px]">© 2026 by The Car Park Society Inc.</p>
             </div>
+            <div className="text-center">
+  <p className="text-gray-500 text-sm italic mb-4">
+    We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
+    Te Āti Awa, and Ngāti Toa Rangatira —
+    mana whenua of Te Whanganui-a-Tara.
+    We honour their whakapapa, histories,
+    and enduring connection to this whenua.
+  </p>
+  <p className="text-gray-600 text-xs font-extralight">
+    Acknowledgement of Mana Whenua
+  </p>
+</div>
             
             <div className="text-center">
               <div className="space-y-2">
