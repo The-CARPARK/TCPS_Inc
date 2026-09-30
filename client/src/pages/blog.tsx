@@ -248,6 +248,46 @@ export default function Blog() {
                 </div>
               </article>
             </Link>
+            <Link href="/post/annual-report-fy2526">
+  <article className="bg-red-900/20 border border-red-800 rounded-lg overflow-hidden hover:bg-red-900/30 transition-colors cursor-pointer group">
+    <div className="grid md:grid-cols-2 gap-0">
+
+      <div className="w-full h-64 bg-gray-800 flex items-center justify-center wavy-bg-fast">
+        <img 
+          src={tcpsLogo}
+          alt="The Car Park Society Annual Report"
+          className="w-full h-full object-cover glitch-create"
+        />
+      </div>
+      
+      <div className="p-8">
+        <h2 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors">
+          The Car Park Society Annual Report 2025–26
+        </h2>
+        
+        <p className="text-gray-300 mb-6 leading-relaxed">
+          Our annual report for 2025–26 — documenting the work, activations,
+          partnerships and kaupapa of The Car Park Society over the past year.
+        </p>
+        
+        <div className="flex items-center gap-4 text-sm text-gray-400">
+          <div className="flex items-center gap-2">
+            <img 
+              src={tcpsLogoSmall} 
+              alt="TCPS Logo" 
+              className="w-8 h-8 object-contain glitch-build"
+            />
+            <span>The Car Park Society</span>
+          </div>
+
+          <span>30.09.2026</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+
+    </div>
+  </article>
+</Link>
           </div>
         </section>
       </main>
