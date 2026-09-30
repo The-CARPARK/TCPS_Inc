@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+0import { useState, useEffect } from "react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import { Link } from "wouter";
@@ -283,11 +283,11 @@ export default function Blog() {
             
             <div className="text-center">
   <p className="text-gray-500 text-sm italic mb-4">
-    "We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
+    We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
     Te Āti Awa, and Ngāti Toa Rangatira —
     mana whenua of Te Whanganui-a-Tara.
     We honour their whakapapa, histories,
-    and enduring connection to this whenua."
+    and enduring connection to this whenua.
   </p>
   <p className="text-gray-600 text-xs font-extralight">
     Acknowledgement of Mana Whenua
