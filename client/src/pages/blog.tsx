@@ -212,42 +212,6 @@ export default function Blog() {
         <section className="px-6">
           <div className="max-w-4xl mx-auto">
             {/* Featured Blog Post */}
-            <Link href="/post/urban-māori-recalling-the-sacred-signal-through-concrete">
-              <article className="bg-red-900/20 border border-red-800 rounded-lg overflow-hidden hover:bg-red-900/30 transition-colors cursor-pointer group">
-                <div className="grid md:grid-cols-2 gap-0">
-                  <div className="w-full h-64 bg-gray-800 flex items-center justify-center wavy-bg-fast">
-                    <img 
-                      src={urbanMaoriImage} 
-                      alt="Urban Māori Blog Post" 
-                      className="w-full h-full object-cover glitch-create"
-                    />
-                  </div>
-                  
-                  <div className="p-8">
-                    <h2 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors">
-                      Urban Māori: Breaking the Concrete Chains of Colonisation
-                    </h2>
-                    
-                    <p className="text-gray-300 mb-6 leading-relaxed">
-                      "E kore au e ngaro, he kākano i ruia mai i Rangiātea." I will never be lost, for I am a seed sown from Rangiātea. More than 80% of Māori...
-                    </p>
-                    
-                    <div className="flex items-center gap-4 text-sm text-gray-400">
-                      <div className="flex items-center gap-2">
-                        <img 
-                          src={tcpsLogoSmall} 
-                          alt="TCPS Logo" 
-                          className="w-8 h-8 object-contain glitch-build"
-                        />
-                        <span>The Car Park Society</span>
-                      </div>
-                      <span>22.09.2025</span>
-                      <span>3 min read</span>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </Link>
             <Link href="/post/annual-report-fy2526">
   <article className="bg-red-900/20 border border-red-800 rounded-lg overflow-hidden hover:bg-red-900/30 transition-colors cursor-pointer group">
     <div className="grid md:grid-cols-2 gap-0">
@@ -288,6 +252,42 @@ export default function Blog() {
     </div>
   </article>
 </Link>
+                        <Link href="/post/urban-māori-recalling-the-sacred-signal-through-concrete">
+              <article className="bg-red-900/20 border border-red-800 rounded-lg overflow-hidden hover:bg-red-900/30 transition-colors cursor-pointer group">
+                <div className="grid md:grid-cols-2 gap-0">
+                  <div className="w-full h-64 bg-gray-800 flex items-center justify-center wavy-bg-fast">
+                    <img 
+                      src={urbanMaoriImage} 
+                      alt="Urban Māori Blog Post" 
+                      className="w-full h-full object-cover glitch-create"
+                    />
+                  </div>
+                  
+                  <div className="p-8">
+                    <h2 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors">
+                      Urban Māori: Breaking the Concrete Chains of Colonisation
+                    </h2>
+                    
+                    <p className="text-gray-300 mb-6 leading-relaxed">
+                      "E kore au e ngaro, he kākano i ruia mai i Rangiātea." I will never be lost, for I am a seed sown from Rangiātea. More than 80% of Māori...
+                    </p>
+                    
+                    <div className="flex items-center gap-4 text-sm text-gray-400">
+                      <div className="flex items-center gap-2">
+                        <img 
+                          src={tcpsLogoSmall} 
+                          alt="TCPS Logo" 
+                          className="w-8 h-8 object-contain glitch-build"
+                        />
+                        <span>The Car Park Society</span>
+                      </div>
+                      <span>22.09.2025</span>
+                      <span>3 min read</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </Link>
           </div>
         </section>
       </main>
