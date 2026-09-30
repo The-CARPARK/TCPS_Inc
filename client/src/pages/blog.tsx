@@ -278,7 +278,7 @@ export default function Blog() {
               <a href="mailto:the.carpark2025@gmail.com" className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]" data-testid="link-email-contact">the.carpark2025@gmail.com</a>
               <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
               <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
-              <p className="text-gray-400 text-[12px]">© 2025 by The Car Park Society Inc.</p>
+              <p className="text-gray-400 text-[12px]">© 2026 by The Car Park Society Inc.</p>
             </div>
             
             <div className="text-center">
