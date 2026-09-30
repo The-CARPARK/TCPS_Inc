@@ -10,6 +10,7 @@ import Events from "@/pages/events";
 import EventDetail from "@/pages/event-detail";
 import Blog from "@/pages/blog";
 import BlogPost from "@/pages/blog-post";
+import AnnualReportPost from "@/pages/AnnualReportPost";
 import Support from "@/pages/support";
 import AdminSignups from "@/pages/admin-signups";
 import NotFound from "@/pages/not-found";
@@ -27,14 +28,30 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/about-1" component={About} />
       <Route path="/event-list" component={Events} />
-      <Route path="/event-details/the-control-room-tcps" component={EventDetail} />
+      <Route
+        path="/event-details/the-control-room-tcps"
+        component={EventDetail}
+      />
+
       <Route path="/blog" component={Blog} />
-      <Route path="/post/urban-māori-recalling-the-sacred-signal-through-concrete" component={BlogPost} />
+
+      <Route
+        path="/post/urban-māori-recalling-the-sacred-signal-through-concrete"
+        component={BlogPost}
+      />
+
+      <Route
+        path="/post/annual-report-fy2526"
+        component={AnnualReportPost}
+      />
+
       <Route path="/donate" component={Support} />
       <Route path="/admin-signups" component={AdminSignups} />
+
       {/* Legacy routes for backwards compatibility */}
       <Route path="/blog/urban-maori" component={BlogPost} />
       <Route path="/support" component={Support} />
+
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>
