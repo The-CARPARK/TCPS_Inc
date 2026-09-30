@@ -1,0 +1,707 @@
+import { useState, useEffect } from "react";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { SiTiktok } from "react-icons/si";
+import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
+import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
+import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
+import tcpsLogoSmall from "@assets/TCPS_Colour_Small_1758549468394.png";
+import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
+
+export default function AnnualReportPost() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    document.title =
+      "The Annual Report Is Open — TCPS Annual Report FY2025/26 | The Car Park Society";
+
+    const metaDescription = document.querySelector(
+      'meta[name="description"]'
+    );
+
+    const description =
+      "TCPS Annual Report FY2025/26 — Phase Zero: The Rupture. The first year of The Car Park Society Inc. is now on record.";
+
+    if (metaDescription) {
+      metaDescription.setAttribute("content", description);
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = description;
+      document.head.appendChild(meta);
+    }
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-black text-white">
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 z-40 bg-red-950/95 backdrop-blur-sm border-b border-gray-800">
+        <div className="px-6 py-3">
+          {/* TCPS Button Above Navigation */}
+          <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast">
+            <Link href="/">
+              <img
+                src={tcpsLogo}
+                alt="TCPS"
+                className="h-4 sm:h-5 hover:opacity-80 transition-opacity cursor-pointer glitch-icon"
+              />
+            </Link>
+
+            <div className="flex gap-2">
+              <a
+                href="https://www.tiktok.com/@thecarparksociety"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+              >
+                <SiTiktok className="w-3 h-3" />
+              </a>
+
+              <a
+                href="https://www.instagram.com/thecarparksociety/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+              >
+                <FaInstagram className="w-3 h-3" />
+              </a>
+
+              <a
+                href="https://www.facebook.com/thecarparksociety"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+              >
+                <FaFacebook className="w-3 h-3" />
+              </a>
+
+              <a
+                href="https://www.youtube.com/@TheCarParkSociety"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+              >
+                <FaYoutube className="w-3 h-3" />
+              </a>
+            </div>
+          </div>
+
+          {/* Navigation */}
+          <div className="flex justify-center">
+            <nav
+              className="flex justify-center gap-2 sm:gap-4 md:gap-6"
+              role="navigation"
+              aria-label="Primary"
+            >
+              <Link
+                href="/"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-home"
+              >
+                Home
+              </Link>
+
+              <Link
+                href="/about-1"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-about"
+              >
+                Origins
+              </Link>
+
+              <Link
+                href="/event-list"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-events"
+              >
+                Activations
+              </Link>
+
+              <Link
+                href="/blog"
+                className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap"
+                data-testid="nav-blog"
+              >
+                Transmissions
+              </Link>
+
+              <Link
+                href="/donate"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-donate"
+              >
+                Support
+              </Link>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      {/* Overlay Menu */}
+      {menuOpen && (
+        <div className="overlay-menu">
+          <div className="menu-content">
+            <div className="absolute top-6 right-6">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setMenuOpen(false)}
+                className="text-white hover:bg-gray-800"
+                data-testid="menu-close"
+              >
+                Close [ - ]
+              </Button>
+            </div>
+
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
+              <div className="flex flex-col items-center">
+                <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8 wavy-bg-white-pulse">
+                  <div className="text-center text-black">
+                    <div className="relative w-48 h-32">
+                      <img
+                        src={logoImage}
+                        alt="The Car Park Society Logo"
+                        className="w-full h-full object-contain glitch-build"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <nav className="flex flex-col gap-6 mb-8">
+                  <Link
+                    href="/"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-home"
+                  >
+                    Home
+                  </Link>
+
+                  <Link
+                    href="/about-1"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-about"
+                  >
+                    Origins
+                  </Link>
+
+                  <Link
+                    href="/event-list"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-events"
+                  >
+                    Activations
+                  </Link>
+
+                  <Link
+                    href="/blog"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-blog"
+                  >
+                    Transmissions
+                  </Link>
+
+                  <Link
+                    href="/donate"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-donate"
+                  >
+                    Support
+                  </Link>
+                </nav>
+
+                <div className="flex gap-4 justify-center">
+                  <a
+                    href="https://www.tiktok.com/@thecarparksociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
+                    <SiTiktok className="w-5 h-5" />
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/thecarparksociety/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
+                    <FaInstagram className="w-5 h-5" />
+                  </a>
+
+                  <a
+                    href="https://www.facebook.com/thecarparksociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
+                    <FaFacebook className="w-5 h-5" />
+                  </a>
+
+                  <a
+                    href="https://www.youtube.com/@TheCarParkSociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
+                    <FaYoutube className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <main className="pt-20 pb-16">
+        {/* Article Header */}
+        <section className="px-6 py-12">
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-8">
+              <Link
+                href="/blog"
+                className="hover:text-red-300 transition-colors text-[#e3071b]"
+              >
+                ← Back to Transmissions
+              </Link>
+            </div>
+
+            <p className="text-sm uppercase tracking-widest text-red-400 mb-4">
+              Transmission
+            </p>
+
+            <h1 className="font-bold mb-4 text-[32px] sm:text-[42px] leading-tight">
+              The Annual Report Is Open
+            </h1>
+
+            <p className="text-xl sm:text-2xl text-gray-300 font-semibold mb-6">
+              TCPS Annual Report FY2025/26 — Phase Zero: The Rupture
+            </p>
+
+            <div className="flex items-center gap-4 text-sm text-gray-400 mb-8">
+              <div className="flex items-center gap-2">
+                <img
+                  src={tcpsLogoSmall}
+                  alt="TCPS Logo"
+                  className="w-8 h-8 object-contain self-end glitch-create"
+                />
+                <span>The Car Park Society</span>
+              </div>
+
+              <span>30.09.2026</span>
+              <span>3 min read</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Article Content */}
+        <article className="px-6">
+          <div className="max-w-4xl mx-auto prose prose-invert prose-lg">
+            <div className="space-y-8 text-gray-300 leading-relaxed">
+
+              <p className="text-xl text-white font-semibold">
+                The first year is now on record.
+              </p>
+
+              <p>
+                The Car Park Society Inc. has released its{" "}
+                <strong className="text-white">
+                  Annual Report for FY2025/26
+                </strong>
+                , documenting a year of formation, experimentation,
+                governance, creative practice and the first public activation
+                of our kaupapa, <strong className="text-white">Te Mana Whakatete</strong>.
+              </p>
+
+              <p>
+                This was the year the signal became a Society.
+              </p>
+
+              <p>
+                We incorporated.
+                <br />
+                We built the foundations of our governance.
+                <br />
+                We developed our creative and organisational systems.
+                <br />
+                We formed relationships.
+                <br />
+                And we opened <strong className="text-white">The Control Room</strong>.
+              </p>
+
+              <section className="pt-4">
+                <h2 className="text-2xl font-bold text-white mb-5">
+                  PHASE ZERO — THE CONTROL ROOM
+                </h2>
+
+                <p>
+                  The Control Room was our first major public activation: part
+                  artwork, part working laboratory, part gathering place.
+                </p>
+
+                <p>
+                  It gave TCPS a physical space to test what happens when
+                  installation, technology, storytelling, participation and
+                  urban research are brought together.
+                </p>
+
+                <p>It also gave us something more important: evidence.</p>
+
+                <p>
+                  Evidence that an unconventional idea could become a public
+                  project.
+                  <br />
+                  Evidence that people would enter, participate and follow the
+                  signal.
+                  <br />
+                  Evidence that our network could make something real.
+                </p>
+
+                <p>
+                  The project became a testing ground for the next phase of
+                  TCPS — and the foundations of the{" "}
+                  <strong className="text-white">Induction Centre</strong>{" "}
+                  planned for 2027.
+                </p>
+              </section>
+
+              <section className="pt-4">
+                <h2 className="text-2xl font-bold text-white mb-5">
+                  THE CITY BECAME THE ARCHIVE
+                </h2>
+
+                <p>
+                  During Phase Zero, we also began building the{" "}
+                  <strong className="text-white">Watcher Map</strong>.
+                </p>
+
+                <p>
+                  QR glyphs and Watchpoints extended the work beyond the walls
+                  of The Control Room and into Te Aro and the wider city.
+                </p>
+
+                <p>
+                  The Exchange.
+                  <br />
+                  The Battle.
+                  <br />
+                  Reclaimed Land.
+                  <br />
+                  The Veins Beneath.
+                </p>
+
+                <p>
+                  Each site opened another fragment of the city’s layered
+                  history — colonial trade, public resistance, reclaimed
+                  shoreline, buried awa and the systems that continue beneath
+                  the surface.
+                </p>
+
+                <p>
+                  The Watcher Map began to shift our practice from an event that
+                  happens in a space to an archive that can be encountered
+                  across the city.
+                </p>
+
+                <p className="text-white font-semibold">
+                  The Control Room was the base.
+                  <br />
+                  The Watcher Map was the breach.
+                </p>
+              </section>
+
+              <section className="pt-4">
+                <h2 className="text-2xl font-bold text-white mb-5">
+                  THE SOCIETY TAKES FORM
+                </h2>
+
+                <p>
+                  FY2025/26 was also the year TCPS became an incorporated
+                  society.
+                </p>
+
+                <p>
+                  We strengthened our Constitution, established a five-person
+                  Committee, developed our membership model and began putting
+                  the systems in place to support the organisation beyond
+                  individual projects.
+                </p>
+
+                <p>
+                  At the end of the financial year,{" "}
+                  <strong className="text-white">
+                    26 people had formally joined as members
+                  </strong>
+                  , helping establish the first layer of the wider Watcher
+                  Network.
+                </p>
+
+                <p>
+                  We also began developing our approach to technology and data
+                  sovereignty, including research into systems that could give
+                  TCPS greater control over our digital infrastructure,
+                  archives, intellectual property and community information.
+                </p>
+
+                <p>These systems are still developing.</p>
+
+                <p>So are we.</p>
+              </section>
+
+              <section className="pt-4">
+                <h2 className="text-2xl font-bold text-white mb-5">
+                  WHAT COMES NEXT
+                </h2>
+
+                <p>
+                  The Annual Report looks ahead to FY2026/27 — a year focused on
+                  moving from planning into action.
+                </p>
+
+                <p>Our priorities include:</p>
+
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-1">
+                      The Induction Centre
+                    </h3>
+                    <p>
+                      Developing the concept, creative team, venue strategy,
+                      funding options and delivery plan for 2027.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-1">
+                      The Watcher Map
+                    </h3>
+                    <p>
+                      Expanding the network of Watchpoints and creating
+                      stronger pathways from participation into ongoing
+                      involvement.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-1">
+                      Membership
+                    </h3>
+                    <p>
+                      Building the Watcher Network into an active membership
+                      community.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-1">
+                      The Collective
+                    </h3>
+                    <p>
+                      Strengthening arrangements for collaborators, including
+                      clearer roles, agreements, crediting and fair-pay
+                      principles.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-1">
+                      Relationships
+                    </h3>
+                    <p>
+                      Continuing to build relationships with mana whenua,
+                      artists, communities, cultural networks and sector
+                      partners.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-bold text-white mb-1">
+                      Capacity and sustainability
+                    </h3>
+                    <p>
+                      Building the systems, resources and organisational
+                      capability required to support bigger ideas without
+                      losing the collective spirit that makes TCPS what it is.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section className="pt-4">
+                <h2 className="text-2xl font-bold text-white mb-5">
+                  THE NEXT TRANSMISSION
+                </h2>
+
+                <p>
+                  The Annual Report is more than a record of what happened.
+                </p>
+
+                <p>It is a record of what we learned.</p>
+
+                <p>
+                  The central lesson of Phase Zero was simple:
+                </p>
+
+                <p className="text-xl text-white font-semibold text-center my-8">
+                  TCPS does not need to become more conventional to become more
+                  capable.
+                </p>
+
+                <p>
+                  We need enough structure to protect people, manage resources,
+                  record learning and deliver responsibly.
+                </p>
+
+                <p>
+                  But we also need room for experimentation, responsiveness,
+                  imagination and collective energy.
+                </p>
+
+                <p>That is the work of the next phase.</p>
+
+                <p className="text-2xl text-white font-bold text-center my-10">
+                  The rupture has opened.
+                  <br />
+                  Now we descend.
+                </p>
+
+                <div className="bg-red-950/30 border border-red-800 rounded-lg p-6 sm:p-8 my-10">
+                  <p className="text-white font-semibold mb-4">
+                    Read the TCPS Annual Report FY2025/26 — Phase Zero: The
+                    Rupture
+                  </p>
+
+                  <a
+                    href="https://drive.google.com/file/d/1wmK2F1EL5e7VFdmYi-jJjN46ToFEv9BG/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-red-400 hover:text-red-300 underline underline-offset-4 transition-colors"
+                  >
+                    Open the Annual Report →
+                  </a>
+                </div>
+
+                <p>
+                  Follow the Society into its next phase.
+                </p>
+
+                <p className="text-white font-semibold">
+                  The signal remains active.
+                  <br />
+                  The network remains open.
+                  <br />
+                  The Sequence continues.
+                </p>
+
+                <div className="text-center mt-12">
+                  <p className="text-xl font-bold">Ngā mihi nui</p>
+                  <p className="text-lg italic text-gray-300 mt-2">
+                    The Car Park Society Inc.
+                  </p>
+                </div>
+              </section>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      {/* Footer */}
+      <footer className="py-16 px-6 border-t border-gray-800 mt-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 items-start">
+            <div>
+              <div className="flex gap-2 mb-4">
+                <a
+                  href="https://www.tiktok.com/@thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
+                  <SiTiktok className="w-4 h-4" />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/thecarparksociety/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
+                  <FaInstagram className="w-4 h-4" />
+                </a>
+
+                <a
+                  href="https://www.facebook.com/thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
+                  <FaFacebook className="w-4 h-4" />
+                </a>
+
+                <a
+                  href="https://www.youtube.com/@TheCarParkSociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
+                  <FaYoutube className="w-4 h-4" />
+                </a>
+              </div>
+
+              <a
+                href="mailto:the.carpark2025@gmail.com"
+                className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]"
+                data-testid="link-email-contact"
+              >
+                connect@thecarparksociety.xyz
+              </a>
+
+              <p className="text-gray-400 mb-2 text-[13px]">
+                Te Whanganui-a-Tara
+              </p>
+
+              <p className="text-gray-400 mb-2 font-bold text-[13px]">
+                AOTEAROA
+              </p>
+
+              <p className="text-gray-400 text-[12px]">
+                © 2025 by The Car Park Society Inc.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <p className="text-gray-500 text-sm italic mb-4">
+                "We will not be seen,
+                <br />
+                but we will be heard.
+                <br />
+                We will not be controlled,
+                <br />
+                but we will govern.
+                <br />
+                We will not wait for change;
+                <br />
+                we will be the change."
+              </p>
+
+              <p className="text-gray-600 text-xs font-extralight">
+                Oath of TCPS
+              </p>
+            </div>
+
+            <div className="flex justify-end">
+              <div className="space-y-2">
+                <img
+                  src={flagsImage}
+                  alt="Flags"
+                  className="h-28 object-contain glitch-amplify"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
