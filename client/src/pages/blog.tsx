@@ -1,4 +1,4 @@
-0import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import { Link } from "wouter";
