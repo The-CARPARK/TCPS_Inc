@@ -405,7 +405,7 @@ export default function Home() {
               <p className="text-gray-400 text-[12px]">© 2026 by The Car Park Society Inc.</p>
             </div>
             
-            <<div className="text-center">
+            <div className="text-center">
   <p className="text-gray-500 text-sm italic mb-4">
     We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
     Te Āti Awa, and Ngāti Toa Rangatira —
