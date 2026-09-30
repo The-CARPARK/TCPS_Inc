@@ -237,7 +237,7 @@ export default function Blog() {
         <div className="flex items-center gap-4 text-sm text-gray-400">
           <div className="flex items-center gap-2">
             <img 
-              src={tcpsLogoSmall} 
+              src={screenshot 2026-09-30 175445.png} 
               alt="TCPS Logo" 
               className="w-8 h-8 object-contain glitch-build"
             />
