@@ -156,6 +156,7 @@ export default function EventDetail() {
                 </a>
                 <br /><br />
                 The Control Room is Phase Zero: The Rupture — the first live activation of The Car Park Society. 
+                    <br /><br />
                                 <a href="https://drive.google.com/file/d/1Yjf2GSWOlbgo3Dm807rStmohFnF783ro/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-red-400 underline">
                  Read the project report here
                 </a>
