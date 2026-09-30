@@ -304,7 +304,7 @@ export default function AnnualReportPost() {
               </p>
 
               <a
-                href="https://drive.google.com/file/d/1wmK2F1EL5e7VFdmYi-jJjN46ToFEv9BG/view?usp=drive_link"
+                href="https://tc1312lia.github.io/tcps2526/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block text-red-400 hover:text-red-300 underline underline-offset-4 transition-colors"
