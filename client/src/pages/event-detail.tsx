@@ -160,6 +160,10 @@ export default function EventDetail() {
                                 <a href="https://drive.google.com/file/d/1Yjf2GSWOlbgo3Dm807rStmohFnF783ro/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-red-400 underline">
                  Read the project report here
                 </a>
+<br /><br />
+                                <a href="https://tcps-map-spj5.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-red-400 underline">
+                 Access the watcher map and archives here
+                </a>
               </p>
             </div>
           </div>
