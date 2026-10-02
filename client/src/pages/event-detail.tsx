@@ -139,7 +139,7 @@ export default function EventDetail() {
                 </div>
               </div>
 
-              {/* Body */}
+  {/* Body */}
 <p className="text-gray-200 leading-relaxed">
   <b>Location:</b> 149 Victoria Street, Te Aro, Te Whanganui-a-Tara<br />
   <b>In collaboration with:</b>{" "}
@@ -154,6 +154,23 @@ export default function EventDetail() {
 
   <br /><br />
 
+  {/* Project Report */}
+  <a
+    href="https://drive.google.com/file/d/1Yjf2GSWOlbgo3Dm807rStmohFnF783ro/view?usp=sharing"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block rounded-xl border border-red-900 bg-red-950/30 p-6 hover:bg-red-950/50 transition"
+  >
+    <strong className="block text-lg text-white mb-3">
+      READ THE PROJECT REPORT →
+    </strong>
+    <span className="text-gray-400 text-sm">
+      Read the full Control Room project report.
+    </span>
+  </a>
+
+  <br /><br />
+
   The Control Room was Phase Zero — The Rupture, the inaugural physical activation of The Car Park Society and our first live base in Te Aro.
   <br /><br />
 
@@ -164,41 +181,6 @@ export default function EventDetail() {
 
   <br /><br />
 
-  {/* Project Links */}
-  <div className="my-6 grid gap-4 md:grid-cols-2">
-
-    <a
-      href="https://drive.google.com/file/d/1Yjf2GSWOlbgo3Dm807rStmohFnF783ro/view?usp=sharing"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block rounded-xl border border-red-900 bg-red-950/30 p-6 hover:bg-red-950/50 transition"
-    >
-      <strong className="block text-lg text-white mb-3">
-        READ THE PROJECT REPORT →
-      </strong>
-      <span className="text-gray-400 text-sm">
-        Read the full Control Room project report.
-      </span>
-    </a>
-
-    <a
-      href="https://tcps-map-spj5.onrender.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block rounded-xl border border-red-900 bg-red-950/30 p-6 hover:bg-red-950/50 transition"
-    >
-      <strong className="block text-lg text-white mb-3">
-        WATCHER MAP & ARCHIVE →
-      </strong>
-      <span className="text-gray-400 text-sm">
-        Explore the map, archive and digital traces of the activation.
-      </span>
-    </a>
-
-  </div>
-
-  <br />
-
   <strong>WATCHING THE WATCHERS</strong>
   <br /><br />
 
@@ -206,6 +188,23 @@ export default function EventDetail() {
   <br /><br />
 
   The Watcher Map, QR-linked archive and livestreams extended the project beyond the physical site and into the city.
+
+  <br /><br />
+
+  {/* Watcher Map & Archive */}
+  <a
+    href="https://tcps-map-spj5.onrender.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block rounded-xl border border-red-900 bg-red-950/30 p-6 hover:bg-red-950/50 transition"
+  >
+    <strong className="block text-lg text-white mb-3">
+      WATCHER MAP & ARCHIVE →
+    </strong>
+    <span className="text-gray-400 text-sm">
+      Explore the map, archive and digital traces of the activation.
+    </span>
+  </a>
 
   <br /><br />
 
