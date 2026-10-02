@@ -121,7 +121,6 @@ export default function EventDetail() {
                     The Control Room – Cnr Dixon & Victoria Street.
                   </p>
                 </div>
-              </div>
 
               {/* Countdown */}
               <div className="mt-10 bg-gray-900/50 border border-red-900/30 rounded p-4 font-mono text-center">
