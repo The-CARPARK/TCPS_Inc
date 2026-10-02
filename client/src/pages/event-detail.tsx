@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import groupHero from "./TCPS_Group_Hero_1.webp";
-import landscape from "./Landscape_1.webp";
+import landscape from "@assets/control room 1.jpeg";
 import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
 
 export default function EventDetail() {
