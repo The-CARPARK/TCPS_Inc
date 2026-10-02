@@ -165,7 +165,7 @@ export default function EventDetail() {
       READ THE PROJECT REPORT →
     </strong>
     <span className="text-gray-400 text-sm">
-      Read the full Control Room project report.
+      The full record of Phase Zero — The Rupture.
     </span>
   </a>
 
@@ -174,21 +174,10 @@ export default function EventDetail() {
   The Control Room was Phase Zero — The Rupture, the inaugural physical activation of The Car Park Society and our first live base in Te Aro.
   <br /><br />
 
-  Operating from a modest urban tenancy, it became a portal into the TCPS mythos, a testing ground for new systems, and an entry point into the Watcher Network.
+  Across six weeks, <strong>133 people entered the Control Room</strong>, engaging with installation, projection, sound, ritual, archival material and digital systems. The space became a working environment for testing ideas, building the Watcher Network and developing the systems that would shape future TCPS activations.
   <br /><br />
 
-  <strong>133 people entered the Control Room across the six-week activation period.</strong>
-
-  <br /><br />
-
-  <strong>WATCHING THE WATCHERS</strong>
-  <br /><br />
-
-  The Control Room introduced The Oracle — an in-house interactive AI system exploring surveillance, observation, information and control.
-  <br /><br />
-
-  The Watcher Map, QR-linked archive and livestreams extended the project beyond the physical site and into the city.
-
+  The Oracle introduced an in-house exploration of surveillance, observation and control, while the Watcher Map and digital archive extended the project beyond the physical site.
   <br /><br />
 
   {/* Watcher Map & Archive */}
@@ -202,44 +191,21 @@ export default function EventDetail() {
       WATCHER MAP & ARCHIVE →
     </strong>
     <span className="text-gray-400 text-sm">
-      Explore the map, archive and digital traces of the activation.
+      Explore the stories, sites and digital traces of the activation.
     </span>
   </a>
 
   <br /><br />
 
-  <strong>FOUR ACTIVATIONS</strong>
-  <br /><br />
-
-  <strong>THE EXCHANGE — FIRST RUPTURE</strong><br />
-  31 October<br />
-  Colonial maps, projection and glyphs opened the breach and introduced the Watcher Archive.
-  <br /><br />
-
-  <strong>THE BATTLE ARCHIVE — MANNERS STREET</strong><br />
-  14 November<br />
-  Sound and projection reframed histories of conflict and resistance.
-  <br /><br />
-
-  <strong>THE DROWNED FILE — RECLAIMED LAND</strong><br />
-  28 November<br />
-  Lost shoreline, archival audio and reclamation brought buried environmental histories to the surface.
-  <br /><br />
-
-  <strong>THE VEINS BENEATH — AWA PAVED WITH CONCRETE</strong><br />
-  12 December<br />
-  The final activation followed water, flow and continuity, closing Phase Zero and signalling what comes next.
+  Four public activations carried the project into Te Aro — exploring rupture, conflict, reclaimed land, water and buried histories. Together, they extended the Control Room beyond its tenancy and into the city.
 
   <br /><br />
 
-  <strong>WHAT REMAINS</strong>
-  <br /><br />
+  The Control Room closed, but the work continues. It established the foundation for <strong>The Induction Centre</strong>.
 
-  The Control Room built the systems, relationships and practical knowledge that would inform the next stage of TCPS — laying the foundation for <strong>The Induction Centre</strong>.
   <br /><br />
 
   <strong>
-    The Control Room closed.<br />
     The rupture remains open.<br />
     The descent continues.
   </strong>
