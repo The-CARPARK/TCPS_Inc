@@ -229,7 +229,6 @@ The descent continues.
 <br /><br />
 
 A huge ngā mihi to <strong>Urban Dream Brokerage</strong> for the venue and media support that helped TCPS establish a physical presence in Te Aro and bring the Control Room to life.
-</a>
               </p>
             </div>
           </div>
