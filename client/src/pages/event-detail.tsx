@@ -115,13 +115,6 @@ export default function EventDetail() {
               </p>
 
               {/* Images */}
-              <div className="mt-10 flex flex-col md:flex-row gap-8">
-                <div className="flex-1">
-                  <img src={groupHero} alt="TCPS Assembly" className="rounded-xl border-2 border-gray-700 shadow-2xl" />
-                  <p className="mt-3 text-[11px] text-gray-400 italic text-center">
-                    The Car Park Society – collective assembly beneath the grid.
-                  </p>
-                </div>
                 <div className="flex-1">
                   <img src={landscape} alt="Control Room Site" className="rounded-xl border-2 border-gray-700 shadow-2xl" />
                   <p className="mt-3 text-[11px] text-gray-400 italic text-center">
