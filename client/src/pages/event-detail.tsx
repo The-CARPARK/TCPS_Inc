@@ -140,96 +140,118 @@ export default function EventDetail() {
               </div>
 
               {/* Body */}
-              <p className="text-gray-200 leading-relaxed">
-                <b>Location:</b> 149 Victoria Street, Te Aro, Te Whanganui-a-Tara<br />
-                <b>In collaboration with:</b>{" "}
-                <a href="https://www.urbandreambrokerage.org.nz/carpark-society" target="_blank" rel="noopener noreferrer" className="text-red-400 underline">
-                  Urban Dream Brokerage
-</a>
-<br /><br />
+<p className="text-gray-200 leading-relaxed">
+  <b>Location:</b> 149 Victoria Street, Te Aro, Te Whanganui-a-Tara<br />
+  <b>In collaboration with:</b>{" "}
+  <a
+    href="https://www.urbandreambrokerage.org.nz/carpark-society"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-red-400 underline"
+  >
+    Urban Dream Brokerage
+  </a>
 
-<a
-  href="https://drive.google.com/file/d/1Yjf2GSWOlbgo3Dm807rStmohFnF783ro/view?usp=sharing"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-red-400 underline font-bold text-lg"
->
-  READ THE PROJECT REPORT HERE
-</a>
+  <br /><br />
 
-<br /><br />
+  The Control Room was Phase Zero — The Rupture, the inaugural physical activation of The Car Park Society and our first live base in Te Aro.
+  <br /><br />
 
-The Control Room was Phase Zero — The Rupture, the inaugural physical activation of The Car Park Society and our first live base in Te Aro.
-<br /><br />
+  Operating from a modest urban tenancy, it became a portal into the TCPS mythos, a testing ground for new systems, and an entry point into the Watcher Network.
+  <br /><br />
 
-Operating from a modest urban tenancy, it became a portal into the TCPS mythos, a testing ground for new systems, and an entry point into the Watcher Network.
-<br /><br />
+  <strong>133 people entered the Control Room across the six-week activation period.</strong>
 
-<strong>133 people entered the Control Room across the six-week activation period.</strong>
-<br /><br />
+  <br /><br />
 
-<strong>WATCHING THE WATCHERS</strong>
-<br /><br />
+  {/* Project Links */}
+  <div className="my-6 grid gap-4 md:grid-cols-2">
 
-The Control Room introduced The Oracle — an in-house interactive AI system exploring surveillance, observation, information and control.
-<br /><br />
+    <a
+      href="https://drive.google.com/file/d/1Yjf2GSWOlbgo3Dm807rStmohFnF783ro/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block rounded-xl border border-red-900 bg-red-950/30 p-6 hover:bg-red-950/50 transition"
+    >
+      <strong className="block text-lg text-white mb-3">
+        READ THE PROJECT REPORT →
+      </strong>
+      <span className="text-gray-400 text-sm">
+        Read the full Control Room project report.
+      </span>
+    </a>
 
-The Watcher Map, QR-linked archive and livestreams extended the project beyond the physical site and into the city.
-<br /><br />
+    <a
+      href="https://tcps-map-spj5.onrender.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block rounded-xl border border-red-900 bg-red-950/30 p-6 hover:bg-red-950/50 transition"
+    >
+      <strong className="block text-lg text-white mb-3">
+        WATCHER MAP & ARCHIVE →
+      </strong>
+      <span className="text-gray-400 text-sm">
+        Explore the map, archive and digital traces of the activation.
+      </span>
+    </a>
 
-<a
-  href="https://tcps-map-spj5.onrender.com/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-red-400 underline"
->
-  Access the Watcher Map and Archive
-</a>
+  </div>
 
-<br /><br />
+  <br />
 
-<strong>FOUR ACTIVATIONS</strong>
-<br /><br />
+  <strong>WATCHING THE WATCHERS</strong>
+  <br /><br />
 
-<strong>THE EXCHANGE — FIRST RUPTURE</strong><br />
-31 October<br />
-Colonial maps, projection and glyphs opened the breach and introduced the Watcher Archive.
-<br /><br />
+  The Control Room introduced The Oracle — an in-house interactive AI system exploring surveillance, observation, information and control.
+  <br /><br />
 
-<strong>THE BATTLE ARCHIVE — MANNERS STREET</strong><br />
-14 November<br />
-Sound and projection reframed histories of conflict and resistance.
-<br /><br />
+  The Watcher Map, QR-linked archive and livestreams extended the project beyond the physical site and into the city.
 
-<strong>THE DROWNED FILE — RECLAIMED LAND</strong><br />
-28 November<br />
-Lost shoreline, archival audio and reclamation brought buried environmental histories to the surface.
-<br /><br />
+  <br /><br />
 
-<strong>THE VEINS BENEATH — AWA PAVED WITH CONCRETE</strong><br />
-12 December<br />
-The final activation followed water, flow and continuity, closing Phase Zero and signalling what comes next.
-<br /><br />
+  <strong>FOUR ACTIVATIONS</strong>
+  <br /><br />
 
-<strong>WHAT REMAINS</strong>
-<br /><br />
+  <strong>THE EXCHANGE — FIRST RUPTURE</strong><br />
+  31 October<br />
+  Colonial maps, projection and glyphs opened the breach and introduced the Watcher Archive.
+  <br /><br />
 
-The Control Room built the systems, relationships and practical knowledge that would inform the next stage of TCPS — laying the foundation for <strong>The Induction Centre</strong>.
-<br /><br />
+  <strong>THE BATTLE ARCHIVE — MANNERS STREET</strong><br />
+  14 November<br />
+  Sound and projection reframed histories of conflict and resistance.
+  <br /><br />
 
-<strong>
-The Control Room closed.<br />
-The rupture remains open.<br />
-The descent continues.
-</strong>
+  <strong>THE DROWNED FILE — RECLAIMED LAND</strong><br />
+  28 November<br />
+  Lost shoreline, archival audio and reclamation brought buried environmental histories to the surface.
+  <br /><br />
 
-<br /><br />
+  <strong>THE VEINS BENEATH — AWA PAVED WITH CONCRETE</strong><br />
+  12 December<br />
+  The final activation followed water, flow and continuity, closing Phase Zero and signalling what comes next.
 
-<strong>NGĀ MIHI NUI</strong>
-<br /><br />
+  <br /><br />
 
-A huge ngā mihi to <strong>Urban Dream Brokerage</strong> for the venue and media support that helped TCPS establish a physical presence in Te Aro and bring the Control Room to life.
-              </p>
+  <strong>WHAT REMAINS</strong>
+  <br /><br />
+
+  The Control Room built the systems, relationships and practical knowledge that would inform the next stage of TCPS — laying the foundation for <strong>The Induction Centre</strong>.
+  <br /><br />
+
+  <strong>
+    The Control Room closed.<br />
+    The rupture remains open.<br />
+    The descent continues.
+  </strong>
+
+  <br /><br />
+
+  <strong>NGĀ MIHI NUI</strong>
+  <br /><br />
+
+  A huge ngā mihi to <strong>Urban Dream Brokerage</strong> for the venue and media support that helped TCPS establish a physical presence in Te Aro and bring the Control Room to life.
+</p>
             </div>
           </div>
         </section>
