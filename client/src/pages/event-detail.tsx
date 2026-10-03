@@ -256,14 +256,99 @@ export default function EventDetail() {
   </div>
 </main>
 
-      <footer className="py-16 px-6 border-t border-gray-800">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-          <div>
-            <img src={flagsImage} alt="Flags" className="h-28 object-contain" />
-            <p className="text-gray-400 text-xs mt-2">© 2025 The Car Park Society Inc.</p>
-          </div>
+<footer className="py-16 px-6 border-t border-gray-800">
+  <div className="max-w-7xl mx-auto">
+    <div className="grid md:grid-cols-3 gap-8 items-start">
+
+      {/* Socials + Contact */}
+      <div className="text-center">
+        <div className="flex gap-2 mb-4 justify-center">
+          <a 
+            href="https://www.tiktok.com/@thecarparksociety" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+          >
+            <SiTiktok className="w-4 h-4" />
+          </a>
+
+          <a 
+            href="https://www.instagram.com/thecarparksociety/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+          >
+            <FaInstagram className="w-4 h-4" />
+          </a>
+
+          <a 
+            href="https://www.facebook.com/thecarparksociety" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+          >
+            <FaFacebook className="w-4 h-4" />
+          </a>
+
+          <a 
+            href="https://www.youtube.com/@TheCarParkSociety" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+          >
+            <FaYoutube className="w-4 h-4" />
+          </a>
         </div>
-      </footer>
+
+        <a 
+          href="mailto:the.carpark2025@gmail.com"
+          className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold"
+        >
+          the.carpark2025@gmail.com
+        </a>
+
+        <p className="text-gray-400 mb-2 text-[13px]">
+          Te Whanganui-a-Tara
+        </p>
+
+        <p className="text-gray-400 mb-2 font-bold text-[13px]">
+          AOTEAROA
+        </p>
+
+        <p className="text-gray-400 text-[12px]">
+          © 2026 by The Car Park Society Inc.
+        </p>
+      </div>
+
+      {/* Mana Whenua */}
+      <div className="text-center">
+        <p className="text-gray-500 text-sm italic mb-4">
+          We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
+          Te Āti Awa, and Ngāti Toa Rangatira —
+          mana whenua of Te Whanganui-a-Tara.
+          We honour their whakapapa, histories,
+          and enduring connection to this whenua.
+        </p>
+
+        <p className="text-gray-600 text-xs font-extralight">
+          Acknowledgement of Mana Whenua
+        </p>
+      </div>
+
+      {/* Flags */}
+      <div className="flex justify-end">
+        <div className="space-y-2">
+          <img 
+            src={flagsImage}
+            alt="Flags"
+            className="h-28 object-contain glitch-amplify"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
     </div>
   );
 }
