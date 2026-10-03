@@ -170,7 +170,7 @@ export default function Home() {
 >
   <Link
     href="/"
-    className="text-[10px] sm:text-sm font-medium text-white border-b border-red-500 border-r border-gray-600 px-1.5 sm:px-3 py-2 whitespace-nowrap text-center"
+    className="text-[10px] sm:text-sm font-medium text-white border-b border-red-500 border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
     data-testid="nav-home"
   >
     Welcome
@@ -178,7 +178,7 @@ export default function Home() {
 
   <Link
     href="/about-1"
-    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-2 whitespace-nowrap text-center"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
     data-testid="nav-about"
   >
     Origins
@@ -186,7 +186,7 @@ export default function Home() {
 
   <Link
     href="/event-list"
-    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-2 whitespace-nowrap text-center"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
     data-testid="nav-events"
   >
     Activations
@@ -194,7 +194,7 @@ export default function Home() {
 
   <Link
     href="/blog"
-    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-2 whitespace-nowrap text-center"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
     data-testid="nav-blog"
   >
     Transmissions
@@ -202,7 +202,7 @@ export default function Home() {
 
   <Link
     href="/donate"
-    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-2 whitespace-nowrap text-center"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
     data-testid="nav-donate"
   >
     Support
@@ -210,7 +210,7 @@ export default function Home() {
 
   <Link
     href="/watcher-portal"
-    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-1.5 sm:px-3 py-2 whitespace-nowrap text-center"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
     data-testid="nav-watcher-portal"
   >
     Join 👁
