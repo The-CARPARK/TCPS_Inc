@@ -5,7 +5,6 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
-import groupHero from "./TCPS_Group_Hero_1.webp";
 import landscape from "@assets/Control room 1.jpeg";
 import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
 
@@ -115,18 +114,22 @@ export default function EventDetail() {
   return (
     <div className="min-h-screen bg-black text-white">
 
-      {/* Header */}
+      {/* =========================================================
+          HEADER
+      ========================================================= */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-red-950/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
 
-          {/* TCPS Scrolling Banner */}
+          {/* TCPS Button Above Navigation with Full-Width Banner */}
           <div className="relative mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast overflow-hidden">
 
+            {/* Full-Width Scrolling Banner Background */}
             <div className="absolute inset-0 bg-white border-y border-red-900/50 glitch-image">
               <div className="h-full overflow-hidden relative flex items-center">
 
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/5 to-transparent animate-pulse"></div>
 
+                {/* Scrolling Text */}
                 <div className="w-full overflow-hidden">
                   <div
                     className="whitespace-nowrap text-[10px] sm:text-[12px] md:text-[14px] text-black font-mono py-2 px-4 animate-scroll vhs-overlay glitch-text tracking-wider"
@@ -139,6 +142,7 @@ export default function EventDetail() {
               </div>
             </div>
 
+            {/* Foreground Elements */}
             <div className="absolute inset-0 flex justify-between items-center px-4 z-10">
 
               <Link href="/">
@@ -192,16 +196,16 @@ export default function EventDetail() {
           </div>
 
           {/* Navigation */}
-          <div className="flex justify-center overflow-x-auto">
+          <div className="flex justify-center w-full">
             <nav
-              className="flex justify-center gap-2 sm:gap-4 md:gap-6 min-w-max"
+              className="flex justify-center items-center gap-1 sm:gap-4 md:gap-6 w-full"
               role="navigation"
               aria-label="Primary"
             >
 
               <Link
                 href="/"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                className="text-[11px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
                 data-testid="nav-home"
               >
                 Home
@@ -209,7 +213,7 @@ export default function EventDetail() {
 
               <Link
                 href="/about-1"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                className="text-[11px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
                 data-testid="nav-about"
               >
                 Origins
@@ -217,7 +221,7 @@ export default function EventDetail() {
 
               <Link
                 href="/event-list"
-                className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap"
+                className="text-[11px] sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap"
                 data-testid="nav-events"
               >
                 Activations
@@ -225,7 +229,7 @@ export default function EventDetail() {
 
               <Link
                 href="/blog"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                className="text-[11px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
                 data-testid="nav-blog"
               >
                 Transmissions
@@ -233,7 +237,7 @@ export default function EventDetail() {
 
               <Link
                 href="/watcher-portal"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                className="text-[11px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
                 data-testid="nav-watcher-portal"
               >
                 Watcher Portal
@@ -241,7 +245,7 @@ export default function EventDetail() {
 
               <Link
                 href="/donate"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                className="text-[11px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
                 data-testid="nav-donate"
               >
                 Support
@@ -249,10 +253,13 @@ export default function EventDetail() {
 
             </nav>
           </div>
+
         </div>
       </header>
 
-      {/* Overlay Menu */}
+      {/* =========================================================
+          OVERLAY MENU
+      ========================================================= */}
       {menuOpen && (
         <div className="overlay-menu">
           <div className="menu-content">
@@ -272,17 +279,25 @@ export default function EventDetail() {
             <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
 
               <div className="flex flex-col items-center">
+
                 <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8 wavy-bg-white-pulse">
+
                   <div className="text-center text-black">
+
                     <div className="relative w-48 h-32">
+
                       <img
                         src={logoImage}
                         alt="The Car Park Society Logo"
                         className="w-full h-full object-contain glitch-build"
                       />
+
                     </div>
+
                   </div>
+
                 </div>
+
               </div>
 
               <div className="text-center">
@@ -307,7 +322,7 @@ export default function EventDetail() {
 
                   <Link
                     href="/event-list"
-                    className="text-2xl font-medium text-white border-b border-red-500 pb-1"
+                    className="text-2xl font-medium text-white border-b border-red-500"
                     data-testid="nav-events"
                   >
                     Activations
@@ -378,13 +393,17 @@ export default function EventDetail() {
                   </a>
 
                 </div>
+
               </div>
+
             </div>
           </div>
         </div>
       )}
 
-      {/* Main */}
+      {/* =========================================================
+          MAIN CONTENT
+      ========================================================= */}
       <main className="pt-20 pb-16">
 
         <div className="max-w-4xl mx-auto px-6">
@@ -569,7 +588,9 @@ export default function EventDetail() {
         </div>
       </main>
 
-      {/* Footer */}
+      {/* =========================================================
+          FOOTER
+      ========================================================= */}
       <footer className="py-16 px-6 border-t border-gray-800">
 
         <div className="max-w-7xl mx-auto">
