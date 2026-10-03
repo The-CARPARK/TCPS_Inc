@@ -203,78 +203,79 @@ export default function Support() {
       )}
 
       <main className="pt-20 pb-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex justify-center min-h-[80vh] items-center">
-            {/* Integrated Content with Image */}
-            <div className="bg-black/60 p-12 rounded-lg max-w-4xl w-full">
-              <div className="flex flex-col lg:flex-row gap-8 items-start lg:relative">
-                <div className="flex-1">
-                  <div className="lg:mb-4">
-                    <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 mb-3 lg:mb-2">
-                      <h1 className="font-bold text-white text-[26px] text-center lg:text-left">
-                        SUPPORT TCPS
-                      </h1>
-                      
-                      {/* Donate Button - Next to title on desktop, centered on mobile */}
-                      <div className="flex justify-center lg:justify-start mt-4 lg:mt-0">
-                        <a 
-                          href="https://donate.stripe.com/5kQcMXfYR5W5ashfl32oE00?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExMkxGV3F3ZUp4VThMWDhTZwEe-OGbJR7ehYUNpJ4GBDobwDvnZgnFAj-xl0_-PAUYuiHq_rmkO4k3S243Wz0_aem_Pqhe4mQfKMP37gl2OUceEg" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="inline-block"
-                        >
-                          <Button 
-                            className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
-                            data-testid="button-donate"
-                          >
-                            DONATE
-                          </Button>
-                        </a>
-                      </div>
-                    </div>
-                    <p className="text-lg font-semibold text-gray-300 mb-6 lg:mb-0 text-center lg:text-left">Why Support us?</p>
-                  </div>
-                  
-                  <div className="space-y-6 text-gray-300 leading-relaxed mb-8 text-center lg:text-left">
-                    
-                    <p>
-                      By backing The Car Park Society, you help us keep the movement 
-                      underground, independent, and powerful.
-                    </p>
-                    
-                    <p>
-                      You help transform abandoned structures into living art and resistance spaces, 
-                      create immersive experiences that challenge colonial narratives, and build a 
-                      collective of Watchers dedicated to land back, memory, and creativity.
-                    </p>
-                    
-                    <p>
-                      Your support keeps the rituals alive, from installations and films to gatherings 
-                      and community wānanga.
-                    </p>
-                    
-                    <p>The sequence is reclamation and resistance.</p>
-                    
-                    <p>We invite you to be part of it.</p>
-                  </div>
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="flex justify-center min-h-[80vh] items-center">
+      {/* Integrated Content */}
+      <div className="bg-black/60 p-12 rounded-lg max-w-4xl w-full">
+        
+        {/* Main Content */}
+        <div className="w-full">
+          <div className="lg:mb-4">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 mb-3 lg:mb-2">
+              <h1 className="font-bold text-white text-[26px] text-center lg:text-left">
+                SUPPORT TCPS
+              </h1>
 
-                </div>
-                
-                {/* Embedded Image */}
-                <div className="flex-shrink-0 flex items-start justify-center">
-                  <div className="flex items-center justify-center wavy-bg-white-slow p-3 rounded mt-8">
-                    <img 
-                      src={tcpsLogoDesign}
-                      alt="TCPS Logo Design" 
-                      className="w-full h-auto max-w-[200px] lg:max-w-[240px] object-contain glitch-create vhs-overlay"
-                    />
-                  </div>
-                </div>
+              {/* Donate Button */}
+              <div className="flex justify-center lg:justify-start mt-4 lg:mt-0">
+                <a 
+                  href="https://donate.stripe.com/5kQcMXfYR5W5ashfl32oE00?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExMkxGV3F3ZUp4VThMWDhTZwEe-OGbJR7ehYUNpJ4GBDobwDvnZgnFAj-xl0_-PAUYuiHq_rmkO4k3S243Wz0_aem_Pqhe4mQfKMP37gl2OUceEg" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <Button 
+                    className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
+                    data-testid="button-donate"
+                  >
+                    DONATE
+                  </Button>
+                </a>
               </div>
             </div>
+
+            <p className="text-lg font-semibold text-gray-300 mb-6 lg:mb-0 text-center lg:text-left">
+              Why Support us?
+            </p>
+          </div>
+
+          <div className="space-y-6 text-gray-300 leading-relaxed mb-8 text-center lg:text-left">
+
+            <p>
+              By backing The Car Park Society, you help us keep the movement 
+              underground, independent, and powerful.
+            </p>
+
+            <p>
+              You help transform abandoned structures into living art and resistance spaces, 
+              create immersive experiences that challenge colonial narratives, and build a 
+              collective of Watchers dedicated to land back, memory, and creativity.
+            </p>
+
+            <p>
+              Your support keeps the rituals alive, from installations and films to gatherings 
+              and community wānanga.
+            </p>
+
+            <p>The sequence is reclamation and resistance.</p>
+
+            <p>We invite you to be part of it.</p>
           </div>
         </div>
-      </main>
+
+        {/* Building Image - Bottom Centre */}
+        <div className="flex justify-center w-full mt-8 pb-4">
+          <img 
+            src={buildingImage}
+            alt="The Car Park Society activation" 
+            className="w-full h-auto max-w-[900px] lg:max-w-[1200px] object-contain glitch-create vhs-overlay"
+          />
+        </div>
+
+      </div>
+    </div>
+  </div>
+</main>
 
       {/* Footer */}
       <footer className="py-16 px-6 border-t border-gray-800 mt-16 bg-[#0f0404]">
