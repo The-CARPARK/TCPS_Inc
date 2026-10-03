@@ -245,7 +245,7 @@ export default function Blog() {
           </div>
 
           <span>30.09.2026</span>
-          <span>3 min read</span>
+          <span>Annual Report</span>
         </div>
       </div>
 
