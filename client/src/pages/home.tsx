@@ -257,6 +257,22 @@ export default function Home() {
           </div>
         </section>
 
+{/* YouTube Video Section */}
+        <section className="py-12 px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="relative w-full aspect-video overflow-hidden border border-red-900/30 bg-black glitch-image vhs-overlay">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/5Oiu3M7IE4g"
+                title="The Car Park Society"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Mission Section */}
         <section className="py-12 px-6 bg-red-900/20">
           <div className="max-w-4xl mx-auto text-center">
@@ -322,22 +338,6 @@ export default function Home() {
                   At the heart of The Car Park Society is a commitment to Indigenous narratives of resurgence, reclamation, and radical futures. We centre voices too often erased by consumerism and colonisation, using our platforms to project stories of sovereignty, resilience, and imagination into the heart of the city.
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* YouTube Video Section */}
-        <section className="py-12 px-6">
-          <div className="max-w-5xl mx-auto">
-            <div className="relative w-full aspect-video overflow-hidden border border-red-900/30 bg-black glitch-image vhs-overlay">
-              <iframe
-                className="absolute inset-0 w-full h-full"
-                src="https://www.youtube-nocookie.com/embed/5Oiu3M7IE4g"
-                title="The Car Park Society"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
             </div>
           </div>
         </section>
