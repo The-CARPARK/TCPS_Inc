@@ -336,32 +336,32 @@ export default function About() {
 
       <main id="main-content" className="pt-20 pb-16">
 
-        {/* Our Story Section */}
-        <section 
-          id="story" 
-          className="pt-20 pb-8 px-6 relative river-bg vhs-overlay"
-        >
-          <div className="max-w-4xl mx-auto relative z-10">
+{/* Our Story Section */}
+<section 
+  id="story" 
+  className="pt-20 pb-8 px-6 relative river-bg vhs-overlay"
+>
+  <div className="max-w-4xl mx-auto relative z-10">
 
-            <h1 
-              className="text-4xl font-bold text-center mb-8 glitch-text" 
-              data-text="TCPS ORIGINS"
-            >
-              TCPS ORIGINS
-            </h1>
+    {/* TCPS Logo Design */}
+    <div className="flex justify-center mb-10">
+      <img 
+        src={tcpsLogoDesign}
+        alt="TCPS Logo Design"
+        className="w-full max-w-[420px] h-auto object-contain glitch-create vhs-overlay"
+      />
+    </div>
 
-            <p className="text-xl text-center mb-8 font-bold">
-              All Carparks Are Battlegrounds.
-            </p>
+    <h1 
+      className="text-4xl font-bold text-center mb-8 glitch-text" 
+      data-text="TCPS ORIGINS"
+    >
+      TCPS ORIGINS
+    </h1>
 
-            {/* TCPS Logo Design */}
-            <div className="flex justify-center mb-12">
-              <img 
-                src={tcpsLogoDesign}
-                alt="TCPS Logo Design"
-                className="w-full max-w-[420px] h-auto object-contain glitch-create vhs-overlay"
-              />
-            </div>
+    <p className="text-xl text-center mb-8 font-bold">
+      All Carparks Are Battlegrounds.
+    </p>
             
             <div className="space-y-6 text-gray-300 leading-relaxed">
 
