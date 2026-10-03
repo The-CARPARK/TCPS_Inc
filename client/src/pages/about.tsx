@@ -114,6 +114,7 @@ export default function About() {
             
             {/* Foreground Elements */}
             <div className="absolute inset-0 flex justify-between items-center px-4 z-10">
+
               <Link href="/">
                 <img 
                   src={tcpsLogo} 
@@ -123,6 +124,7 @@ export default function About() {
               </Link>
               
               <div className="flex gap-1 bg-white px-1 py-0.5 rounded">
+
                 <a 
                   href="https://www.tiktok.com/@thecarparksociety" 
                   target="_blank" 
@@ -158,19 +160,20 @@ export default function About() {
                 >
                   <FaYoutube className="w-2 h-2" />
                 </a>
+
               </div>
             </div>
           </div>
           
-          {/* Navigation and Social Icons Row */}
+          {/* Navigation */}
           <div className="flex justify-center">
 
-            {/* Center Navigation */}
             <nav 
               className="flex justify-center gap-2 sm:gap-4 md:gap-6" 
               role="navigation" 
               aria-label="Primary"
             >
+
               <Link 
                 href="/" 
                 className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" 
@@ -204,12 +207,21 @@ export default function About() {
               </Link>
 
               <Link 
+                href="/watcher-portal" 
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" 
+                data-testid="nav-watcher-portal"
+              >
+                Watcher Portal
+              </Link>
+
+              <Link 
                 href="/donate" 
                 className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" 
                 data-testid="nav-donate"
               >
                 Support
               </Link>
+
             </nav>
           </div>
         </div>
@@ -235,8 +247,10 @@ export default function About() {
             <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
 
               <div className="flex flex-col items-center">
+
                 <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8 wavy-bg-white-slow">
                   <div className="text-center text-black">
+
                     <div className="relative w-48 h-32">
                       <img 
                         src={logoImage} 
@@ -244,12 +258,16 @@ export default function About() {
                         className="w-full h-full object-contain glitch-build"
                       />
                     </div>
+
                   </div>
                 </div>
+
               </div>
               
               <div className="text-center">
+
                 <nav className="flex flex-col gap-6 mb-8">
+
                   <Link 
                     href="/" 
                     className="text-2xl font-medium hover:text-red-500 transition-colors" 
@@ -283,15 +301,25 @@ export default function About() {
                   </Link>
 
                   <Link 
+                    href="/watcher-portal" 
+                    className="text-2xl font-medium hover:text-red-500 transition-colors" 
+                    data-testid="nav-watcher-portal"
+                  >
+                    Watcher Portal
+                  </Link>
+
+                  <Link 
                     href="/donate" 
                     className="text-2xl font-medium hover:text-red-500 transition-colors" 
                     data-testid="nav-donate"
                   >
                     Support
                   </Link>
+
                 </nav>
                 
                 <div className="flex gap-4 justify-center">
+
                   <a 
                     href="https://www.tiktok.com/@thecarparksociety" 
                     target="_blank" 
@@ -327,6 +355,7 @@ export default function About() {
                   >
                     <FaYoutube className="w-5 h-5" />
                   </a>
+
                 </div>
               </div>
             </div>
@@ -336,32 +365,32 @@ export default function About() {
 
       <main id="main-content" className="pt-20 pb-16">
 
-{/* Our Story Section */}
-<section 
-  id="story" 
-  className="pt-20 pb-8 px-6 relative river-bg vhs-overlay"
->
-  <div className="max-w-4xl mx-auto relative z-10">
+        {/* Our Story Section */}
+        <section 
+          id="story" 
+          className="pt-20 pb-8 px-6 relative river-bg vhs-overlay"
+        >
+          <div className="max-w-4xl mx-auto relative z-10">
 
-    {/* TCPS Logo Design */}
-    <div className="flex justify-center mb-10">
-      <img 
-        src={tcpsLogoDesign}
-        alt="TCPS Logo Design"
-        className="w-full max-w-[420px] h-auto object-contain glitch-create vhs-overlay"
-      />
-    </div>
+            {/* TCPS Logo Design */}
+            <div className="flex justify-center mb-10">
+              <img 
+                src={tcpsLogoDesign}
+                alt="TCPS Logo Design"
+                className="w-full max-w-[420px] h-auto object-contain glitch-create vhs-overlay"
+              />
+            </div>
 
-    <h1 
-      className="text-4xl font-bold text-center mb-8 glitch-text" 
-      data-text="TCPS ORIGINS"
-    >
-      TCPS ORIGINS
-    </h1>
+            <h1 
+              className="text-4xl font-bold text-center mb-8 glitch-text" 
+              data-text="TCPS ORIGINS"
+            >
+              TCPS ORIGINS
+            </h1>
 
-    <p className="text-xl text-center mb-8 font-bold">
-      All Carparks Are Battlegrounds.
-    </p>
+            <p className="text-xl text-center mb-8 font-bold">
+              All Carparks Are Battlegrounds.
+            </p>
             
             <div className="space-y-6 text-gray-300 leading-relaxed">
 
@@ -609,7 +638,9 @@ export default function About() {
 
           <div className="grid md:grid-cols-3 gap-8 items-start">
 
+            {/* Socials + Contact */}
             <div className="text-center">
+
               <div className="flex gap-2 mb-4 justify-center">
 
                 <a 
@@ -669,9 +700,12 @@ export default function About() {
               <p className="text-gray-400 text-[12px]">
                 © 2026 by The Car Park Society Inc.
               </p>
+
             </div>
             
+            {/* Mana Whenua */}
             <div className="text-center">
+
               <p className="text-gray-500 text-sm italic mb-4">
                 We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
                 Te Āti Awa, and Ngāti Toa Rangatira —
@@ -683,16 +717,33 @@ export default function About() {
               <p className="text-gray-600 text-xs font-extralight">
                 Acknowledgement of Mana Whenua
               </p>
+
             </div>
             
+            {/* Member Portal + Flags */}
             <div className="flex justify-end">
-              <div className="space-y-2">
-                <img 
-                  src={flagsImage} 
-                  alt="Flags" 
-                  className="h-28 object-contain glitch-amplify"
-                />
+
+              <div className="flex flex-col items-end gap-4">
+
+                <a
+                  href="https://auth.tcps.app/login?next=%2Foauth%2Fauthorize%3Fclient_id%3Dclient_cf59aa5f3196%26redirect_uri%3Dhttps%253A%252F%252Fdev.tcps.app%252Fauth%252Fcallback%26response_type%3Dcode%26state%3D5031576d5a3a70e571c0c53c5a331dda"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block border border-red-600 bg-red-950/70 px-4 py-2 text-[11px] font-bold tracking-[0.18em] uppercase text-white hover:bg-red-600 transition-colors"
+                >
+                  Member Portal →
+                </a>
+
+                <div className="space-y-2">
+                  <img 
+                    src={flagsImage} 
+                    alt="Flags" 
+                    className="h-28 object-contain glitch-amplify"
+                  />
+                </div>
+
               </div>
+
             </div>
 
           </div>
@@ -701,4 +752,4 @@ export default function About() {
 
     </div>
   );
-}
+      }
