@@ -320,10 +320,13 @@ export default function AnnualReportPost() {
                 </p>
               </div>
 
+              {/* Embedded Annual Report */}
               <div className="w-full overflow-hidden rounded-lg border border-gray-700 bg-black">
                 <iframe
-                  src="https://docs.google.com/gview?embedded=1&url=https%3A%2F%2Ftc1312lia.github.io%2Ftcps2526%2FTCPS_AR.pdf"
-                  className="w-full h-[80vh] min-h-[600px] border-0"
+                  src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(
+                    "https://tc1312lia.github.io/tcps2526/TCPS_AR.pdf"
+                  )}`}
+                  className="w-full h-[85vh] min-h-[700px] border-0"
                   title="TCPS Annual Report FY2025/26"
                 />
               </div>
