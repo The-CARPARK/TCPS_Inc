@@ -164,53 +164,63 @@ export default function Home() {
 
             {/* Center Navigation */}
 <nav
-  className="flex w-full justify-center gap-1 px-1 sm:gap-2 sm:px-0 md:gap-4"
+  className="flex justify-center items-center gap-0"
   role="navigation"
   aria-label="Primary"
 >
   <Link
     href="/"
-    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-white border border-red-500 bg-red-900/20 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:bg-red-900/40 transition-colors"
+    className="text-xs sm:text-sm font-medium text-white border-b border-red-500 px-3 sm:px-4 whitespace-nowrap"
     data-testid="nav-home"
   >
     Welcome
   </Link>
 
+  <span className="h-4 w-px bg-gray-600" aria-hidden="true" />
+
   <Link
     href="/about-1"
-    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-3 sm:px-4 whitespace-nowrap"
     data-testid="nav-about"
   >
     Origins
   </Link>
 
+  <span className="h-4 w-px bg-gray-600" aria-hidden="true" />
+
   <Link
     href="/event-list"
-    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-3 sm:px-4 whitespace-nowrap"
     data-testid="nav-events"
   >
     Activations
   </Link>
 
+  <span className="h-4 w-px bg-gray-600" aria-hidden="true" />
+
   <Link
     href="/blog"
-    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-3 sm:px-4 whitespace-nowrap"
     data-testid="nav-blog"
   >
     Transmissions
   </Link>
 
+  <span className="h-4 w-px bg-gray-600" aria-hidden="true" />
+
   <Link
     href="/donate"
-    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-3 sm:px-4 whitespace-nowrap"
     data-testid="nav-donate"
   >
     Support
   </Link>
 
+  <span className="h-4 w-px bg-gray-600" aria-hidden="true" />
+
   <Link
     href="/watcher-portal"
-    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-3 sm:px-4 whitespace-nowrap"
     data-testid="nav-watcher-portal"
   >
     Join 👁
