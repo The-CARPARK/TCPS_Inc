@@ -369,6 +369,14 @@ export default function AnnualReportPost() {
               </Link>
 
               <Link
+                href="/watcher-portal"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-watcher-portal"
+              >
+                Watcher Portal
+              </Link>
+
+              <Link
                 href="/donate"
                 className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
                 data-testid="nav-donate"
@@ -443,6 +451,14 @@ export default function AnnualReportPost() {
                     data-testid="nav-blog"
                   >
                     Transmissions
+                  </Link>
+
+                  <Link
+                    href="/watcher-portal"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-watcher-portal"
+                  >
+                    Watcher Portal
                   </Link>
 
                   <Link
