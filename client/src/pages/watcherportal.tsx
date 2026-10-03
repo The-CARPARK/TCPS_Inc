@@ -384,8 +384,7 @@ export default function Membership() {
               </h2>
 
               <p className="text-gray-500 text-sm md:text-base mt-4 max-w-2xl mx-auto leading-relaxed">
-                Enter your details below. Tell us where you are, what you are
-                interested in, and how you want to connect with the work.
+                The signal is out there. Tell us where you’re watching from, what’s caught your attention, and what you’re carrying into the network — skills, knowledge, resources, connections, or something we haven’t thought of yet. Tell us how you want to connect. The rest reveals itself from there.
               </p>
             </div>
 
