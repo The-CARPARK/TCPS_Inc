@@ -632,9 +632,21 @@ export default function About() {
 
       </main>
 
-      {/* Footer */}
-      <footer className="py-16 px-6 border-t border-gray-800">
+                  <footer className="py-16 px-6 border-t border-gray-800">
+
         <div className="max-w-7xl mx-auto">
+
+          {/* Member Login */}
+          <div className="flex justify-center md:justify-end mb-10">
+            <a
+              href="https://auth.tcps.app/login?next=%2Foauth%2Fauthorize%3Fclient_id%3Dclient_cf59aa5f3196%26redirect_uri%3Dhttps%253A%252F%252Fdev.tcps.app%252Fauth%252Fcallback%26response_type%3Dcode%26state%3D5031576d5a3a70e571c0c53c5a331dda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 py-2 border border-red-600 bg-red-950/60 text-white text-xs font-bold tracking-widest uppercase hover:bg-red-600 transition-colors"
+            >
+              MEMBER LOGIN →
+            </a>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8 items-start">
 
@@ -643,37 +655,37 @@ export default function About() {
 
               <div className="flex gap-2 mb-4 justify-center">
 
-                <a 
-                  href="https://www.tiktok.com/@thecarparksociety" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://www.tiktok.com/@thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
                 >
                   <SiTiktok className="w-4 h-4" />
                 </a>
 
-                <a 
-                  href="https://www.instagram.com/thecarparksociety/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://www.instagram.com/thecarparksociety/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
                 >
                   <FaInstagram className="w-4 h-4" />
                 </a>
 
-                <a 
-                  href="https://www.facebook.com/thecarparksociety" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://www.facebook.com/thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
                 >
                   <FaFacebook className="w-4 h-4" />
                 </a>
 
-                <a 
-                  href="https://www.youtube.com/@TheCarParkSociety" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://www.youtube.com/@TheCarParkSociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
                 >
                   <FaYoutube className="w-4 h-4" />
@@ -681,10 +693,9 @@ export default function About() {
 
               </div>
 
-              <a 
-                href="mailto:the.carpark2025@gmail.com" 
-                className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]" 
-                data-testid="link-email-contact"
+              <a
+                href="mailto:the.carpark2025@gmail.com"
+                className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold"
               >
                 the.carpark2025@gmail.com
               </a>
@@ -702,7 +713,7 @@ export default function About() {
               </p>
 
             </div>
-            
+
             {/* Mana Whenua */}
             <div className="text-center">
 
@@ -714,42 +725,23 @@ export default function About() {
                 and enduring connection to this whenua.
               </p>
 
-              <p className="text-gray-600 text-xs font-extralight">
-                Acknowledgement of Mana Whenua
-              </p>
-
             </div>
-            
-            {/* Member Portal + Flags */}
-            <div className="flex justify-end">
 
-              <div className="flex flex-col items-end gap-4">
-
-                <a
-                  href="https://auth.tcps.app/login?next=%2Foauth%2Fauthorize%3Fclient_id%3Dclient_cf59aa5f3196%26redirect_uri%3Dhttps%253A%252F%252Fdev.tcps.app%252Fauth%252Fcallback%26response_type%3Dcode%26state%3D5031576d5a3a70e571c0c53c5a331dda"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block border border-red-600 bg-red-950/70 px-4 py-2 text-[11px] font-bold tracking-[0.18em] uppercase text-white hover:bg-red-600 transition-colors"
-                >
-                  Member Portal →
-                </a>
-
-                <div className="space-y-2">
-                  <img 
-                    src={flagsImage} 
-                    alt="Flags" 
-                    className="h-28 object-contain glitch-amplify"
-                  />
-                </div>
-
+            <div className="text-center">
+              <div className="space-y-2">
+                <img 
+                  src={flagsImage} 
+                  alt="Flags" 
+                  className="h-16 object-contain mx-auto glitch-build"
+                />
               </div>
-
             </div>
 
+            <div className="flex justify-center">
+            </div>
           </div>
         </div>
       </footer>
-
     </div>
   );
-      }
+}
