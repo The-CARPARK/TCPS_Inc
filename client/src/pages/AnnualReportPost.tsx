@@ -290,46 +290,46 @@ export default function AnnualReportPost() {
               </div>
 
               <span>30.09.2026</span>
-              <span>3 min read</span>
+              <span>Annual Report</span>
             </div>
 
             {/* Annual Report */}
-<div className="bg-red-950/30 border border-red-800 rounded-lg p-4 sm:p-6 mb-4">
-  <p className="text-white font-semibold mb-2">
-    TCPS Annual Report FY2025/26 — Phase Zero: The Rupture
-  </p>
+            <div className="bg-red-950/30 border border-red-800 rounded-lg p-4 sm:p-6 mb-4">
+              <p className="text-white font-semibold mb-2">
+                TCPS Annual Report FY2025/26 — Phase Zero: The Rupture
+              </p>
 
-  <p className="text-gray-300 mb-6">
-    The first year is now on record.
-  </p>
+              <p className="text-gray-300 mb-6">
+                The first year is now on record.
+              </p>
 
-  <div className="w-full overflow-hidden rounded-lg border border-gray-700 bg-black">
-    <iframe
-      src="/TCPS%20Annual%20Report%20FY25-26.pdf"
-      className="w-full h-[80vh] min-h-[600px] border-0"
-      title="TCPS Annual Report FY2025/26"
-    />
-  </div>
+              <div className="w-full overflow-hidden rounded-lg border border-gray-700 bg-black">
+                <iframe
+                  src="/TCPS%20Annual%20Report%20FY25-26.pdf"
+                  className="w-full h-[80vh] min-h-[600px] border-0"
+                  title="TCPS Annual Report FY2025/26"
+                />
+              </div>
 
-  <p className="text-center text-sm text-gray-400 mt-4">
-    Can't view the document?{" "}
-    <a
-      href="/TCPS%20Annual%20Report%20FY25-26.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-red-400 hover:text-red-300 underline underline-offset-4"
-    >
-      Open the Annual Report →
-    </a>
-  </p>
-</div>
-              </section>
+              <p className="text-center text-sm text-gray-400 mt-4">
+                Can't view the document?{" "}
+                <a
+                  href="/TCPS%20Annual%20Report%20FY25-26.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-300 underline underline-offset-4"
+                >
+                  Open the Annual Report →
+                </a>
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* Article Content */}
         <article className="px-6">
           <div className="max-w-4xl mx-auto prose prose-invert prose-lg">
             <div className="space-y-8 text-gray-300 leading-relaxed">
-
               <p className="text-xl text-white font-semibold">
                 The first year is now on record.
               </p>
@@ -339,282 +339,37 @@ export default function AnnualReportPost() {
                 <strong className="text-white">
                   Annual Report for FY2025/26
                 </strong>
-                , documenting a year of formation, experimentation,
-                governance, creative practice and the first public activation
-                of our kaupapa, <strong className="text-white">Te Mana Whakatete</strong>.
+                , documenting the first year of the Society — from
+                incorporation and governance through to our first major public
+                activation,{" "}
+                <strong className="text-white">The Control Room</strong>.
               </p>
 
               <p>
-                This was the year the signal became a Society.
+                <strong className="text-white">
+                  Phase Zero: The Rupture
+                </strong>{" "}
+                was a year of formation, experimentation, creative practice,
+                relationship-building and testing what TCPS could become.
               </p>
 
               <p>
-                We incorporated.
-                <br />
-                We built the foundations of our governance.
-                <br />
-                We developed our creative and organisational systems.
-                <br />
-                We formed relationships.
-                <br />
-                And we opened <strong className="text-white">The Control Room</strong>.
+                The report records what we built, what we learned, where the
+                organisation stands now, and what comes next — including the
+                development of the{" "}
+                <strong className="text-white">Induction Centre</strong>, the
+                Watcher Map, membership and the wider Watcher Network.
               </p>
 
-              <section className="pt-4">
-                <h2 className="text-2xl font-bold text-white mb-5">
-                  PHASE ZERO — THE CONTROL ROOM
-                </h2>
+              <p className="text-white font-semibold">
+                Read the full report above.
+              </p>
 
-                <p>
-                  The Control Room was our first major public activation: part
-                  artwork, part working laboratory, part gathering place.
-                </p>
-
-                <p>
-                  It gave TCPS a physical space to test what happens when
-                  installation, technology, storytelling, participation and
-                  urban research are brought together.
-                </p>
-
-                <p>It also gave us something more important: evidence.</p>
-
-                <p>
-                  Evidence that an unconventional idea could become a public
-                  project.
-                  <br />
-                  Evidence that people would enter, participate and follow the
-                  signal.
-                  <br />
-                  Evidence that our network could make something real.
-                </p>
-
-                <p>
-                  The project became a testing ground for the next phase of
-                  TCPS — and the foundations of the{" "}
-                  <strong className="text-white">Induction Centre</strong>{" "}
-                  planned for 2027.
-                </p>
-              </section>
-
-              <section className="pt-4">
-                <h2 className="text-2xl font-bold text-white mb-5">
-                  THE CITY BECAME THE ARCHIVE
-                </h2>
-
-                <p>
-                  During Phase Zero, we also began building the{" "}
-                  <strong className="text-white">Watcher Map</strong>.
-                </p>
-
-                <p>
-                  QR glyphs and Watchpoints extended the work beyond the walls
-                  of The Control Room and into Te Aro and the wider city.
-                </p>
-
-                <p>
-                  The Exchange.
-                  <br />
-                  The Battle.
-                  <br />
-                  Reclaimed Land.
-                  <br />
-                  The Veins Beneath.
-                </p>
-
-                <p>
-                  Each site opened another fragment of the city’s layered
-                  history — colonial trade, public resistance, reclaimed
-                  shoreline, buried awa and the systems that continue beneath
-                  the surface.
-                </p>
-
-                <p>
-                  The Watcher Map began to shift our practice from an event that
-                  happens in a space to an archive that can be encountered
-                  across the city.
-                </p>
-
-                <p className="text-white font-semibold">
-                  The Control Room was the base.
-                  <br />
-                  The Watcher Map was the breach.
-                </p>
-              </section>
-
-              <section className="pt-4">
-                <h2 className="text-2xl font-bold text-white mb-5">
-                  THE SOCIETY TAKES FORM
-                </h2>
-
-                <p>
-                  FY2025/26 was also the year TCPS became an incorporated
-                  society.
-                </p>
-
-                <p>
-                  We strengthened our Constitution, established a five-person
-                  Committee, developed our membership model and began putting
-                  the systems in place to support the organisation beyond
-                  individual projects.
-                </p>
-
-                <p>
-                  At the end of the financial year,{" "}
-                  <strong className="text-white">
-                    26 people had formally joined as members
-                  </strong>
-                  , helping establish the first layer of the wider Watcher
-                  Network.
-                </p>
-
-                <p>
-                  We also began developing our approach to technology and data
-                  sovereignty, including research into systems that could give
-                  TCPS greater control over our digital infrastructure,
-                  archives, intellectual property and community information.
-                </p>
-
-                <p>These systems are still developing.</p>
-
-                <p>So are we.</p>
-              </section>
-
-              <section className="pt-4">
-                <h2 className="text-2xl font-bold text-white mb-5">
-                  WHAT COMES NEXT
-                </h2>
-
-                <p>
-                  The Annual Report looks ahead to FY2026/27 — a year focused on
-                  moving from planning into action.
-                </p>
-
-                <p>Our priorities include:</p>
-
-                <div className="space-y-6">
-                  <div>
-                    <h3 className="text-lg font-bold text-white mb-1">
-                      The Induction Centre
-                    </h3>
-                    <p>
-                      Developing the concept, creative team, venue strategy,
-                      funding options and delivery plan for 2027.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-lg font-bold text-white mb-1">
-                      The Watcher Map
-                    </h3>
-                    <p>
-                      Expanding the network of Watchpoints and creating
-                      stronger pathways from participation into ongoing
-                      involvement.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-lg font-bold text-white mb-1">
-                      Membership
-                    </h3>
-                    <p>
-                      Building the Watcher Network into an active membership
-                      community.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-lg font-bold text-white mb-1">
-                      The Collective
-                    </h3>
-                    <p>
-                      Strengthening arrangements for collaborators, including
-                      clearer roles, agreements, crediting and fair-pay
-                      principles.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-lg font-bold text-white mb-1">
-                      Relationships
-                    </h3>
-                    <p>
-                      Continuing to build relationships with mana whenua,
-                      artists, communities, cultural networks and sector
-                      partners.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-lg font-bold text-white mb-1">
-                      Capacity and sustainability
-                    </h3>
-                    <p>
-                      Building the systems, resources and organisational
-                      capability required to support bigger ideas without
-                      losing the collective spirit that makes TCPS what it is.
-                    </p>
-                  </div>
-                </div>
-              </section>
-
-              <section className="pt-4">
-                <h2 className="text-2xl font-bold text-white mb-5">
-                  THE NEXT TRANSMISSION
-                </h2>
-
-                <p>
-                  The Annual Report is more than a record of what happened.
-                </p>
-
-                <p>It is a record of what we learned.</p>
-
-                <p>
-                  The central lesson of Phase Zero was simple:
-                </p>
-
-                <p className="text-xl text-white font-semibold text-center my-8">
-                  TCPS does not need to become more conventional to become more
-                  capable.
-                </p>
-
-                <p>
-                  We need enough structure to protect people, manage resources,
-                  record learning and deliver responsibly.
-                </p>
-
-                <p>
-                  But we also need room for experimentation, responsiveness,
-                  imagination and collective energy.
-                </p>
-
-                <p>That is the work of the next phase.</p>
-
-                <p className="text-2xl text-white font-bold text-center my-10">
-                  The rupture has opened.
-                  <br />
-                  Now we descend.
-                </p>
-
-                <p>
-                  Follow the Society into its next phase.
-                </p>
-
-                <p className="text-white font-semibold">
-                  The signal remains active.
-                  <br />
-                  The network remains open.
-                  <br />
-                  The Sequence continues.
-                </p>
-
-                <div className="text-center mt-12">
-                  <p className="text-xl font-bold">Ngā mihi nui</p>
-                  <p className="text-lg italic text-gray-300 mt-2">
-                    The Car Park Society Inc.
-                  </p>
-                </div>
-              </section>
+              <p className="text-center text-2xl text-white font-bold my-10">
+                The rupture has opened.
+                <br />
+                Now we descend.
+              </p>
             </div>
           </div>
         </article>
@@ -684,18 +439,18 @@ export default function AnnualReportPost() {
               </p>
             </div>
 
-                        <div className="text-center">
-  <p className="text-gray-500 text-sm italic mb-4">
-    We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
-    Te Āti Awa, and Ngāti Toa Rangatira —
-    mana whenua of Te Whanganui-a-Tara.
-    We honour their whakapapa, histories,
-    and enduring connection to this whenua.
-  </p>
-  <p className="text-gray-600 text-xs font-extralight">
-    Acknowledgement of Mana Whenua
-  </p>
-</div>
+            <div className="text-center">
+              <p className="text-gray-500 text-sm italic mb-4">
+                We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
+                Te Āti Awa, and Ngāti Toa Rangatira — mana whenua of Te
+                Whanganui-a-Tara. We honour their whakapapa, histories, and
+                enduring connection to this whenua.
+              </p>
+
+              <p className="text-gray-600 text-xs font-extralight">
+                Acknowledgement of Mana Whenua
+              </p>
+            </div>
 
             <div className="flex justify-end">
               <div className="space-y-2">
