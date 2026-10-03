@@ -326,6 +326,22 @@ export default function Home() {
           </div>
         </section>
 
+        {/* YouTube Video Section */}
+        <section className="py-12 px-6">
+          <div className="max-w-5xl mx-auto">
+            <div className="relative w-full aspect-video overflow-hidden border border-red-900/30 bg-black glitch-image vhs-overlay">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/5Oiu3M7IE4g"
+                title="The Car Park Society"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Join the Movement Section */}
         <section className="py-12 px-6 bg-red-900/30 vhs-overlay">
           <div className="max-w-4xl mx-auto text-center">
