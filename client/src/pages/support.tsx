@@ -2,8 +2,7 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import buildingImage from "@assets/Support.jpg";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
@@ -34,25 +33,28 @@ export default function Support() {
 
   useEffect(() => {
     document.title = "Support The Car Park Society - Donate";
-    
-    // Update meta description
+
     const metaDescription = document.querySelector('meta[name="description"]');
+
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Support The Car Park Society. Help us keep the movement underground, independent, and powerful through your donations.');
+      metaDescription.setAttribute(
+        'content',
+        'Support The Car Park Society. Help us keep the movement underground, independent, and powerful through your donations.'
+      );
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Support The Car Park Society. Help us keep the movement underground, independent, and powerful through your donations.';
+      meta.content =
+        'Support The Car Park Society. Help us keep the movement underground, independent, and powerful through your donations.';
       document.head.appendChild(meta);
     }
 
-    // Banner text cycling
     const cycleText = () => {
       setTextIndex((prev) => (prev + 1) % bannerMessages.length);
     };
 
     setBannerText(bannerMessages[0]);
-    
+
     const textInterval = setInterval(cycleText, 8000);
 
     return () => {
@@ -66,69 +68,146 @@ export default function Support() {
 
   return (
     <div className="min-h-screen bg-red-900/30 text-white">
+
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-red-950/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
+
           {/* TCPS Button Above Navigation with Full-Width Banner */}
           <div className="relative mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast overflow-hidden">
+
             {/* Full-Width Scrolling Banner Background */}
             <div className="absolute inset-0 bg-white border-y border-red-900/50 glitch-image">
               <div className="h-full overflow-hidden relative flex items-center">
+
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/5 to-transparent animate-pulse"></div>
-                
+
                 {/* Scrolling Text */}
                 <div className="w-full overflow-hidden">
-                  <div className="whitespace-nowrap text-[10px] sm:text-[12px] md:text-[14px] text-black font-mono py-2 px-4 animate-scroll vhs-overlay glitch-text tracking-wider" data-text={bannerText}>
+                  <div
+                    className="whitespace-nowrap text-[10px] sm:text-[12px] md:text-[14px] text-black font-mono py-2 px-4 animate-scroll vhs-overlay glitch-text tracking-wider"
+                    data-text={bannerText}
+                  >
                     {bannerText}&nbsp;&nbsp;&nbsp;&nbsp;
                   </div>
                 </div>
+
               </div>
             </div>
-            
+
             {/* Foreground Elements */}
             <div className="absolute inset-0 flex justify-between items-center px-4 z-10">
+
               <Link href="/">
-                <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 glitch-icon bg-white/90 rounded px-1" />
+                <img
+                  src={tcpsLogo}
+                  alt="TCPS"
+                  className="h-4 sm:h-5 glitch-icon bg-white/90 rounded px-1"
+                />
               </Link>
-              
+
               <div className="flex gap-1 bg-white px-1 py-0.5 rounded">
-                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+
+                <a
+                  href="https://www.tiktok.com/@thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
                   <SiTiktok className="w-2 h-2" />
                 </a>
-                <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+
+                <a
+                  href="https://www.instagram.com/thecarparksociety/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
                   <FaInstagram className="w-2 h-2" />
                 </a>
-                <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+
+                <a
+                  href="https://www.facebook.com/thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
                   <FaFacebook className="w-2 h-2" />
                 </a>
-                <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+
+                <a
+                  href="https://www.youtube.com/@TheCarParkSociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
                   <FaYoutube className="w-2 h-2" />
                 </a>
+
               </div>
             </div>
           </div>
-          
-          {/* Navigation and Social Icons Row */}
+
+          {/* Navigation */}
           <div className="flex justify-center">
-            {/* Center Navigation */}
-            <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
-              <Link href="/" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-home">
+
+            <nav
+              className="flex justify-center gap-2 sm:gap-4 md:gap-6"
+              role="navigation"
+              aria-label="Primary"
+            >
+
+              <Link
+                href="/"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-home"
+              >
                 Home
               </Link>
-              <Link href="/about-1" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-about">
+
+              <Link
+                href="/about-1"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-about"
+              >
                 Origins
               </Link>
-              <Link href="/event-list" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-events">
+
+              <Link
+                href="/event-list"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-events"
+              >
                 Activations
               </Link>
-              <Link href="/blog" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-blog">
+
+              <Link
+                href="/blog"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-blog"
+              >
                 Transmissions
               </Link>
-              <Link href="/donate" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-donate">
+
+              <Link
+                href="/watcher-portal"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-watcher-portal"
+              >
+                Watcher Portal
+              </Link>
+
+              <Link
+                href="/donate"
+                className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap"
+                data-testid="nav-donate"
+              >
                 Support
               </Link>
+
             </nav>
           </div>
+
         </div>
       </header>
 
@@ -136,6 +215,7 @@ export default function Support() {
       {menuOpen && (
         <div className="overlay-menu">
           <div className="menu-content">
+
             <div className="absolute top-6 right-6">
               <Button
                 variant="ghost"
@@ -147,55 +227,125 @@ export default function Support() {
                 Close [ - ]
               </Button>
             </div>
-            
+
             <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
+
               <div className="flex flex-col items-center">
+
                 <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8 wavy-bg-white-slow">
+
                   <div className="text-center text-black">
+
                     <div className="relative w-48 h-32">
-                      <img 
-                        src={logoImage} 
-                        alt="The Car Park Society Logo" 
+
+                      <img
+                        src={logoImage}
+                        alt="The Car Park Society Logo"
                         className="w-full h-full object-contain glitch-amplify"
                       />
+
                     </div>
+
                   </div>
+
                 </div>
+
               </div>
-              
+
               <div className="text-center">
+
                 <nav className="flex flex-col gap-6 mb-8">
-                  <Link href="/" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-home">
+
+                  <Link
+                    href="/"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-home"
+                  >
                     Home
                   </Link>
-                  <Link href="/about-1" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
+
+                  <Link
+                    href="/about-1"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-about"
+                  >
                     Origins
                   </Link>
-                  <Link href="/event-list" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-events">
+
+                  <Link
+                    href="/event-list"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-events"
+                  >
                     Activations
                   </Link>
-                  <Link href="/blog" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-blog">
+
+                  <Link
+                    href="/blog"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-blog"
+                  >
                     Transmissions
                   </Link>
-                  <Link href="/donate" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-donate">
+
+                  <Link
+                    href="/watcher-portal"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-watcher-portal"
+                  >
+                    Watcher Portal
+                  </Link>
+
+                  <Link
+                    href="/donate"
+                    className="text-2xl font-medium text-white border-b border-red-500"
+                    data-testid="nav-donate"
+                  >
                     Support
                   </Link>
+
                 </nav>
-                
+
                 <div className="flex gap-4 justify-center">
-                  <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                  <a
+                    href="https://www.tiktok.com/@thecarparksociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
                     <SiTiktok className="w-5 h-5" />
                   </a>
-                  <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                  <a
+                    href="https://www.instagram.com/thecarparksociety/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
                     <FaInstagram className="w-5 h-5" />
                   </a>
-                  <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                  <a
+                    href="https://www.facebook.com/thecarparksociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
                     <FaFacebook className="w-5 h-5" />
                   </a>
-                  <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                  <a
+                    href="https://www.youtube.com/@TheCarParkSociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
                     <FaYoutube className="w-5 h-5" />
                   </a>
+
                 </div>
+
               </div>
             </div>
           </div>
@@ -203,86 +353,107 @@ export default function Support() {
       )}
 
       <main className="pt-20 pb-16">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="flex justify-center min-h-[80vh] items-center">
-      {/* Integrated Content */}
-      <div className="bg-black/60 p-12 rounded-lg max-w-4xl w-full">
-        
-        {/* Main Content */}
-        <div className="w-full">
-          <div className="lg:mb-4">
-            <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 mb-3 lg:mb-2">
-              <h1 className="font-bold text-white text-[26px] text-center lg:text-left">
-                SUPPORT TCPS
-              </h1>
 
-              {/* Donate Button */}
-              <div className="flex justify-center lg:justify-start mt-4 lg:mt-0">
-                <a 
-                  href="https://donate.stripe.com/5kQcMXfYR5W5ashfl32oE00?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExMkxGV3F3ZUp4VThMWDhTZwEe-OGbJR7ehYUNpJ4GBDobwDvnZgnFAj-xl0_-PAUYuiHq_rmkO4k3S243Wz0_aem_Pqhe4mQfKMP37gl2OUceEg" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-block"
-                >
-                  <Button 
-                    className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
-                    data-testid="button-donate"
-                  >
-                    DONATE
-                  </Button>
-                </a>
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="flex justify-center min-h-[80vh] items-center">
+
+            {/* Integrated Content */}
+            <div className="bg-black/60 p-12 rounded-lg max-w-4xl w-full">
+
+              {/* Main Content */}
+              <div className="w-full">
+
+                <div className="lg:mb-4">
+
+                  <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 mb-3 lg:mb-2">
+
+                    <h1 className="font-bold text-white text-[26px] text-center lg:text-left">
+                      SUPPORT TCPS
+                    </h1>
+
+                    {/* Donate Button */}
+                    <div className="flex justify-center lg:justify-start mt-4 lg:mt-0">
+
+                      <a
+                        href="https://donate.stripe.com/5kQcMXfYR5W5ashfl32oE00?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExMkxGV3F3ZUp4VThMWDhTZwEe-OGbJR7ehYUNpJ4GBDobwDvnZgnFAj-xl0_-PAUYuiHq_rmkO4k3S243Wz0_aem_Pqhe4mQfKMP37gl2OUceEg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block"
+                      >
+
+                        <Button
+                          className="bg-white text-black font-bold px-6 py-3 text-lg hover:bg-gray-200 transition-colors wavy-bg-white-pulse glitch-button"
+                          data-testid="button-donate"
+                        >
+                          DONATE
+                        </Button>
+
+                      </a>
+
+                    </div>
+
+                  </div>
+
+                  <p className="text-lg font-semibold text-gray-300 mb-6 lg:mb-0 text-center lg:text-left">
+                    Why Support us?
+                  </p>
+
+                </div>
+
+                <div className="space-y-6 text-gray-300 leading-relaxed mb-8 text-center lg:text-left">
+
+                  <p>
+                    By backing The Car Park Society, you help us keep the movement
+                    underground, independent, and powerful.
+                  </p>
+
+                  <p>
+                    You help transform abandoned structures into living art and resistance spaces,
+                    create immersive experiences that challenge colonial narratives, and build a
+                    collective of Watchers dedicated to land back, memory, and creativity.
+                  </p>
+
+                  <p>
+                    Your support keeps the rituals alive, from installations and films to gatherings
+                    and community wānanga.
+                  </p>
+
+                  <p>
+                    The sequence is reclamation and resistance.
+                  </p>
+
+                  <p>
+                    We invite you to be part of it.
+                  </p>
+
+                </div>
               </div>
+
+              {/* Building Image - Bottom Centre */}
+              <div className="flex justify-center w-full mt-8 pb-4">
+
+                <img
+                  src={buildingImage}
+                  alt="The Car Park Society activation"
+                  className="w-full h-auto max-w-[900px] lg:max-w-[1200px] object-contain glitch-create vhs-overlay"
+                />
+
+              </div>
+
             </div>
-
-            <p className="text-lg font-semibold text-gray-300 mb-6 lg:mb-0 text-center lg:text-left">
-              Why Support us?
-            </p>
-          </div>
-
-          <div className="space-y-6 text-gray-300 leading-relaxed mb-8 text-center lg:text-left">
-
-            <p>
-              By backing The Car Park Society, you help us keep the movement 
-              underground, independent, and powerful.
-            </p>
-
-            <p>
-              You help transform abandoned structures into living art and resistance spaces, 
-              create immersive experiences that challenge colonial narratives, and build a 
-              collective of Watchers dedicated to land back, memory, and creativity.
-            </p>
-
-            <p>
-              Your support keeps the rituals alive, from installations and films to gatherings 
-              and community wānanga.
-            </p>
-
-            <p>The sequence is reclamation and resistance.</p>
-
-            <p>We invite you to be part of it.</p>
           </div>
         </div>
+      </main>
 
-        {/* Building Image - Bottom Centre */}
-        <div className="flex justify-center w-full mt-8 pb-4">
-          <img 
-            src={buildingImage}
-            alt="The Car Park Society activation" 
-            className="w-full h-auto max-w-[900px] lg:max-w-[1200px] object-contain glitch-create vhs-overlay"
-          />
-        </div>
-
-      </div>
-    </div>
-  </div>
-</main>
-
-            <footer className="py-16 px-6 border-t border-gray-800">
+      {/* Footer */}
+      <footer className="py-16 px-6 border-t border-gray-800">
 
         <div className="max-w-7xl mx-auto">
 
           {/* Member Login */}
           <div className="flex justify-center md:justify-end mb-10">
+
             <a
               href="https://auth.tcps.app/login?next=%2Foauth%2Fauthorize%3Fclient_id%3Dclient_cf59aa5f3196%26redirect_uri%3Dhttps%253A%252F%252Fdev.tcps.app%252Fauth%252Fcallback%26response_type%3Dcode%26state%3D5031576d5a3a70e571c0c53c5a331dda"
               target="_blank"
@@ -291,6 +462,7 @@ export default function Support() {
             >
               MEMBER LOGIN →
             </a>
+
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 items-start">
@@ -371,22 +543,26 @@ export default function Support() {
               </p>
 
             </div>
-            
+
+            {/* Flags */}
             <div className="text-center">
+
               <div className="space-y-2">
-                <img 
-                  src={flagsImage} 
-                  alt="Flags" 
+
+                <img
+                  src={flagsImage}
+                  alt="Flags"
                   className="h-16 object-contain mx-auto glitch-build"
                 />
+
               </div>
+
             </div>
-            
-            <div className="flex justify-center">
-            </div>
+
           </div>
         </div>
       </footer>
+
     </div>
   );
 }
