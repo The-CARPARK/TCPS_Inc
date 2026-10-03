@@ -218,60 +218,54 @@ export default function Home() {
 
       <main id="main-content" className="pt-20">
         {/* Hero Section */}
-        <section className="pt-12 pb-0 px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-4 items-center" data-testid="text-welcome">
-              <div className="text-center">
-                <p className="font-black text-gray-300 mb-4 text-[31px]">
-                  WELCOME TO
-                </p>
-                <h1 className="mb-8 font-black glitch-text text-[32px]" data-text="THE CAR PARK SOCIETY">
-                  THE CAR PARK SOCIETY
-                </h1>
-                
-                <div className="text-gray-300 text-[15px] font-light mb-6" data-testid="text-intro">
-                  <p className="mb-4">
-                    The Car Park Society Inc. (TCPS) is a kaupapa-driven incorporated society based in Te Whanganui-a-Tara. We are a collective of Māori and tauiwi artists, researchers, organisers, and community builders.
-                  </p>
-                  <p>
-                    Our mahi is dedicated to revealing hidden histories, restoring connections, and transforming overlooked urban spaces into vibrant hubs of creativity, cultural resurgence, and community empowerment.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex justify-center">
-                <a 
-                  href="https://tcps-map-spj5.onrender.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="cursor-pointer"
-                >
-                  <img 
-                    src={newHeroLogoImage} 
-                    alt="The Car Park Society Eye Symbol" 
-                    className="w-full max-w-md h-[280px] object-contain glitch-image hover:opacity-90 transition-opacity"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+<section className="pt-12 pb-12 px-6">
+  <div className="max-w-6xl mx-auto">
+    <div className="grid md:grid-cols-2 gap-8 items-center" data-testid="text-welcome">
+      
+      {/* Hero Text */}
+      <div className="text-center">
+        <p className="font-black text-gray-300 mb-4 text-[31px]">
+          WELCOME TO
+        </p>
 
-{/* YouTube Video Section */}
-        <section className="py-12 px-6">
-          <div className="max-w-5xl mx-auto">
-            <div className="relative w-full aspect-video overflow-hidden border border-red-900/30 bg-black glitch-image vhs-overlay">
-              <iframe
-                className="absolute inset-0 w-full h-full"
-                src="https://www.youtube-nocookie.com/embed/5Oiu3M7IE4g"
-                title="The Car Park Society"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
-            </div>
-          </div>
-        </section>
+        <h1 
+          className="mb-8 font-black glitch-text text-[32px]" 
+          data-text="THE CAR PARK SOCIETY"
+        >
+          THE CAR PARK SOCIETY
+        </h1>
+        
+        <div 
+          className="text-gray-300 text-[15px] font-light mb-6" 
+          data-testid="text-intro"
+        >
+          <p className="mb-4">
+            The Car Park Society Inc. (TCPS) is a kaupapa-driven incorporated society based in Te Whanganui-a-Tara. We are a collective of Māori and tauiwi artists, researchers, organisers, and community builders.
+          </p>
+
+          <p>
+            Our mahi is dedicated to revealing hidden histories, restoring connections, and transforming overlooked urban spaces into vibrant hubs of creativity, cultural resurgence, and community empowerment.
+          </p>
+        </div>
+      </div>
+
+      {/* Hero YouTube Video */}
+      <div className="flex justify-center">
+        <div className="relative w-full max-w-xl aspect-video overflow-hidden border border-red-900/30 bg-black glitch-image vhs-overlay">
+          <iframe
+            className="absolute inset-0 w-full h-full"
+            src="https://www.youtube-nocookie.com/embed/5Oiu3M7IE4g"
+            title="The Car Park Society"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
         {/* Mission Section */}
         <section className="py-12 px-6 bg-red-900/20">
