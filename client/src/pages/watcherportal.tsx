@@ -384,7 +384,7 @@ export default function Membership() {
               </h2>
 
               <p className="text-gray-500 text-sm md:text-base mt-4 max-w-2xl mx-auto leading-relaxed">
-                The signal is out there. Tell us where you’re watching from, what’s caught your attention, and what you’re carrying into the network — skills, knowledge, resources, connections, or something we haven’t thought of yet. Tell us how you want to connect. The rest reveals itself from there.
+                The signal is out there. Tell us where you’re watching from, what’s caught your attention, and what you’re carrying into the network — skills, knowledge, resources, connections, or something we haven’t thought of yet. Tell us how you want to connect. The rest reveals itself 👁
               </p>
             </div>
 
