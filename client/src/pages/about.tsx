@@ -3,10 +3,10 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { X } from "lucide-react";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
+import tcpsLogoDesign from "@assets/TCPS Logo Design.png";
 
 import eyeSymbol from "@assets/Screenshot 2025-09-26 031454_1758813420788.png";
 import curvedDesign from "@assets/Screenshot 2025-09-26 025540_1758813515914.png";
@@ -38,11 +38,15 @@ export default function About() {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Learn about The Car Park Society story, mission, and Te Mana Whakatete Accord. Discover why we chose a car park as our symbolic battleground.');
+      metaDescription.setAttribute(
+        'content',
+        'Learn about The Car Park Society story, mission, and Te Mana Whakatete Accord. Discover why we chose a car park as our symbolic battleground.'
+      );
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Learn about The Car Park Society story, mission, and Te Mana Whakatete Accord. Discover why we chose a car park as our symbolic battleground.';
+      meta.content =
+        'Learn about The Car Park Society story, mission, and Te Mana Whakatete Accord. Discover why we chose a car park as our symbolic battleground.';
       document.head.appendChild(meta);
     }
 
@@ -74,6 +78,7 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-black text-white">
+
       {/* Skip to main content */}
       <a 
         href="#main-content" 
@@ -82,11 +87,14 @@ export default function About() {
       >
         Skip to Main Content
       </a>
+
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-red-950/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
+
           {/* TCPS Button Above Navigation with Full-Width Banner */}
           <div className="relative mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast overflow-hidden">
+
             {/* Full-Width Scrolling Banner Background */}
             <div className="absolute inset-0 bg-white border-y border-red-900/50 glitch-image">
               <div className="h-full overflow-hidden relative flex items-center">
@@ -94,7 +102,10 @@ export default function About() {
                 
                 {/* Scrolling Text */}
                 <div className="w-full overflow-hidden">
-                  <div className="whitespace-nowrap text-[10px] sm:text-[12px] md:text-[14px] text-black font-mono py-2 px-4 animate-scroll vhs-overlay glitch-text tracking-wider" data-text={bannerText}>
+                  <div 
+                    className="whitespace-nowrap text-[10px] sm:text-[12px] md:text-[14px] text-black font-mono py-2 px-4 animate-scroll vhs-overlay glitch-text tracking-wider" 
+                    data-text={bannerText}
+                  >
                     {bannerText}&nbsp;&nbsp;&nbsp;&nbsp;
                   </div>
                 </div>
@@ -104,20 +115,47 @@ export default function About() {
             {/* Foreground Elements */}
             <div className="absolute inset-0 flex justify-between items-center px-4 z-10">
               <Link href="/">
-                <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 glitch-icon bg-white/90 rounded px-1" />
+                <img 
+                  src={tcpsLogo} 
+                  alt="TCPS" 
+                  className="h-4 sm:h-5 glitch-icon bg-white/90 rounded px-1" 
+                />
               </Link>
               
               <div className="flex gap-1 bg-white px-1 py-0.5 rounded">
-                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                <a 
+                  href="https://www.tiktok.com/@thecarparksociety" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
                   <SiTiktok className="w-2 h-2" />
                 </a>
-                <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+
+                <a 
+                  href="https://www.instagram.com/thecarparksociety/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
                   <FaInstagram className="w-2 h-2" />
                 </a>
-                <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+
+                <a 
+                  href="https://www.facebook.com/thecarparksociety" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
                   <FaFacebook className="w-2 h-2" />
                 </a>
-                <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+
+                <a 
+                  href="https://www.youtube.com/@TheCarParkSociety" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
                   <FaYoutube className="w-2 h-2" />
                 </a>
               </div>
@@ -126,21 +164,50 @@ export default function About() {
           
           {/* Navigation and Social Icons Row */}
           <div className="flex justify-center">
+
             {/* Center Navigation */}
-            <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
-              <Link href="/" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-home">
+            <nav 
+              className="flex justify-center gap-2 sm:gap-4 md:gap-6" 
+              role="navigation" 
+              aria-label="Primary"
+            >
+              <Link 
+                href="/" 
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" 
+                data-testid="nav-home"
+              >
                 Home
               </Link>
-              <Link href="/about-1" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-about">
+
+              <Link 
+                href="/about-1" 
+                className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" 
+                data-testid="nav-about"
+              >
                 Origins
               </Link>
-              <Link href="/event-list" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-events">
+
+              <Link 
+                href="/event-list" 
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" 
+                data-testid="nav-events"
+              >
                 Activations
               </Link>
-              <Link href="/blog" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-blog">
+
+              <Link 
+                href="/blog" 
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" 
+                data-testid="nav-blog"
+              >
                 Transmissions
               </Link>
-              <Link href="/donate" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-donate">
+
+              <Link 
+                href="/donate" 
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" 
+                data-testid="nav-donate"
+              >
                 Support
               </Link>
             </nav>
@@ -148,12 +215,11 @@ export default function About() {
         </div>
       </header>
 
-      
-
       {/* Overlay Menu */}
       {menuOpen && (
         <div className="overlay-menu">
           <div className="menu-content">
+
             <div className="absolute top-6 right-6">
               <Button
                 variant="ghost"
@@ -167,6 +233,7 @@ export default function About() {
             </div>
             
             <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
+
               <div className="flex flex-col items-center">
                 <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8 wavy-bg-white-slow">
                   <div className="text-center text-black">
@@ -183,34 +250,81 @@ export default function About() {
               
               <div className="text-center">
                 <nav className="flex flex-col gap-6 mb-8">
-                  <Link href="/" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-home">
+                  <Link 
+                    href="/" 
+                    className="text-2xl font-medium hover:text-red-500 transition-colors" 
+                    data-testid="nav-home"
+                  >
                     Home
                   </Link>
-                  <Link href="/about-1" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
+
+                  <Link 
+                    href="/about-1" 
+                    className="text-2xl font-medium hover:text-red-500 transition-colors" 
+                    data-testid="nav-about"
+                  >
                     Origins
                   </Link>
-                  <Link href="/event-list" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-events">
+
+                  <Link 
+                    href="/event-list" 
+                    className="text-2xl font-medium hover:text-red-500 transition-colors" 
+                    data-testid="nav-events"
+                  >
                     Activations
                   </Link>
-                  <Link href="/blog" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-blog">
+
+                  <Link 
+                    href="/blog" 
+                    className="text-2xl font-medium hover:text-red-500 transition-colors" 
+                    data-testid="nav-blog"
+                  >
                     Transmissions
                   </Link>
-                  <Link href="/donate" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-donate">
+
+                  <Link 
+                    href="/donate" 
+                    className="text-2xl font-medium hover:text-red-500 transition-colors" 
+                    data-testid="nav-donate"
+                  >
                     Support
                   </Link>
                 </nav>
                 
                 <div className="flex gap-4 justify-center">
-                  <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <a 
+                    href="https://www.tiktok.com/@thecarparksociety" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
                     <SiTiktok className="w-5 h-5" />
                   </a>
-                  <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                  <a 
+                    href="https://www.instagram.com/thecarparksociety/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
                     <FaInstagram className="w-5 h-5" />
                   </a>
-                  <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                  <a 
+                    href="https://www.facebook.com/thecarparksociety" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
                     <FaFacebook className="w-5 h-5" />
                   </a>
-                  <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                  <a 
+                    href="https://www.youtube.com/@TheCarParkSociety" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
                     <FaYoutube className="w-5 h-5" />
                   </a>
                 </div>
@@ -219,14 +333,38 @@ export default function About() {
           </div>
         </div>
       )}
+
       <main id="main-content" className="pt-20 pb-16">
+
         {/* Our Story Section */}
-        <section id="story" className="pt-20 pb-8 px-6 relative river-bg vhs-overlay">
+        <section 
+          id="story" 
+          className="pt-20 pb-8 px-6 relative river-bg vhs-overlay"
+        >
           <div className="max-w-4xl mx-auto relative z-10">
-            <h1 className="text-4xl font-bold text-center mb-8 glitch-text" data-text="TCPS ORIGINS">TCPS ORIGINS</h1>
-            <p className="text-xl text-center mb-12 font-bold">All Carparks Are Battlegrounds.</p>
+
+            <h1 
+              className="text-4xl font-bold text-center mb-8 glitch-text" 
+              data-text="TCPS ORIGINS"
+            >
+              TCPS ORIGINS
+            </h1>
+
+            <p className="text-xl text-center mb-8 font-bold">
+              All Carparks Are Battlegrounds.
+            </p>
+
+            {/* TCPS Logo Design */}
+            <div className="flex justify-center mb-12">
+              <img 
+                src={tcpsLogoDesign}
+                alt="TCPS Logo Design"
+                className="w-full max-w-[420px] h-auto object-contain glitch-create vhs-overlay"
+              />
+            </div>
             
             <div className="space-y-6 text-gray-300 leading-relaxed">
+
               <p className="text-center">
                 Our beginnings lie in disturbance. In the the faint static of places where mauri has been unsettled. Concrete slabs and spiral ramps conceal more than emptiness. They hum with what has been buried, what refuses to be forgotten. The silence of these structures is not absence but memory under pressure.
               </p>
@@ -262,28 +400,46 @@ export default function About() {
               <p className="text-center font-semibold">
                 We are Watchers. We follow the currents beneath asphalt. We reclaim the battlegrounds of the city and reimagine them as portals of mauri, memory, and transformation.
               </p>
+
             </div>
           </div>
         </section>
+
         {/* Te Mana Whakatete Accord Section */}
-        <section id="accord" className="pt-8 pb-8 px-6 text-[13px] relative bg-black">
+        <section 
+          id="accord" 
+          className="pt-8 pb-8 px-6 text-[13px] relative bg-black"
+        >
           <div className="max-w-4xl mx-auto text-center relative z-10">
+
             {/* Eye Symbol Above Header */}
             <div className="flex justify-center mb-4">
               <img 
                 src={eyeSymbol} 
                 alt="TCPS Eye Symbol" 
                 className="h-72 w-72 sm:h-80 sm:w-80 object-contain image-rendering-crisp-edges glitch-create"
-                style={{imageRendering: 'crisp-edges', background: 'transparent'}}
+                style={{
+                  imageRendering: 'crisp-edges',
+                  background: 'transparent'
+                }}
               />
             </div>
-            <h2 className="text-4xl font-bold text-center mb-8 glitch-text" data-text="TE MANA WHAKATETE ACCORD">TE MANA WHAKATETE ACCORD</h2>
+
+            <h2 
+              className="text-4xl font-bold text-center mb-8 glitch-text" 
+              data-text="TE MANA WHAKATETE ACCORD"
+            >
+              TE MANA WHAKATETE ACCORD
+            </h2>
             
             <div className="text-center mb-12 space-y-2">
-              <p className="text-[15px] italic">This Accord is not a beginning. It is a resurfacing; the uprising of what colonisation tried to bury beneath asphalt, steel, and concrete.</p>
+              <p className="text-[15px] italic">
+                This Accord is not a beginning. It is a resurfacing; the uprising of what colonisation tried to bury beneath asphalt, steel, and concrete.
+              </p>
             </div>
             
             <div className="space-y-8 text-gray-300 text-[13px]">
+
               <div>
                 <p className="text-center">
                   The Car Park Society (TCPS) is a living assemblage of artists, insurgents, storytellers, cultural workers, rangatira, and spectral participants dedicated to the reclamation of space, spirit, and story from the suffocating weight of colonial infrastructure.
@@ -293,11 +449,16 @@ export default function About() {
                   We declare that the structures of the city are not neutral. They are vertical archives of dispossession and resistance, each layer a stratum of memory pressed beneath concrete. They are liminal zones where mauri is distorted yet persists, where streams run silenced but unbroken, where stories buried by colonisation demand to be heard. They are modern pā reimagined, not of palisades but of presence, defence, and resurgence in the very heart of the colonial city.
                 </p>
                 
-                <p className="mb-8 mt-8 text-center font-semibold text-[13px]">From these fissures we issue the Accord. We refuse erasure. We contest the violence of concrete and capital. We declare the right of whenua, awa, and people to be remembered, restored, and reborn.</p>
+                <p className="mb-8 mt-8 text-center font-semibold text-[13px]">
+                  From these fissures we issue the Accord. We refuse erasure. We contest the violence of concrete and capital. We declare the right of whenua, awa, and people to be remembered, restored, and reborn.
+                </p>
               </div>
 
               <div>
-                <h3 className="text-[19px] font-bold text-white mb-6">Article I: RANGATIRATANGA KĀWAI (Purpose)</h3>
+                <h3 className="text-[19px] font-bold text-white mb-6">
+                  Article I: RANGATIRATANGA KĀWAI (Purpose)
+                </h3>
+
                 <p className="mb-4 text-center">
                   What is seen is not always true, and what is true is often hidden in plain sight. The Car Park Society (TCPS) is not a society of the obvious. Our purpose lies in the unclaimed, the unseen, and the unspoken:
                 </p>
@@ -322,7 +483,10 @@ export default function About() {
               </div>
               
               <div>
-                <h3 className="text-[19px] font-bold text-white mb-6">Article II: TE MANA WHAKAARO (Principles)</h3>
+                <h3 className="text-[19px] font-bold text-white mb-6">
+                  Article II: TE MANA WHAKAARO (Principles)
+                </h3>
+
                 <p className="mb-4 text-center">
                   There are rules, and then there are truths that cannot be broken. The Te Mana Whakatete Accord exists to honour these truths:
                 </p>
@@ -351,7 +515,10 @@ export default function About() {
               </div>
               
               <div>
-                <h3 className="text-[19px] font-bold text-white mb-6">Article III: TE KOTAHITANGA HUNA (The Unseen Movement)</h3>
+                <h3 className="text-[19px] font-bold text-white mb-6">
+                  Article III: TE KOTAHITANGA HUNA (The Unseen Movement)
+                </h3>
+
                 <p className="mb-4 text-center">
                   We are not bound to the traditional forms. We are fluid, disruptive, and invisible. Governance within TCPS operates outside the visible structures of the state, embracing the disruptive power of community-led, anarchistic practice.
                 </p>
@@ -372,7 +539,10 @@ export default function About() {
               </div>
               
               <div>
-                <h3 className="text-[19px] font-bold text-white mb-6">Article IV: TE TAUMANU (The Reclamation)</h3>
+                <h3 className="text-[19px] font-bold text-white mb-6">
+                  Article IV: TE TAUMANU (The Reclamation)
+                </h3>
+
                 <p className="mb-4 text-center">
                   To reclaim The Car Park is to reclaim more than space. It is to reclaim what has been erased and forgotten; the invisible histories, the quiet resistances, the unwritten codes of power.
                 </p>
@@ -393,7 +563,10 @@ export default function About() {
               </div>
               
               <div>
-                <h3 className="text-[19px] font-bold text-white mb-6">Article V: TE MANAAKITANGA RERENGA (The Invisible Hand)</h3>
+                <h3 className="text-[19px] font-bold text-white mb-6">
+                  Article V: TE MANAAKITANGA RERENGA (The Invisible Hand)
+                </h3>
+
                 <p className="mb-4 text-center">
                   Though we operate in the shadows, we are not lawless. We are bound by the principles of the invisible hand, an ethical framework rooted in community care, respect, and indigenous justice.
                 </p>
@@ -412,6 +585,7 @@ export default function About() {
                   </p>
                 </div>
               </div>
+
             </div>
             
             {/* Curved Design Image at End */}
@@ -420,49 +594,96 @@ export default function About() {
                 src={curvedDesign} 
                 alt="TCPS Design Element" 
                 className="w-full max-w-32 h-auto object-contain image-rendering-crisp-edges"
-                style={{imageRendering: 'crisp-edges'}}
+                style={{ imageRendering: 'crisp-edges' }}
               />
             </div>
+
           </div>
         </section>
+
       </main>
+
       {/* Footer */}
       <footer className="py-16 px-6 border-t border-gray-800">
         <div className="max-w-7xl mx-auto">
+
           <div className="grid md:grid-cols-3 gap-8 items-start">
+
             <div className="text-center">
               <div className="flex gap-2 mb-4 justify-center">
-                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                <a 
+                  href="https://www.tiktok.com/@thecarparksociety" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
                   <SiTiktok className="w-4 h-4" />
                 </a>
-                <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                <a 
+                  href="https://www.instagram.com/thecarparksociety/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
                   <FaInstagram className="w-4 h-4" />
                 </a>
-                <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                <a 
+                  href="https://www.facebook.com/thecarparksociety" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
                   <FaFacebook className="w-4 h-4" />
                 </a>
-                <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                <a 
+                  href="https://www.youtube.com/@TheCarParkSociety" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
                   <FaYoutube className="w-4 h-4" />
                 </a>
+
               </div>
-              <a href="mailto:the.carpark2025@gmail.com" className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]" data-testid="link-email-contact">the.carpark2025@gmail.com</a>
-              <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
-              <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
-              <p className="text-gray-400 text-[12px]">© 2026 by The Car Park Society Inc.</p>
+
+              <a 
+                href="mailto:the.carpark2025@gmail.com" 
+                className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]" 
+                data-testid="link-email-contact"
+              >
+                the.carpark2025@gmail.com
+              </a>
+
+              <p className="text-gray-400 mb-2 text-[13px]">
+                Te Whanganui-a-Tara
+              </p>
+
+              <p className="text-gray-400 mb-2 font-bold text-[13px]">
+                AOTEAROA
+              </p>
+
+              <p className="text-gray-400 text-[12px]">
+                © 2026 by The Car Park Society Inc.
+              </p>
             </div>
             
             <div className="text-center">
-  <p className="text-gray-500 text-sm italic mb-4">
-    We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
-    Te Āti Awa, and Ngāti Toa Rangatira —
-    mana whenua of Te Whanganui-a-Tara.
-    We honour their whakapapa, histories,
-    and enduring connection to this whenua.
-  </p>
-  <p className="text-gray-600 text-xs font-extralight">
-    Acknowledgement of Mana Whenua
-  </p>
-</div>
+              <p className="text-gray-500 text-sm italic mb-4">
+                We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
+                Te Āti Awa, and Ngāti Toa Rangatira —
+                mana whenua of Te Whanganui-a-Tara.
+                We honour their whakapapa, histories,
+                and enduring connection to this whenua.
+              </p>
+
+              <p className="text-gray-600 text-xs font-extralight">
+                Acknowledgement of Mana Whenua
+              </p>
+            </div>
             
             <div className="flex justify-end">
               <div className="space-y-2">
@@ -473,9 +694,11 @@ export default function About() {
                 />
               </div>
             </div>
+
           </div>
         </div>
       </footer>
+
     </div>
   );
 }
