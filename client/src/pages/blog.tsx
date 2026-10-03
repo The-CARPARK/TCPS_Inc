@@ -6,12 +6,13 @@ import { Button } from "@/components/ui/button";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import urbanMaoriImage from "@assets/Screenshot 2026-09-30 175445.png";
+import constitutionImage from "../../Screenshot_20261004_084248_My Files.jpg";
 import tcpsLogoSmall from "@assets/TCPS_Colour_Small_1758549907788.png";
 import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
 
 export default function Blog() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [bannerText, setBannerText] = useState('');
+  const [bannerText, setBannerText] = useState("");
   const [textIndex, setTextIndex] = useState(0);
 
   const bannerMessages = [
@@ -33,27 +34,30 @@ export default function Blog() {
 
   useEffect(() => {
     document.title = "Blog - The Car Park Society";
-    
-    const metaDescription = document.querySelector('meta[name="description"]');
+
+    const metaDescription = document.querySelector(
+      'meta[name="description"]'
+    );
+
     if (metaDescription) {
       metaDescription.setAttribute(
-        'content',
-        'Read stories from The Car Park Society about urban Māori experiences, decolonisation, and reclaiming urban spaces.'
+        "content",
+        "Read stories from The Car Park Society about urban Māori experiences, decolonisation, and reclaiming urban spaces."
       );
     } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = 'Read stories from The Car Park Society about urban Māori experiences, decolonisation, and reclaiming urban spaces.';
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content =
+        "Read stories from The Car Park Society about urban Māori experiences, decolonisation, and reclaiming urban spaces.";
       document.head.appendChild(meta);
     }
 
-    // Banner text cycling
     const cycleText = () => {
       setTextIndex((prev) => (prev + 1) % bannerMessages.length);
     };
 
     setBannerText(bannerMessages[0]);
-    
+
     const textInterval = setInterval(cycleText, 8000);
 
     return () => {
@@ -67,16 +71,20 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen bg-black text-white">
+
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-red-950/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
+
           {/* TCPS Button Above Navigation with Full-Width Banner */}
           <div className="relative mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast overflow-hidden">
+
             {/* Full-Width Scrolling Banner Background */}
             <div className="absolute inset-0 bg-white border-y border-red-900/50 glitch-image">
               <div className="h-full overflow-hidden relative flex items-center">
+
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/5 to-transparent animate-pulse"></div>
-                
+
                 {/* Scrolling Text */}
                 <div className="w-full overflow-hidden">
                   <div
@@ -86,11 +94,13 @@ export default function Blog() {
                     {bannerText}&nbsp;&nbsp;&nbsp;&nbsp;
                   </div>
                 </div>
+
               </div>
             </div>
-            
+
             {/* Foreground Elements */}
             <div className="absolute inset-0 flex justify-between items-center px-4 z-10">
+
               <Link href="/">
                 <img
                   src={tcpsLogo}
@@ -98,8 +108,9 @@ export default function Blog() {
                   className="h-4 sm:h-5 glitch-icon bg-white/90 rounded px-1"
                 />
               </Link>
-              
+
               <div className="flex gap-1 bg-white px-1 py-0.5 rounded">
+
                 <a
                   href="https://www.tiktok.com/@thecarparksociety"
                   target="_blank"
@@ -108,6 +119,7 @@ export default function Blog() {
                 >
                   <SiTiktok className="w-2 h-2" />
                 </a>
+
                 <a
                   href="https://www.instagram.com/thecarparksociety/"
                   target="_blank"
@@ -116,6 +128,7 @@ export default function Blog() {
                 >
                   <FaInstagram className="w-2 h-2" />
                 </a>
+
                 <a
                   href="https://www.facebook.com/thecarparksociety"
                   target="_blank"
@@ -124,6 +137,7 @@ export default function Blog() {
                 >
                   <FaFacebook className="w-2 h-2" />
                 </a>
+
                 <a
                   href="https://www.youtube.com/@TheCarParkSociety"
                   target="_blank"
@@ -132,17 +146,20 @@ export default function Blog() {
                 >
                   <FaYoutube className="w-2 h-2" />
                 </a>
+
               </div>
             </div>
           </div>
-          
+
           {/* Navigation */}
           <div className="flex justify-center">
+
             <nav
               className="flex justify-center gap-2 sm:gap-4 md:gap-6"
               role="navigation"
               aria-label="Primary"
             >
+
               <Link
                 href="/"
                 className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
@@ -190,6 +207,7 @@ export default function Blog() {
               >
                 Support
               </Link>
+
             </nav>
           </div>
         </div>
@@ -198,8 +216,11 @@ export default function Blog() {
       {/* Overlay Menu */}
       {menuOpen && (
         <div className="overlay-menu">
+
           <div className="menu-content">
+
             <div className="absolute top-6 right-6">
+
               <Button
                 variant="ghost"
                 size="sm"
@@ -209,25 +230,34 @@ export default function Blog() {
               >
                 Close [ - ]
               </Button>
+
             </div>
-            
+
             <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
+
               <div className="flex flex-col items-center">
+
                 <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8 wavy-bg-white-pulse">
+
                   <div className="text-center text-black">
+
                     <div className="relative w-48 h-32">
-                      <img 
-                        src={logoImage} 
-                        alt="The Car Park Society Logo" 
+
+                      <img
+                        src={logoImage}
+                        alt="The Car Park Society Logo"
                         className="w-full h-full object-contain glitch-amplify"
                       />
+
                     </div>
                   </div>
                 </div>
               </div>
-              
+
               <div className="text-center">
+
                 <nav className="flex flex-col gap-6 mb-8">
+
                   <Link
                     href="/"
                     className="text-2xl font-medium hover:text-red-500 transition-colors"
@@ -275,9 +305,11 @@ export default function Blog() {
                   >
                     Support
                   </Link>
+
                 </nav>
-                
+
                 <div className="flex gap-4 justify-center">
+
                   <a
                     href="https://www.tiktok.com/@thecarparksociety"
                     target="_blank"
@@ -313,6 +345,7 @@ export default function Blog() {
                   >
                     <FaYoutube className="w-5 h-5" />
                   </a>
+
                 </div>
               </div>
             </div>
@@ -321,67 +354,164 @@ export default function Blog() {
       )}
 
       <main className="pt-20 pb-16">
+
         {/* Blog Header */}
         <div className="px-6 py-12">
+
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-8">Transmissions</h1>
+
+            <h1 className="text-4xl font-bold mb-8">
+              Transmissions
+            </h1>
+
           </div>
         </div>
 
         {/* Blog Posts */}
         <section className="px-6">
+
           <div className="max-w-4xl mx-auto">
-            {/* Featured Blog Post */}
+
+            {/* Annual Report */}
             <Link href="/post/annual-report-fy2526">
+
               <article className="bg-red-900/20 border border-red-800 rounded-lg overflow-hidden hover:bg-red-900/30 transition-colors cursor-pointer group">
+
                 <div className="grid md:grid-cols-2 gap-0">
 
                   <div className="w-full h-64 bg-gray-800 flex items-center justify-center wavy-bg-fast">
-                    <img 
+
+                    <img
                       src={urbanMaoriImage}
                       alt="The Car Park Society Annual Report"
                       className="w-full h-full object-cover glitch-create"
                     />
+
                   </div>
-                  
+
                   <div className="p-8">
+
                     <h2 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors">
                       The Car Park Society Annual Report 2025–26
                     </h2>
-                    
+
                     <p className="text-gray-300 mb-6 leading-relaxed">
-                      Our annual report for 2025–26 — documenting the work, activations,
-                      partnerships and kaupapa of The Car Park Society over the past year.
+                      Our annual report for 2025–26 — documenting the work,
+                      activations, partnerships and kaupapa of The Car Park
+                      Society over the past year.
                     </p>
-                    
+
                     <div className="flex items-center gap-4 text-sm text-gray-400">
+
                       <div className="flex items-center gap-2">
-                        <img 
-                          src={tcpsLogo} 
-                          alt="TCPS Logo" 
+
+                        <img
+                          src={tcpsLogo}
+                          alt="TCPS Logo"
                           className="w-8 h-8 object-contain glitch-build"
                         />
-                        <span>The Car Park Society</span>
+
+                        <span>
+                          The Car Park Society
+                        </span>
+
                       </div>
 
-                      <span>30.09.2026</span>
-                      <span>Annual Report</span>
+                      <span>
+                        30.09.2026
+                      </span>
+
+                      <span>
+                        Annual Report
+                      </span>
+
                     </div>
                   </div>
 
                 </div>
               </article>
+
             </Link>
+
+
+            {/* Space between transmissions */}
+            <div className="h-8" />
+
+
+            {/* Constitution */}
+            <Link href="/post/constitution-recoded">
+
+              <article className="bg-red-900/20 border border-red-800 rounded-lg overflow-hidden hover:bg-red-900/30 transition-colors cursor-pointer group">
+
+                <div className="grid md:grid-cols-2 gap-0">
+
+                  <div className="w-full h-64 bg-gray-800 flex items-center justify-center wavy-bg-fast">
+
+                    <img
+                      src={constitutionImage}
+                      alt="The Car Park Society amended Constitution"
+                      className="w-full h-full object-cover glitch-create"
+                    />
+
+                  </div>
+
+                  <div className="p-8">
+
+                    <h2 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors">
+                      THE CONSTITUTION: RECODED
+                    </h2>
+
+                    <p className="text-gray-300 mb-6 leading-relaxed">
+                      The amended Constitution of The Car Park Society Inc. —
+                      updating the framework through which the Society is
+                      governed and operates.
+                    </p>
+
+                    <div className="flex items-center gap-4 text-sm text-gray-400">
+
+                      <div className="flex items-center gap-2">
+
+                        <img
+                          src={tcpsLogo}
+                          alt="TCPS Logo"
+                          className="w-8 h-8 object-contain glitch-build"
+                        />
+
+                        <span>
+                          The Car Park Society
+                        </span>
+
+                      </div>
+
+                      <span>
+                        18.09.2025
+                      </span>
+
+                      <span>
+                        Constitution
+                      </span>
+
+                    </div>
+                  </div>
+
+                </div>
+              </article>
+
+            </Link>
+
           </div>
         </section>
+
       </main>
 
-                  <footer className="py-16 px-6 border-t border-gray-800">
+      {/* Footer */}
+      <footer className="py-16 px-6 border-t border-gray-800">
 
         <div className="max-w-7xl mx-auto">
 
           {/* Member Login */}
           <div className="flex justify-center md:justify-end mb-10">
+
             <a
               href="https://auth.tcps.app/login?next=%2Foauth%2Fauthorize%3Fclient_id%3Dclient_cf59aa5f3196%26redirect_uri%3Dhttps%253A%252F%252Fdev.tcps.app%252Fauth%252Fcallback%26response_type%3Dcode%26state%3D5031576d5a3a70e571c0c53c5a331dda"
               target="_blank"
@@ -390,6 +520,7 @@ export default function Blog() {
             >
               WATCHER PORTAL →
             </a>
+
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 items-start">
@@ -471,21 +602,28 @@ export default function Blog() {
 
             </div>
 
+            {/* Flags */}
             <div className="text-center">
+
               <div className="space-y-2">
-                <img 
-                  src={flagsImage} 
-                  alt="Flags" 
+
+                <img
+                  src={flagsImage}
+                  alt="Flags"
                   className="h-16 object-contain mx-auto glitch-build"
                 />
+
               </div>
+
             </div>
 
             <div className="flex justify-center">
             </div>
+
           </div>
         </div>
       </footer>
+
     </div>
   );
 }
