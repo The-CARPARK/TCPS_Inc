@@ -36,7 +36,10 @@ export default function Blog() {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Read stories from The Car Park Society about urban Māori experiences, decolonisation, and reclaiming urban spaces.');
+      metaDescription.setAttribute(
+        'content',
+        'Read stories from The Car Park Society about urban Māori experiences, decolonisation, and reclaiming urban spaces.'
+      );
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
@@ -76,7 +79,10 @@ export default function Blog() {
                 
                 {/* Scrolling Text */}
                 <div className="w-full overflow-hidden">
-                  <div className="whitespace-nowrap text-[10px] sm:text-[12px] md:text-[14px] text-black font-mono py-2 px-4 animate-scroll vhs-overlay glitch-text tracking-wider" data-text={bannerText}>
+                  <div
+                    className="whitespace-nowrap text-[10px] sm:text-[12px] md:text-[14px] text-black font-mono py-2 px-4 animate-scroll vhs-overlay glitch-text tracking-wider"
+                    data-text={bannerText}
+                  >
                     {bannerText}&nbsp;&nbsp;&nbsp;&nbsp;
                   </div>
                 </div>
@@ -86,43 +92,102 @@ export default function Blog() {
             {/* Foreground Elements */}
             <div className="absolute inset-0 flex justify-between items-center px-4 z-10">
               <Link href="/">
-                <img src={tcpsLogo} alt="TCPS" className="h-4 sm:h-5 glitch-icon bg-white/90 rounded px-1" />
+                <img
+                  src={tcpsLogo}
+                  alt="TCPS"
+                  className="h-4 sm:h-5 glitch-icon bg-white/90 rounded px-1"
+                />
               </Link>
               
               <div className="flex gap-1 bg-white px-1 py-0.5 rounded">
-                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                <a
+                  href="https://www.tiktok.com/@thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
                   <SiTiktok className="w-2 h-2" />
                 </a>
-                <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                <a
+                  href="https://www.instagram.com/thecarparksociety/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
                   <FaInstagram className="w-2 h-2" />
                 </a>
-                <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                <a
+                  href="https://www.facebook.com/thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
                   <FaFacebook className="w-2 h-2" />
                 </a>
-                <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+                <a
+                  href="https://www.youtube.com/@TheCarParkSociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
                   <FaYoutube className="w-2 h-2" />
                 </a>
               </div>
             </div>
           </div>
           
-          {/* Navigation and Social Icons Row */}
+          {/* Navigation */}
           <div className="flex justify-center">
-            {/* Center Navigation */}
-            <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
-              <Link href="/" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-home">
+            <nav
+              className="flex justify-center gap-2 sm:gap-4 md:gap-6"
+              role="navigation"
+              aria-label="Primary"
+            >
+              <Link
+                href="/"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-home"
+              >
                 Home
               </Link>
-              <Link href="/about-1" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-about">
+
+              <Link
+                href="/about-1"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-about"
+              >
                 Origins
               </Link>
-              <Link href="/event-list" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-events">
+
+              <Link
+                href="/event-list"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-events"
+              >
                 Activations
               </Link>
-              <Link href="/blog" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-blog">
+
+              <Link
+                href="/blog"
+                className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap"
+                data-testid="nav-blog"
+              >
                 Transmissions
               </Link>
-              <Link href="/donate" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-donate">
+
+              <Link
+                href="/watcher-portal"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-watcher-portal"
+              >
+                Watcher Portal
+              </Link>
+
+              <Link
+                href="/donate"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-donate"
+              >
                 Support
               </Link>
             </nav>
@@ -163,34 +228,89 @@ export default function Blog() {
               
               <div className="text-center">
                 <nav className="flex flex-col gap-6 mb-8">
-                  <Link href="/" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-home">
+                  <Link
+                    href="/"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-home"
+                  >
                     Home
                   </Link>
-                  <Link href="/about-1" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-about">
+
+                  <Link
+                    href="/about-1"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-about"
+                  >
                     Origins
                   </Link>
-                  <Link href="/event-list" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-events">
+
+                  <Link
+                    href="/event-list"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-events"
+                  >
                     Activations
                   </Link>
-                  <Link href="/blog" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-blog">
+
+                  <Link
+                    href="/blog"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-blog"
+                  >
                     Transmissions
                   </Link>
-                  <Link href="/donate" className="text-2xl font-medium hover:text-red-500 transition-colors" data-testid="nav-donate">
+
+                  <Link
+                    href="/watcher-portal"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-watcher-portal"
+                  >
+                    Watcher Portal
+                  </Link>
+
+                  <Link
+                    href="/donate"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-donate"
+                  >
                     Support
                   </Link>
                 </nav>
                 
                 <div className="flex gap-4 justify-center">
-                  <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                  <a
+                    href="https://www.tiktok.com/@thecarparksociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
                     <SiTiktok className="w-5 h-5" />
                   </a>
-                  <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                  <a
+                    href="https://www.instagram.com/thecarparksociety/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
                     <FaInstagram className="w-5 h-5" />
                   </a>
-                  <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                  <a
+                    href="https://www.facebook.com/thecarparksociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
                     <FaFacebook className="w-5 h-5" />
                   </a>
-                  <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                  <a
+                    href="https://www.youtube.com/@TheCarParkSociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
                     <FaYoutube className="w-5 h-5" />
                   </a>
                 </div>
@@ -213,45 +333,45 @@ export default function Blog() {
           <div className="max-w-4xl mx-auto">
             {/* Featured Blog Post */}
             <Link href="/post/annual-report-fy2526">
-  <article className="bg-red-900/20 border border-red-800 rounded-lg overflow-hidden hover:bg-red-900/30 transition-colors cursor-pointer group">
-    <div className="grid md:grid-cols-2 gap-0">
+              <article className="bg-red-900/20 border border-red-800 rounded-lg overflow-hidden hover:bg-red-900/30 transition-colors cursor-pointer group">
+                <div className="grid md:grid-cols-2 gap-0">
 
-      <div className="w-full h-64 bg-gray-800 flex items-center justify-center wavy-bg-fast">
-        <img 
-          src={urbanMaoriImage}
-          alt="The Car Park Society Annual Report"
-          className="w-full h-full object-cover glitch-create"
-        />
-      </div>
-      
-      <div className="p-8">
-        <h2 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors">
-          The Car Park Society Annual Report 2025–26
-        </h2>
-        
-        <p className="text-gray-300 mb-6 leading-relaxed">
-          Our annual report for 2025–26 — documenting the work, activations,
-          partnerships and kaupapa of The Car Park Society over the past year.
-        </p>
-        
-        <div className="flex items-center gap-4 text-sm text-gray-400">
-          <div className="flex items-center gap-2">
-            <img 
-              src={tcpsLogo} 
-              alt="TCPS Logo" 
-              className="w-8 h-8 object-contain glitch-build"
-            />
-            <span>The Car Park Society</span>
-          </div>
+                  <div className="w-full h-64 bg-gray-800 flex items-center justify-center wavy-bg-fast">
+                    <img 
+                      src={urbanMaoriImage}
+                      alt="The Car Park Society Annual Report"
+                      className="w-full h-full object-cover glitch-create"
+                    />
+                  </div>
+                  
+                  <div className="p-8">
+                    <h2 className="text-2xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors">
+                      The Car Park Society Annual Report 2025–26
+                    </h2>
+                    
+                    <p className="text-gray-300 mb-6 leading-relaxed">
+                      Our annual report for 2025–26 — documenting the work, activations,
+                      partnerships and kaupapa of The Car Park Society over the past year.
+                    </p>
+                    
+                    <div className="flex items-center gap-4 text-sm text-gray-400">
+                      <div className="flex items-center gap-2">
+                        <img 
+                          src={tcpsLogo} 
+                          alt="TCPS Logo" 
+                          className="w-8 h-8 object-contain glitch-build"
+                        />
+                        <span>The Car Park Society</span>
+                      </div>
 
-          <span>30.09.2026</span>
-          <span>Annual Report</span>
-        </div>
-      </div>
+                      <span>30.09.2026</span>
+                      <span>Annual Report</span>
+                    </div>
+                  </div>
 
-    </div>
-  </article>
-</Link>
+                </div>
+              </article>
+            </Link>
           </div>
         </section>
       </main>
@@ -262,37 +382,77 @@ export default function Blog() {
           <div className="grid md:grid-cols-3 gap-8 items-start">
             <div className="text-center">
               <div className="flex gap-2 mb-4 justify-center">
-                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+                <a
+                  href="https://www.tiktok.com/@thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
                   <SiTiktok className="w-4 h-4" />
                 </a>
-                <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                <a
+                  href="https://www.instagram.com/thecarparksociety/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
                   <FaInstagram className="w-4 h-4" />
                 </a>
-                <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                <a
+                  href="https://www.facebook.com/thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
                   <FaFacebook className="w-4 h-4" />
                 </a>
-                <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                <a
+                  href="https://www.youtube.com/@TheCarParkSociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
                   <FaYoutube className="w-4 h-4" />
                 </a>
               </div>
-              <a href="mailto:the.carpark2025@gmail.com" className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]" data-testid="link-email-contact">the.carpark2025@gmail.com</a>
-              <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
-              <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
-              <p className="text-gray-400 text-[12px]">© 2026 by The Car Park Society Inc.</p>
+
+              <a
+                href="mailto:the.carpark2025@gmail.com"
+                className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]"
+                data-testid="link-email-contact"
+              >
+                the.carpark2025@gmail.com
+              </a>
+
+              <p className="text-gray-400 mb-2 text-[13px]">
+                Te Whanganui-a-Tara
+              </p>
+
+              <p className="text-gray-400 mb-2 font-bold text-[13px]">
+                AOTEAROA
+              </p>
+
+              <p className="text-gray-400 text-[12px]">
+                © 2026 by The Car Park Society Inc.
+              </p>
             </div>
             
             <div className="text-center">
-  <p className="text-gray-500 text-sm italic mb-4">
-    We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
-    Te Āti Awa, and Ngāti Toa Rangatira —
-    mana whenua of Te Whanganui-a-Tara.
-    We honour their whakapapa, histories,
-    and enduring connection to this whenua.
-  </p>
-  <p className="text-gray-600 text-xs font-extralight">
-    Acknowledgement of Mana Whenua
-  </p>
-</div>
+              <p className="text-gray-500 text-sm italic mb-4">
+                We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
+                Te Āti Awa, and Ngāti Toa Rangatira —
+                mana whenua of Te Whanganui-a-Tara.
+                We honour their whakapapa, histories,
+                and enduring connection to this whenua.
+              </p>
+
+              <p className="text-gray-600 text-xs font-extralight">
+                Acknowledgement of Mana Whenua
+              </p>
+            </div>
             
             <div className="flex justify-end">
               <div className="space-y-2">
