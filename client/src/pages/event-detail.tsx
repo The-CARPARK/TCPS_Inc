@@ -240,7 +240,7 @@ export default function EventDetail() {
                 className="text-[11px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
                 data-testid="nav-watcher-portal"
               >
-                Watcher Portal
+                Join
               </Link>
 
               <Link
