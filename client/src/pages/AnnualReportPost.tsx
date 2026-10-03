@@ -323,6 +323,7 @@ export default function AnnualReportPost() {
     </a>
   </p>
 </div>
+              </section>
 
         {/* Article Content */}
         <article className="px-6">
