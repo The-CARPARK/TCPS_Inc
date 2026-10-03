@@ -126,12 +126,17 @@ export default function ConstitutionPost() {
       try {
         const containerWidth =
           pdfContainerRef.current?.clientWidth || 900;
+
         const devicePixelRatio = Math.min(
           window.devicePixelRatio || 1,
           2
         );
 
-        for (let pageNumber = 1; pageNumber <= numPages; pageNumber++) {
+        for (
+          let pageNumber = 1;
+          pageNumber <= numPages;
+          pageNumber++
+        ) {
           if (cancelled) return;
 
           const page = await pdfDocument.getPage(pageNumber);
@@ -156,7 +161,9 @@ export default function ConstitutionPost() {
           canvas.height = viewport.height;
 
           canvas.style.width = `${containerWidth}px`;
-          canvas.style.height = `${viewport.height / devicePixelRatio}px`;
+          canvas.style.height = `${
+            viewport.height / devicePixelRatio
+          }px`;
 
           await page.render({
             canvasContext: context,
@@ -164,7 +171,10 @@ export default function ConstitutionPost() {
           }).promise;
         }
       } catch (error) {
-        console.error("TCPS Constitution render error:", error);
+        console.error(
+          "TCPS Constitution render error:",
+          error
+        );
 
         if (!cancelled) setPdfError(true);
       }
@@ -194,37 +204,45 @@ export default function ConstitutionPost() {
           2
         );
 
-        for (let pageNumber = 1; pageNumber <= numPages; pageNumber++) {
-          pdfDocument.getPage(pageNumber).then(async (page: any) => {
-            const baseViewport = page.getViewport({ scale: 1 });
+        for (
+          let pageNumber = 1;
+          pageNumber <= numPages;
+          pageNumber++
+        ) {
+          pdfDocument
+            .getPage(pageNumber)
+            .then(async (page: any) => {
+              const baseViewport =
+                page.getViewport({ scale: 1 });
 
-            const scale =
-              (containerWidth / baseViewport.width) *
-              devicePixelRatio;
+              const scale =
+                (containerWidth / baseViewport.width) *
+                devicePixelRatio;
 
-            const viewport = page.getViewport({ scale });
+              const viewport = page.getViewport({ scale });
 
-            const canvas = canvasRefs.current[pageNumber - 1];
+              const canvas =
+                canvasRefs.current[pageNumber - 1];
 
-            if (!canvas) return;
+              if (!canvas) return;
 
-            const context = canvas.getContext("2d");
+              const context = canvas.getContext("2d");
 
-            if (!context) return;
+              if (!context) return;
 
-            canvas.width = viewport.width;
-            canvas.height = viewport.height;
+              canvas.width = viewport.width;
+              canvas.height = viewport.height;
 
-            canvas.style.width = `${containerWidth}px`;
-            canvas.style.height = `${
-              viewport.height / devicePixelRatio
-            }px`;
+              canvas.style.width = `${containerWidth}px`;
+              canvas.style.height = `${
+                viewport.height / devicePixelRatio
+              }px`;
 
-            await page.render({
-              canvasContext: context,
-              viewport,
-            }).promise;
-          });
+              await page.render({
+                canvasContext: context,
+                viewport,
+              }).promise;
+            });
         }
       }, 250);
     };
@@ -241,6 +259,8 @@ export default function ConstitutionPost() {
     <div className="min-h-screen bg-black text-white">
       <header className="fixed top-0 left-0 right-0 z-40 bg-red-950/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
+
+          {/* Top Logo + Socials */}
           <div className="flex justify-between items-center mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast">
             <Link href="/">
               <img
@@ -251,34 +271,104 @@ export default function ConstitutionPost() {
             </Link>
 
             <div className="flex gap-2">
-              <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+              <a
+                href="https://www.tiktok.com/@thecarparksociety"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+              >
                 <SiTiktok className="w-3 h-3" />
               </a>
-              <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+
+              <a
+                href="https://www.instagram.com/thecarparksociety/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+              >
                 <FaInstagram className="w-3 h-3" />
               </a>
-              <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+
+              <a
+                href="https://www.facebook.com/thecarparksociety"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+              >
                 <FaFacebook className="w-3 h-3" />
               </a>
-              <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon">
+
+              <a
+                href="https://www.youtube.com/@TheCarParkSociety"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-6 h-6 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+              >
                 <FaYoutube className="w-3 h-3" />
               </a>
             </div>
           </div>
 
-          <div className="flex justify-center">
-            <nav className="flex justify-center gap-2 sm:gap-4 md:gap-6" role="navigation" aria-label="Primary">
-              <Link href="/" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-home">Home</Link>
-              <Link href="/about-1" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-about">Origins</Link>
-              <Link href="/event-list" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-events">Activations</Link>
-              <Link href="/blog" className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap" data-testid="nav-blog">Transmissions</Link>
-              <Link href="/watcher-portal" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-watcher-portal">Join</Link>
-              <Link href="/donate" className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap" data-testid="nav-donate">Support</Link>
+          {/* Navigation */}
+          <div className="flex justify-center w-full">
+            <nav
+              className="flex w-full items-center justify-center"
+              role="navigation"
+              aria-label="Primary"
+            >
+              <Link
+                href="/"
+                className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+                data-testid="nav-home"
+              >
+                Home
+              </Link>
+
+              <Link
+                href="/about-1"
+                className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+                data-testid="nav-about"
+              >
+                Origins
+              </Link>
+
+              <Link
+                href="/event-list"
+                className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+                data-testid="nav-events"
+              >
+                Activations
+              </Link>
+
+              <Link
+                href="/blog"
+                className="text-[10px] sm:text-sm font-medium text-white border-b border-red-500 border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+                data-testid="nav-blog"
+              >
+                Transmissions
+              </Link>
+
+              <Link
+                href="/donate"
+                className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+                data-testid="nav-donate"
+              >
+                Support
+              </Link>
+
+              <Link
+                href="/watcher-portal"
+                className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+                data-testid="nav-watcher-portal"
+              >
+                Join 👁
+              </Link>
             </nav>
           </div>
         </div>
       </header>
 
+      {/* Overlay Menu */}
       {menuOpen && (
         <div className="overlay-menu">
           <div className="menu-content">
@@ -311,19 +401,85 @@ export default function ConstitutionPost() {
 
               <div className="text-center">
                 <nav className="flex flex-col gap-6 mb-8">
-                  <Link href="/" className="text-2xl font-medium hover:text-red-500 transition-colors">Home</Link>
-                  <Link href="/about-1" className="text-2xl font-medium hover:text-red-500 transition-colors">Origins</Link>
-                  <Link href="/event-list" className="text-2xl font-medium hover:text-red-500 transition-colors">Activations</Link>
-                  <Link href="/blog" className="text-2xl font-medium hover:text-red-500 transition-colors">Transmissions</Link>
-                  <Link href="/watcher-portal" className="text-2xl font-medium hover:text-red-500 transition-colors">Watcher Portal</Link>
-                  <Link href="/donate" className="text-2xl font-medium hover:text-red-500 transition-colors">Support</Link>
+                  <Link
+                    href="/"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                  >
+                    Home
+                  </Link>
+
+                  <Link
+                    href="/about-1"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                  >
+                    Origins
+                  </Link>
+
+                  <Link
+                    href="/event-list"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                  >
+                    Activations
+                  </Link>
+
+                  <Link
+                    href="/blog"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                  >
+                    Transmissions
+                  </Link>
+
+                  <Link
+                    href="/watcher-portal"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                  >
+                    Watcher Portal
+                  </Link>
+
+                  <Link
+                    href="/donate"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                  >
+                    Support
+                  </Link>
                 </nav>
 
                 <div className="flex gap-4 justify-center">
-                  <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"><SiTiktok className="w-5 h-5" /></a>
-                  <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"><FaInstagram className="w-5 h-5" /></a>
-                  <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"><FaFacebook className="w-5 h-5" /></a>
-                  <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"><FaYoutube className="w-5 h-5" /></a>
+                  <a
+                    href="https://www.tiktok.com/@thecarparksociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
+                    <SiTiktok className="w-5 h-5" />
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/thecarparksociety/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
+                    <FaInstagram className="w-5 h-5" />
+                  </a>
+
+                  <a
+                    href="https://www.facebook.com/thecarparksociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
+                    <FaFacebook className="w-5 h-5" />
+                  </a>
+
+                  <a
+                    href="https://www.youtube.com/@TheCarParkSociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                  >
+                    <FaYoutube className="w-5 h-5" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -334,8 +490,12 @@ export default function ConstitutionPost() {
       <main className="pt-20 pb-16">
         <section className="px-6 py-12">
           <div className="max-w-4xl mx-auto">
+
             <div className="mb-8">
-              <Link href="/blog" className="hover:text-red-300 transition-colors text-[#e3071b]">
+              <Link
+                href="/blog"
+                className="hover:text-red-300 transition-colors text-[#e3071b]"
+              >
                 ← Back to Transmissions
               </Link>
             </div>
@@ -359,6 +519,7 @@ export default function ConstitutionPost() {
                   alt="TCPS Logo"
                   className="w-8 h-8 object-contain self-end glitch-create"
                 />
+
                 <span>The Car Park Society</span>
               </div>
 
@@ -412,6 +573,7 @@ export default function ConstitutionPost() {
                 </p>
               </div>
 
+              {/* Constitution PDF */}
               <div
                 ref={pdfContainerRef}
                 className="w-full rounded-lg border border-gray-700 bg-[#111113] p-2 sm:p-4 overflow-hidden"
@@ -419,9 +581,11 @@ export default function ConstitutionPost() {
                 {pdfLoading && !pdfError && (
                   <div className="flex flex-col items-center justify-center py-20 text-center">
                     <div className="w-10 h-10 border-2 border-gray-600 border-t-red-500 rounded-full animate-spin mb-5" />
+
                     <p className="text-gray-300 font-medium">
                       Loading Constitution…
                     </p>
+
                     <p className="text-gray-500 text-sm mt-2">
                       Amended and adopted 18 September 2025
                     </p>
@@ -451,19 +615,21 @@ export default function ConstitutionPost() {
 
                 {!pdfLoading &&
                   !pdfError &&
-                  Array.from({ length: numPages }).map((_, index) => (
-                    <div
-                      key={`page_${index + 1}`}
-                      className="w-full flex justify-center mb-4 last:mb-0"
-                    >
-                      <canvas
-                        ref={(canvas) => {
-                          canvasRefs.current[index] = canvas;
-                        }}
-                        className="block w-full h-auto bg-white shadow-lg"
-                      />
-                    </div>
-                  ))}
+                  Array.from({ length: numPages }).map(
+                    (_, index) => (
+                      <div
+                        key={`page_${index + 1}`}
+                        className="w-full flex justify-center mb-4 last:mb-0"
+                      >
+                        <canvas
+                          ref={(canvas) => {
+                            canvasRefs.current[index] = canvas;
+                          }}
+                          className="block w-full h-auto bg-white shadow-lg"
+                        />
+                      </div>
+                    )
+                  )}
               </div>
 
               <p className="text-center text-sm text-gray-400 mt-4">
@@ -477,6 +643,7 @@ export default function ConstitutionPost() {
 
       <footer className="py-16 px-6 border-t border-gray-800">
         <div className="max-w-7xl mx-auto">
+
           <div className="flex justify-center md:justify-end mb-10">
             <a
               href="https://auth.tcps.app/login?next=%2Foauth%2Fauthorize%3Fclient_id%3Dclient_cf59aa5f3196%26redirect_uri%3Dhttps%253A%252F%252Fdev.tcps.app%252Fauth%252Fcallback%26response_type%3Dcode%26state%3D5031576d5a3a70e571c0c53c5a331dda"
@@ -489,12 +656,44 @@ export default function ConstitutionPost() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 items-start">
+
             <div className="text-center">
               <div className="flex gap-2 mb-4 justify-center">
-                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"><SiTiktok className="w-4 h-4" /></a>
-                <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"><FaInstagram className="w-4 h-4" /></a>
-                <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"><FaFacebook className="w-4 h-4" /></a>
-                <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"><FaYoutube className="w-4 h-4" /></a>
+                <a
+                  href="https://www.tiktok.com/@thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
+                  <SiTiktok className="w-4 h-4" />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/thecarparksociety/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
+                  <FaInstagram className="w-4 h-4" />
+                </a>
+
+                <a
+                  href="https://www.facebook.com/thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
+                  <FaFacebook className="w-4 h-4" />
+                </a>
+
+                <a
+                  href="https://www.youtube.com/@TheCarParkSociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
+                  <FaYoutube className="w-4 h-4" />
+                </a>
               </div>
 
               <a
@@ -537,9 +736,10 @@ export default function ConstitutionPost() {
             </div>
 
             <div className="flex justify-center"></div>
+
           </div>
         </div>
       </footer>
     </div>
   );
-}
+      }
