@@ -147,60 +147,60 @@ export default function Membership() {
           </div>
 
           {/* Center Navigation */}
-<nav
-  className="flex w-full justify-center gap-1 px-1 sm:gap-2 sm:px-0 md:gap-4"
-  role="navigation"
-  aria-label="Primary"
->
-  <Link
-    href="/"
-    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-white border border-red-500 bg-red-900/20 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:bg-red-900/40 transition-colors"
-    data-testid="nav-home"
-  >
-    Home
-  </Link>
+          <nav
+            className="flex w-full items-center justify-center"
+            role="navigation"
+            aria-label="Primary"
+          >
+            <Link
+              href="/"
+              className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+              data-testid="nav-home"
+            >
+              Home
+            </Link>
 
-  <Link
-    href="/about-1"
-    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
-    data-testid="nav-about"
-  >
-    Origins
-  </Link>
+            <Link
+              href="/about-1"
+              className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+              data-testid="nav-about"
+            >
+              Origins
+            </Link>
 
-  <Link
-    href="/event-list"
-    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
-    data-testid="nav-events"
-  >
-    Activations
-  </Link>
+            <Link
+              href="/event-list"
+              className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+              data-testid="nav-events"
+            >
+              Activations
+            </Link>
 
-  <Link
-    href="/blog"
-    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
-    data-testid="nav-blog"
-  >
-    Transmissions
-  </Link>
+            <Link
+              href="/blog"
+              className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+              data-testid="nav-blog"
+            >
+              Transmissions
+            </Link>
 
-  <Link
-    href="/donate"
-    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
-    data-testid="nav-donate"
-  >
-    Support
-  </Link>
+            <Link
+              href="/donate"
+              className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+              data-testid="nav-donate"
+            >
+              Support
+            </Link>
 
-  <Link
-    href="/watcher-portal"
-    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
-    data-testid="nav-watcher-portal"
-  >
-    Join 👁
-  </Link>
-</nav>
-      
+            <Link
+              href="/watcher-portal"
+              className="text-[10px] sm:text-sm font-medium text-white border-b border-red-500 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+              data-testid="nav-watcher-portal"
+            >
+              Join 👁
+            </Link>
+          </nav>
+
         </div>
       </header>
 
@@ -332,7 +332,6 @@ export default function Membership() {
       {/* MAIN */}
       <main className="pt-20 pb-0">
 
-      
         {/* INTRO */}
         <section className="px-6 pt-8 pb-5">
           <div className="max-w-5xl mx-auto text-center">
@@ -387,7 +386,11 @@ export default function Membership() {
               </h2>
 
               <p className="text-gray-500 text-sm md:text-base mt-4 max-w-2xl mx-auto leading-relaxed">
-                The signal is out there. Tell us where you’re watching from, what’s caught your attention, and what you’re carrying into the network — skills, knowledge, resources, connections, or something we haven’t thought of yet. Tell us how you want to connect. The rest reveals itself 👁
+                The signal is out there. Tell us where you’re watching from,
+                what’s caught your attention, and what you’re carrying into
+                the network — skills, knowledge, resources, connections, or
+                something we haven’t thought of yet. Tell us how you want to
+                connect. The rest reveals itself 👁
               </p>
             </div>
 
@@ -467,7 +470,7 @@ export default function Membership() {
 
       </main>
 
-                  <footer className="py-16 px-6 border-t border-gray-800">
+      <footer className="py-16 px-6 border-t border-gray-800">
 
         <div className="max-w-7xl mx-auto">
 
@@ -564,9 +567,9 @@ export default function Membership() {
 
             <div className="text-center">
               <div className="space-y-2">
-                <img 
-                  src={flagsImage} 
-                  alt="Flags" 
+                <img
+                  src={flagsImage}
+                  alt="Flags"
                   className="h-16 object-contain mx-auto glitch-build"
                 />
               </div>
@@ -574,9 +577,11 @@ export default function Membership() {
 
             <div className="flex justify-center">
             </div>
+
           </div>
         </div>
       </footer>
+
     </div>
   );
 }
