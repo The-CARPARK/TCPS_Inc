@@ -591,7 +591,7 @@ export default function EventDetail() {
       {/* =========================================================
           FOOTER
       ========================================================= */}
-      <footer className="py-16 px-6 border-t border-gray-800">
+                  <footer className="py-16 px-6 border-t border-gray-800">
 
         <div className="max-w-7xl mx-auto">
 
@@ -684,31 +684,23 @@ export default function EventDetail() {
                 and enduring connection to this whenua.
               </p>
 
-              <p className="text-gray-600 text-xs font-extralight">
-                Acknowledgement of Mana Whenua
-              </p>
-
             </div>
 
-            {/* Flags */}
-            <div className="flex justify-center md:justify-end">
-
+            <div className="text-center">
               <div className="space-y-2">
-
-                <img
-                  src={flagsImage}
-                  alt="Flags"
-                  className="h-28 object-contain glitch-amplify"
+                <img 
+                  src={flagsImage} 
+                  alt="Flags" 
+                  className="h-16 object-contain mx-auto glitch-build"
                 />
-
               </div>
-
             </div>
 
+            <div className="flex justify-center">
+            </div>
           </div>
         </div>
       </footer>
-
     </div>
   );
 }
