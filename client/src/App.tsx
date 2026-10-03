@@ -12,6 +12,7 @@ import EventDetail from "@/pages/event-detail";
 import Blog from "@/pages/blog";
 import BlogPost from "@/pages/blog-post";
 import AnnualReportPost from "@/pages/AnnualReportPost";
+import ConstitutionPost from "@/pages/ConstitutionPost";
 import Support from "@/pages/support";
 import WatcherPortal from "@/pages/watcherportal";
 import AdminSignups from "@/pages/admin-signups";
@@ -49,6 +50,11 @@ function Router() {
       <Route
         path="/post/annual-report-fy2526"
         component={AnnualReportPost}
+      />
+
+      <Route
+        path="/post/constitution-recoded"
+        component={ConstitutionPost}
       />
 
       {/* Support */}
