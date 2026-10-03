@@ -330,61 +330,61 @@ export default function AnnualReportPost() {
           </div>
 
           {/* Navigation */}
-          <div className="flex justify-center">
-            <nav
-              className="flex justify-center gap-2 sm:gap-4 md:gap-6"
-              role="navigation"
-              aria-label="Primary"
-            >
-              <Link
-                href="/"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-                data-testid="nav-home"
-              >
-                Home
-              </Link>
+<div className="flex justify-center w-full">
+  <nav
+    className="flex w-full items-center justify-center"
+    role="navigation"
+    aria-label="Primary"
+  >
+    <Link
+      href="/"
+      className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+      data-testid="nav-home"
+    >
+      Home
+    </Link>
 
-              <Link
-                href="/about-1"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-                data-testid="nav-about"
-              >
-                Origins
-              </Link>
+    <Link
+      href="/about-1"
+      className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+      data-testid="nav-about"
+    >
+      Origins
+    </Link>
 
-              <Link
-                href="/event-list"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-                data-testid="nav-events"
-              >
-                Activations
-              </Link>
+    <Link
+      href="/event-list"
+      className="text-[10px] sm:text-sm font-medium text-white border-b border-red-500 border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+      data-testid="nav-events"
+    >
+      Activations
+    </Link>
 
-              <Link
-                href="/blog"
-                className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap"
-                data-testid="nav-blog"
-              >
-                Transmissions
-              </Link>
+    <Link
+      href="/blog"
+      className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+      data-testid="nav-blog"
+    >
+      Transmissions
+    </Link>
 
-              <Link
-                href="/watcher-portal"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-                data-testid="nav-watcher-portal"
-              >
-                Join
-              </Link>
+    <Link
+      href="/donate"
+      className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+      data-testid="nav-donate"
+    >
+      Support
+    </Link>
 
-              <Link
-                href="/donate"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-                data-testid="nav-donate"
-              >
-                Support
-              </Link>
-            </nav>
-          </div>
+    <Link
+      href="/watcher-portal"
+      className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+      data-testid="nav-watcher-portal"
+    >
+      Join 👁
+    </Link>
+  </nav>
+</div>
         </div>
       </header>
 
