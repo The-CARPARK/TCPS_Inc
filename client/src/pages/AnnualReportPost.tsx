@@ -7,6 +7,7 @@ import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import tcpsLogoSmall from "@assets/TCPS_Colour_Small_1758549468394.png";
 import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
+import annualReportPdf from "../../TCPS Annual Report FY25-26.pdf";
 
 export default function AnnualReportPost() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -324,7 +325,7 @@ export default function AnnualReportPost() {
               <div className="w-full overflow-hidden rounded-lg border border-gray-700 bg-black">
                 <iframe
                   src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(
-                    "https://tc1312lia.github.io/tcps2526/TCPS_AR.pdf"
+                    annualReportPdf
                   )}`}
                   className="w-full h-[85vh] min-h-[700px] border-0"
                   title="TCPS Annual Report FY2025/26"
@@ -334,7 +335,7 @@ export default function AnnualReportPost() {
               <p className="text-center text-sm text-gray-400 mt-4">
                 Can't view the document?{" "}
                 <a
-                  href="https://tc1312lia.github.io/tcps2526/TCPS_AR.pdf"
+                  href={annualReportPdf}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-red-400 hover:text-red-300 underline underline-offset-4"
