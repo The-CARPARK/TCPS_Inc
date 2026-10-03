@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { useEffect } from "react";
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
-import buildingImage from "@assets/Screenshot 2025-09-21 214642_1758536131507.png";
+import buildingImage from "@assets/Support.jpg";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import tcpsLogoDesign from "@assets/Screenshot 2025-09-21 214642_1758551336909.png";
 import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
