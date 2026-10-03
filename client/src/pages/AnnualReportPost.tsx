@@ -294,18 +294,35 @@ export default function AnnualReportPost() {
             </div>
 
             {/* Annual Report */}
-            <div className="bg-red-950/30 border border-red-800 rounded-lg p-4 sm:p-6 mb-4">
-              <p className="text-white font-semibold mb-2">
-                TCPS Annual Report FY2025/26 — Phase Zero: The Rupture
-              </p>
+            <div className="bg-red-950/30 border border-red-800 rounded-lg p-5 sm:p-8 mb-4">
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">
+                TCPS Annual Report FY2025/26
+              </h2>
 
-              <p className="text-gray-300 mb-6">
-                The first year is now on record.
-              </p>
+              <div className="space-y-4 text-gray-300 leading-relaxed mb-8">
+                <p>
+                  <strong className="text-white">
+                    Phase Zero: The Rupture
+                  </strong>{" "}
+                  is now on record.
+                </p>
+
+                <p>
+                  This report documents the first year of The Car Park Society
+                  Inc. — from incorporation and governance through to our first
+                  major public activation,{" "}
+                  <strong className="text-white">The Control Room</strong>.
+                </p>
+
+                <p>
+                  It records what we built, what we learned, and what comes
+                  next for TCPS.
+                </p>
+              </div>
 
               <div className="w-full overflow-hidden rounded-lg border border-gray-700 bg-black">
                 <iframe
-                  src="/TCPS%20Annual%20Report%20FY25-26.pdf"
+                  src="https://tc1312lia.github.io/tcps2526/TCPS_AR.pdf"
                   className="w-full h-[80vh] min-h-[600px] border-0"
                   title="TCPS Annual Report FY2025/26"
                 />
@@ -314,7 +331,7 @@ export default function AnnualReportPost() {
               <p className="text-center text-sm text-gray-400 mt-4">
                 Can't view the document?{" "}
                 <a
-                  href="/TCPS%20Annual%20Report%20FY25-26.pdf"
+                  href="https://tc1312lia.github.io/tcps2526/TCPS_AR.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-red-400 hover:text-red-300 underline underline-offset-4"
@@ -325,54 +342,6 @@ export default function AnnualReportPost() {
             </div>
           </div>
         </section>
-
-        {/* Article Content */}
-        <article className="px-6">
-          <div className="max-w-4xl mx-auto prose prose-invert prose-lg">
-            <div className="space-y-8 text-gray-300 leading-relaxed">
-              <p className="text-xl text-white font-semibold">
-                The first year is now on record.
-              </p>
-
-              <p>
-                The Car Park Society Inc. has released its{" "}
-                <strong className="text-white">
-                  Annual Report for FY2025/26
-                </strong>
-                , documenting the first year of the Society — from
-                incorporation and governance through to our first major public
-                activation,{" "}
-                <strong className="text-white">The Control Room</strong>.
-              </p>
-
-              <p>
-                <strong className="text-white">
-                  Phase Zero: The Rupture
-                </strong>{" "}
-                was a year of formation, experimentation, creative practice,
-                relationship-building and testing what TCPS could become.
-              </p>
-
-              <p>
-                The report records what we built, what we learned, where the
-                organisation stands now, and what comes next — including the
-                development of the{" "}
-                <strong className="text-white">Induction Centre</strong>, the
-                Watcher Map, membership and the wider Watcher Network.
-              </p>
-
-              <p className="text-white font-semibold">
-                Read the full report above.
-              </p>
-
-              <p className="text-center text-2xl text-white font-bold my-10">
-                The rupture has opened.
-                <br />
-                Now we descend.
-              </p>
-            </div>
-          </div>
-        </article>
       </main>
 
       {/* Footer */}
