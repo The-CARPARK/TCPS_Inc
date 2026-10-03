@@ -164,13 +164,13 @@ export default function Home() {
 
             {/* Center Navigation */}
 <nav
-  className="flex w-full justify-center gap-1 px-2 sm:gap-2 sm:px-0 md:gap-4"
+  className="flex w-full justify-center gap-1 px-1 sm:gap-2 sm:px-0 md:gap-4"
   role="navigation"
   aria-label="Primary"
 >
   <Link
     href="/"
-    className="flex-1 min-w-0 text-[9px] sm:text-sm font-medium text-white border border-red-500 bg-red-900/20 px-1 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:bg-red-900/40 transition-colors"
+    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-white border border-red-500 bg-red-900/20 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:bg-red-900/40 transition-colors"
     data-testid="nav-home"
   >
     Welcome
@@ -178,7 +178,7 @@ export default function Home() {
 
   <Link
     href="/about-1"
-    className="flex-1 min-w-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
     data-testid="nav-about"
   >
     Origins
@@ -186,7 +186,7 @@ export default function Home() {
 
   <Link
     href="/event-list"
-    className="flex-1 min-w-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
     data-testid="nav-events"
   >
     Activations
@@ -194,7 +194,7 @@ export default function Home() {
 
   <Link
     href="/blog"
-    className="flex-1 min-w-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
     data-testid="nav-blog"
   >
     Transmissions
@@ -202,7 +202,7 @@ export default function Home() {
 
   <Link
     href="/donate"
-    className="flex-1 min-w-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
     data-testid="nav-donate"
   >
     Support
@@ -210,7 +210,7 @@ export default function Home() {
 
   <Link
     href="/watcher-portal"
-    className="flex-1 min-w-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
     data-testid="nav-watcher-portal"
   >
     Join 👁
