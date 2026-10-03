@@ -146,57 +146,60 @@ export default function Membership() {
             </div>
           </div>
 
-          {/* Navigation */}
-          <div className="flex justify-center">
-            <nav
-              className="flex justify-center gap-2 sm:gap-4 md:gap-6"
-              role="navigation"
-              aria-label="Primary"
-            >
+          {/* Center Navigation */}
+<nav
+  className="flex w-full justify-center gap-1 px-1 sm:gap-2 sm:px-0 md:gap-4"
+  role="navigation"
+  aria-label="Primary"
+>
+  <Link
+    href="/"
+    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-white border border-red-500 bg-red-900/20 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:bg-red-900/40 transition-colors"
+    data-testid="nav-home"
+  >
+    Home
+  </Link>
 
-              <Link
-                href="/"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-              >
-                Home
-              </Link>
+  <Link
+    href="/about-1"
+    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    data-testid="nav-about"
+  >
+    Origins
+  </Link>
 
-              <Link
-                href="/about-1"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-              >
-                Origins
-              </Link>
+  <Link
+    href="/event-list"
+    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    data-testid="nav-events"
+  >
+    Activations
+  </Link>
 
-              <Link
-                href="/event-list"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-              >
-                Activations
-              </Link>
+  <Link
+    href="/blog"
+    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    data-testid="nav-blog"
+  >
+    Transmissions
+  </Link>
 
-              <Link
-                href="/blog"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-              >
-                Transmissions
-              </Link>
+  <Link
+    href="/donate"
+    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    data-testid="nav-donate"
+  >
+    Support
+  </Link>
 
-              <Link
-                href="/watcher-portal"
-                className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap"
-              >
-                Join
-              </Link>
-
-              <Link
-                href="/donate"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-              >
-                Support
-              </Link>
-
-            </nav>
+  <Link
+    href="/watcher-portal"
+    className="flex-shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-1.5 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    data-testid="nav-watcher-portal"
+  >
+    Join 👁
+  </Link>
+</nav>
           </div>
         </div>
       </header>
