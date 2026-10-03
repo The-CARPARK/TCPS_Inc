@@ -170,72 +170,47 @@ export default function Home() {
 >
   <Link
     href="/"
-    className="flex-1 text-xs sm:text-sm font-medium text-white border-b border-red-500 text-center whitespace-nowrap py-2"
+    className="text-[10px] sm:text-sm font-medium text-white border-b border-red-500 border-r border-gray-600 px-1.5 sm:px-3 py-2 whitespace-nowrap text-center"
     data-testid="nav-home"
   >
     Welcome
   </Link>
 
-  <span
-    className="h-5 w-px bg-red-500 shrink-0"
-    aria-hidden="true"
-  />
-
   <Link
     href="/about-1"
-    className="flex-1 text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors text-center whitespace-nowrap py-2"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-2 whitespace-nowrap text-center"
     data-testid="nav-about"
   >
     Origins
   </Link>
 
-  <span
-    className="h-5 w-px bg-red-500 shrink-0"
-    aria-hidden="true"
-  />
-
   <Link
     href="/event-list"
-    className="flex-1 text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors text-center whitespace-nowrap py-2"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-2 whitespace-nowrap text-center"
     data-testid="nav-events"
   >
     Activations
   </Link>
 
-  <span
-    className="h-5 w-px bg-red-500 shrink-0"
-    aria-hidden="true"
-  />
-
   <Link
     href="/blog"
-    className="flex-1 text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors text-center whitespace-nowrap py-2"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-2 whitespace-nowrap text-center"
     data-testid="nav-blog"
   >
     Transmissions
   </Link>
 
-  <span
-    className="h-5 w-px bg-red-500 shrink-0"
-    aria-hidden="true"
-  />
-
   <Link
     href="/donate"
-    className="flex-1 text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors text-center whitespace-nowrap py-2"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-2 whitespace-nowrap text-center"
     data-testid="nav-donate"
   >
     Support
   </Link>
 
-  <span
-    className="h-5 w-px bg-red-500 shrink-0"
-    aria-hidden="true"
-  />
-
   <Link
     href="/watcher-portal"
-    className="flex-1 text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors text-center whitespace-nowrap py-2"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-1.5 sm:px-3 py-2 whitespace-nowrap text-center"
     data-testid="nav-watcher-portal"
   >
     Join 👁
