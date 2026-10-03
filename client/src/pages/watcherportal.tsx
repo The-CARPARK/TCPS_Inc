@@ -200,7 +200,7 @@ export default function Membership() {
     Join 👁
   </Link>
 </nav>
-          </div>
+      
         </div>
       </header>
 
