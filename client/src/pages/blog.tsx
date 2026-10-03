@@ -376,12 +376,29 @@ export default function Blog() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="py-16 px-6 border-t border-gray-800">
+                  <footer className="py-16 px-6 border-t border-gray-800">
+
         <div className="max-w-7xl mx-auto">
+
+          {/* Member Login */}
+          <div className="flex justify-center md:justify-end mb-10">
+            <a
+              href="https://auth.tcps.app/login?next=%2Foauth%2Fauthorize%3Fclient_id%3Dclient_cf59aa5f3196%26redirect_uri%3Dhttps%253A%252F%252Fdev.tcps.app%252Fauth%252Fcallback%26response_type%3Dcode%26state%3D5031576d5a3a70e571c0c53c5a331dda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 py-2 border border-red-600 bg-red-950/60 text-white text-xs font-bold tracking-widest uppercase hover:bg-red-600 transition-colors"
+            >
+              MEMBER LOGIN →
+            </a>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8 items-start">
+
+            {/* Socials + Contact */}
             <div className="text-center">
+
               <div className="flex gap-2 mb-4 justify-center">
+
                 <a
                   href="https://www.tiktok.com/@thecarparksociety"
                   target="_blank"
@@ -417,12 +434,12 @@ export default function Blog() {
                 >
                   <FaYoutube className="w-4 h-4" />
                 </a>
+
               </div>
 
               <a
                 href="mailto:the.carpark2025@gmail.com"
-                className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]"
-                data-testid="link-email-contact"
+                className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold"
               >
                 the.carpark2025@gmail.com
               </a>
@@ -438,9 +455,12 @@ export default function Blog() {
               <p className="text-gray-400 text-[12px]">
                 © 2026 by The Car Park Society Inc.
               </p>
+
             </div>
-            
+
+            {/* Mana Whenua */}
             <div className="text-center">
+
               <p className="text-gray-500 text-sm italic mb-4">
                 We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
                 Te Āti Awa, and Ngāti Toa Rangatira —
@@ -449,19 +469,19 @@ export default function Blog() {
                 and enduring connection to this whenua.
               </p>
 
-              <p className="text-gray-600 text-xs font-extralight">
-                Acknowledgement of Mana Whenua
-              </p>
             </div>
-            
-            <div className="flex justify-end">
+
+            <div className="text-center">
               <div className="space-y-2">
                 <img 
                   src={flagsImage} 
                   alt="Flags" 
-                  className="h-28 object-contain glitch-build"
+                  className="h-16 object-contain mx-auto glitch-build"
                 />
               </div>
+            </div>
+
+            <div className="flex justify-center">
             </div>
           </div>
         </div>
