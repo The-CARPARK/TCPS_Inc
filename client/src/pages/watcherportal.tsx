@@ -329,20 +329,7 @@ export default function Membership() {
       {/* MAIN */}
       <main className="pt-20 pb-0">
 
-        {/* MEMBER LOGIN — NOW BELOW NAV */}
-        <div className="px-6 pt-5 pb-2">
-          <div className="max-w-5xl mx-auto flex justify-center">
-            <a
-              href="https://auth.tcps.app/login?next=%2Foauth%2Fauthorize%3Fclient_id%3Dclient_cf59aa5f3196%26redirect_uri%3Dhttps%253A%252F%252Fdev.tcps.app%252Fauth%252Fcallback%26response_type%3Dcode%26state%3D5031576d5a3a70e571c0c53c5a331dda"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-5 py-2 border border-red-600 bg-red-950/70 text-white text-[11px] font-bold tracking-[0.18em] uppercase hover:bg-red-600 transition-colors"
-            >
-              Member Login
-            </a>
-          </div>
-        </div>
-
+      
         {/* INTRO */}
         <section className="px-6 pt-8 pb-5">
           <div className="max-w-5xl mx-auto text-center">
@@ -478,13 +465,25 @@ export default function Membership() {
 
       </main>
 
-      {/* FOOTER */}
-      <footer className="py-16 px-6 border-t border-gray-800">
+                  <footer className="py-16 px-6 border-t border-gray-800">
+
         <div className="max-w-7xl mx-auto">
+
+          {/* Member Login */}
+          <div className="flex justify-center md:justify-end mb-10">
+            <a
+              href="https://auth.tcps.app/login?next=%2Foauth%2Fauthorize%3Fclient_id%3Dclient_cf59aa5f3196%26redirect_uri%3Dhttps%253A%252F%252Fdev.tcps.app%252Fauth%252Fcallback%26response_type%3Dcode%26state%3D5031576d5a3a70e571c0c53c5a331dda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 py-2 border border-red-600 bg-red-950/60 text-white text-xs font-bold tracking-widest uppercase hover:bg-red-600 transition-colors"
+            >
+              MEMBER LOGIN →
+            </a>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8 items-start">
 
-            {/* Social + Contact */}
+            {/* Socials + Contact */}
             <div className="text-center">
 
               <div className="flex gap-2 mb-4 justify-center">
@@ -529,7 +528,7 @@ export default function Membership() {
 
               <a
                 href="mailto:the.carpark2025@gmail.com"
-                className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]"
+                className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold"
               >
                 the.carpark2025@gmail.com
               </a>
@@ -559,29 +558,23 @@ export default function Membership() {
                 and enduring connection to this whenua.
               </p>
 
-              <p className="text-gray-600 text-xs font-extralight">
-                Acknowledgement of Mana Whenua
-              </p>
-
             </div>
 
-            {/* Flags */}
-            <div className="flex justify-end">
-
+            <div className="text-center">
               <div className="space-y-2">
-                <img
-                  src={flagsImage}
-                  alt="Flags"
-                  className="h-28 object-contain glitch-create"
+                <img 
+                  src={flagsImage} 
+                  alt="Flags" 
+                  className="h-16 object-contain mx-auto glitch-build"
                 />
               </div>
-
             </div>
 
+            <div className="flex justify-center">
+            </div>
           </div>
         </div>
       </footer>
-
     </div>
   );
 }
