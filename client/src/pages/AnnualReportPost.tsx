@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import { Link } from "wouter";
@@ -9,8 +9,21 @@ import tcpsLogoSmall from "@assets/TCPS_Colour_Small_1758549468394.png";
 import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
 import annualReportPdf from "../../TCPS Annual Report FY25-26.pdf";
 
+declare global {
+  interface Window {
+    pdfjsLib?: any;
+  }
+}
+
 export default function AnnualReportPost() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [numPages, setNumPages] = useState(0);
+  const [pdfLoading, setPdfLoading] = useState(true);
+  const [pdfError, setPdfError] = useState(false);
+  const [pdfDocument, setPdfDocument] = useState<any>(null);
+
+  const pdfContainerRef = useRef<HTMLDivElement>(null);
+  const canvasRefs = useRef<(HTMLCanvasElement | null)[]>([]);
 
   useEffect(() => {
     document.title =
@@ -32,6 +45,235 @@ export default function AnnualReportPost() {
       document.head.appendChild(meta);
     }
   }, []);
+
+  /*
+   * Load PDF.js directly in the browser.
+   * This avoids Google Viewer, Mozilla's iframe viewer,
+   * and the phone's native PDF viewer.
+   */
+  useEffect(() => {
+    let cancelled = false;
+
+    const loadPdf = async () => {
+      try {
+        setPdfLoading(true);
+        setPdfError(false);
+
+        if (!window.pdfjsLib) {
+          await new Promise<void>((resolve, reject) => {
+            const existingScript = document.querySelector(
+              'script[data-tcps-pdfjs="true"]'
+            );
+
+            if (existingScript) {
+              existingScript.addEventListener("load", () => resolve());
+              existingScript.addEventListener("error", () =>
+                reject(new Error("PDF.js failed to load"))
+              );
+              return;
+            }
+
+            const script = document.createElement("script");
+
+            script.src =
+              "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js";
+
+            script.async = true;
+            script.dataset.tcpsPdfjs = "true";
+
+            script.onload = () => resolve();
+            script.onerror = () =>
+              reject(new Error("PDF.js failed to load"));
+
+            document.head.appendChild(script);
+          });
+        }
+
+        if (cancelled || !window.pdfjsLib) {
+          return;
+        }
+
+        window.pdfjsLib.GlobalWorkerOptions.workerSrc =
+          "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+        const loadingTask = window.pdfjsLib.getDocument({
+          url: annualReportPdf,
+        });
+
+        const pdf = await loadingTask.promise;
+
+        if (cancelled) {
+          return;
+        }
+
+        setPdfDocument(pdf);
+        setNumPages(pdf.numPages);
+        setPdfLoading(false);
+      } catch (error) {
+        console.error("TCPS Annual Report PDF error:", error);
+
+        if (!cancelled) {
+          setPdfLoading(false);
+          setPdfError(true);
+        }
+      }
+    };
+
+    loadPdf();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  /*
+   * Render each PDF page into its own canvas.
+   * Pages resize to the width of the TCPS content area,
+   * including on mobile.
+   */
+  useEffect(() => {
+    if (!pdfDocument || !numPages || !pdfContainerRef.current) {
+      return;
+    }
+
+    let cancelled = false;
+
+    const renderPages = async () => {
+      try {
+        const containerWidth = pdfContainerRef.current?.clientWidth || 900;
+        const devicePixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+
+        for (let pageNumber = 1; pageNumber <= numPages; pageNumber++) {
+          if (cancelled) {
+            return;
+          }
+
+          const page = await pdfDocument.getPage(pageNumber);
+
+          const baseViewport = page.getViewport({
+            scale: 1,
+          });
+
+          const scale =
+            (containerWidth / baseViewport.width) * devicePixelRatio;
+
+          const viewport = page.getViewport({
+            scale,
+          });
+
+          const canvas = canvasRefs.current[pageNumber - 1];
+
+          if (!canvas) {
+            continue;
+          }
+
+          const context = canvas.getContext("2d");
+
+          if (!context) {
+            continue;
+          }
+
+          canvas.width = viewport.width;
+          canvas.height = viewport.height;
+
+          canvas.style.width = `${containerWidth}px`;
+          canvas.style.height = `${viewport.height / devicePixelRatio}px`;
+
+          await page.render({
+            canvasContext: context,
+            viewport,
+          }).promise;
+        }
+      } catch (error) {
+        console.error("TCPS Annual Report render error:", error);
+
+        if (!cancelled) {
+          setPdfError(true);
+        }
+      }
+    };
+
+    renderPages();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [pdfDocument, numPages]);
+
+  /*
+   * Re-render the pages when the browser width changes.
+   * This makes the document responsive on mobile rotation
+   * and desktop resizing.
+   */
+  useEffect(() => {
+    if (!pdfDocument || !numPages) {
+      return;
+    }
+
+    let resizeTimeout: ReturnType<typeof setTimeout>;
+
+    const handleResize = () => {
+      clearTimeout(resizeTimeout);
+
+      resizeTimeout = setTimeout(() => {
+        const containerWidth =
+          pdfContainerRef.current?.clientWidth || 900;
+
+        const devicePixelRatio = Math.min(
+          window.devicePixelRatio || 1,
+          2
+        );
+
+        for (let pageNumber = 1; pageNumber <= numPages; pageNumber++) {
+          pdfDocument.getPage(pageNumber).then(async (page: any) => {
+            const baseViewport = page.getViewport({
+              scale: 1,
+            });
+
+            const scale =
+              (containerWidth / baseViewport.width) *
+              devicePixelRatio;
+
+            const viewport = page.getViewport({
+              scale,
+            });
+
+            const canvas = canvasRefs.current[pageNumber - 1];
+
+            if (!canvas) {
+              return;
+            }
+
+            const context = canvas.getContext("2d");
+
+            if (!context) {
+              return;
+            }
+
+            canvas.width = viewport.width;
+            canvas.height = viewport.height;
+
+            canvas.style.width = `${containerWidth}px`;
+            canvas.style.height = `${
+              viewport.height / devicePixelRatio
+            }px`;
+
+            await page.render({
+              canvasContext: context,
+              viewport,
+            }).promise;
+          });
+        }
+      }, 250);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      clearTimeout(resizeTimeout);
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [pdfDocument, numPages]);
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -321,27 +563,65 @@ export default function AnnualReportPost() {
                 </p>
               </div>
 
-              {/* Embedded Annual Report */}
-              <div className="w-full overflow-hidden rounded-lg border border-gray-700 bg-black">
-                <iframe
-                  src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(
-                    annualReportPdf
-                  )}`}
-                  className="w-full h-[85vh] min-h-[700px] border-0"
-                  title="TCPS Annual Report FY2025/26"
-                />
+              {/* PDF Reader */}
+              <div
+                ref={pdfContainerRef}
+                className="w-full rounded-lg border border-gray-700 bg-[#111113] p-2 sm:p-4 overflow-hidden"
+              >
+                {pdfLoading && !pdfError && (
+                  <div className="flex flex-col items-center justify-center py-20 text-center">
+                    <div className="w-10 h-10 border-2 border-gray-600 border-t-red-500 rounded-full animate-spin mb-5" />
+
+                    <p className="text-gray-300 font-medium">
+                      Loading Annual Report…
+                    </p>
+
+                    <p className="text-gray-500 text-sm mt-2">
+                      Phase Zero: The Rupture
+                    </p>
+                  </div>
+                )}
+
+                {pdfError && (
+                  <div className="text-center py-16 px-4">
+                    <p className="text-red-400 font-semibold mb-3">
+                      The Annual Report could not be displayed.
+                    </p>
+
+                    <p className="text-gray-500 text-sm mb-6">
+                      The document is still available directly.
+                    </p>
+
+                    <a
+                      href={annualReportPdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-red-700 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded transition-colors"
+                    >
+                      Open the Annual Report →
+                    </a>
+                  </div>
+                )}
+
+                {!pdfLoading &&
+                  !pdfError &&
+                  Array.from({ length: numPages }).map((_, index) => (
+                    <div
+                      key={`page_${index + 1}`}
+                      className="w-full flex justify-center mb-4 last:mb-0"
+                    >
+                      <canvas
+                        ref={(canvas) => {
+                          canvasRefs.current[index] = canvas;
+                        }}
+                        className="block w-full h-auto bg-white shadow-lg"
+                      />
+                    </div>
+                  ))}
               </div>
 
               <p className="text-center text-sm text-gray-400 mt-4">
-                Can't view the document?{" "}
-                <a
-                  href={annualReportPdf}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-red-400 hover:text-red-300 underline underline-offset-4"
-                >
-                  Open the Annual Report →
-                </a>
+                Annual Report FY2025/26 · Phase Zero: The Rupture
               </p>
             </div>
           </div>
