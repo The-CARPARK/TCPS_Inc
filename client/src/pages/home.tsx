@@ -582,84 +582,84 @@ export default function Home() {
 
         </section>
 
-        {/* Join the Movement Section */}
-        <section className="py-12 px-6 bg-red-900/30 vhs-overlay">
+        {/* Stay Connected Section */}
+<section className="py-12 px-6 bg-red-900/30 vhs-overlay">
 
-          <div className="max-w-4xl mx-auto text-center">
+  <div className="max-w-4xl mx-auto text-center">
 
-            <h2
-              className="text-4xl font-bold mb-8 glitch-text"
-              data-text="Join the Movement"
-              data-testid="text-join-heading"
-            >
-              Join the Movement
-            </h2>
+    <h2
+      className="text-4xl font-bold mb-8 glitch-text"
+      data-text="Stay Connected"
+      data-testid="text-join-heading"
+    >
+      Stay Connected
+    </h2>
 
-            <p
-              className="text-base text-gray-300 mb-8"
-              data-testid="text-join-description"
-            >
-              We are building a society of Watchers, partners, and allies who choose solidarity over silence. Join our email list and get updates about upcoming society events and activations:
-            </p>
-            
-            <div className="max-w-md mx-auto">
+    <p
+      className="text-base text-gray-300 mb-8"
+      data-testid="text-join-description"
+    >
+      Get the signal. Subscribe to the TCPS mailing list for updates on upcoming activations, transmissions, events, and new work from The Car Park Society.
+    </p>
 
-              {/* Minimal Google Form Embed - Email Field Only */}
-              <div className="relative bg-gray-900/80 p-6 rounded-lg border border-red-900/30 glitch-image vhs-overlay">
+    <div className="max-w-md mx-auto">
 
-                <div className="absolute inset-0 bg-gradient-to-r from-red-900/10 via-transparent to-red-900/10 rounded-lg"></div>
-                
-                {/* Custom styled iframe container to hide Google Form branding */}
-                <div className="relative z-10 overflow-hidden rounded bg-gray-800/50 h-44">
+      {/* Minimal Google Form Embed - Email Field Only */}
+      <div className="relative bg-gray-900/80 p-6 rounded-lg border border-red-900/30 glitch-image vhs-overlay">
 
-                  <iframe 
-                    src="https://docs.google.com/forms/d/e/1FAIpQLScZtK0FRz0y5khXVoDZea5IxPaJYy4M9e66OLTYrJNjL0AZHw/viewform?embedded=true&usp=pp_url&entry.1045781291=" 
-                    width="100%"
-                    height="700"
-                    frameBorder={0}
-                    marginHeight={0}
-                    marginWidth={0}
-                    className="w-full"
-                    style={{
-                      transform: 'scale(0.9) translateY(-290px)',
-                      filter: 'invert(0.95) hue-rotate(180deg) contrast(1.1) brightness(0.85) saturate(1.2)',
-                      background: 'transparent'
-                    }}
-                    title="Newsletter Signup"
-                    data-testid="form-newsletter-signup"
-                  >
-                    Loading...
-                  </iframe>
+        <div className="absolute inset-0 bg-gradient-to-r from-red-900/10 via-transparent to-red-900/10 rounded-lg"></div>
 
-                </div>
-                
-                {/* Custom overlay with TCPS styling */}
-                <div className="absolute inset-0 pointer-events-none z-20">
+        {/* Custom styled iframe container to hide Google Form branding */}
+        <div className="relative z-10 overflow-hidden rounded bg-gray-800/50 h-44">
 
-                  <div className="absolute top-4 left-6 text-xs text-red-400 font-mono uppercase tracking-wider">
-                    ◦ SIGNAL TRANSMISSION ◦
-                  </div>
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLScZtK0FRz0y5khXVoDZea5IxPaJYy4M9e66OLTYrJNjL0AZHw/viewform?embedded=true&usp=pp_url&entry.1045781291=" 
+            width="100%"
+            height="700"
+            frameBorder={0}
+            marginHeight={0}
+            marginWidth={0}
+            className="w-full"
+            style={{
+              transform: 'scale(0.9) translateY(-290px)',
+              filter: 'invert(0.95) hue-rotate(180deg) contrast(1.1) brightness(0.85) saturate(1.2)',
+              background: 'transparent'
+            }}
+            title="Newsletter Signup"
+            data-testid="form-newsletter-signup"
+          >
+            Loading...
+          </iframe>
 
-                  <div className="absolute bottom-4 right-6 text-xs text-gray-500 font-mono">
-                    ∴ ENCRYPTED ∴
-                  </div>
+        </div>
 
-                </div>
+        {/* Custom overlay with TCPS styling */}
+        <div className="absolute inset-0 pointer-events-none z-20">
 
-              </div>
-              
-              <p
-                className="text-xs text-gray-400 text-center mt-3 font-mono tracking-wide glitch-text"
-                data-text="⟩ DIRECT NEURAL INTERFACE ⟨"
-              >
-                ⟩ DIRECT NEURAL INTERFACE ⟨
-              </p>
-
-            </div>
-
+          <div className="absolute top-4 left-6 text-xs text-red-400 font-mono uppercase tracking-wider">
+            ◦ TCPS MAILING LIST ◦
           </div>
 
-        </section>
+          <div className="absolute bottom-4 right-6 text-xs text-gray-500 font-mono">
+            ∴ ENCRYPTED ∴
+          </div>
+
+        </div>
+
+      </div>
+
+      <p
+        className="text-xs text-gray-400 text-center mt-3 font-mono tracking-wide glitch-text"
+        data-text="⟩ RECEIVE TRANSMISSIONS ⟨"
+      >
+        ⟩ RECEIVE TRANSMISSIONS ⟨
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 
       </main>
 
