@@ -194,7 +194,7 @@ export default function Support() {
                 className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
                 data-testid="nav-watcher-portal"
               >
-                Watcher Portal
+                Join
               </Link>
 
               <Link
@@ -460,7 +460,7 @@ export default function Support() {
               rel="noopener noreferrer"
               className="inline-block px-5 py-2 border border-red-600 bg-red-950/60 text-white text-xs font-bold tracking-widest uppercase hover:bg-red-600 transition-colors"
             >
-              MEMBER LOGIN →
+              WATCHER PORTAL →
             </a>
 
           </div>
