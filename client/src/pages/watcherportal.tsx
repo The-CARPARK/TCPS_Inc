@@ -3,11 +3,9 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-
 import logoImage from "@assets/TCPS_Medium_Colour (1)_1758535590698.png";
 import flagsImage from "@assets/Screenshot 2025-09-21 211954_1758536131506.png";
 import tcpsLogo from "@assets/Screenshot 2025-09-26 030210_1758812594772.png";
-
 import tcpsGroupHero from "./TCPS_Group_Hero_1.webp";
 
 export default function Membership() {
@@ -39,24 +37,25 @@ export default function Membership() {
       'meta[name="description"]'
     );
 
+    const description =
+      "Enter the Watcher Network. Membership in The Car Park Society is an entry point into the work, activations, transmissions and systems being built across Te Whanganui-a-Tara.";
+
     if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "Join The Car Park Society and submit your membership application."
-      );
+      metaDescription.setAttribute("content", description);
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content =
-        "Join The Car Park Society and submit your membership application.";
+      meta.content = description;
       document.head.appendChild(meta);
     }
 
     setBannerText(bannerMessages[0]);
 
-    const textInterval = setInterval(() => {
+    const cycleText = () => {
       setTextIndex((prev) => (prev + 1) % bannerMessages.length);
-    }, 8000);
+    };
+
+    const textInterval = setInterval(cycleText, 8000);
 
     return () => {
       clearInterval(textInterval);
@@ -70,27 +69,17 @@ export default function Membership() {
   return (
     <div className="min-h-screen bg-black text-white">
 
-      {/* Skip to main content */}
-      <a
-        href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-primary-foreground px-4 py-2 rounded-md z-50"
-        data-testid="skip-to-content"
-      >
-        Skip to Main Content
-      </a>
-
       {/* HEADER */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-red-950/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
 
-          {/* TCPS BUTTON / SCROLLING BANNER */}
+          {/* Scrolling Banner */}
           <div className="relative mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast overflow-hidden">
 
-            {/* Full-width scrolling banner background */}
             <div className="absolute inset-0 bg-white border-y border-red-900/50 glitch-image">
               <div className="h-full overflow-hidden relative flex items-center">
 
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/5 to-transparent animate-pulse" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/5 to-transparent animate-pulse"></div>
 
                 <div className="w-full overflow-hidden">
                   <div
@@ -104,10 +93,9 @@ export default function Membership() {
               </div>
             </div>
 
-            {/* Foreground elements */}
+            {/* Banner Foreground */}
             <div className="absolute inset-0 flex justify-between items-center px-4 z-10">
 
-              {/* TCPS logo */}
               <Link href="/">
                 <img
                   src={tcpsLogo}
@@ -116,67 +104,50 @@ export default function Membership() {
                 />
               </Link>
 
-              <div className="flex items-center gap-2">
+              <div className="flex gap-1 bg-white px-1 py-0.5 rounded">
 
-                {/* EXISTING MEMBER LOGIN */}
                 <a
-                  href="https://auth.tcps.app/login?next=%2Foauth%2Fauthorize%3Fclient_id%3Dclient_cf59aa5f3196%26redirect_uri%3Dhttps%253A%252F%252Fdev.tcps.app%252Fauth%252Fcallback%26response_type%3Dcode%26state%3D5031576d5a3a70e571c0c53c5a331dda"
+                  href="https://www.tiktok.com/@thecarparksociety"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-2 sm:px-3 py-1 border border-red-600 bg-red-950/90 text-white text-[8px] sm:text-[10px] font-bold tracking-wider uppercase hover:bg-red-600 transition-colors whitespace-nowrap"
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
                 >
-                  Member Login
+                  <SiTiktok className="w-2 h-2" />
                 </a>
 
-                {/* SOCIAL ICONS */}
-                <div className="flex gap-1 bg-white px-1 py-0.5 rounded">
+                <a
+                  href="https://www.instagram.com/thecarparksociety/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
+                  <FaInstagram className="w-2 h-2" />
+                </a>
 
-                  <a
-                    href="https://www.tiktok.com/@thecarparksociety"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
-                  >
-                    <SiTiktok className="w-2 h-2" />
-                  </a>
+                <a
+                  href="https://www.facebook.com/thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
+                  <FaFacebook className="w-2 h-2" />
+                </a>
 
-                  <a
-                    href="https://www.instagram.com/thecarparksociety/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
-                  >
-                    <FaInstagram className="w-2 h-2" />
-                  </a>
-
-                  <a
-                    href="https://www.facebook.com/thecarparksociety"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
-                  >
-                    <FaFacebook className="w-2 h-2" />
-                  </a>
-
-                  <a
-                    href="https://www.youtube.com/@TheCarParkSociety"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
-                  >
-                    <FaYoutube className="w-2 h-2" />
-                  </a>
-
-                </div>
+                <a
+                  href="https://www.youtube.com/@TheCarParkSociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                >
+                  <FaYoutube className="w-2 h-2" />
+                </a>
 
               </div>
-
             </div>
           </div>
 
-          {/* NAVIGATION */}
+          {/* Navigation */}
           <div className="flex justify-center">
-
             <nav
               className="flex justify-center gap-2 sm:gap-4 md:gap-6"
               role="navigation"
@@ -186,7 +157,6 @@ export default function Membership() {
               <Link
                 href="/"
                 className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-                data-testid="nav-home"
               >
                 Home
               </Link>
@@ -194,7 +164,6 @@ export default function Membership() {
               <Link
                 href="/about-1"
                 className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-                data-testid="nav-about"
               >
                 Origins
               </Link>
@@ -202,7 +171,6 @@ export default function Membership() {
               <Link
                 href="/event-list"
                 className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-                data-testid="nav-events"
               >
                 Activations
               </Link>
@@ -210,7 +178,6 @@ export default function Membership() {
               <Link
                 href="/blog"
                 className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-                data-testid="nav-blog"
               >
                 Transmissions
               </Link>
@@ -218,7 +185,6 @@ export default function Membership() {
               <Link
                 href="/watcher-portal"
                 className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap"
-                data-testid="nav-watcher-portal"
               >
                 Watcher Portal
               </Link>
@@ -226,7 +192,6 @@ export default function Membership() {
               <Link
                 href="/donate"
                 className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-                data-testid="nav-donate"
               >
                 Support
               </Link>
@@ -236,11 +201,9 @@ export default function Membership() {
         </div>
       </header>
 
-
-      {/* OVERLAY MENU */}
+      {/* Overlay Menu */}
       {menuOpen && (
         <div className="overlay-menu">
-
           <div className="menu-content">
 
             <div className="absolute top-6 right-6">
@@ -249,7 +212,6 @@ export default function Membership() {
                 size="sm"
                 onClick={() => setMenuOpen(false)}
                 className="text-white hover:bg-gray-800"
-                data-testid="menu-close"
               >
                 Close [ - ]
               </Button>
@@ -258,27 +220,18 @@ export default function Membership() {
             <div className="flex flex-col lg:flex-row items-center justify-center gap-16 h-full">
 
               <div className="flex flex-col items-center">
-
-                <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8 wavy-bg-white-slow">
-
+                <div className="w-64 h-48 bg-white rounded-lg flex items-center justify-center mb-8 wavy-bg-white-colorful">
                   <div className="text-center text-black">
-
                     <div className="relative w-48 h-32">
-
                       <img
                         src={logoImage}
                         alt="The Car Park Society Logo"
                         className="w-full h-full object-contain glitch-build"
                       />
-
                     </div>
-
                   </div>
-
                 </div>
-
               </div>
-
 
               <div className="text-center">
 
@@ -287,8 +240,6 @@ export default function Membership() {
                   <Link
                     href="/"
                     className="text-2xl font-medium hover:text-red-500 transition-colors"
-                    data-testid="nav-home"
-                    onClick={() => setMenuOpen(false)}
                   >
                     Home
                   </Link>
@@ -296,8 +247,6 @@ export default function Membership() {
                   <Link
                     href="/about-1"
                     className="text-2xl font-medium hover:text-red-500 transition-colors"
-                    data-testid="nav-about"
-                    onClick={() => setMenuOpen(false)}
                   >
                     Origins
                   </Link>
@@ -305,8 +254,6 @@ export default function Membership() {
                   <Link
                     href="/event-list"
                     className="text-2xl font-medium hover:text-red-500 transition-colors"
-                    data-testid="nav-events"
-                    onClick={() => setMenuOpen(false)}
                   >
                     Activations
                   </Link>
@@ -314,17 +261,13 @@ export default function Membership() {
                   <Link
                     href="/blog"
                     className="text-2xl font-medium hover:text-red-500 transition-colors"
-                    data-testid="nav-blog"
-                    onClick={() => setMenuOpen(false)}
                   >
                     Transmissions
                   </Link>
 
                   <Link
                     href="/watcher-portal"
-                    className="text-2xl font-medium text-white border-b border-red-500 transition-colors"
-                    data-testid="nav-watcher-portal"
-                    onClick={() => setMenuOpen(false)}
+                    className="text-2xl font-medium text-white border-b border-red-500"
                   >
                     Watcher Portal
                   </Link>
@@ -332,14 +275,11 @@ export default function Membership() {
                   <Link
                     href="/donate"
                     className="text-2xl font-medium hover:text-red-500 transition-colors"
-                    data-testid="nav-donate"
-                    onClick={() => setMenuOpen(false)}
                   >
                     Support
                   </Link>
 
                 </nav>
-
 
                 <div className="flex gap-4 justify-center">
 
@@ -380,247 +320,171 @@ export default function Membership() {
                   </a>
 
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
       )}
 
+      {/* MAIN */}
+      <main className="pt-20 pb-0">
 
-      {/* MAIN CONTENT */}
-      <main id="main-content" className="pt-20 pb-16">
-
-        {/* MEMBERSHIP INTRO */}
-        <section className="relative pt-20 pb-16 px-6 overflow-hidden">
-
-          {/* Background grid */}
-          <div
-            className="absolute inset-0 opacity-[0.08]"
-            style={{
-              backgroundImage: `
-                linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px)
-              `,
-              backgroundSize: "50px 50px",
-            }}
-          />
-
-          <div className="absolute top-24 left-0 w-full h-px bg-white/10" />
-          <div className="absolute bottom-10 left-0 w-full h-px bg-white/10" />
-
-          <div className="relative max-w-6xl mx-auto">
-
-            <div className="flex flex-col items-center text-center">
-
-              {/* TITLE */}
-              <div className="mb-8">
-
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight leading-[0.9]">
-
-                  JOIN THE{" "}
-
-                  <span className="text-gray-400">
-                    CAR PARK
-                  </span>{" "}
-
-                  SOCIETY
-
-                </h1>
-
-              </div>
-
-
-              <div className="max-w-3xl">
-
-                <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
-                  Membership is your entry point into The Car Park Society
-                  network.
-                </p>
-
-                <p className="text-gray-500 mt-4 leading-relaxed">
-                  If you want to be part of the network, contribute to the
-                  work, participate in activations, or stay connected to what
-                  is happening across the Society, complete the membership
-                  application below.
-                </p>
-
-              </div>
-
-            </div>
-
+        {/* MEMBER LOGIN — NOW BELOW NAV */}
+        <div className="px-6 pt-5 pb-2">
+          <div className="max-w-5xl mx-auto flex justify-center">
+            <a
+              href="https://auth.tcps.app/login?next=%2Foauth%2Fauthorize%3Fclient_id%3Dclient_cf59aa5f3196%26redirect_uri%3Dhttps%253A%252F%252Fdev.tcps.app%252Fauth%252Fcallback%26response_type%3Dcode%26state%3D5031576d5a3a70e571c0c53c5a331dda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-5 py-2 border border-red-600 bg-red-950/70 text-white text-[11px] font-bold tracking-[0.18em] uppercase hover:bg-red-600 transition-colors"
+            >
+              Member Login
+            </a>
           </div>
-        </section>
+        </div>
 
+        {/* INTRO */}
+        <section className="px-6 pt-8 pb-5">
+          <div className="max-w-5xl mx-auto text-center">
 
-        {/* MEMBERSHIP APPLICATION */}
-        <section className="px-6 py-20 border-t border-gray-800">
+            <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tight leading-none">
+              JOIN THE{" "}
+              <span className="text-gray-500">CAR PARK</span>
+              <br />
+              SOCIETY
+            </h1>
 
-          <div className="max-w-5xl mx-auto">
+            <div className="max-w-3xl mx-auto mt-8 space-y-5">
 
-            <div className="text-center mb-10">
-
-              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight">
-
-                MEMBERSHIP
-
+              <p className="text-xl md:text-2xl text-gray-500 leading-relaxed">
+                Membership is not a subscription.
                 <br />
+                It is an entry point.
+              </p>
 
-                <span className="text-gray-500">
-                  APPLICATION
-                </span>
+              <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+                The Car Park Society works in the gaps — between the official
+                story and what was buried underneath it, between the city you
+                are given and the histories it tries to conceal.
+              </p>
 
-              </h2>
+              <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+                The Watcher Network is made up of people who want to look
+                closer. To question the surface. To contribute, participate,
+                document, build, transmit and stay connected to what is
+                happening across the Society.
+              </p>
 
-              <p className="text-gray-500 mt-5 max-w-2xl mx-auto leading-relaxed">
-                Complete the application below to submit your request for
-                membership with The Car Park Society.
+              <p className="text-lg md:text-xl font-semibold text-white leading-relaxed">
+                If you are already watching —
+                <br />
+                you are already at the threshold.
               </p>
 
             </div>
+          </div>
+        </section>
 
+        {/* APPLICATION */}
+        <section className="px-6 pt-5 pb-10 border-t border-gray-900">
+          <div className="max-w-5xl mx-auto">
 
-            {/* GOOGLE MEMBERSHIP FORM */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-2xl">
+            <div className="text-center mb-8">
+              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight">
+                MEMBERSHIP
+                <br />
+                <span className="text-gray-500">APPLICATION</span>
+              </h2>
 
+              <p className="text-gray-500 text-sm md:text-base mt-4 max-w-2xl mx-auto leading-relaxed">
+                Enter your details below. Tell us where you are, what you are
+                interested in, and how you want to connect with the work.
+              </p>
+            </div>
+
+            {/* Google Form */}
+            <div className="w-full border border-gray-800 bg-[#111113] overflow-hidden">
               <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSfDjfk7rvBz0-eOoC5DQVyNbzZeq4IOXbwwqhUjYfwV9jn8DQ/viewform?embedded=true"
                 width="100%"
                 height="650"
-                frameBorder="0"
-                marginHeight={0}
-                marginWidth={0}
                 className="w-full h-[650px] md:h-[800px] border-0 block"
-                title="The Car Park Society Membership Application"
+                title="TCPS Membership Application"
               >
-                Loading membership application…
+                Loading…
               </iframe>
-
             </div>
 
-          </div>
+            {/* PROCESS */}
+            <div className="mt-10 grid md:grid-cols-3 gap-6">
 
+              <div className="border-t border-red-800 pt-5">
+                <p className="text-red-500 font-mono text-sm mb-2">
+                  01 / APPLY
+                </p>
+
+                <h3 className="text-xl font-bold text-white mb-3">
+                  CROSS THE THRESHOLD
+                </h3>
+
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Complete the application. Give us enough to know where you
+                  might fit within the network.
+                </p>
+              </div>
+
+              <div className="border-t border-red-800 pt-5">
+                <p className="text-red-500 font-mono text-sm mb-2">
+                  02 / REVIEW
+                </p>
+
+                <h3 className="text-xl font-bold text-white mb-3">
+                  SIGNAL RECEIVED
+                </h3>
+
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Your application is reviewed by the Society. Membership is
+                  considered in the context of the network and its kaupapa.
+                </p>
+              </div>
+
+              <div className="border-t border-red-800 pt-5">
+                <p className="text-red-500 font-mono text-sm mb-2">
+                  03 / CONNECT
+                </p>
+
+                <h3 className="text-xl font-bold text-white mb-3">
+                  ENTER THE NETWORK
+                </h3>
+
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Connect with the work, the activations, the transmissions
+                  and the people watching what happens next.
+                </p>
+              </div>
+
+            </div>
+          </div>
         </section>
 
-
-        {/* MEMBERSHIP PROCESS */}
-        <section className="px-6 py-20 border-t border-gray-800">
-
-          <div className="max-w-5xl mx-auto">
-
-            <div className="grid md:grid-cols-3 gap-10">
-
-              {/* 01 */}
-              <div>
-
-                <p className="text-gray-600 text-xs font-bold tracking-[0.25em] uppercase mb-3">
-                  01
-                </p>
-
-                <h2 className="text-xl font-black uppercase mb-3">
-                  Apply
-                </h2>
-
-                <p className="text-gray-500 leading-relaxed text-sm">
-                  Complete the membership application with your details and
-                  information about your connection to the Society.
-                </p>
-
-              </div>
-
-
-              {/* 02 */}
-              <div>
-
-                <p className="text-gray-600 text-xs font-bold tracking-[0.25em] uppercase mb-3">
-                  02
-                </p>
-
-                <h2 className="text-xl font-black uppercase mb-3">
-                  Review
-                </h2>
-
-                <p className="text-gray-500 leading-relaxed text-sm">
-                  Your application is received by The Car Park Society for
-                  consideration.
-                </p>
-
-              </div>
-
-
-              {/* 03 */}
-              <div>
-
-                <p className="text-gray-600 text-xs font-bold tracking-[0.25em] uppercase mb-3">
-                  03
-                </p>
-
-                <h2 className="text-xl font-black uppercase mb-3">
-                  Connect
-                </h2>
-
-                <p className="text-gray-500 leading-relaxed text-sm">
-                  Once your application has been processed, you will be
-                  contacted with the next steps.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
-
-
-        {/* TCPS GROUP IMAGE — ABOVE FOOTER */}
-        <section className="px-6 pt-8 pb-0">
-
-          <div className="max-w-7xl mx-auto">
-
-            <div className="relative overflow-hidden">
-
-              <img
-                src={tcpsGroupHero}
-                alt="The Car Park Society"
-                className="w-full h-auto object-contain object-center block"
-              />
-
-              {/* Image overlay */}
-              <div className="absolute inset-0 bg-black/10 pointer-events-none" />
-
-              {/* Scan line */}
-              <div className="absolute top-1/3 left-0 right-0 h-px bg-white/20 pointer-events-none" />
-
-              {/* Corner markers */}
-              <div className="absolute top-4 left-4 w-8 h-8 border-t border-l border-white/50" />
-
-              <div className="absolute top-4 right-4 w-8 h-8 border-t border-r border-white/50" />
-
-              <div className="absolute bottom-4 left-4 w-8 h-8 border-b border-l border-white/50" />
-
-              <div className="absolute bottom-4 right-4 w-8 h-8 border-b border-r border-white/50" />
-
-            </div>
-
-          </div>
-
+        {/* GROUP IMAGE */}
+        <section className="w-full">
+          <img
+            src={tcpsGroupHero}
+            alt="The Car Park Society"
+            className="w-full h-auto object-contain object-center block"
+          />
         </section>
 
       </main>
 
-
       {/* FOOTER */}
       <footer className="py-16 px-6 border-t border-gray-800">
-
         <div className="max-w-7xl mx-auto">
 
           <div className="grid md:grid-cols-3 gap-8 items-start">
 
-            {/* LEFT — SOCIAL / CONTACT */}
+            {/* Social + Contact */}
             <div className="text-center">
 
               <div className="flex gap-2 mb-4 justify-center">
@@ -663,25 +527,20 @@ export default function Membership() {
 
               </div>
 
-
               <a
                 href="mailto:the.carpark2025@gmail.com"
                 className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]"
-                data-testid="link-email-contact"
               >
                 the.carpark2025@gmail.com
               </a>
-
 
               <p className="text-gray-400 mb-2 text-[13px]">
                 Te Whanganui-a-Tara
               </p>
 
-
               <p className="text-gray-400 mb-2 font-bold text-[13px]">
                 AOTEAROA
               </p>
-
 
               <p className="text-gray-400 text-[12px]">
                 © 2026 by The Car Park Society Inc.
@@ -689,8 +548,7 @@ export default function Membership() {
 
             </div>
 
-
-            {/* CENTRE — MANA WHENUA */}
+            {/* Mana Whenua */}
             <div className="text-center">
 
               <p className="text-gray-500 text-sm italic mb-4">
@@ -707,26 +565,21 @@ export default function Membership() {
 
             </div>
 
-
-            {/* RIGHT — FLAGS */}
+            {/* Flags */}
             <div className="flex justify-end">
 
               <div className="space-y-2">
-
                 <img
                   src={flagsImage}
                   alt="Flags"
-                  className="h-28 object-contain glitch-amplify"
+                  className="h-28 object-contain glitch-create"
                 />
-
               </div>
 
             </div>
 
           </div>
-
         </div>
-
       </footer>
 
     </div>
