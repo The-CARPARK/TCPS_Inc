@@ -354,7 +354,7 @@ export default function AnnualReportPost() {
 
     <Link
       href="/event-list"
-      className="text-[10px] sm:text-sm font-medium text-white border-b border-red-500 border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+      className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
       data-testid="nav-events"
     >
       Activations
@@ -362,7 +362,7 @@ export default function AnnualReportPost() {
 
     <Link
       href="/blog"
-      className="text-[10px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
+      className="text-[10px] sm:text-sm font-medium text-white border-b border-red-500 border-r border-gray-600 px-1.5 sm:px-3 py-1 whitespace-nowrap text-center"
       data-testid="nav-blog"
     >
       Transmissions
