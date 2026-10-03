@@ -164,63 +164,63 @@ export default function Home() {
 
             {/* Center Navigation */}
 <nav
-  className="flex justify-center items-center gap-0"
+  className="flex w-full items-center justify-center gap-0 px-1 sm:px-0"
   role="navigation"
   aria-label="Primary"
 >
   <Link
     href="/"
-    className="text-xs sm:text-sm font-medium text-white border-b border-red-500 px-3 sm:px-4 whitespace-nowrap"
+    className="shrink-0 text-[9px] sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap"
     data-testid="nav-home"
   >
     Welcome
   </Link>
 
-  <span className="h-4 w-px bg-gray-600" aria-hidden="true" />
+  <span className="mx-1 sm:mx-3 h-4 w-px shrink-0 bg-gray-600" aria-hidden="true" />
 
   <Link
     href="/about-1"
-    className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-3 sm:px-4 whitespace-nowrap"
+    className="shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
     data-testid="nav-about"
   >
     Origins
   </Link>
 
-  <span className="h-4 w-px bg-gray-600" aria-hidden="true" />
+  <span className="mx-1 sm:mx-3 h-4 w-px shrink-0 bg-gray-600" aria-hidden="true" />
 
   <Link
     href="/event-list"
-    className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-3 sm:px-4 whitespace-nowrap"
+    className="shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
     data-testid="nav-events"
   >
     Activations
   </Link>
 
-  <span className="h-4 w-px bg-gray-600" aria-hidden="true" />
+  <span className="mx-1 sm:mx-3 h-4 w-px shrink-0 bg-gray-600" aria-hidden="true" />
 
   <Link
     href="/blog"
-    className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-3 sm:px-4 whitespace-nowrap"
+    className="shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
     data-testid="nav-blog"
   >
     Transmissions
   </Link>
 
-  <span className="h-4 w-px bg-gray-600" aria-hidden="true" />
+  <span className="mx-1 sm:mx-3 h-4 w-px shrink-0 bg-gray-600" aria-hidden="true" />
 
   <Link
     href="/donate"
-    className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-3 sm:px-4 whitespace-nowrap"
+    className="shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
     data-testid="nav-donate"
   >
     Support
   </Link>
 
-  <span className="h-4 w-px bg-gray-600" aria-hidden="true" />
+  <span className="mx-1 sm:mx-3 h-4 w-px shrink-0 bg-gray-600" aria-hidden="true" />
 
   <Link
     href="/watcher-portal"
-    className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors px-3 sm:px-4 whitespace-nowrap"
+    className="shrink-0 text-[9px] sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
     data-testid="nav-watcher-portal"
   >
     Join 👁
