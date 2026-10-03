@@ -277,42 +277,100 @@ export default function Support() {
   </div>
 </main>
 
-      {/* Footer */}
-      <footer className="py-16 px-6 border-t border-gray-800 mt-16 bg-[#0f0404]">
+            <footer className="py-16 px-6 border-t border-gray-800">
+
         <div className="max-w-7xl mx-auto">
+
+          {/* Member Login */}
+          <div className="flex justify-center md:justify-end mb-10">
+            <a
+              href="https://auth.tcps.app/login?next=%2Foauth%2Fauthorize%3Fclient_id%3Dclient_cf59aa5f3196%26redirect_uri%3Dhttps%253A%252F%252Fdev.tcps.app%252Fauth%252Fcallback%26response_type%3Dcode%26state%3D5031576d5a3a70e571c0c53c5a331dda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 py-2 border border-red-600 bg-red-950/60 text-white text-xs font-bold tracking-widest uppercase hover:bg-red-600 transition-colors"
+            >
+              MEMBER LOGIN →
+            </a>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-8 items-start">
-            <div className="text-center md:text-left">
-              <div className="flex gap-2 mb-4 justify-center md:justify-start">
-                <a href="https://www.tiktok.com/@thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+
+            {/* Socials + Contact */}
+            <div className="text-center">
+
+              <div className="flex gap-2 mb-4 justify-center">
+
+                <a
+                  href="https://www.tiktok.com/@thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
                   <SiTiktok className="w-4 h-4" />
                 </a>
-                <a href="https://www.instagram.com/thecarparksociety/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                <a
+                  href="https://www.instagram.com/thecarparksociety/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
                   <FaInstagram className="w-4 h-4" />
                 </a>
-                <a href="https://www.facebook.com/thecarparksociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                <a
+                  href="https://www.facebook.com/thecarparksociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
                   <FaFacebook className="w-4 h-4" />
                 </a>
-                <a href="https://www.youtube.com/@TheCarParkSociety" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors">
+
+                <a
+                  href="https://www.youtube.com/@TheCarParkSociety"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-red-600 transition-colors"
+                >
                   <FaYoutube className="w-4 h-4" />
-                                </a>
+                </a>
+
               </div>
-              <a href="mailto:the.carpark2025@gmail.com" className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold bg-[#000000]" data-testid="link-email-contact">the.carpark2025@gmail.com</a>
-              <p className="text-gray-400 mb-2 text-[13px]">Te Whanganui-a-Tara</p>
-              <p className="text-gray-400 mb-2 font-bold text-[13px]">AOTEAROA</p>
-              <p className="text-gray-400 text-[12px]">© 2026 by The Car Park Society Inc.</p>
+
+              <a
+                href="mailto:the.carpark2025@gmail.com"
+                className="text-gray-400 text-[13px] mb-2 block hover:text-red-500 transition-colors font-bold"
+              >
+                the.carpark2025@gmail.com
+              </a>
+
+              <p className="text-gray-400 mb-2 text-[13px]">
+                Te Whanganui-a-Tara
+              </p>
+
+              <p className="text-gray-400 mb-2 font-bold text-[13px]">
+                AOTEAROA
+              </p>
+
+              <p className="text-gray-400 text-[12px]">
+                © 2026 by The Car Park Society Inc.
+              </p>
+
             </div>
+
+            {/* Mana Whenua */}
             <div className="text-center">
-  <p className="text-gray-500 text-sm italic mb-4">
-    We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
-    Te Āti Awa, and Ngāti Toa Rangatira —
-    mana whenua of Te Whanganui-a-Tara.
-    We honour their whakapapa, histories,
-    and enduring connection to this whenua.
-  </p>
-  <p className="text-gray-600 text-xs font-extralight">
-    Acknowledgement of Mana Whenua
-  </p>
-</div>
+
+              <p className="text-gray-500 text-sm italic mb-4">
+                We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
+                Te Āti Awa, and Ngāti Toa Rangatira —
+                mana whenua of Te Whanganui-a-Tara.
+                We honour their whakapapa, histories,
+                and enduring connection to this whenua.
+              </p>
+
+            </div>
             
             <div className="text-center">
               <div className="space-y-2">
