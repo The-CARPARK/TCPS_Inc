@@ -632,7 +632,7 @@ export default function About() {
 
       </main>
 
-                  <footer className="py-16 px-6 border-t border-gray-800">
+                              <footer className="py-16 px-6 border-t border-gray-800">
 
         <div className="max-w-7xl mx-auto">
 
