@@ -164,13 +164,13 @@ export default function Home() {
 
             {/* Center Navigation */}
 <nav
-  className="grid grid-cols-3 gap-2 px-2 sm:flex sm:flex-nowrap sm:justify-center sm:gap-2 md:gap-4 md:px-0"
+  className="flex justify-center gap-1 sm:gap-2 md:gap-4 w-full overflow-x-auto"
   role="navigation"
   aria-label="Primary"
 >
   <Link
     href="/"
-    className="text-[11px] sm:text-sm font-medium text-white border border-red-500 bg-red-900/20 px-2 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:bg-red-900/40 transition-colors"
+    className="text-[10px] sm:text-sm font-medium text-white border border-red-500 bg-red-900/20 px-2 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:bg-red-900/40 transition-colors"
     data-testid="nav-home"
   >
     Welcome
@@ -178,7 +178,7 @@ export default function Home() {
 
   <Link
     href="/about-1"
-    className="text-[11px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-2 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-2 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
     data-testid="nav-about"
   >
     Origins
@@ -186,7 +186,7 @@ export default function Home() {
 
   <Link
     href="/event-list"
-    className="text-[11px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-2 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-2 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
     data-testid="nav-events"
   >
     Activations
@@ -194,25 +194,23 @@ export default function Home() {
 
   <Link
     href="/blog"
-    className="text-[11px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-2 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-2 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
     data-testid="nav-blog"
   >
     Transmissions
   </Link>
 
-  {/* SUPPORT */}
   <Link
     href="/donate"
-    className="text-[11px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-2 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-2 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
     data-testid="nav-donate"
   >
     Support
   </Link>
 
-  {/* WATCHER PORTAL */}
   <Link
     href="/watcher-portal"
-    className="text-[11px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-2 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
+    className="text-[10px] sm:text-sm font-medium text-gray-300 border border-gray-700 px-2 sm:px-3 py-2 rounded-sm whitespace-nowrap text-center hover:text-white hover:border-red-500 hover:bg-red-900/20 transition-colors"
     data-testid="nav-watcher-portal"
   >
     Join 👁
