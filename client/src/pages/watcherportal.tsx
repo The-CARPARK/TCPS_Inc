@@ -83,16 +83,15 @@ export default function Membership() {
       <header className="fixed top-0 left-0 right-0 z-40 bg-red-950/95 backdrop-blur-sm border-b border-gray-800">
         <div className="px-6 py-3">
 
-          {/* TCPS Button Above Navigation with Full-Width Banner */}
+          {/* TCPS BUTTON / SCROLLING BANNER */}
           <div className="relative mb-2 bg-white px-4 py-2 -mx-6 -mt-3 wavy-bg-white-fast overflow-hidden">
 
-            {/* Full-Width Scrolling Banner Background */}
+            {/* Full-width scrolling banner background */}
             <div className="absolute inset-0 bg-white border-y border-red-900/50 glitch-image">
               <div className="h-full overflow-hidden relative flex items-center">
 
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/5 to-transparent animate-pulse" />
 
-                {/* Scrolling Text */}
                 <div className="w-full overflow-hidden">
                   <div
                     className="whitespace-nowrap text-[10px] sm:text-[12px] md:text-[14px] text-black font-mono py-2 px-4 animate-scroll vhs-overlay glitch-text tracking-wider"
@@ -105,9 +104,10 @@ export default function Membership() {
               </div>
             </div>
 
-            {/* Foreground Elements */}
+            {/* Foreground elements */}
             <div className="absolute inset-0 flex justify-between items-center px-4 z-10">
 
+              {/* TCPS logo */}
               <Link href="/">
                 <img
                   src={tcpsLogo}
@@ -116,49 +116,65 @@ export default function Membership() {
                 />
               </Link>
 
-              <div className="flex gap-1 bg-white px-1 py-0.5 rounded">
+              <div className="flex items-center gap-2">
 
+                {/* EXISTING MEMBER LOGIN */}
                 <a
-                  href="https://www.tiktok.com/@thecarparksociety"
+                  href="https://auth.tcps.app/login?next=%2Foauth%2Fauthorize%3Fclient_id%3Dclient_cf59aa5f3196%26redirect_uri%3Dhttps%253A%252F%252Fdev.tcps.app%252Fauth%252Fcallback%26response_type%3Dcode%26state%3D5031576d5a3a70e571c0c53c5a331dda"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                  className="px-2 sm:px-3 py-1 border border-red-600 bg-red-950/90 text-white text-[8px] sm:text-[10px] font-bold tracking-wider uppercase hover:bg-red-600 transition-colors whitespace-nowrap"
                 >
-                  <SiTiktok className="w-2 h-2" />
+                  Member Login
                 </a>
 
-                <a
-                  href="https://www.instagram.com/thecarparksociety/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
-                >
-                  <FaInstagram className="w-2 h-2" />
-                </a>
+                {/* SOCIAL ICONS */}
+                <div className="flex gap-1 bg-white px-1 py-0.5 rounded">
 
-                <a
-                  href="https://www.facebook.com/thecarparksociety"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
-                >
-                  <FaFacebook className="w-2 h-2" />
-                </a>
+                  <a
+                    href="https://www.tiktok.com/@thecarparksociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                  >
+                    <SiTiktok className="w-2 h-2" />
+                  </a>
 
-                <a
-                  href="https://www.youtube.com/@TheCarParkSociety"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
-                >
-                  <FaYoutube className="w-2 h-2" />
-                </a>
+                  <a
+                    href="https://www.instagram.com/thecarparksociety/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                  >
+                    <FaInstagram className="w-2 h-2" />
+                  </a>
+
+                  <a
+                    href="https://www.facebook.com/thecarparksociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                  >
+                    <FaFacebook className="w-2 h-2" />
+                  </a>
+
+                  <a
+                    href="https://www.youtube.com/@TheCarParkSociety"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-4 h-4 bg-black rounded flex items-center justify-center hover:bg-red-600 transition-colors text-white glitch-icon"
+                  >
+                    <FaYoutube className="w-2 h-2" />
+                  </a>
+
+                </div>
 
               </div>
+
             </div>
           </div>
 
-          {/* Navigation and Social Icons Row */}
+          {/* NAVIGATION */}
           <div className="flex justify-center">
 
             <nav
@@ -200,19 +216,19 @@ export default function Membership() {
               </Link>
 
               <Link
-                href="/donate"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-                data-testid="nav-donate"
-              >
-                Support
-              </Link>
-
-              <Link
                 href="/watcher-portal"
                 className="text-xs sm:text-sm font-medium text-white border-b border-red-500 whitespace-nowrap"
                 data-testid="nav-watcher-portal"
               >
                 Watcher Portal
+              </Link>
+
+              <Link
+                href="/donate"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-donate"
+              >
+                Support
               </Link>
 
             </nav>
@@ -305,21 +321,21 @@ export default function Membership() {
                   </Link>
 
                   <Link
-                    href="/donate"
-                    className="text-2xl font-medium hover:text-red-500 transition-colors"
-                    data-testid="nav-donate"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    Support
-                  </Link>
-
-                  <Link
                     href="/watcher-portal"
                     className="text-2xl font-medium text-white border-b border-red-500 transition-colors"
                     data-testid="nav-watcher-portal"
                     onClick={() => setMenuOpen(false)}
                   >
                     Watcher Portal
+                  </Link>
+
+                  <Link
+                    href="/donate"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-donate"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    Support
                   </Link>
 
                 </nav>
@@ -375,9 +391,8 @@ export default function Membership() {
       )}
 
 
-      {/* MAIN */}
+      {/* MAIN CONTENT */}
       <main id="main-content" className="pt-20 pb-16">
-
 
         {/* MEMBERSHIP INTRO */}
         <section className="relative pt-20 pb-16 px-6 overflow-hidden">
@@ -401,8 +416,8 @@ export default function Membership() {
 
             <div className="flex flex-col items-center text-center">
 
-              {/* TITLE + LOGIN */}
-              <div className="flex flex-col md:flex-row md:items-center md:justify-center gap-6 mb-8">
+              {/* TITLE */}
+              <div className="mb-8">
 
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight leading-[0.9]">
 
@@ -415,16 +430,6 @@ export default function Membership() {
                   SOCIETY
 
                 </h1>
-
-
-                <a
-                  href="https://auth.tcps.app/login?next=%2Foauth%2Fauthorize%3Fclient_id%3Dclient_cf59aa5f3196%26redirect_uri%3Dhttps%253A%252F%252Fdev.tcps.app%252Fauth%252Fcallback%26response_type%3Dcode%26state%3D5031576d5a3a70e571c0c53c5a331dda"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex shrink-0 items-center justify-center px-7 py-3 border border-white/30 text-white text-sm font-bold tracking-[0.15em] uppercase hover:bg-white hover:text-black transition-all duration-300"
-                >
-                  Existing Member Login
-                </a>
 
               </div>
 
@@ -615,7 +620,6 @@ export default function Membership() {
 
           <div className="grid md:grid-cols-3 gap-8 items-start">
 
-
             {/* LEFT — SOCIAL / CONTACT */}
             <div className="text-center">
 
@@ -690,13 +694,11 @@ export default function Membership() {
             <div className="text-center">
 
               <p className="text-gray-500 text-sm italic mb-4">
-
                 We acknowledge Taranaki Whānui ki Te Upoko o Te Ika,
                 Te Āti Awa, and Ngāti Toa Rangatira —
                 mana whenua of Te Whanganui-a-Tara.
                 We honour their whakapapa, histories,
                 and enduring connection to this whenua.
-
               </p>
 
               <p className="text-gray-600 text-xs font-extralight">
