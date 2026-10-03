@@ -201,14 +201,6 @@ export default function Home() {
                 Transmissions
               </Link>
 
-              <Link
-                href="/donate"
-                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
-                data-testid="nav-donate"
-              >
-                Support
-              </Link>
-
               {/* WATCHER PORTAL */}
               <Link
                 href="/watcher-portal"
@@ -216,6 +208,15 @@ export default function Home() {
                 data-testid="nav-watcher-portal"
               >
                 Watcher Portal
+              </Link>
+
+              {/* SUPPORT — LAST */}
+              <Link
+                href="/donate"
+                className="text-xs sm:text-sm font-medium text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                data-testid="nav-donate"
+              >
+                Support
               </Link>
 
             </nav>
@@ -301,14 +302,6 @@ export default function Home() {
                     Transmissions
                   </Link>
 
-                  <Link
-                    href="/donate"
-                    className="text-2xl font-medium hover:text-red-500 transition-colors"
-                    data-testid="nav-donate"
-                  >
-                    Support
-                  </Link>
-
                   {/* WATCHER PORTAL */}
                   <Link
                     href="/watcher-portal"
@@ -316,6 +309,15 @@ export default function Home() {
                     data-testid="nav-watcher-portal"
                   >
                     Watcher Portal
+                  </Link>
+
+                  {/* SUPPORT — LAST */}
+                  <Link
+                    href="/donate"
+                    className="text-2xl font-medium hover:text-red-500 transition-colors"
+                    data-testid="nav-donate"
+                  >
+                    Support
                   </Link>
 
                 </nav>
@@ -770,4 +772,4 @@ export default function Home() {
 
     </div>
   );
-                    }
+}
