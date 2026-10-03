@@ -293,27 +293,36 @@ export default function AnnualReportPost() {
               <span>3 min read</span>
             </div>
 
-            {/* Annual Report Link */}
-            <div className="bg-red-950/30 border border-red-800 rounded-lg p-6 sm:p-8 mb-4">
-              <p className="text-white font-semibold mb-3">
-                TCPS Annual Report FY2025/26 — Phase Zero: The Rupture
-              </p>
+            {/* Annual Report */}
+<div className="bg-red-950/30 border border-red-800 rounded-lg p-4 sm:p-6 mb-4">
+  <p className="text-white font-semibold mb-2">
+    TCPS Annual Report FY2025/26 — Phase Zero: The Rupture
+  </p>
 
-              <p className="text-gray-300 mb-4">
-                The first year is now on record.
-              </p>
+  <p className="text-gray-300 mb-6">
+    The first year is now on record.
+  </p>
 
-              <a
-                href="https://tc1312lia.github.io/tcps2526/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-red-400 hover:text-red-300 underline underline-offset-4 transition-colors"
-              >
-                Read the Annual Report →
-              </a>
-            </div>
-          </div>
-        </section>
+  <div className="w-full overflow-hidden rounded-lg border border-gray-700 bg-black">
+    <iframe
+      src="/TCPS%20Annual%20Report%20FY25-26.pdf"
+      className="w-full h-[80vh] min-h-[600px] border-0"
+      title="TCPS Annual Report FY2025/26"
+    />
+  </div>
+
+  <p className="text-center text-sm text-gray-400 mt-4">
+    Can't view the document?{" "}
+    <a
+      href="/TCPS%20Annual%20Report%20FY25-26.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-red-400 hover:text-red-300 underline underline-offset-4"
+    >
+      Open the Annual Report →
+    </a>
+  </p>
+</div>
 
         {/* Article Content */}
         <article className="px-6">
